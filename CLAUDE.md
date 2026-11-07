@@ -23,7 +23,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
   clip in `cast/<id>/voice/sample.mp3`. ElevenLabs (free plan, built-in voices, model eleven_v3,
   needs `ELEVENLABS_API_KEY`): Foxley = Callum, Zara = Jessica, Faisal = Liam. Indic Parler-TTS
   (free, Apache-2.0, needs `HF_TOKEN`, runs in `.venv-parler`): Bilal, Nusrat, Raju, Ayesha
-  (seed 1001), Rafiq and Jamil (seed 7), each with a fixed description. Do not change a
+  (seed 1001), Rafiq, Jamil and Sher Khan (seed 7), each with a fixed description. Do not change a
   character's voice without the owner's approval. Pitch-lock each generated line to the
   character's median pitch so voices stay consistent. The owner will buy ElevenLabs Starter
   before monetizing (free plan is non-commercial).

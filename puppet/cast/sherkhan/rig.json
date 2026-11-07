@@ -35,6 +35,13 @@
     ],
     "match": 23.5
   },
-  "voice": null,
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rohit speaks in a stern, firm and authoritative voice with a low pitch at a moderate pace, like a strict security guard, expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 7,
+    "approved": "2026-11-07",
+    "note": "Owner picked option C. Seed 7 had the steadiest timbre of 8 seeds; pitch-lock lines to ~138 Hz."
+  },
   "height": 1.0
 }
