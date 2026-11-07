@@ -62,7 +62,8 @@
     "engine": "indic-parler-tts",
     "model": "ai4bharat/indic-parler-tts",
     "description": "Rohit speaks in a very low-pitched, gruff and grumpy voice of an old man at a slow pace, expressive. The recording is very clear, close-sounding, with no background noise.",
-    "seed": 1001,
-    "approved": "2026-11-07"
+    "seed": 7,
+    "approved": "2026-11-07",
+    "note": "Seed 7 chosen by studio/tune_parler.py: steadiest pitch and timbre across sentences."
   }
 }

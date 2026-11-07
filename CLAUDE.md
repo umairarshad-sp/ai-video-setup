@@ -19,6 +19,15 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 - **Language: Hindustani (Urdu/Hindi)** for all voices (2026-11-07). Write each line twice in the
   episode JSON: `say` in Devanagari (what Kokoro speaks, lang hi; it pronounces Devanagari best)
   and `caption` in Roman Urdu/Hindi (what viewers read). On-screen text is Roman Urdu/Hindi.
+- **Voices are locked (2026-11-07)** in `cast/<id>/profile.json` -> `voice`, with the approved
+  clip in `cast/<id>/voice/sample.mp3`. ElevenLabs (free plan, built-in voices, model eleven_v3,
+  needs `ELEVENLABS_API_KEY`): Foxley = Callum, Zara = Jessica, Faisal = Liam. Indic Parler-TTS
+  (free, Apache-2.0, needs `HF_TOKEN`, runs in `.venv-parler`): Bilal, Nusrat, Raju, Ayesha
+  (seed 1001), Rafiq and Jamil (seed 7), each with a fixed description. Do not change a
+  character's voice without the owner's approval. Pitch-lock each generated line to the
+  character's median pitch so voices stay consistent. The owner will buy ElevenLabs Starter
+  before monetizing (free plan is non-commercial).
+- Voices are finalized BEFORE any video work; the owner wants to approve audio first.
 - **Cast names are Pakistani/Indian:** Constable Bilal (sidekick), Ustad Rafiq (cook), Begum
   Nusrat, Raju Mistri, Zara, Dr. Ayesha, Chacha Jamil, Faisal. Folder ids: bilal, rafiq, nusrat,
   raju, zara, ayesha, jamil, faisal. Voices: `cast/<id>/profile.json` -> `voice`, `studio/voices.py`.
@@ -118,7 +127,8 @@ Done:
 - The earlier talk/react format (Riddle #001, `episodes/001_part*.json`) still builds.
 
 Next:
-1. Owner review of the Hindustani Episode 1 and the voice audition; lock voices.
+1. Voices are locked. Next: wire the locked voices (ElevenLabs + Parler, pitch-locked) into
+   `studio/build_story.py`, then redo Episode 1, only when the owner asks.
 2. Build puppets for ayesha, jamil, faisal (set their mouth centre in profile.json first).
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).

@@ -33,6 +33,19 @@ for f in "${!sums[@]}"; do
   fi
 done
 
+echo "==> Indic Parler-TTS env (.venv-parler) for the character voices"
+if [[ ! -x .venv-parler/bin/python ]]; then
+  python3 -m venv .venv-parler
+fi
+.venv-parler/bin/pip install -q --upgrade pip
+.venv-parler/bin/pip install -q -r requirements-parler.txt
+if [[ -n "${HF_TOKEN:-}" ]]; then
+  # downloads ai4bharat/indic-parler-tts (~3.5 GB) into the Hugging Face cache once per session
+  .venv-parler/bin/python -c "from huggingface_hub import snapshot_download; snapshot_download('ai4bharat/indic-parler-tts')" >/dev/null
+else
+  echo "    HF_TOKEN not set: Indic Parler-TTS voices will not work (see CLAUDE.md)"
+fi
+
 echo "==> Skills"
 # The repo's .claude/skills/ load automatically when Claude Code opens this folder.
 ls .claude/skills
