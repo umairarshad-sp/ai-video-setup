@@ -1,0 +1,233 @@
+{
+  "number": 1,
+  "part": 2,
+  "title": "The Stolen Painting",
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "marco",
+          "x": 0.2
+        },
+        {
+          "id": "mia",
+          "x": 0.5
+        },
+        {
+          "id": "rocky",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "marco",
+        "mia",
+        "rocky"
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "title": "WHO STOLE THE PAINTING?",
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "Alright, detectives. Let's check the alibis."
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "post_office_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "marco",
+          "x": 0.3
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "marco",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "sign:door",
+          "zoom": 2.2
+        },
+        "ease": "power2.inOut"
+      },
+      "highlight": "door",
+      "highlight_at": 2.6,
+      "answer": {
+        "label": "THE CLUE",
+        "text": "It was Sunday!",
+        "at": 2.9,
+        "y": 210
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "Marco says he was at the post office."
+        },
+        {
+          "who": "foxley",
+          "say": "But it was Sunday. And the post office is closed on Sundays!",
+          "sfx_before": "reveal"
+        }
+      ],
+      "hold": 0.4,
+      "caption_y": 1500
+    },
+    {
+      "set": "mansion_living_room",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.28,
+          "face": "right",
+          "pose": "point"
+        },
+        {
+          "id": "marco",
+          "x": 0.72,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.22
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": "GUILTY",
+        "on": "marco",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "You were never there, Marco!",
+          "pose": "point"
+        },
+        {
+          "who": "marco",
+          "say": "Mamma mia... I only wanted to borrow it!",
+          "pose": "guilty"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "barnaby",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": "CASE CLOSED",
+        "on": "foxley",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "barnaby",
+          "say": "I knew it! I always knew it!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "say": "Case closed!",
+          "pose": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.5,
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.18
+        }
+      },
+      "cta": {
+        "at": 0.2,
+        "y": 560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "Follow for tomorrow's mystery. Stay sharp, detectives!",
+          "after": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 1.5,
+      "caption_y": 230
+    }
+  ]
+}

@@ -30,6 +30,9 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | Path | What it is |
 |---|---|
 | `studio/build_episode.py` | Episode script (JSON) -> Kokoro voice -> lip sync -> HyperFrames HTML -> MP4 in `output/` |
+| `studio/build_story.py` | Story episodes: shots on sets, cast puppets, per-character Kokoro voices, lip sync, word-by-word captions, camera moves, line-up, timer, stamps, music + SFX mix |
+| `studio/make_cast_puppet.py` | Cuts `cast/<id>/art/acting.png` into `puppet/cast/<id>/` (poses on one canvas, feet on the bottom edge, talking mouths) |
+| `studio/audio.py` | Original music (D-minor detective loop) and SFX synthesized in code; ducking; loudnorm to -14 LUFS |
 | `studio/lipsync.py` | Audio-only lip sync: loudness + brightness -> mouth shape per frame (A-G, None) |
 | `studio/make_foxley_puppet.py` | Cuts the ChatGPT Foxley sheets in `source/` into `puppet/foxley/` |
 | `studio/make_placeholder.py` | A code-drawn stand-in fox (`puppet/placeholder/`), for tests |
@@ -43,6 +46,15 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `.claude/skills/` | `video-director` (directing, timing, sound, QA) and `rossark-motion-skill` (making characters feel alive) |
 
 ## Commands
+
+Story episodes (the main format):
+
+```bash
+.venv/bin/python studio/build_story.py episodes/s001_part1.json            # render to output/story_001_part1.mp4
+.venv/bin/python studio/make_cast_puppet.py all                           # rebuild cast puppets from cast/<id>/art
+```
+
+Older talk/react format (Foxley talking head only):
 
 ```bash
 .venv/bin/python studio/build_episode.py episodes/001_part1.json            # render to output/
@@ -86,27 +98,22 @@ pose for `expression` (smug, proud, thinking, shocked, laugh, point, excited, fa
 ## Status and next steps (keep this section current)
 
 Done:
-- Pipeline works end to end: Kokoro voice, lip sync, Foxley talk/react puppet from the owner's
-  art, study background, riddle card, timer, answer reveal, "Case closed!" stamp, CTA.
-- Riddle #001 ("The more you take, the more you leave behind" / Footsteps) renders in both parts.
-- Cast of 8 human characters designed (`cast/`), with ChatGPT prompts, and **all 8 have their
-  turnaround + acting sheets** in `cast/<id>/art/`, imported and checked with
-  `studio/check_cast_art.py` (pose split, mouth-closed vs mouth-open alignment; see each
-  `profile.json` -> `art.mouth` for how that character lip-syncs). Puppets not built yet.
-- Mia's look (mint hoodie, messy dark ponytail) was flagged as close to Vanellope (Wreck-It
-  Ralph); the owner decided to keep her as she is (2026-11-07).
+- Story pipeline works end to end (`studio/build_story.py`): Episode 1 "The Stolen Painting"
+  renders in both parts (`episodes/s001_part1.json` 34 s, `s001_part2.json` 24 s), passes
+  video-director QA (no flashes, -13.5 LUFS). Marco is the culprit (post office closed on Sundays).
+- All 8 cast members + Foxley full body have art; puppets built for foxley, barnaby, penelope,
+  marco, rocky, mia (`puppet/cast/`). Mouth positions are hand-set in each profile.json
+  (`art.mouth.center/radius`, acting-sheet pixels); the automatic finder is unreliable.
+- 4 episode-1 sets + Foxley's study in `sets/`, with floor lines and sign boxes in set.json.
+- The earlier talk/react format (Riddle #001, `episodes/001_part*.json`) still builds.
 
 Next:
-1. All episode-1 art is in: Foxley's acting sheet, the 8 cast members, and the 4 sets
-   (mansion_living_room, garden, post_office_street, small_bedroom), each with a `set.json`
-   (floor line, sign boxes, notes). Signs are blank; clue text is drawn in code.
-2. Build the story/scene engine: multiple shots and backgrounds, camera moves, several
-   characters per shot, per-character voices, word-by-word captions, numbered line-up.
-3. Music and SFX: an original mystery score synthesized from the timeline (see
-   video-director `references/sound.md`), ducking, tick, reveal hit, stamp. Loudness -14 LUFS.
-4. First story episode: "The Stolen Painting" (Sunday noon; Marco says he was at the post
-   office, which is closed on Sundays).
-5. Audition and lock voices for Foxley and each cast member.
+1. Owner review of Episode 1; then audition and lock voices (Foxley is am_puck for now).
+2. Build puppets for amara, wally, sunny (set their mouth centre in profile.json first).
+3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
+   a moment of silence/music drop before the reveal (QA asks for it).
+4. Known nit: Marco's shocked pose loses a sliver of his hat (poses touch on his sheet).
+5. More episodes: write new `episodes/sNNN_part1/2.json` using the cast and sets.
 
 ## Environment notes (cloud sessions)
 

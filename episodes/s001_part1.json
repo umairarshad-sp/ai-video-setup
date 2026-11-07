@@ -1,0 +1,258 @@
+{
+  "number": 1,
+  "part": 1,
+  "title": "The Stolen Painting",
+  "handle": "@AskFoxley",
+  "answer_note": "Marco is lying: he says he was at the post office, but it was Sunday and the post office is closed on Sundays (the sign on its door says so in his alibi shot).",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "penelope",
+          "x": 0.5,
+          "pose": "shocked"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.31
+          ],
+          "zoom": 1.9
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "dur": 1.6,
+        "ease": "power2.out"
+      },
+      "title": "WHO STOLE THE PAINTING?",
+      "title_dur": 3.2,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "penelope",
+          "say": "My painting! It's gone!",
+          "pose": "shocked",
+          "after": "signature_faint"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "barnaby",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.32
+        }
+      },
+      "sfx": [
+        [
+          "pop",
+          0.05
+        ]
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "Nobody leaves this room. It's Sunday, twelve o'clock, and someone here is lying."
+        },
+        {
+          "who": "barnaby",
+          "say": "I knew it! It was the butler!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "say": "There is no butler, Barnaby.",
+          "after": "thinking"
+        }
+      ]
+    },
+    {
+      "set": "post_office_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "marco",
+          "x": 0.3
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.45,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "lines": [
+        {
+          "who": "marco",
+          "say": "I was at the post office, mailing a letter to my mamma!",
+          "after": "signature_pie"
+        }
+      ],
+      "hold": 0.4,
+      "caption_y": 520
+    },
+    {
+      "set": "garden",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "mia",
+          "x": 0.55
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.55
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "mia",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "mia",
+          "say": "I was out here filming the roses for my followers. All afternoon.",
+          "after": "signature_filming"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "small_bedroom",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "rocky",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.55
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "rocky",
+          "zoom": 1.22
+        }
+      },
+      "lines": [
+        {
+          "who": "rocky",
+          "say": "I was asleep! I worked the night shift, okay?",
+          "after": "nervous"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "mansion_living_room",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "marco",
+          "x": 0.2
+        },
+        {
+          "id": "mia",
+          "x": 0.5
+        },
+        {
+          "id": "rocky",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "marco",
+        "mia",
+        "rocky"
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.06
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "say": "One of them is lying. Who stole the painting?"
+        }
+      ],
+      "timer": 5,
+      "cta": {
+        "after_timer": true
+      },
+      "hold": 2.2
+    }
+  ]
+}
