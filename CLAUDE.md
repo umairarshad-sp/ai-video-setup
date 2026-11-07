@@ -51,6 +51,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `episodes/NNN_partK.json` | Episode scripts |
 | `sets/<id>/background.png` | Reusable scene backgrounds; descriptions and the ChatGPT prompt in `sets/SETS.md` |
 | `branding/avatar_*.png` | @AskFoxley profile pictures (1080x1080, circle-safe), made by `studio/make_avatar.py`; teal is the recommended one |
+| `planning/riddle_tracker.xlsx` | The 30-episode plan (suspects, alibis, culprit, clue, sets, new art) and status tracker; built by `studio/make_riddle_plan.py` |
 | `MOTION.md` | Animation rules (rossark-motion-skill method + this project's rig limits) |
 | `.claude/skills/` | `video-director` (directing, timing, sound, QA) and `rossark-motion-skill` (making characters feel alive) |
 
