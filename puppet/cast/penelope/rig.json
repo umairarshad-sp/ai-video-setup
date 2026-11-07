@@ -1,0 +1,40 @@
+{
+  "id": "penelope",
+  "name": "Lady Penelope Sterling",
+  "canvas": [
+    396,
+    746
+  ],
+  "figure_height": 717,
+  "facing": "front",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_faint"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      128,
+      248
+    ],
+    "radius": [
+      30,
+      24
+    ],
+    "offset": [
+      21,
+      1
+    ],
+    "match": 29.2
+  },
+  "voice": "bf_emma",
+  "height": 0.95
+}

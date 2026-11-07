@@ -1,0 +1,40 @@
+{
+  "id": "rocky",
+  "name": "Rocky Ruiz",
+  "canvas": [
+    385,
+    650
+  ],
+  "figure_height": 622,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_wrench"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      115,
+      203
+    ],
+    "radius": [
+      34,
+      22
+    ],
+    "offset": [
+      12,
+      -1
+    ],
+    "match": 18.9
+  },
+  "voice": "am_adam",
+  "height": 1.0
+}

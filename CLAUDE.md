@@ -93,8 +93,8 @@ Done:
   turnaround + acting sheets** in `cast/<id>/art/`, imported and checked with
   `studio/check_cast_art.py` (pose split, mouth-closed vs mouth-open alignment; see each
   `profile.json` -> `art.mouth` for how that character lip-syncs). Puppets not built yet.
-- Open question for the owner: Mia's mint hoodie + messy dark ponytail resembles Vanellope
-  (Wreck-It Ralph); suggested regenerating with a different hoodie colour/hairstyle.
+- Mia's look (mint hoodie, messy dark ponytail) was flagged as close to Vanellope (Wreck-It
+  Ralph); the owner decided to keep her as she is (2026-11-07).
 
 Next:
 1. All episode-1 art is in: Foxley's acting sheet, the 8 cast members, and the 4 sets

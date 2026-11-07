@@ -26,16 +26,20 @@
     "facing": "left",
     "mouth": {
       "pose": "neutral",
-      "method": "patch_from_pose_2",
-      "approx_center": [
-        118,
-        341
-      ],
+      "method": "patch",
       "pose2_offset": [
         4,
         -1
       ],
-      "note": "acting.png pixel coords, approximate. Best match of the cast so far: same head angle, only the mouth (and slightly the eye whites) differ, so patch the mouth region only."
+      "note": "acting.png pixel coords, approximate. Best match of the cast so far: same head angle, only the mouth (and slightly the eye whites) differ, so patch the mouth region only.",
+      "center": [
+        115,
+        348
+      ],
+      "radius": [
+        34,
+        22
+      ]
     }
   }
 }

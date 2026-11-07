@@ -45,7 +45,8 @@
         208,
         151
       ],
-      "note": "acting.png pixel coords: left end, lowest point, right end of the closed smile. Talking mouths are drawn over pose 1 along this curve (pose 2 has a turned head, so it is reference only)."
+      "note": "acting.png pixel coords: left end, lowest point, right end of the closed smile. Talking mouths are drawn over pose 1 along this curve (pose 2 has a turned head, so it is reference only).",
+      "method": "draw"
     }
   }
 }

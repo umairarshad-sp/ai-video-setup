@@ -1,0 +1,40 @@
+{
+  "id": "mia",
+  "name": "Mia Chen",
+  "canvas": [
+    405,
+    761
+  ],
+  "figure_height": 733,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_filming"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      126,
+      247
+    ],
+    "radius": [
+      26,
+      22
+    ],
+    "offset": [
+      19,
+      2
+    ],
+    "match": 25.9
+  },
+  "voice": "af_nova",
+  "height": 0.8
+}

@@ -26,20 +26,20 @@
     "facing": "front",
     "mouth": {
       "pose": "neutral",
-      "method": "patch_from_pose_2",
-      "patch_center": [
-        121,
-        392
-      ],
-      "patch_radius": [
-        32,
-        22
-      ],
+      "method": "patch",
       "pose2_offset": [
         4,
         2
       ],
-      "note": "acting.png pixel coords (approximate, refine when building the puppet). Pose 2 matches pose 1 closely (same head angle), so its open mouth is patched onto pose 1 under the moustache. Poses 5 and 6 touch on the sheet: split them at the gap between the figures."
+      "note": "acting.png pixel coords (approximate, refine when building the puppet). Pose 2 matches pose 1 closely (same head angle), so its open mouth is patched onto pose 1 under the moustache. Poses 5 and 6 touch on the sheet: split them at the gap between the figures.",
+      "center": [
+        115,
+        396
+      ],
+      "radius": [
+        30,
+        22
+      ]
     }
   }
 }

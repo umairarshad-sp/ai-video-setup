@@ -1,0 +1,29 @@
+{
+  "id": "barnaby",
+  "name": "Officer Barnaby Plum",
+  "canvas": [
+    360,
+    777
+  ],
+  "figure_height": 751,
+  "facing": "front",
+  "poses": [
+    "neutral",
+    "talk_ref",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_point"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "draw",
+    "shapes": [
+      "small",
+      "medium",
+      "wide"
+    ]
+  },
+  "voice": "am_eric",
+  "height": 1.1
+}

@@ -35,16 +35,20 @@
     ],
     "mouth": {
       "pose": "neutral",
-      "method": "patch_from_pose_2",
-      "approx_center": [
-        130,
-        330
-      ],
+      "method": "patch",
       "pose2_offset": [
         18,
         2
       ],
-      "note": "acting.png pixel coords, approximate. The poses touch on the sheet, so split them at pose_columns instead of by connected shapes. Pose 2 has the same face angle; patch the mouth only."
+      "note": "acting.png pixel coords, approximate. The poses touch on the sheet, so split them at pose_columns instead of by connected shapes. Pose 2 has the same face angle; patch the mouth only.",
+      "center": [
+        126,
+        337
+      ],
+      "radius": [
+        26,
+        22
+      ]
     }
   }
 }

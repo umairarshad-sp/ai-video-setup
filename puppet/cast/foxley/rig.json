@@ -1,0 +1,40 @@
+{
+  "id": "foxley",
+  "name": "Professor Foxley",
+  "canvas": [
+    428,
+    534
+  ],
+  "figure_height": 508,
+  "facing": "right",
+  "poses": [
+    "neutral",
+    "talk",
+    "point",
+    "examine",
+    "thinking",
+    "signature_thumbs_wink"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      178,
+      190
+    ],
+    "radius": [
+      32,
+      26
+    ],
+    "offset": [
+      25,
+      1
+    ],
+    "match": 25.8
+  },
+  "voice": "am_puck",
+  "height": 1.0
+}

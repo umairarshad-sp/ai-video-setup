@@ -1,0 +1,40 @@
+{
+  "id": "marco",
+  "name": "Chef Marco Bellini",
+  "canvas": [
+    450,
+    682
+  ],
+  "figure_height": 647,
+  "facing": "front",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_pie"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      115,
+      290
+    ],
+    "radius": [
+      30,
+      22
+    ],
+    "offset": [
+      7,
+      2
+    ],
+    "match": 19.9
+  },
+  "voice": "am_onyx",
+  "height": 0.85
+}
