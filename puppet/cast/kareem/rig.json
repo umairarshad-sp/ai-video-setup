@@ -1,0 +1,40 @@
+{
+  "id": "kareem",
+  "name": "Seth Kareem",
+  "canvas": [
+    401,
+    686
+  ],
+  "figure_height": 654,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_scheming"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      118,
+      207
+    ],
+    "radius": [
+      38,
+      22
+    ],
+    "offset": [
+      10,
+      0
+    ],
+    "match": 30.5
+  },
+  "voice": null,
+  "height": 0.9
+}
