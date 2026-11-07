@@ -1,0 +1,11 @@
+# rebuilt by setup.sh
+node_modules/
+.venv/
+models/
+# generated
+build/
+work/
+output/
+__pycache__/
+*.pyc
+.hyperframes/

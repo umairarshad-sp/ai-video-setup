@@ -1,0 +1,40 @@
+{
+  "name": "Foxley (placeholder)",
+  "canvas": [900, 1300],
+  "pivots": {
+    "neck": [450, 690],
+    "tail": [560, 1150],
+    "feet": [450, 1240],
+    "shoulder_r": [560, 760]
+  },
+  "layers": [
+    {"slot": "tail",    "group": "tail", "files": {"tail": "tail.png"}},
+    {"slot": "body",    "group": "body", "files": {"body": "body.png"}},
+    {"slot": "armL",    "group": "body", "files": {"left": "arm_left.png"}},
+    {"slot": "head",    "group": "head", "files": {"head": "head.png"}},
+    {"slot": "eyes",    "group": "head", "files": {
+      "open": "eyes_open.png", "closed": "eyes_closed.png", "up": "eyes_up.png", "halflid": "eyes_halflid.png",
+      "shocked": "eyes_shocked.png", "happy": "eyes_happy.png", "wink": "eyes_wink.png"}},
+    {"slot": "glasses", "group": "head", "files": {"glasses": "glasses.png"}},
+    {"slot": "brows",   "group": "head", "files": {
+      "neutral": "brows_neutral.png", "raised": "brows_raised.png", "smug": "brows_smug.png", "frown": "brows_frown.png"}},
+    {"slot": "mouth",   "group": "head", "files": {
+      "X": "mouth_X.png", "smirk": "mouth_smirk.png", "A": "mouth_A.png", "B": "mouth_B.png", "C": "mouth_C.png",
+      "D": "mouth_D.png", "E": "mouth_E.png", "F": "mouth_F.png", "G": "mouth_G.png"}},
+    {"slot": "armR",    "group": "front", "files": {
+      "rest": "arm_rest.png", "point": "arm_point.png", "chin": "arm_chin.png",
+      "magnify": "arm_magnify.png", "facepalm": "arm_facepalm.png"}}
+  ],
+  "fixed": {"tail": "tail", "body": "body", "armL": "left", "head": "head", "glasses": "glasses"},
+  "blink": {"slot": "eyes", "closed": "closed", "skip_when": ["closed", "happy"]},
+  "expressions": {
+    "neutral":  {"eyes": "open",    "brows": "neutral", "armR": "rest",     "idle_mouth": "X"},
+    "smug":     {"eyes": "halflid", "brows": "smug",    "armR": "rest",     "idle_mouth": "smirk"},
+    "thinking": {"eyes": "up",      "brows": "raised",  "armR": "chin",     "idle_mouth": "A"},
+    "shocked":  {"eyes": "shocked", "brows": "raised",  "armR": "rest",     "idle_mouth": "E"},
+    "laugh":    {"eyes": "happy",   "brows": "raised",  "armR": "rest",     "idle_mouth": "D"},
+    "point":    {"eyes": "open",    "brows": "smug",    "armR": "point",    "idle_mouth": "smirk"},
+    "facepalm": {"eyes": "closed",  "brows": "frown",   "armR": "facepalm", "idle_mouth": "A"},
+    "wink":     {"eyes": "wink",    "brows": "smug",    "armR": "magnify",  "idle_mouth": "smirk"}
+  }
+}

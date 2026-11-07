@@ -1,0 +1,15 @@
+{
+  "id": "amara",
+  "name": "Dr. Amara Okafor",
+  "role": "suspect",
+  "look": "a brilliant museum curator and scientist with dark brown skin, a big round afro puff and gold hoop earrings; a white lab coat over an orange turtleneck, round tortoiseshell glasses, holding a clipboard",
+  "personality": "Precise, calm, a bit of a know-it-all; respects Foxley as a fellow genius.",
+  "catchphrase": "Technically speaking...",
+  "voice": "af_heart",
+  "height": 0.95,
+  "colors": [
+    "#FFFFFF",
+    "#E8762B",
+    "#5A3A22"
+  ]
+}

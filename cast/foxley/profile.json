@@ -1,0 +1,15 @@
+{
+  "id": "foxley",
+  "name": "Professor Foxley",
+  "role": "detective",
+  "look": "the fox detective (see source/fullbody.png)",
+  "personality": "Playful, theatrical, a little smug, secretly kind.",
+  "catchphrase": "Case closed!",
+  "voice": "am_puck",
+  "height": 1.0,
+  "colors": [
+    "#E8762B",
+    "#1F4E5F",
+    "#F2B134"
+  ]
+}

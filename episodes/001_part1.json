@@ -1,0 +1,34 @@
+{
+  "number": 1,
+  "part": 1,
+  "difficulty": 2,
+  "voice": "am_puck",
+  "speed": 1.0,
+  "handle": "@AskFoxley",
+  "riddle": "The more you take, the more you leave behind. What am I?",
+  "segments": [
+    {
+      "pause": 0.8,
+      "expression": "smug"
+    },
+    {
+      "say": "Let's see how sharp you really are, detectives."
+    },
+    {
+      "say": "The more you take, the more you leave behind. What am I?",
+      "show": "riddle"
+    },
+    {
+      "timer": 5,
+      "expression": "thinking"
+    },
+    {
+      "say": "Drop your answer in the comments. Answer drops tomorrow!",
+      "show": "cta"
+    },
+    {
+      "pause": 1.2,
+      "expression": "wink"
+    }
+  ]
+}

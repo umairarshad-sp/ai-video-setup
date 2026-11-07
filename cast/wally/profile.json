@@ -1,0 +1,15 @@
+{
+  "id": "wally",
+  "name": "Grandpa Wally Grimes",
+  "role": "suspect",
+  "look": "a grumpy old man with a bald head, huge bushy white eyebrows and a white walrus moustache, slightly hunched; a brown knitted cardigan with leather elbow patches, beige trousers, slippers, leaning on a wooden cane",
+  "personality": "Grumpy neighbour who complains about everything and notices everything.",
+  "catchphrase": "Back in my day, nobody stole anything!",
+  "voice": "bm_george",
+  "height": 0.85,
+  "colors": [
+    "#8B5A2B",
+    "#E8DCC2",
+    "#FFFFFF"
+  ]
+}

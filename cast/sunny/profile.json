@@ -1,0 +1,15 @@
+{
+  "id": "sunny",
+  "name": "Sunny Patel",
+  "role": "suspect",
+  "look": "a cheerful, energetic young delivery man with brown skin, a big smile, short wavy black hair and a thin moustache; a bright yellow delivery uniform with a cap, a green bike helmet hanging from his arm and a big cardboard parcel",
+  "personality": "Always in a hurry, always cheerful, always somewhere he 'just' delivered to.",
+  "catchphrase": "Just dropping this off!",
+  "voice": "am_liam",
+  "height": 0.95,
+  "colors": [
+    "#F2C230",
+    "#3C9A5F",
+    "#8B5A2B"
+  ]
+}

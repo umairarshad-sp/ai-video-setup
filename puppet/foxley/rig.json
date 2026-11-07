@@ -1,0 +1,66 @@
+{
+  "name": "Foxley",
+  "kind": "bust",
+  "display": {
+    "left": -10,
+    "top": 670,
+    "scale": 1.1
+  },
+  "desk": true,
+  "canvas": [
+    1000,
+    900
+  ],
+  "layers": [
+    {
+      "slot": "body",
+      "group": "body",
+      "files": {
+        "talk": "talk.png",
+        "pose_excited": "pose_excited.png",
+        "pose_proud": "pose_proud.png",
+        "pose_thinking": "pose_thinking.png",
+        "pose_shocked": "pose_shocked.png",
+        "pose_laugh": "pose_laugh.png",
+        "pose_facepalm": "pose_facepalm.png",
+        "pose_wink": "pose_wink.png",
+        "pose_smug": "pose_smug.png"
+      }
+    },
+    {
+      "slot": "mouth",
+      "group": "body",
+      "files": {
+        "A": "mouth_A.png",
+        "B": "mouth_B.png",
+        "C": "mouth_C.png",
+        "D": "mouth_D.png",
+        "E": "mouth_E.png",
+        "F": "mouth_F.png",
+        "G": "mouth_G.png",
+        "smirk": "mouth_smirk.png",
+        "X": "mouth_X.png",
+        "L": "mouth_L.png"
+      }
+    },
+    {
+      "slot": "eyes",
+      "group": "body",
+      "files": {
+        "closed": "eyes_closed.png"
+      }
+    }
+  ],
+  "expressions": {
+    "neutral": null,
+    "smug": "pose_smug",
+    "proud": "pose_proud",
+    "thinking": "pose_thinking",
+    "shocked": "pose_shocked",
+    "laugh": "pose_laugh",
+    "point": "pose_laugh",
+    "excited": "pose_excited",
+    "facepalm": "pose_facepalm",
+    "wink": "pose_wink"
+  }
+}

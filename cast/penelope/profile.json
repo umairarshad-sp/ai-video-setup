@@ -1,0 +1,15 @@
+{
+  "id": "penelope",
+  "name": "Lady Penelope Sterling",
+  "role": "suspect",
+  "look": "an elegant, wealthy elderly lady with a tall silver-grey hair bun, cat-eye glasses on a chain and a proud raised chin; a long purple dress, a white feather boa, a big pearl necklace and a small purple handbag",
+  "personality": "Snobbish but sharp-tongued and funny; owner of most of the things that go missing.",
+  "catchphrase": "Do you know who I AM?",
+  "voice": "bf_emma",
+  "height": 0.95,
+  "colors": [
+    "#6B3FA0",
+    "#F5F0E6",
+    "#C9A227"
+  ]
+}

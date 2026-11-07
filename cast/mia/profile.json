@@ -1,0 +1,15 @@
+{
+  "id": "mia",
+  "name": "Mia Chen",
+  "role": "suspect",
+  "look": "a clever teenage girl with a high black ponytail, round face and confident smirk; an oversized mint-green hoodie, big white headphones around her neck, black leggings, chunky white sneakers, always holding her phone",
+  "personality": "Sarcastic, observant, films everything on her phone (sometimes her videos are the clue).",
+  "catchphrase": "Wait, I literally have it on video.",
+  "voice": "af_nova",
+  "height": 0.8,
+  "colors": [
+    "#8FD3B6",
+    "#2B2B2B",
+    "#FFFFFF"
+  ]
+}

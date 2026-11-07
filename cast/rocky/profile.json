@@ -1,0 +1,15 @@
+{
+  "id": "rocky",
+  "name": "Rocky Ruiz",
+  "role": "suspect",
+  "look": "a stocky, friendly handyman with tan skin, short black stubble, a cheeky gap-toothed grin and a backwards red cap; faded blue overalls over a yellow T-shirt, a brown toolbelt with a hammer and wrench, scuffed work boots",
+  "personality": "Looks guilty in every scene, is usually innocent. The red herring.",
+  "catchphrase": "Hey, I just fix stuff!",
+  "voice": "am_adam",
+  "height": 1.0,
+  "colors": [
+    "#3E6FA8",
+    "#F2C14E",
+    "#C8342B"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "barnaby",
+  "name": "Officer Barnaby Plum",
+  "role": "sidekick",
+  "look": "a tall, skinny young police officer with a long neck, a big nose, freckles and messy ginger hair; an oversized navy police cap that slips over his eyes, a navy uniform a size too big, a shiny badge, a small notepad and pencil",
+  "personality": "Eager and loyal, always sure he has solved it, always wrong. The audience feels smart next to him.",
+  "catchphrase": "I knew it! ...Wait, I didn't know it.",
+  "voice": "am_eric",
+  "height": 1.1,
+  "colors": [
+    "#22356B",
+    "#E3A33B",
+    "#D9653B"
+  ]
+}

@@ -1,0 +1,10 @@
+# Python tools for the Foxley Studio pipeline (installed into .venv by setup.sh)
+kokoro-onnx==0.6.1
+onnxruntime==1.31.1
+soundfile==0.14.0
+numpy==2.5.4
+pillow==13.0.0
+scipy==1.18.1
+# Official Freesound API client from MTG's GitHub. Do NOT use the PyPI package called
+# "freesound-python": it is an unrelated name-squat, not the real client.
+freesound-python @ git+https://github.com/MTG/freesound-python.git@7f53a3e92f2282b26cff3152d4dcc5e4f013d6b9

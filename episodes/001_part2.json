@@ -1,0 +1,59 @@
+{
+  "number": 1,
+  "part": 2,
+  "difficulty": 2,
+  "voice": "am_puck",
+  "speed": 1.0,
+  "handle": "@AskFoxley",
+  "riddle": "The more you take, the more you leave behind. What am I?",
+  "answer": "Footsteps!",
+  "explanation": "Every step you take leaves another footprint behind you.",
+  "segments": [
+    {
+      "pause": 0.7,
+      "expression": "proud"
+    },
+    {
+      "say": "Alright detectives, let's see who cracked it.",
+      "show": "riddle"
+    },
+    {
+      "say": "The more you take, the more you leave behind."
+    },
+    {
+      "say": "The answer is..."
+    },
+    {
+      "pause": 0.8,
+      "expression": "shocked"
+    },
+    {
+      "say": "Footsteps!",
+      "show": "answer"
+    },
+    {
+      "pause": 0.9,
+      "expression": "laugh"
+    },
+    {
+      "say": "Every step you take leaves another footprint behind you.",
+      "show": "explain"
+    },
+    {
+      "say": "Case closed!",
+      "show": "stamp"
+    },
+    {
+      "pause": 0.9,
+      "expression": "wink"
+    },
+    {
+      "say": "Follow for tomorrow's riddle. Stay curious, stay sharp!",
+      "show": "cta"
+    },
+    {
+      "pause": 1.0,
+      "expression": "smug"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "marco",
+  "name": "Chef Marco Bellini",
+  "role": "suspect",
+  "look": "a short, round, jolly chef with rosy cheeks, a huge curly black moustache and thick eyebrows; a very tall white chef hat, a white double-breasted chef jacket, a red neckerchief and a red-and-white checked apron, holding a wooden spoon",
+  "personality": "Loud and dramatic, takes everything personally, always near food.",
+  "catchphrase": "Mamma mia, I was in my kitchen!",
+  "voice": "am_onyx",
+  "height": 0.85,
+  "colors": [
+    "#FFFFFF",
+    "#C8342B",
+    "#2B2B2B"
+  ]
+}
