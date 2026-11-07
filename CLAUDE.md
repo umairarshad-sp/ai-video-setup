@@ -137,7 +137,11 @@ Next:
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).
 4. Known nit: Rafiq's shocked pose loses a sliver of his hat (poses touch on his sheet).
-5. More episodes: write new `episodes/sNNN_part1/2.json` using the cast and sets.
+5. Episodes 2-5 done (2026-11-07) in BOTH languages: `episodes/s002-s005_part1/2.json` are bilingual
+   (say = Devanagari, caption = Roman Urdu, en = English), written by `studio/write_episodes_2_5.py`.
+   Build with `--lang ur|en` (render_lines.py takes `--lang ur,en`); outputs
+   `output/story_00N_partK_{ur,en}.mp4`. Shot extras: `dark`, `rain`, cast `prop: kheer`, per-shot `signs`.
+   English uses the SAME locked voices. Next: episodes 6+ from planning/riddle_tracker.xlsx.
 
 ## Environment notes (cloud sessions)
 
