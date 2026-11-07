@@ -1,0 +1,55 @@
+{
+  "floor_line": 0.563,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "clock": {
+      "box": [
+        552,
+        90,
+        785,
+        322
+      ],
+      "text": "",
+      "colour": [
+        253,
+        226,
+        185
+      ],
+      "note": "blank clock face: draw clock hands in code (e.g. 5:00)"
+    },
+    "ticket_window": {
+      "box": [
+        506,
+        412,
+        707,
+        467
+      ],
+      "text": "TICKETS",
+      "colour": [
+        253,
+        228,
+        186
+      ],
+      "note": "sign above the ticket window"
+    },
+    "timetable": {
+      "box": [
+        799,
+        444,
+        907,
+        641
+      ],
+      "text": "",
+      "colour": [
+        253,
+        226,
+        185
+      ],
+      "note": "timetable board: write train times; ep 30 needs '5:00 PM - Lahore - CANCELLED ON SUNDAYS'"
+    }
+  },
+  "notes": "Railway platform for ep 12 (Sota Hua Musafir), 27 (Halka Suitcase) and 30 (Foxley Ka Imtihan). Bench left with the track behind, ticket window centre, timetable board right, luggage trolley with suitcases far right (props for the suitcase episodes). Yellow platform safety line across the floor."
+}
