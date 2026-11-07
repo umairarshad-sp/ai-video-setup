@@ -217,8 +217,12 @@ def build_html(ep, shots, total):
             layers += "".join(f'<img id="{eid}-m-{m}" class="part" src="cast/{c["id"]}/mouth_{m}.png" alt="">' for m in rig["mouth"]["shapes"])
             if c.get("prop") == "kheer":
                 mx, my = mouth_centre(c["id"])
-                layers += (f'<div class="prop-kheer" style="left:{(mx-30)/CW*100:.2f}%;top:{(my-30)/CH*100:.2f}%;'
-                           f'width:{60/CW*100:.2f}%;height:{22/CH*100:.2f}%"><i></i></div>')
+                # a small smear of kheer on one side of the moustache, a drip and a raisin
+                layers += (f'<svg class="prop" viewBox="0 0 {CW} {CH}" preserveAspectRatio="none">'
+                           f'<path d="M{mx+2},{my-24} q7,-5 15,-1 q6,3 3,8 q-3,5 -9,3 q-5,4 -9,0 q-4,-4 0,-10z" fill="#FFF4DA" stroke="#C9B48A" stroke-width="1.2"/>'
+                           f'<path d="M{mx+9},{my-15} q2,5 0,9 q-3,2 -3,-2 q0,-4 3,-7z" fill="#FFF4DA" stroke="#C9B48A" stroke-width="1"/>'
+                           f'<ellipse cx="{mx+13}" cy="{my-21}" rx="2.6" ry="3.4" fill="#5A2E14"/>'
+                           f'<circle cx="{mx-6}" cy="{my-20}" r="1.8" fill="#FFF4DA"/></svg>')
             ch_html.append(
                 f'<div class="ch" style="left:{left:.1f}px;top:{top:.1f}px;width:{CW*s:.1f}px;height:{CH*s:.1f}px;z-index:{10+ci}">'
                 f'<div class="fl{" flip" if flip else ""}"><div id="{eid}-br" class="br"><div id="{eid}-sq" class="sq">{layers}</div></div></div></div>')
@@ -437,8 +441,7 @@ def build_html(ep, shots, total):
       .rain {{ position: absolute; inset: 0; overflow: hidden; z-index: 41; pointer-events: none; }}
       .rain i {{ position: absolute; top: 0; width: 3px; background: linear-gradient(rgba(200,220,255,0), rgba(200,220,255,0.75));
                  transform: rotate(14deg); border-radius: 2px; }}
-      .prop-kheer {{ position: absolute; background: #FFF8E6; border-radius: 45% 55% 50% 50%; border: 2px solid #8A7A5A; }}
-      .prop-kheer i {{ position: absolute; left: 58%; top: 18%; width: 22%; height: 55%; background: #6B3A1E; border-radius: 50%; }}
+      .prop {{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; }}
       .world {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; transform-origin: 0 0; }}
       .bg {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; object-fit: cover; }}
       .ch {{ position: absolute; }}
