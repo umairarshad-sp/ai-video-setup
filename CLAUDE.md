@@ -42,6 +42,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `cast/CAST.md` | Cast list, descriptions and the ChatGPT prompts to generate each character's art |
 | `episodes/NNN_partK.json` | Episode scripts |
 | `sets/<id>/background.png` | Reusable scene backgrounds; descriptions and the ChatGPT prompt in `sets/SETS.md` |
+| `branding/avatar_*.png` | @AskFoxley profile pictures (1080x1080, circle-safe), made by `studio/make_avatar.py`; teal is the recommended one |
 | `MOTION.md` | Animation rules (rossark-motion-skill method + this project's rig limits) |
 | `.claude/skills/` | `video-director` (directing, timing, sound, QA) and `rossark-motion-skill` (making characters feel alive) |
 
