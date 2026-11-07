@@ -39,7 +39,12 @@
         30,
         22
       ]
-    }
+    },
+    "pose_margin": 40,
+    "pose_margin_note": "Rafiq's poses overlap on the sheet: crop with a 40px margin; the guilty and pie hats touch exactly at x=1440, so the poses are clipped there (clip_at).",
+    "clip_at": [
+      1440
+    ]
   },
   "label": "USTAD RAFIQ",
   "accent": "#C8342B",

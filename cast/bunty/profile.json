@@ -53,7 +53,9 @@
         22,
         -3
       ]
-    }
+    },
+    "pose_margin": 40,
+    "pose_margin_note": "Bunty's shoes overlap the next pose on the sheet; a 40px margin keeps the white toes from being eaten by the edge flood-fill."
   },
   "voice": {
     "engine": "elevenlabs",

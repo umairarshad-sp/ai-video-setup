@@ -136,7 +136,11 @@ Next:
 2. All 12 characters have puppets (`puppet/cast/`) and locked voices (2026-11-07).
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).
-4. Known nit: Rafiq's shocked pose loses a sliver of his hat (poses touch on his sheet).
+4. Puppet cut-outs cleaned (2026-11-07): `clear_enclosed_white` in make_cast_puppet.py removes
+   background white trapped by the outline (arm/leg gaps, curls) and halos near the edge, keeping
+   eyes, teeth and white clothing. Per-character `art.pose_margin` (Bunty, Rafiq) and
+   `art.clip_at` (Rafiq) handle poses that overlap on the sheet. Rafiq's hat is whole now.
+   Videos 1-5 were NOT re-rendered after this (owner said not to); they still show white gaps.
 5. Episodes 2-5 done (2026-11-07) in BOTH languages: `episodes/s002-s005_part1/2.json` are bilingual
    (say = Devanagari, caption = Roman Urdu, en = English), written by `studio/write_episodes_2_5.py`.
    Build with `--lang ur|en` (render_lines.py takes `--lang ur,en`); outputs

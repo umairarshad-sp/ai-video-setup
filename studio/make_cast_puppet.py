@@ -56,32 +56,70 @@ def clean_figure(rgba):
     return out
 
 
-def clear_enclosed_white(rgba, head_frac=0.36, min_size=120):
-    """Background white trapped inside the figure (between an arm and the body, between the
-    legs, behind a cane) survives the edge flood-fill in remove_white. Clear such patches when
-    they sit below the head; patches in the head are eye whites and teeth, so they stay.
-    Returns the cleaned image and the number of patches cleared."""
+def clear_enclosed_white(rgba, head_frac=0.36, min_size=8):
+    """Remove background white that survived the edge flood-fill in remove_white.
+
+    1. Defringe: light, unsaturated pixels touching transparency (white halos around curls,
+       hands and other edges) are made transparent.
+    2. Enclosed white: pure-white patches fenced in by the black outline (>= 80% of a thin
+       ring around them is ink): gaps between an arm and the body, between close legs, behind
+       a cane, between curls. Costume white (sneakers, lens glare, eye whites) borders coloured
+       shading and is kept. In the head only the sides (hair) are cleared, never the face,
+       since pupil highlights and teeth are ringed by dark too. Cleared patches grow into their
+       light anti-aliased rims.
+    Returns the cleaned image and the number of enclosed patches cleared."""
     out = rgba.copy()
-    rgb, al = out[..., :3].astype(int), out[..., 3]
+    rgb = out[..., :3].astype(int)
+    mn, sat = rgb.min(axis=2), rgb.max(axis=2) - rgb.min(axis=2)
+    light = (mn > 215) & (sat < 28)
+    # 1. defringe: flood from the transparent outside through every light pixel it can reach
+    #    (halos, and white notches between curls at the silhouette's edge)
+    clear = out[..., 3] < 40
+    lab, _ = ndi.label(clear | light)
+    outside = np.unique(lab[clear])
+    reach = np.isin(lab, outside[outside > 0]) & ~clear
+    # only near the silhouette edge, so a light area without an outline (Rafiq's chef hat at
+    # the sheet's top edge) is never eaten; halos and curl notches are within a few pixels
+    near = ndi.distance_transform_edt(~clear) <= 7
+    out[..., 3] = np.where(reach & near, 0, out[..., 3])
+    al = out[..., 3]
     ys = np.nonzero((al > 128).any(axis=1))[0]
     if not len(ys):
         return out, 0
     top, bot = ys[0], ys[-1]
     head_line = top + head_frac * (bot - top)
-    white = (al > 200) & (rgb.min(axis=2) > 243) & ((rgb.max(axis=2) - rgb.min(axis=2)) < 14)
-    lab, n = ndi.label(white)
-    cleared = 0
+    core = (al > 120) & (mn > 243) & (sat < 14)
+    lab, n = ndi.label(core)
+    # the face: middle of the head's width, where eyes, highlights and teeth are
+    head_cols = np.nonzero((al[top:int(head_line)] > 128).any(axis=0))[0]
+    hx0, hx1 = head_cols.min(), head_cols.max()
+    face_lo, face_hi = hx0 + 0.22 * (hx1 - hx0), hx1 - 0.22 * (hx1 - hx0)
+    ink = mn < 90
+    cleared = np.zeros(al.shape, bool)
+    count = 0
     for i, o in enumerate(ndi.find_objects(lab)):
-        m = lab[o] == i + 1
-        if m.sum() < min_size or o[0].start < head_line:
+        m = np.zeros(al.shape, bool)
+        m[o] = lab[o] == i + 1
+        if m.sum() < min_size:
             continue
-        # soften the cut: take the patch plus a 1px ring of near-white anti-aliasing
-        full = np.zeros(al.shape, bool)
-        full[o] = m
-        ring = ndi.binary_dilation(full, iterations=1) & (rgb.min(axis=2) > 225)
-        out[..., 3] = np.where(full | ring, 0, out[..., 3])
-        cleared += 1
-    return out, cleared
+        # background showing through is fenced in by the black outline; white that belongs to
+        # the drawing (sneaker toes, lens glare, eye whites) sits against coloured shading
+        ring = ndi.binary_dilation(m, iterations=3) & ~ndi.binary_dilation(m, iterations=1)
+        cy, cx = (o[0].start + o[0].stop) / 2, (o[1].start + o[1].stop) / 2
+        in_head = cy < head_line
+        if in_head and face_lo < cx < face_hi:
+            continue  # eye highlights and teeth are also ringed by dark: keep the whole face
+        # hair (head sides) is loosely outlined, so a looser ring counts there
+        if ink[ring].mean() < (0.55 if in_head else 0.8):
+            continue
+        cleared |= m
+        count += 1
+    if count:  # 2b. grow into the light anti-aliased rim of each cleared patch
+        soft = (mn > 200) & (sat < 30)
+        for _ in range(2):
+            cleared |= ndi.binary_dilation(cleared, iterations=1) & soft
+        out[..., 3] = np.where(cleared, 0, out[..., 3])
+    return out, count
 
 
 def figure_anchor(rgba):
@@ -186,15 +224,49 @@ def build(cid):
     names = art["acting_poses"]
     crops = [a[top:bot, cols[i]:cols[i + 1]] for i in range(len(names))]
 
-    # cut out every pose
+    # cut out every pose, with a margin so a cut between touching poses never lands inside a
+    # shoe or a hand (the flood-fill would eat into white parts that touch the crop edge);
+    # clean_figure then drops the neighbour's slivers
+    MARGIN = art.get("pose_margin", 0)  # set per character when poses overlap (Bunty's shoes)
+    margins = []
     poses = {}
-    for name, c in zip(names, crops):
+    for i, name in enumerate(names):
+        x0, x1 = max(cols[i] - MARGIN, 0), min(cols[i + 1] + MARGIN, a.shape[1])
+        margins.append((cols[i] - x0, x1 - cols[i + 1]))
+        c = a[top:bot, x0:x1]
         rgba = np.asarray(remove_white(Image.fromarray(c.astype(np.uint8)))).copy()
         fig = clean_figure(rgba)
+        # the margin can pull in pieces of the neighbouring poses: drop any detached piece
+        # that reaches the original cut lines (or lies outside this pose's own column)
+        L, _ = margins[-1]
+        lo, hi = L, L + (cols[i + 1] - cols[i])
+        lab, n = ndi.label(fig[..., 3] > 40)
+        if n > 1:
+            sizes = ndi.sum(fig[..., 3] > 40, lab, range(1, n + 1))
+            main = int(np.argmax(sizes)) + 1
+            xs_all = np.arange(fig.shape[1])[None, :]
+            for j, o in enumerate(ndi.find_objects(lab), 1):
+                if j == main:
+                    continue
+                piece = lab == j
+                outside = (piece & ((xs_all < lo) | (xs_all >= hi))).sum() / max(piece.sum(), 1)
+                crosses = o[1].start < lo + 8 or o[1].stop > hi - 8
+                if crosses or outside > 0.3:
+                    fig[..., 3] = np.where(piece, 0, fig[..., 3])
+        # sheet x positions where two poses touch exactly on the cut line (Rafiq's hats):
+        # clip there so the neighbour's piece is dropped, but only at those boundaries
+        L, _ = margins[-1]
+        for bx in art.get("clip_at", []):
+            if bx == cols[i + 1]:
+                fig[:, L + (cols[i + 1] - cols[i]) + 3:, 3] = 0
+            elif bx == cols[i]:
+                fig[:, :max(L - 3, 0), 3] = 0
         fig, k = clear_enclosed_white(fig, art.get("head_frac", 0.36))
         poses[name] = fig
 
-    # mouths on the neutral pose (pose 1)
+    # mouths on the neutral pose (pose 1); they are built in the un-widened crop's coordinates
+    L0 = margins[0][0]
+    alpha0 = poses[names[0]][:, L0:L0 + crops[0].shape[1], 3]
     p1 = crops[0]
     mouth_layers = {}
     mouth_info = {}
@@ -205,7 +277,7 @@ def build(cid):
         drawn = drawn_mouths(Image.fromarray(p1.astype(np.uint8)), smile, m["skin"])
         for k, lay in drawn.items():
             arr = np.asarray(lay).copy()
-            arr[..., 3] = np.minimum(arr[..., 3], poses[names[0]][..., 3])
+            arr[..., 3] = np.minimum(arr[..., 3], alpha0)
             mouth_layers[k] = arr
         mouth_info = {"method": "draw", "shapes": ["small", "medium", "wide"]}
     else:
@@ -217,7 +289,7 @@ def build(cid):
         if "offset" in art.get("mouth", {}):   # hand-set pose2 -> pose1 offset
             dx, dy = art["mouth"]["offset"]
         P2s = np.roll(np.roll(P2, dy, 0), dx, 1)
-        alpha1 = np.pad(poses[names[0]][..., 3], ((0, 0), (0, w - p1.shape[1])))
+        alpha1 = np.pad(alpha0, ((0, 0), (0, w - p1.shape[1])))
         if "center" in art.get("mouth", {}):   # set by hand in sheet coordinates
             cx, cy = art["mouth"]["center"][0] - cols[0], art["mouth"]["center"][1] - top
             rx, ry = art["mouth"]["radius"]
@@ -253,6 +325,7 @@ def build(cid):
     for name, arr in poses.items():
         place(arr, anchors[name]).save(os.path.join(out_dir, f"pose_{name}.png"))
     for k, arr in mouth_layers.items():
+        arr = np.pad(arr, ((0, 0), margins[0], (0, 0)))  # line up with the widened neutral pose
         place(arr, anchors[names[0]]).save(os.path.join(out_dir, f"mouth_{k}.png"))
     ntop, nbot, _ = anchors[names[0]]
     rig = {"id": cid, "name": prof["name"], "canvas": [CW, CH], "figure_height": int(nbot - ntop),
