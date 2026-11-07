@@ -1,0 +1,25 @@
+{
+  "floor_line": 0.63,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "signboard": {
+      "box": [
+        296,
+        85,
+        658,
+        192
+      ],
+      "text": "KAREEM SPICES & ANTIQUES",
+      "colour": [
+        253,
+        192,
+        103
+      ],
+      "note": "hanging shop signboard"
+    }
+  },
+  "notes": "Seth Kareem's shop (ep 10, 14, 16, 28). Spice jars incl. yellow haldi (ep 14 Haldi Wale Haath) left, spice sacks and barrels, brass weighing scale on the counter, wall clocks and an hourglass centre, glass display case with antiques right (ep 28 reflection / trophy display). Counter base meets the floor at ~63%."
+}
