@@ -2,7 +2,7 @@
   "id": "wally",
   "name": "Grandpa Wally Grimes",
   "role": "suspect",
-  "look": "a grumpy old man with a bald head, huge bushy white eyebrows and a white walrus moustache, slightly hunched; a brown knitted cardigan with leather elbow patches, beige trousers, slippers, leaning on a wooden cane",
+  "look": "a grumpy old man with a bald head, tufts of white hair at the sides, huge bushy white eyebrows in a permanent scowl and a big white walrus moustache, slightly hunched; a brown knitted cardigan with leather elbow patches over a cream shirt, beige trousers rolled at the ankle, plaid slippers, leaning on a wooden cane",
   "personality": "Grumpy neighbour who complains about everything and notices everything.",
   "catchphrase": "Back in my day, nobody stole anything!",
   "voice": "bm_george",
@@ -11,5 +11,37 @@
     "#8B5A2B",
     "#E8DCC2",
     "#FFFFFF"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_cane_shake"
+    ],
+    "facing": "left",
+    "pose_columns": [
+      0,
+      311,
+      600,
+      868,
+      1147,
+      1424,
+      1774
+    ],
+    "mouth": {
+      "pose": "neutral",
+      "method": "patch the area under the moustache from pose 2, else draw",
+      "pose2_offset": [
+        26,
+        1
+      ],
+      "match_score": 25.1,
+      "note": "The mouth sits under the walrus moustache. Pose 2's brows and eyes are a little angrier, so patch only below the nose, never the eyes."
+    }
+  }
 }
