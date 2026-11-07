@@ -264,9 +264,18 @@ def mix(voice, voice_sr, music, events, out_wav, music_gain=0.55, lufs=-14.0):
     out = out / (np.max(np.abs(out)) + 1e-9) * 0.9
     with tempfile.TemporaryDirectory() as td:
         raw = os.path.join(td, "raw.wav")
-        sf.write(raw, out, SR)
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af",
-                        f"loudnorm=I={lufs}:TP=-1.5:LRA=11", "-ar", str(SR), out_wav], check=True)
+        # write stereo: players upmix mono to two identical channels, which measures ~3 dB
+        # louder, so normalise the stereo file that will actually be played
+        sf.write(raw, np.stack([out, out], axis=1), SR)
+        # two-pass loudnorm: measure, then apply a linear gain to hit the target exactly
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", raw, "-af",
+                            f"loudnorm=I={lufs}:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+                           capture_output=True, text=True, check=True)
+        import json as _json
+        m = _json.loads(r.stderr[r.stderr.rindex("{"):r.stderr.rindex("}") + 1])
+        af = (f"loudnorm=I={lufs}:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+              f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af", af, "-ar", str(SR), out_wav], check=True)
     return n / SR
 
 

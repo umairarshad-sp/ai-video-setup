@@ -130,8 +130,9 @@ Done:
 - The earlier talk/react format (Riddle #001, `episodes/001_part*.json`) still builds.
 
 Next:
-1. Voices are locked. Next: wire the locked voices (ElevenLabs + Parler, pitch-locked) into
-   `studio/build_story.py`, then redo Episode 1, only when the owner asks.
+1. Episode 1 re-rendered with the locked voices (2026-11-07): Part 1 44.5 s, Part 2 33.2 s,
+   -14.1/-14.2 LUFS. The mix is written stereo (a mono mix measured ~3 dB louder once the
+   player upmixed it). QA 'pops' warnings are intended pose changes, not glitches.
 2. All 12 characters have puppets (`puppet/cast/`) and locked voices (2026-11-07).
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).

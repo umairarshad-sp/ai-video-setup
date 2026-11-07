@@ -41,6 +41,10 @@ class LineCache:
                              f"run: .venv-parler/bin/python studio/render_lines.py <episode.json>")
         a, sr = sf.read(p, dtype="float32")
         assert sr == VSR
+        n = int(0.015 * VSR)  # 15 ms fades: no clicks where a line starts or stops
+        a = a.copy()
+        a[:n] *= np.linspace(0, 1, n)
+        a[-n:] *= np.linspace(1, 0, n)
         return a
 
 FPS = 30
