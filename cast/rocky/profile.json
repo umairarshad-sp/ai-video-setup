@@ -11,5 +11,31 @@
     "#3E6FA8",
     "#F2C14E",
     "#C8342B"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_wrench"
+    ],
+    "facing": "left",
+    "mouth": {
+      "pose": "neutral",
+      "method": "patch_from_pose_2",
+      "approx_center": [
+        118,
+        341
+      ],
+      "pose2_offset": [
+        4,
+        -1
+      ],
+      "note": "acting.png pixel coords, approximate. Best match of the cast so far: same head angle, only the mouth (and slightly the eye whites) differ, so patch the mouth region only."
+    }
+  }
 }
