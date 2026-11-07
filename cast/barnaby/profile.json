@@ -11,5 +11,41 @@
     "#22356B",
     "#E3A33B",
     "#D9653B"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk_ref",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_point"
+    ],
+    "facing": "front",
+    "mouth": {
+      "pose": "neutral",
+      "smile": [
+        [
+          117,
+          285
+        ],
+        [
+          146,
+          292
+        ],
+        [
+          186,
+          277
+        ]
+      ],
+      "skin": [
+        255,
+        208,
+        151
+      ],
+      "note": "acting.png pixel coords: left end, lowest point, right end of the closed smile. Talking mouths are drawn over pose 1 along this curve (pose 2 has a turned head, so it is reference only)."
+    }
+  }
 }
