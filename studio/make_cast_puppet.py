@@ -184,6 +184,8 @@ def build(cid):
         pad = lambda p: np.pad(p, ((0, 0), (0, w - p.shape[1]), (0, 0)), constant_values=255)  # noqa: E731
         P1, P2 = pad(p1), pad(p2)
         dx, dy, score = align(P1, P2)
+        if "offset" in art.get("mouth", {}):   # hand-set pose2 -> pose1 offset
+            dx, dy = art["mouth"]["offset"]
         P2s = np.roll(np.roll(P2, dy, 0), dx, 1)
         alpha1 = np.pad(poses[names[0]][..., 3], ((0, 0), (0, w - p1.shape[1])))
         if "center" in art.get("mouth", {}):   # set by hand in sheet coordinates
@@ -193,7 +195,7 @@ def build(cid):
             (cx, cy), (rx, ry) = find_mouth(P1, P2s, alpha1)
         mask = Image.new("L", (w, P1.shape[0]), 0)
         ImageDraw.Draw(mask).ellipse((cx - rx, cy - ry, cx + rx, cy + ry), fill=255)
-        mask = np.asarray(mask.filter(ImageFilter.GaussianBlur(3.5))).astype(np.float32)
+        mask = np.asarray(mask.filter(ImageFilter.GaussianBlur(art.get("mouth", {}).get("feather", 3.5)))).astype(np.float32)
         patch = np.dstack([P2s, np.minimum(mask, alpha1)])[:, :p1.shape[1]].astype(np.uint8)
         mouth_layers["open"] = patch
         mouth_info = {"method": "patch", "shapes": ["open"], "center": [round(cx), round(cy)],

@@ -1,0 +1,40 @@
+{
+  "id": "bunty",
+  "name": "Bunty",
+  "canvas": [
+    475,
+    673
+  ],
+  "figure_height": 625,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_batting"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      122,
+      226
+    ],
+    "radius": [
+      42,
+      26
+    ],
+    "offset": [
+      22,
+      -3
+    ],
+    "match": 31.2
+  },
+  "voice": null,
+  "height": 0.7
+}
