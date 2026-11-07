@@ -1,6 +1,7 @@
 # rebuilt by setup.sh
 node_modules/
 .venv/
+.venv-parler/
 models/
 # generated
 build/
