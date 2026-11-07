@@ -11,5 +11,27 @@
     "#6B3FA0",
     "#F5F0E6",
     "#C9A227"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_faint"
+    ],
+    "facing": "front",
+    "mouth": {
+      "pose": "neutral",
+      "method": "patch_from_pose_2 (align on the face only) or draw along the smile",
+      "approx_center": [
+        143,
+        351
+      ],
+      "note": "acting.png pixel coords, approximate. Pose 2 has the same head angle but the head is slightly larger and shifted and the glasses chain differs, so align the face region before patching; if seams show, draw mouths along the closed smile like Barnaby."
+    }
+  }
 }
