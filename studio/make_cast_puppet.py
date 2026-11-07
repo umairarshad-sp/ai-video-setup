@@ -225,7 +225,7 @@ def build(cid):
     ntop, nbot, _ = anchors[names[0]]
     rig = {"id": cid, "name": prof["name"], "canvas": [CW, CH], "figure_height": int(nbot - ntop),
            "facing": art.get("facing", "front"), "poses": names, "talk_pose": names[0],
-           "mouth": mouth_info, "voice": prof["voice"], "height": prof["height"]}
+           "mouth": mouth_info, "voice": prof.get("voice"), "height": prof["height"]}
     json.dump(rig, open(os.path.join(out_dir, "rig.json"), "w"), indent=2)
 
     # preview: every pose, plus the neutral pose with each mouth
