@@ -1,0 +1,40 @@
+{
+  "floor_line": 0.6,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "door_left": {
+      "box": [
+        57,
+        285,
+        115,
+        406
+      ],
+      "text": "",
+      "colour": [
+        255,
+        200,
+        121
+      ],
+      "note": "blank door nameplate; for ep 15 write 'Bell kharab hai' or a flat number"
+    },
+    "door_right": {
+      "box": [
+        826,
+        286,
+        884,
+        407
+      ],
+      "text": "",
+      "colour": [
+        253,
+        202,
+        124
+      ],
+      "note": "blank door nameplate; for ep 15 write 'Bell kharab hai' or a flat number"
+    }
+  },
+  "notes": "Apartment corridor (Jamil's building). Doors left and right with blank nameplates, window and radiator at the far end, plant, wall lamp, painting, long red runner rug. Deep perspective: the far wall meets the floor at ~47%, but characters stand on the front floor (bottom third). Floor line set to 0.6 for consistent character scale."
+}
