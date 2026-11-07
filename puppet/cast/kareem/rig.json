@@ -35,6 +35,13 @@
     ],
     "match": 30.5
   },
-  "voice": null,
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rohit speaks in a warm, cunning and chatty voice with a slightly low pitch at a moderate pace, expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 7,
+    "approved": "2026-11-07",
+    "note": "Owner picked option D. Pitch-lock lines to ~128 Hz."
+  },
   "height": 0.9
 }

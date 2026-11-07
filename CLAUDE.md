@@ -23,14 +23,15 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
   clip in `cast/<id>/voice/sample.mp3`. ElevenLabs (free plan, built-in voices, model eleven_v3,
   needs `ELEVENLABS_API_KEY`): Foxley = Callum, Zara = Jessica, Faisal = Liam, Bunty = Will raised +4 semitones. Indic Parler-TTS
   (free, Apache-2.0, needs `HF_TOKEN`, runs in `.venv-parler`): Bilal, Nusrat, Raju, Ayesha
-  (seed 1001), Rafiq, Jamil and Sher Khan (seed 7), each with a fixed description. Do not change a
+  (seed 1001), Rafiq, Jamil, Sher Khan and Seth Kareem (seed 7), each with a fixed description. Do not change a
   character's voice without the owner's approval. Pitch-lock each generated line to the
   character's median pitch so voices stay consistent. The owner will buy ElevenLabs Starter
   before monetizing (free plan is non-commercial).
 - Voices are finalized BEFORE any video work; the owner wants to approve audio first.
 - **Cast names are Pakistani/Indian:** Constable Bilal (sidekick), Ustad Rafiq (cook), Begum
-  Nusrat, Raju Mistri, Zara, Dr. Ayesha, Chacha Jamil, Faisal. Folder ids: bilal, rafiq, nusrat,
-  raju, zara, ayesha, jamil, faisal. Voices: `cast/<id>/profile.json` -> `voice`, `studio/voices.py`.
+  Nusrat, Raju Mistri, Zara, Dr. Ayesha, Chacha Jamil, Faisal, Sher Khan (guard), Bunty (kid),
+  Seth Kareem (shopkeeper). Folder ids: bilal, rafiq, nusrat, raju, zara, ayesha, jamil, faisal,
+  sherkhan, bunty, kareem. Voices: `cast/<id>/profile.json` -> `voice`, `studio/voices.py`.
 
 - **Story format, not a talking head.** Each Part 1 is a short mystery with several scenes
   and cuts, several characters, and Foxley as the detective who solves it. A single static
@@ -130,6 +131,7 @@ Next:
 1. Voices are locked. Next: wire the locked voices (ElevenLabs + Parler, pitch-locked) into
    `studio/build_story.py`, then redo Episode 1, only when the owner asks.
 2. Build puppets for ayesha, jamil, faisal (set their mouth centre in profile.json first).
+   sherkhan, bunty and kareem puppets are done (2026-11-07); all 12 characters have locked voices.
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).
 4. Known nit: Rafiq's shocked pose loses a sliver of his hat (poses touch on his sheet).
