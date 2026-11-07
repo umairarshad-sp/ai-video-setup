@@ -2,7 +2,7 @@
   "id": "amara",
   "name": "Dr. Amara Okafor",
   "role": "suspect",
-  "look": "a brilliant museum curator and scientist with dark brown skin, a big round afro puff and gold hoop earrings; a white lab coat over an orange turtleneck, round tortoiseshell glasses, holding a clipboard",
+  "look": "a brilliant museum curator and scientist with brown skin, a big high puff of brown curls with loose curls framing her face, and gold hoop earrings; a white lab coat over an orange turtleneck, dark wide trousers, brown boots, round tortoiseshell glasses, holding a brown clipboard",
   "personality": "Precise, calm, a bit of a know-it-all; respects Foxley as a fellow genius.",
   "catchphrase": "Technically speaking...",
   "voice": "af_heart",
@@ -11,5 +11,37 @@
     "#FFFFFF",
     "#E8762B",
     "#5A3A22"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_glasses_push"
+    ],
+    "facing": "left",
+    "pose_columns": [
+      0,
+      331,
+      616,
+      900,
+      1191,
+      1474,
+      1774
+    ],
+    "mouth": {
+      "pose": "neutral",
+      "method": "small patch around the mouth from pose 2, else draw along the smile",
+      "pose2_offset": [
+        46,
+        -2
+      ],
+      "match_score": 35.4,
+      "note": "Curls and glasses differ slightly between poses 1 and 2; keep the patch tight to the mouth, well below the glasses."
+    }
+  }
 }
