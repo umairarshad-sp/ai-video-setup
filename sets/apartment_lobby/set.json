@@ -1,0 +1,40 @@
+{
+  "floor_line": 0.57,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "lift_sign": {
+      "box": [
+        392,
+        473,
+        569,
+        570
+      ],
+      "text": "UNDER REPAIR",
+      "colour": [
+        249,
+        225,
+        192
+      ],
+      "note": "the ep 26 clue: hangs on the lift door"
+    },
+    "notice_board": {
+      "box": [
+        791,
+        392,
+        926,
+        568
+      ],
+      "text": "",
+      "colour": [
+        250,
+        222,
+        186
+      ],
+      "note": "framed notice board by the guard desk"
+    }
+  },
+  "notes": "Apartment building ground floor (ep 26 Lift Band Hai). Lift with a hanging blank sign centre, mailboxes left, guard desk with a monitor right (Sher Khan's post), notice board. Lift base meets the floor at ~57%."
+}
