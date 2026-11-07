@@ -7,8 +7,9 @@ Voices come from cast/<id>/profile.json -> "voice" (approved by the owner; do no
   engine "indic-parler-tts"  ai4bharat/indic-parler-tts with a fixed description + seed (needs HF_TOKEN)
 Then, per line:
   pitch_semitones   fixed shift from the profile (Bunty +4)
-  pitch lock        nudge the line's median pitch to the character's approved sample
-                    (cast/<id>/voice/sample.mp3) when it is off by more than 4%, at most 3 semitones
+  pitch nudge       Indic Parler-TTS only: move a line halfway toward the approved sample's
+                    pitch (cast/<id>/voice/sample.mp3) when it is off by more than 6%, at most
+                    1.5 semitones. ElevenLabs lines are not pitch-locked (expression is kept).
   level             every line normalised to the same loudness, edges trimmed
 Lines are cached in work/voicecache/<id>/<hash>.wav (24 kHz mono) so re-renders cost nothing.
 build_story.py reads this cache (see LineCache there).
@@ -26,9 +27,16 @@ def profile(cid):
     return json.load(open(os.path.join(ROOT, "cast", cid, "profile.json")))
 
 
-def cache_path(cid, text, voice):
+PROC = "p2"  # bump when the post-processing below changes; raw takes are kept and reused
+
+
+def raw_path(cid, text, voice):
     key = hashlib.sha1((text + "|" + json.dumps(voice, sort_keys=True, ensure_ascii=False)).encode()).hexdigest()[:16]
-    return os.path.join(CACHE, cid, f"{key}.wav")
+    return os.path.join(CACHE, cid, f"{key}.raw.wav")
+
+
+def cache_path(cid, text, voice):
+    return raw_path(cid, text, voice)[:-8] + f".{PROC}.wav"
 
 
 def f0_median(x, sr):
@@ -126,17 +134,25 @@ def render(eng, cid, text):
     out = cache_path(cid, text, v)
     if os.path.exists(out):
         return out, "cached"
-    a = eng.elevenlabs(text, v) if v["engine"] == "elevenlabs" else eng.indic_parler(text, v)
+    raw = raw_path(cid, text, v)
+    if os.path.exists(raw):
+        a, _ = sf.read(raw, dtype="float32")
+    else:
+        a = eng.elevenlabs(text, v) if v["engine"] == "elevenlabs" else eng.indic_parler(text, v)
+        os.makedirs(os.path.dirname(raw), exist_ok=True)
+        sf.write(raw, a, SR)
     if v.get("pitch_semitones"):
         a = shift(a, v["pitch_semitones"])
     note = ""
-    tp, lp = target_pitch(cid), f0_median(a, SR)
-    if tp and lp:
-        semis = 12 * np.log2(tp / lp)
-        if abs(tp / lp - 1) > 0.04:
-            semis = float(np.clip(semis, -3, 3))
+    # Pitch lock, gently and only for Indic Parler-TTS (its voice can wander between lines).
+    # ElevenLabs voices keep their identity on their own; their pitch moves with emotion, so
+    # they are left alone. Readings far off (likely octave errors) are ignored.
+    if v["engine"] == "indic-parler-tts":
+        tp, lp = target_pitch(cid), f0_median(a, SR)
+        if tp and lp and 0.7 < tp / lp < 1.45 and abs(tp / lp - 1) > 0.06:
+            semis = float(np.clip(0.5 * 12 * np.log2(tp / lp), -1.5, 1.5))
             a = shift(a, semis)
-            note = f"pitch-locked {semis:+.1f} st"
+            note = f"pitch nudged {semis:+.1f} st"
     nz = np.nonzero(np.abs(a) > 0.01)[0]
     if len(nz):
         a = a[max(nz[0] - 600, 0): nz[-1] + 1200]
