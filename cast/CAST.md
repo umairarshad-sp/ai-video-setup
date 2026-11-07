@@ -1,19 +1,24 @@
 # Foxley Studio cast
 
+> **Language and voices (2026-11-07):** the channel is in Hindustani (Urdu/Hindi). Names are
+> Pakistani/Indian. Each character's voice recipe (Kokoro Hindi voice, blend, speed, pitch) is in
+> `cast/<id>/profile.json` -> `voice`; audition them all with `.venv/bin/python studio/voices.py`.
+> The voice column in the table below is out of date; profile.json is the source of truth.
+
 Professor Foxley is the detective in every story. Everyone else is a human cartoon
 character who can come back in any riddle as a suspect, witness or victim. Each one has a
 folder here: `profile.json` (look, personality, voice, height) and `art/` (their sheets).
 
 | ID | Character | Role | What they look like | Voice | Height* |
 |---|---|---|---|---|---|
-| `barnaby` | **Officer Barnaby Plum** | Foxley's sidekick | Tall, skinny, ginger, freckles, oversized police cap over his eyes | am_eric | 1.10 |
-| `marco` | **Chef Marco Bellini** | Suspect | Short and round, giant curly moustache, very tall chef hat, checked apron | am_onyx | 0.85 |
-| `penelope` | **Lady Penelope Sterling** | Suspect / victim | Elderly rich lady, silver bun, purple dress, pearls, feather boa | bf_emma | 0.95 |
-| `rocky` | **Rocky Ruiz** | Suspect (red herring) | Stocky handyman, backwards red cap, blue overalls, toolbelt | am_adam | 1.00 |
-| `mia` | **Mia Chen** | Suspect / witness | Teen girl, black ponytail, mint hoodie, headphones, phone | af_nova | 0.80 |
-| `amara` | **Dr. Amara Okafor** | Suspect / expert | Museum curator, afro puff, lab coat, orange turtleneck, round glasses | af_heart | 0.95 |
-| `wally` | **Grandpa Wally Grimes** | Suspect / witness | Grumpy old man, bald, huge white eyebrows and moustache, cardigan, cane | bm_george | 0.85 |
-| `sunny` | **Sunny Patel** | Suspect | Cheerful delivery man, bright yellow uniform, green bike helmet, parcel | am_liam | 0.95 |
+| `bilal` | **Constable Bilal** | Foxley's sidekick | Tall, skinny, ginger, freckles, oversized police cap over his eyes | am_eric | 1.10 |
+| `rafiq` | **Ustad Rafiq** | Suspect | Short and round, giant curly moustache, very tall chef hat, checked apron | am_onyx | 0.85 |
+| `nusrat` | **Begum Nusrat** | Suspect / victim | Elderly rich lady, silver bun, purple dress, pearls, feather boa | bf_emma | 0.95 |
+| `raju` | **Raju Mistri** | Suspect (red herring) | Stocky handyman, backwards red cap, blue overalls, toolbelt | am_adam | 1.00 |
+| `zara` | **Zara** | Suspect / witness | Teen girl, black ponytail, mint hoodie, headphones, phone | af_nova | 0.80 |
+| `ayesha` | **Dr. Ayesha** | Suspect / expert | Museum curator, afro puff, lab coat, orange turtleneck, round glasses | af_heart | 0.95 |
+| `jamil` | **Chacha Jamil** | Suspect / witness | Grumpy old man, bald, huge white eyebrows and moustache, cardigan, cane | bm_george | 0.85 |
+| `faisal` | **Faisal** | Suspect | Cheerful delivery man, bright yellow uniform, green bike helmet, parcel | am_liam | 0.95 |
 
 \*Height relative to Foxley, so line-ups look right. Voices are first picks; we will audition them.
 
@@ -62,49 +67,49 @@ mirroring the image, which is why there must be **no text, logos or numbers on c
 
 ### Descriptions and signature poses to paste in
 
-**Officer Barnaby Plum**
+**Constable Bilal**
 - DESCRIPTION: a tall, skinny young police officer with a long neck, a big nose, freckles and
   messy ginger hair; an oversized navy police cap that slips over his eyes, a navy uniform a
   size too big, a shiny badge, a small notepad and pencil
 - SIGNATURE POSE: pointing forward proudly with total (wrong) confidence
 
-**Chef Marco Bellini**
+**Ustad Rafiq**
 - DESCRIPTION: a short, round, jolly chef with rosy cheeks, a huge curly black moustache and
   thick eyebrows; a very tall white chef hat, a white double-breasted chef jacket, a red
   neckerchief and a red-and-white checked apron, holding a wooden spoon
 - SIGNATURE POSE: proudly holding up a steaming pie on a tray
 
-**Lady Penelope Sterling**
+**Begum Nusrat**
 - DESCRIPTION: an elegant, wealthy elderly lady with a tall silver-grey hair bun, cat-eye
   glasses on a chain and a proud raised chin; a long purple dress, a white feather boa, a big
   pearl necklace and a small purple handbag
 - SIGNATURE POSE: dramatically fainting with the back of her hand on her forehead
 
-**Rocky Ruiz**
+**Raju Mistri**
 - DESCRIPTION: a stocky, friendly handyman with tan skin, short black stubble, a cheeky
   gap-toothed grin and a backwards red cap; faded blue overalls over a yellow T-shirt, a brown
   toolbelt with a hammer and wrench, scuffed work boots
 - SIGNATURE POSE: holding a big wrench over his shoulder, giving a thumbs up
 
-**Mia Chen**
+**Zara**
 - DESCRIPTION: a clever teenage girl with a high black ponytail, round face and confident
   smirk; an oversized mint-green hoodie, big white headphones around her neck, black leggings,
   chunky white sneakers, always holding her phone
 - SIGNATURE POSE: holding her phone up, filming, with a smug look
 
-**Dr. Amara Okafor**
+**Dr. Ayesha**
 - DESCRIPTION: a brilliant museum curator and scientist with dark brown skin, a big round afro
   puff and gold hoop earrings; a white lab coat over an orange turtleneck, round tortoiseshell
   glasses, holding a clipboard
 - SIGNATURE POSE: pushing her glasses up with one finger, clipboard under her arm
 
-**Grandpa Wally Grimes**
+**Chacha Jamil**
 - DESCRIPTION: a grumpy old man with a bald head, huge bushy white eyebrows and a white walrus
   moustache, slightly hunched; a brown knitted cardigan with leather elbow patches, beige
   trousers, slippers, leaning on a wooden cane
 - SIGNATURE POSE: shaking his cane angrily in the air
 
-**Sunny Patel**
+**Faisal**
 - DESCRIPTION: a cheerful, energetic young delivery man with brown skin, a big smile, short
   wavy black hair and a thin moustache; a bright yellow delivery uniform with a cap, a green
   bike helmet hanging from his arm and a big cardboard parcel

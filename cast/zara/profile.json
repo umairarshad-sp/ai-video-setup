@@ -1,11 +1,16 @@
 {
-  "id": "mia",
-  "name": "Mia Chen",
+  "id": "zara",
+  "name": "Zara",
   "role": "suspect",
   "look": "a clever teenage girl with long dark-brown wavy hair in a high messy ponytail with a mint scrunchie, warm tan skin and a confident smirk; an oversized mint-green hoodie, big white headphones around her neck, black leggings, chunky white sneakers, always holding her phone",
-  "personality": "Sarcastic, observant, films everything on her phone (sometimes her videos are the clue).",
-  "catchphrase": "Wait, I literally have it on video.",
-  "voice": "af_nova",
+  "personality": "Sarcastic, observant teenager who films everything on her phone.",
+  "catchphrase": "Ruko, mere paas iski video hai!",
+  "voice": {
+    "base": "hf_alpha",
+    "blend": [],
+    "speed": 1.08,
+    "pitch": 1.5
+  },
   "height": 0.8,
   "colors": [
     "#8FD3B6",
@@ -50,5 +55,9 @@
         22
       ]
     }
-  }
+  },
+  "label": "ZARA",
+  "accent": "#2F9E77",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "रुको, मेरे पास इसकी वीडियो है!"
 }

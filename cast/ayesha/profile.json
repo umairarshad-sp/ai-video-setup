@@ -1,11 +1,16 @@
 {
-  "id": "amara",
-  "name": "Dr. Amara Okafor",
+  "id": "ayesha",
+  "name": "Dr. Ayesha",
   "role": "suspect",
   "look": "a brilliant museum curator and scientist with brown skin, a big high puff of brown curls with loose curls framing her face, and gold hoop earrings; a white lab coat over an orange turtleneck, dark wide trousers, brown boots, round tortoiseshell glasses, holding a brown clipboard",
-  "personality": "Precise, calm, a bit of a know-it-all; respects Foxley as a fellow genius.",
-  "catchphrase": "Technically speaking...",
-  "voice": "af_heart",
+  "personality": "Precise, calm museum curator and scientist; a bit of a know-it-all.",
+  "catchphrase": "Technically dekha jaye to...",
+  "voice": {
+    "base": "hf_beta",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": 0.5
+  },
   "height": 0.95,
   "colors": [
     "#FFFFFF",
@@ -43,5 +48,9 @@
       "match_score": 35.4,
       "note": "Curls and glasses differ slightly between poses 1 and 2; keep the patch tight to the mouth, well below the glasses."
     }
-  }
+  },
+  "label": "DR. AYESHA",
+  "accent": "#E07B2A",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "टेक्निकली देखा जाए तो..."
 }

@@ -1,6 +1,6 @@
 {
-  "id": "barnaby",
-  "name": "Officer Barnaby Plum",
+  "id": "bilal",
+  "name": "Constable Bilal",
   "canvas": [
     360,
     777
@@ -24,6 +24,11 @@
       "wide"
     ]
   },
-  "voice": "am_eric",
+  "voice": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.1,
+    "pitch": 1.5
+  },
   "height": 1.1
 }

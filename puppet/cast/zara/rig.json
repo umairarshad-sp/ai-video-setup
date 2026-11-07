@@ -1,11 +1,11 @@
 {
-  "id": "rocky",
-  "name": "Rocky Ruiz",
+  "id": "zara",
+  "name": "Zara",
   "canvas": [
-    385,
-    650
+    405,
+    761
   ],
-  "figure_height": 622,
+  "figure_height": 733,
   "facing": "left",
   "poses": [
     "neutral",
@@ -13,7 +13,7 @@
     "nervous",
     "shocked",
     "guilty",
-    "signature_wrench"
+    "signature_filming"
   ],
   "talk_pose": "neutral",
   "mouth": {
@@ -22,19 +22,24 @@
       "open"
     ],
     "center": [
-      115,
-      203
+      126,
+      247
     ],
     "radius": [
-      34,
+      26,
       22
     ],
     "offset": [
-      12,
-      -1
+      19,
+      2
     ],
-    "match": 18.9
+    "match": 25.9
   },
-  "voice": "am_adam",
-  "height": 1.0
+  "voice": {
+    "base": "hf_alpha",
+    "blend": [],
+    "speed": 1.08,
+    "pitch": 1.5
+  },
+  "height": 0.8
 }

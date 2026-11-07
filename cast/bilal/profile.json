@@ -1,11 +1,16 @@
 {
-  "id": "barnaby",
-  "name": "Officer Barnaby Plum",
+  "id": "bilal",
+  "name": "Constable Bilal",
   "role": "sidekick",
   "look": "a tall, skinny young police officer with a long neck, a big nose, freckles and messy ginger hair; an oversized navy police cap that slips over his eyes, a navy uniform a size too big, a shiny badge, a small notepad and pencil",
-  "personality": "Eager and loyal, always sure he has solved it, always wrong. The audience feels smart next to him.",
-  "catchphrase": "I knew it! ...Wait, I didn't know it.",
-  "voice": "am_eric",
+  "personality": "Eager, loyal police constable, always sure he has solved it, always wrong.",
+  "catchphrase": "Mujhe pata tha! ...Acha, mujhe nahi pata tha.",
+  "voice": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.1,
+    "pitch": 3.0
+  },
   "height": 1.1,
   "colors": [
     "#22356B",
@@ -48,5 +53,9 @@
       "note": "acting.png pixel coords: left end, lowest point, right end of the closed smile. Talking mouths are drawn over pose 1 along this curve (pose 2 has a turned head, so it is reference only).",
       "method": "draw"
     }
-  }
+  },
+  "label": "CONSTABLE BILAL",
+  "accent": "#2E4B8F",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "मुझे पता था! अच्छा... मुझे नहीं पता था।"
 }

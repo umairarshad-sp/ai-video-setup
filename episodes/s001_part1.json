@@ -3,7 +3,6 @@
   "part": 1,
   "title": "The Stolen Painting",
   "handle": "@AskFoxley",
-  "answer_note": "Marco is lying: he says he was at the post office, but it was Sunday and the post office is closed on Sundays (the sign on its door says so in his alibi shot).",
   "music": {
     "bpm": 92,
     "gain": 0.5
@@ -13,7 +12,7 @@
       "set": "mansion_living_room",
       "cast": [
         {
-          "id": "penelope",
+          "id": "nusrat",
           "x": 0.5,
           "pose": "shocked"
         }
@@ -36,7 +35,7 @@
         "dur": 1.6,
         "ease": "power2.out"
       },
-      "title": "WHO STOLE THE PAINTING?",
+      "title": "PAINTING KIS NE CHURAYI?",
       "title_dur": 3.2,
       "sfx": [
         [
@@ -46,10 +45,11 @@
       ],
       "lines": [
         {
-          "who": "penelope",
-          "say": "My painting! It's gone!",
+          "who": "nusrat",
+          "say": "मेरी पेंटिंग! वो ग़ायब है!",
           "pose": "shocked",
-          "after": "signature_faint"
+          "after": "signature_faint",
+          "caption": "Meri painting! Woh ghayab hai!"
         }
       ],
       "hold": 0.6
@@ -63,7 +63,7 @@
           "face": "right"
         },
         {
-          "id": "barnaby",
+          "id": "bilal",
           "x": 0.74
         }
       ],
@@ -86,18 +86,21 @@
       "lines": [
         {
           "who": "foxley",
-          "say": "Nobody leaves this room. It's Sunday, twelve o'clock, and someone here is lying."
+          "say": "कोई इस कमरे से बाहर नहीं जाएगा। आज इतवार है, दोपहर के बारह बजे हैं, और यहाँ कोई झूठ बोल रहा है।",
+          "caption": "Koi is kamre se bahar nahi jayega. Aaj itwaar hai, dopehar ke barah baje hain, aur yahan koi jhoot bol raha hai."
         },
         {
-          "who": "barnaby",
-          "say": "I knew it! It was the butler!",
+          "who": "bilal",
+          "say": "मुझे पता था! ये चौकीदार का काम है!",
           "pose": "signature_point",
-          "sfx_after": "boing"
+          "sfx_after": "boing",
+          "caption": "Mujhe pata tha! Ye chowkidar ka kaam hai!"
         },
         {
           "who": "foxley",
-          "say": "There is no butler, Barnaby.",
-          "after": "thinking"
+          "say": "यहाँ कोई चौकीदार है ही नहीं, बिलाल।",
+          "after": "thinking",
+          "caption": "Yahan koi chowkidar hai hi nahi, Bilal."
         }
       ]
     },
@@ -106,7 +109,7 @@
       "transition": "whoosh",
       "cast": [
         {
-          "id": "marco",
+          "id": "rafiq",
           "x": 0.3
         }
       ],
@@ -128,9 +131,10 @@
       },
       "lines": [
         {
-          "who": "marco",
-          "say": "I was at the post office, mailing a letter to my mamma!",
-          "after": "signature_pie"
+          "who": "rafiq",
+          "say": "मैं तो पोस्ट ऑफ़िस गया था, अपनी अम्मी को ख़त भेजने!",
+          "after": "signature_pie",
+          "caption": "Main to post office gaya tha, apni ammi ko khat bhejne!"
         }
       ],
       "hold": 0.4,
@@ -141,7 +145,7 @@
       "transition": "whoosh",
       "cast": [
         {
-          "id": "mia",
+          "id": "zara",
           "x": 0.55
         }
       ],
@@ -154,15 +158,16 @@
           "zoom": 1.0
         },
         "to": {
-          "focus": "mia",
+          "focus": "zara",
           "zoom": 1.2
         }
       },
       "lines": [
         {
-          "who": "mia",
-          "say": "I was out here filming the roses for my followers. All afternoon.",
-          "after": "signature_filming"
+          "who": "zara",
+          "say": "मैं पूरी दोपहर यहाँ बाग़ में गुलाबों की वीडियो बना रही थी।",
+          "after": "signature_filming",
+          "caption": "Main poori dopehar yahan baagh mein gulabon ki video bana rahi thi."
         }
       ],
       "hold": 0.3
@@ -172,7 +177,7 @@
       "transition": "whoosh",
       "cast": [
         {
-          "id": "rocky",
+          "id": "raju",
           "x": 0.5
         }
       ],
@@ -185,15 +190,16 @@
           "zoom": 1.0
         },
         "to": {
-          "focus": "rocky",
+          "focus": "raju",
           "zoom": 1.22
         }
       },
       "lines": [
         {
-          "who": "rocky",
-          "say": "I was asleep! I worked the night shift, okay?",
-          "after": "nervous"
+          "who": "raju",
+          "say": "मैं तो सो रहा था! रात की शिफ़्ट करके आया था, समझे?",
+          "after": "nervous",
+          "caption": "Main to so raha tha! Raat ki shift karke aaya tha, samjhe?"
         }
       ],
       "hold": 0.3
@@ -203,22 +209,22 @@
       "transition": "whoosh",
       "cast": [
         {
-          "id": "marco",
+          "id": "rafiq",
           "x": 0.2
         },
         {
-          "id": "mia",
+          "id": "zara",
           "x": 0.5
         },
         {
-          "id": "rocky",
+          "id": "raju",
           "x": 0.8
         }
       ],
       "lineup": [
-        "marco",
-        "mia",
-        "rocky"
+        "rafiq",
+        "zara",
+        "raju"
       ],
       "camera": {
         "from": {
@@ -245,7 +251,8 @@
       "lines": [
         {
           "who": "foxley",
-          "say": "One of them is lying. Who stole the painting?"
+          "say": "इनमें से एक झूठ बोल रहा है। पेंटिंग किसने चुराई?",
+          "caption": "Inn mein se ek jhoot bol raha hai. Painting kis ne churayi?"
         }
       ],
       "timer": 5,
@@ -254,5 +261,7 @@
       },
       "hold": 2.2
     }
-  ]
+  ],
+  "language": "hi (Hindustani); say = Devanagari for the voice, caption = Roman Urdu/Hindi on screen",
+  "answer_note": "Rafiq is lying: he says he went to the post office, but it was Sunday (itwaar) and the post office is closed on Sundays; the sign on its door says so in his alibi shot."
 }

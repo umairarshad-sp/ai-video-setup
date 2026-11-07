@@ -1,6 +1,6 @@
 {
-  "id": "marco",
-  "name": "Chef Marco Bellini",
+  "id": "rafiq",
+  "name": "Ustad Rafiq",
   "canvas": [
     450,
     682
@@ -35,6 +35,16 @@
     ],
     "match": 19.9
   },
-  "voice": "am_onyx",
+  "voice": {
+    "base": "hm_omega",
+    "blend": [
+      [
+        "am_onyx",
+        0.3
+      ]
+    ],
+    "speed": 0.95,
+    "pitch": -2.0
+  },
   "height": 0.85
 }

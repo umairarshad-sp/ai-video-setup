@@ -12,22 +12,22 @@
       "set": "mansion_living_room",
       "cast": [
         {
-          "id": "marco",
+          "id": "rafiq",
           "x": 0.2
         },
         {
-          "id": "mia",
+          "id": "zara",
           "x": 0.5
         },
         {
-          "id": "rocky",
+          "id": "raju",
           "x": 0.8
         }
       ],
       "lineup": [
-        "marco",
-        "mia",
-        "rocky"
+        "rafiq",
+        "zara",
+        "raju"
       ],
       "camera": {
         "from": {
@@ -45,7 +45,7 @@
           "zoom": 1.0
         }
       },
-      "title": "WHO STOLE THE PAINTING?",
+      "title": "PAINTING KIS NE CHURAYI?",
       "sfx": [
         [
           "sting",
@@ -55,7 +55,8 @@
       "lines": [
         {
           "who": "foxley",
-          "say": "Alright, detectives. Let's check the alibis."
+          "say": "चलो जासूसो, अब सबकी कहानी जाँचते हैं।",
+          "caption": "Chalo jasooso, ab sab ki kahani jaanchte hain."
         }
       ],
       "hold": 0.3
@@ -65,13 +66,13 @@
       "transition": "whoosh",
       "cast": [
         {
-          "id": "marco",
+          "id": "rafiq",
           "x": 0.3
         }
       ],
       "camera": {
         "from": {
-          "focus": "marco",
+          "focus": "rafiq",
           "zoom": 1.15
         },
         "to": {
@@ -83,20 +84,22 @@
       "highlight": "door",
       "highlight_at": 2.6,
       "answer": {
-        "label": "THE CLUE",
-        "text": "It was Sunday!",
+        "label": "SURAAG",
+        "text": "Us din ITWAAR tha!",
         "at": 2.9,
         "y": 210
       },
       "lines": [
         {
           "who": "foxley",
-          "say": "Marco says he was at the post office."
+          "say": "रफ़ीक़ कहता है वो पोस्ट ऑफ़िस गया था।",
+          "caption": "Rafiq kehta hai woh post office gaya tha."
         },
         {
           "who": "foxley",
-          "say": "But it was Sunday. And the post office is closed on Sundays!",
-          "sfx_before": "reveal"
+          "say": "लेकिन उस दिन इतवार था, और इतवार को पोस्ट ऑफ़िस बंद होता है!",
+          "sfx_before": "reveal",
+          "caption": "Lekin us din itwaar tha, aur itwaar ko post office band hota hai!"
         }
       ],
       "hold": 0.4,
@@ -113,7 +116,7 @@
           "pose": "point"
         },
         {
-          "id": "marco",
+          "id": "rafiq",
           "x": 0.72,
           "pose": "nervous"
         }
@@ -129,20 +132,22 @@
         }
       },
       "stamp": {
-        "text": "GUILTY",
-        "on": "marco",
+        "text": "MUJRIM!",
+        "on": "rafiq",
         "line": 1
       },
       "lines": [
         {
           "who": "foxley",
-          "say": "You were never there, Marco!",
-          "pose": "point"
+          "say": "तुम वहाँ गए ही नहीं थे, रफ़ीक़!",
+          "pose": "point",
+          "caption": "Tum wahan gaye hi nahi thay, Rafiq!"
         },
         {
-          "who": "marco",
-          "say": "Mamma mia... I only wanted to borrow it!",
-          "pose": "guilty"
+          "who": "rafiq",
+          "say": "अरे बाप रे... मैं तो बस थोड़ी देर के लिए ले गया था!",
+          "pose": "guilty",
+          "caption": "Arey baap re... main to bas thodi der ke liye le gaya tha!"
         }
       ],
       "hold": 0.6
@@ -156,7 +161,7 @@
           "face": "right"
         },
         {
-          "id": "barnaby",
+          "id": "bilal",
           "x": 0.74
         }
       ],
@@ -171,21 +176,23 @@
         }
       },
       "stamp": {
-        "text": "CASE CLOSED",
+        "text": "CASE CLOSED!",
         "on": "foxley",
         "line": 1
       },
       "lines": [
         {
-          "who": "barnaby",
-          "say": "I knew it! I always knew it!",
+          "who": "bilal",
+          "say": "मुझे पता था! मुझे हमेशा से पता था!",
           "pose": "signature_point",
-          "sfx_after": "boing"
+          "sfx_after": "boing",
+          "caption": "Mujhe pata tha! Mujhe hamesha se pata tha!"
         },
         {
           "who": "foxley",
-          "say": "Case closed!",
-          "pose": "signature_thumbs_wink"
+          "say": "केस क्लोज़्ड!",
+          "pose": "signature_thumbs_wink",
+          "caption": "Case closed!"
         }
       ],
       "hold": 0.5
@@ -222,12 +229,14 @@
       "lines": [
         {
           "who": "foxley",
-          "say": "Follow for tomorrow's mystery. Stay sharp, detectives!",
-          "after": "signature_thumbs_wink"
+          "say": "कल के नए केस के लिए फ़ॉलो करें। होशियार रहिए, जासूसो!",
+          "after": "signature_thumbs_wink",
+          "caption": "Kal ke naye case ke liye follow karein. Hoshiyar rahiye, jasooso!"
         }
       ],
       "hold": 1.5,
       "caption_y": 230
     }
-  ]
+  ],
+  "language": "hi (Hindustani); say = Devanagari for the voice, caption = Roman Urdu/Hindi on screen"
 }

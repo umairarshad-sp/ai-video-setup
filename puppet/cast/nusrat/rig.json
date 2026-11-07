@@ -1,6 +1,6 @@
 {
-  "id": "penelope",
-  "name": "Lady Penelope Sterling",
+  "id": "nusrat",
+  "name": "Begum Nusrat",
   "canvas": [
     396,
     746
@@ -35,6 +35,11 @@
     ],
     "match": 29.2
   },
-  "voice": "bf_emma",
+  "voice": {
+    "base": "hf_beta",
+    "blend": [],
+    "speed": 0.9,
+    "pitch": -1.5
+  },
   "height": 0.95
 }

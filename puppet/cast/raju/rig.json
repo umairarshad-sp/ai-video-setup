@@ -1,11 +1,11 @@
 {
-  "id": "mia",
-  "name": "Mia Chen",
+  "id": "raju",
+  "name": "Raju Mistri",
   "canvas": [
-    405,
-    761
+    385,
+    650
   ],
-  "figure_height": 733,
+  "figure_height": 622,
   "facing": "left",
   "poses": [
     "neutral",
@@ -13,7 +13,7 @@
     "nervous",
     "shocked",
     "guilty",
-    "signature_filming"
+    "signature_wrench"
   ],
   "talk_pose": "neutral",
   "mouth": {
@@ -22,19 +22,24 @@
       "open"
     ],
     "center": [
-      126,
-      247
+      115,
+      203
     ],
     "radius": [
-      26,
+      34,
       22
     ],
     "offset": [
-      19,
-      2
+      12,
+      -1
     ],
-    "match": 25.9
+    "match": 18.9
   },
-  "voice": "af_nova",
-  "height": 0.8
+  "voice": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": -1.0
+  },
+  "height": 1.0
 }

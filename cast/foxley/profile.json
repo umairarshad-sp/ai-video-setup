@@ -1,11 +1,16 @@
 {
   "id": "foxley",
-  "name": "Professor Foxley",
+  "name": "Foxley",
   "role": "detective",
   "look": "the fox detective (see source/fullbody.png)",
-  "personality": "Playful, theatrical, a little smug, secretly kind.",
-  "catchphrase": "Case closed!",
-  "voice": "am_puck",
+  "personality": "Playful, theatrical, a little smug, secretly kind. Calls the viewers 'jasooso' (detectives).",
+  "catchphrase": "Dekhte hain aap kitne hoshiyar hain, jasooso!",
+  "voice": {
+    "base": "hm_omega",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": 0.0
+  },
   "height": 1.0,
   "colors": [
     "#E8762B",
@@ -52,5 +57,9 @@
         26
       ]
     }
-  }
+  },
+  "label": "FOXLEY",
+  "accent": "#E8762B",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "देखते हैं आप कितने होशियार हैं, जासूसो!"
 }

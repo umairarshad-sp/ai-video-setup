@@ -27,6 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "studio"))
 from lipsync import mouths  # noqa: E402
 import audio  # noqa: E402
+from voices import Voices  # noqa: E402
 
 FPS = 30
 W, H = 1080, 1920
@@ -36,10 +37,17 @@ BASE_H = 0.34          # Foxley's standing height as a fraction of the frame
 GAP, PAD_IN, PAD_OUT = 0.22, 0.25, 0.35
 CAPTION_TOP = 300
 
-ACCENT = {"foxley": "#E8762B", "barnaby": "#2E4B8F", "penelope": "#6B3FA0", "marco": "#C8342B",
-          "rocky": "#3E6FA8", "mia": "#2F9E77", "amara": "#E07B2A", "wally": "#8B5A2B", "sunny": "#D9A300"}
-SHORT = {"foxley": "FOXLEY", "barnaby": "OFFICER BARNABY", "penelope": "LADY PENELOPE", "marco": "CHEF MARCO",
-         "rocky": "ROCKY", "mia": "MIA", "amara": "DR. AMARA", "wally": "GRANDPA WALLY", "sunny": "SUNNY"}
+# on-screen text defaults (Roman Urdu/Hindi: readable for Pakistani and Indian viewers)
+TEXT = {"cta1": "1, 2 YA 3? COMMENT KAREIN!", "sub1": "Jawab kal aayega · follow {handle}",
+        "cta2": "AAP KA JAWAB SAHI THA?", "sub2": "Roz ek naya case · follow {handle}", "clue": "SURAAG"}
+
+_PROFILES = {}
+
+
+def profile(cid):
+    if cid not in _PROFILES:
+        _PROFILES[cid] = json.load(open(os.path.join(ROOT, "cast", cid, "profile.json")))
+    return _PROFILES[cid]
 
 
 def esc(s):
@@ -57,22 +65,6 @@ def load_set(sid):
 
 
 # ---------------------------------------------------------------- voices
-class Voice:
-    def __init__(self):
-        from kokoro_onnx import Kokoro
-        self.tts = Kokoro(os.path.join(ROOT, "models/kokoro-v1.0.onnx"), os.path.join(ROOT, "models/voices-v1.0.bin"))
-
-    def say(self, text, voice, speed=1.0):
-        a, sr = self.tts.create(text, voice=voice, speed=speed, lang="en-gb" if voice.startswith("b") else "en-us")
-        assert sr == VSR
-        # trim leading/trailing silence so cues land on the words
-        a = a.astype(np.float32)
-        nz = np.nonzero(np.abs(a) > 0.01)[0]
-        if len(nz):
-            a = a[max(nz[0] - 600, 0): nz[-1] + 1200]
-        return a
-
-
 # ---------------------------------------------------------------- timeline
 def plan(ep, voice):
     """lay every shot and line out in seconds; render the voice track"""
@@ -84,7 +76,10 @@ def plan(ep, voice):
         lines = []
         for li, ln in enumerate(sh.get("lines", [])):
             rig = load_rig(ln["who"])
-            a = voice.say(ln["say"], ln.get("voice", rig["voice"]), ln.get("speed", 1.0))
+            recipe = dict(ln.get("voice", rig["voice"]))
+            if "speed" in ln:
+                recipe["speed"] = ln["speed"]
+            a = voice.say(ln["say"], recipe)
             dur = len(a) / VSR
             lines.append({**ln, "start": t, "end": t + dur, "audio": a})
             if ln.get("sfx_after"):
@@ -304,9 +299,8 @@ def build_html(ep, shots, total):
             add(f'tl.to("#{sid}-timer", {{opacity: 0, duration: 0.2}}, {t0+secs:.3f});')
         if sh.get("cta"):
             c = sh["cta"] if isinstance(sh["cta"], dict) else {}
-            main = c.get("main", "COMMENT 1, 2 OR 3!" if ep.get("part", 1) == 1 else "DID YOU GET IT RIGHT?")
-            sub = c.get("sub", f"Answer drops tomorrow · follow {ep.get('handle', '@AskFoxley')}" if ep.get("part", 1) == 1
-                        else f"Follow {ep.get('handle', '@AskFoxley')} for a new mystery every day")
+            main = c.get("main", TEXT["cta1"] if ep.get("part", 1) == 1 else TEXT["cta2"])
+            sub = c.get("sub", (TEXT["sub1"] if ep.get("part", 1) == 1 else TEXT["sub2"]).format(handle=ep.get("handle", "@AskFoxley")))
             cy = f' style="top:{c["y"]}px"' if "y" in c else ""
             html.append(f'<div id="{sid}-cta" class="cta"{cy}><div class="cmain">{esc(main)}</div><div class="csub">{esc(sub)}</div></div>')
             ca = (sh["_timer_start"] + sh["timer"]) if c.get("after_timer") and sh.get("timer") else s0 + c.get("at", 0.3)
@@ -316,14 +310,14 @@ def build_html(ep, shots, total):
         if sh.get("answer"):
             a = sh["answer"]
             ay = f' style="top:{a["y"]}px"' if "y" in a else ""
-            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(a.get("label", "THE CLUE"))}</div><div class="atext">{esc(a["text"])}</div></div>')
+            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(a.get("label", TEXT["clue"]))}</div><div class="atext">{esc(a["text"])}</div></div>')
             aa = s0 + a.get("at", 0.3)
             add(f'tl.fromTo("#{sid}-ans", {{opacity: 0, y: -40}}, {{opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}}, {aa:.3f});')
             add(f'tl.set("#{sid}-ans", {{opacity: 0}}, {s1});')
 
         # ---- captions: phrase by phrase, the current word highlighted
         for li, ln in enumerate(sh["lines"]):
-            words = ln["say"].split()
+            words = ln.get("caption", ln["say"]).split()
             weights = np.array([len(w) + 2 for w in words], float)
             span = (ln["end"] - ln["start"]) * 0.96
             starts = ln["start"] + np.concatenate([[0], np.cumsum(weights)[:-1]]) / weights.sum() * span
@@ -335,8 +329,9 @@ def build_html(ep, shots, total):
                     cur = []
             if cur:
                 chunks.append(cur)
-            col = ACCENT.get(ln["who"], "#E8762B")
-            name = SHORT.get(ln["who"], ln["who"].upper())
+            prof = profile(ln["who"])
+            col = prof.get("accent", "#E8762B")
+            name = prof.get("label", prof["name"].upper())
             for ki, ch in enumerate(chunks):
                 cid = f"{sid}l{li}k{ki}"
                 spans = "".join(f'<span id="{cid}w{wi}" class="w">{esc(words[wi])}</span> ' for wi in ch)
@@ -445,7 +440,7 @@ def main():
         shutil.copy(src, os.path.join(work, "sets", f"{sid}.png"))
 
     print("1/4 voices ...")
-    shots, track, events, total = plan(ep, Voice())
+    shots, track, events, total = plan(ep, Voices())
     print(f"    {len(shots)} shots, {total:.1f}s")
     print("2/4 composition ...")
     html, extra = build_html(ep, shots, total)

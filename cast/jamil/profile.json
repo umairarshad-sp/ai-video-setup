@@ -1,11 +1,21 @@
 {
-  "id": "wally",
-  "name": "Grandpa Wally Grimes",
+  "id": "jamil",
+  "name": "Chacha Jamil",
   "role": "suspect",
   "look": "a grumpy old man with a bald head, tufts of white hair at the sides, huge bushy white eyebrows in a permanent scowl and a big white walrus moustache, slightly hunched; a brown knitted cardigan with leather elbow patches over a cream shirt, beige trousers rolled at the ankle, plaid slippers, leaning on a wooden cane",
-  "personality": "Grumpy neighbour who complains about everything and notices everything.",
-  "catchphrase": "Back in my day, nobody stole anything!",
-  "voice": "bm_george",
+  "personality": "Grumpy old neighbour who complains about everything and notices everything.",
+  "catchphrase": "Hamare zamane mein koi chori nahi karta tha!",
+  "voice": {
+    "base": "hm_omega",
+    "blend": [
+      [
+        "bm_george",
+        0.3
+      ]
+    ],
+    "speed": 0.85,
+    "pitch": -7.0
+  },
   "height": 0.85,
   "colors": [
     "#8B5A2B",
@@ -43,5 +53,9 @@
       "match_score": 25.1,
       "note": "The mouth sits under the walrus moustache. Pose 2's brows and eyes are a little angrier, so patch only below the nose, never the eyes."
     }
-  }
+  },
+  "label": "CHACHA JAMIL",
+  "accent": "#8B5A2B",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "हमारे ज़माने में कोई चोरी नहीं करता था!"
 }

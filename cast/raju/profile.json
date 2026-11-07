@@ -1,11 +1,16 @@
 {
-  "id": "rocky",
-  "name": "Rocky Ruiz",
+  "id": "raju",
+  "name": "Raju Mistri",
   "role": "suspect",
   "look": "a stocky, friendly handyman with tan skin, short black stubble, a cheeky gap-toothed grin and a backwards red cap; faded blue overalls over a yellow T-shirt, a brown toolbelt with a hammer and wrench, scuffed work boots",
-  "personality": "Looks guilty in every scene, is usually innocent. The red herring.",
-  "catchphrase": "Hey, I just fix stuff!",
-  "voice": "am_adam",
+  "personality": "Friendly handyman who looks guilty in every scene and is usually innocent.",
+  "catchphrase": "Arey, main to bas cheezein theek karta hoon!",
+  "voice": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": -2.0
+  },
   "height": 1.0,
   "colors": [
     "#3E6FA8",
@@ -41,5 +46,9 @@
         22
       ]
     }
-  }
+  },
+  "label": "RAJU MISTRI",
+  "accent": "#3E6FA8",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "अरे, मैं तो बस चीज़ें ठीक करता हूँ!"
 }

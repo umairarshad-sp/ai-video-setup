@@ -16,6 +16,13 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 
 ## The owner's rules (they override defaults)
 
+- **Language: Hindustani (Urdu/Hindi)** for all voices (2026-11-07). Write each line twice in the
+  episode JSON: `say` in Devanagari (what Kokoro speaks, lang hi; it pronounces Devanagari best)
+  and `caption` in Roman Urdu/Hindi (what viewers read). On-screen text is Roman Urdu/Hindi.
+- **Cast names are Pakistani/Indian:** Constable Bilal (sidekick), Ustad Rafiq (cook), Begum
+  Nusrat, Raju Mistri, Zara, Dr. Ayesha, Chacha Jamil, Faisal. Folder ids: bilal, rafiq, nusrat,
+  raju, zara, ayesha, jamil, faisal. Voices: `cast/<id>/profile.json` -> `voice`, `studio/voices.py`.
+
 - **Story format, not a talking head.** Each Part 1 is a short mystery with several scenes
   and cuts, several characters, and Foxley as the detective who solves it. A single static
   frame with one character was rejected (2026-11-07).
@@ -32,6 +39,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `studio/build_episode.py` | Episode script (JSON) -> Kokoro voice -> lip sync -> HyperFrames HTML -> MP4 in `output/` |
 | `studio/build_story.py` | Story episodes: shots on sets, cast puppets, per-character Kokoro voices, lip sync, word-by-word captions, camera moves, line-up, timer, stamps, music + SFX mix |
 | `studio/make_cast_puppet.py` | Cuts `cast/<id>/art/acting.png` into `puppet/cast/<id>/` (poses on one canvas, feet on the bottom edge, talking mouths) |
+| `studio/voices.py` | Kokoro voices per character: Hindi base voice + blend + speed + pitch (rubberband); `python studio/voices.py` writes an audition to `work/voices/` |
 | `studio/audio.py` | Original music (D-minor detective loop) and SFX synthesized in code; ducking; loudnorm to -14 LUFS |
 | `studio/lipsync.py` | Audio-only lip sync: loudness + brightness -> mouth shape per frame (A-G, None) |
 | `studio/make_foxley_puppet.py` | Cuts the ChatGPT Foxley sheets in `source/` into `puppet/foxley/` |
@@ -101,19 +109,19 @@ pose for `expression` (smug, proud, thinking, shocked, laugh, point, excited, fa
 Done:
 - Story pipeline works end to end (`studio/build_story.py`): Episode 1 "The Stolen Painting"
   renders in both parts (`episodes/s001_part1.json` 34 s, `s001_part2.json` 24 s), passes
-  video-director QA (no flashes, -13.5 LUFS). Marco is the culprit (post office closed on Sundays).
-- All 8 cast members + Foxley full body have art; puppets built for foxley, barnaby, penelope,
-  marco, rocky, mia (`puppet/cast/`). Mouth positions are hand-set in each profile.json
+  video-director QA (no flashes, -13.5 LUFS). Rafiq is the culprit (post office closed on Sundays / itwaar).
+- All 8 cast members + Foxley full body have art; puppets built for foxley, bilal, nusrat,
+  rafiq, raju, zara (`puppet/cast/`). Mouth positions are hand-set in each profile.json
   (`art.mouth.center/radius`, acting-sheet pixels); the automatic finder is unreliable.
 - 4 episode-1 sets + Foxley's study in `sets/`, with floor lines and sign boxes in set.json.
 - The earlier talk/react format (Riddle #001, `episodes/001_part*.json`) still builds.
 
 Next:
-1. Owner review of Episode 1; then audition and lock voices (Foxley is am_puck for now).
-2. Build puppets for amara, wally, sunny (set their mouth centre in profile.json first).
+1. Owner review of the Hindustani Episode 1 and the voice audition; lock voices.
+2. Build puppets for ayesha, jamil, faisal (set their mouth centre in profile.json first).
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).
-4. Known nit: Marco's shocked pose loses a sliver of his hat (poses touch on his sheet).
+4. Known nit: Rafiq's shocked pose loses a sliver of his hat (poses touch on his sheet).
 5. More episodes: write new `episodes/sNNN_part1/2.json` using the cast and sets.
 
 ## Environment notes (cloud sessions)

@@ -1,11 +1,16 @@
 {
-  "id": "penelope",
-  "name": "Lady Penelope Sterling",
+  "id": "nusrat",
+  "name": "Begum Nusrat",
   "role": "suspect",
   "look": "an elegant, wealthy elderly lady with a tall silver-grey hair bun, cat-eye glasses on a chain and a proud raised chin; a long purple dress, a white feather boa, a big pearl necklace and a small purple handbag",
-  "personality": "Snobbish but sharp-tongued and funny; owner of most of the things that go missing.",
-  "catchphrase": "Do you know who I AM?",
-  "voice": "bf_emma",
+  "personality": "Grand, proud and sharp-tongued; owner of most of the things that go missing.",
+  "catchphrase": "Aap jaante nahi main kaun hoon?",
+  "voice": {
+    "base": "hf_beta",
+    "blend": [],
+    "speed": 0.9,
+    "pitch": -3.0
+  },
   "height": 0.95,
   "colors": [
     "#6B3FA0",
@@ -37,5 +42,9 @@
         24
       ]
     }
-  }
+  },
+  "label": "BEGUM NUSRAT",
+  "accent": "#6B3FA0",
+  "language": "hi (Hindustani: Hindi/Urdu)",
+  "catchphrase_say": "आप जानते नहीं मैं कौन हूँ?"
 }
