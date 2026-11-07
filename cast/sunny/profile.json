@@ -2,7 +2,7 @@
   "id": "sunny",
   "name": "Sunny Patel",
   "role": "suspect",
-  "look": "a cheerful, energetic young delivery man with brown skin, a big smile, short wavy black hair and a thin moustache; a bright yellow delivery uniform with a cap, a green bike helmet hanging from his arm and a big cardboard parcel",
+  "look": "a cheerful, energetic young delivery man with warm brown skin, a big smile, curly black hair and a thin curled moustache; a yellow cap, a yellow polo shirt with dark trim, dark cargo trousers with a belt, a wristwatch, yellow-and-dark sneakers, carrying a cardboard parcel under one arm and a green bike helmet in the other hand",
   "personality": "Always in a hurry, always cheerful, always somewhere he 'just' delivered to.",
   "catchphrase": "Just dropping this off!",
   "voice": "am_liam",
@@ -11,5 +11,37 @@
     "#F2C230",
     "#3C9A5F",
     "#8B5A2B"
-  ]
+  ],
+  "art": {
+    "turnaround": "art/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "nervous",
+      "shocked",
+      "guilty",
+      "signature_running"
+    ],
+    "facing": "left",
+    "pose_columns": [
+      0,
+      317,
+      610,
+      900,
+      1171,
+      1468,
+      1774
+    ],
+    "mouth": {
+      "pose": "neutral",
+      "method": "patch_from_pose_2",
+      "pose2_offset": [
+        22,
+        0
+      ],
+      "match_score": 19.8,
+      "note": "Same head angle in poses 1 and 2; patch the mouth under the moustache."
+    }
+  }
 }

@@ -88,11 +88,16 @@ Done:
 - Pipeline works end to end: Kokoro voice, lip sync, Foxley talk/react puppet from the owner's
   art, study background, riddle card, timer, answer reveal, "Case closed!" stamp, CTA.
 - Riddle #001 ("The more you take, the more you leave behind" / Footsteps) renders in both parts.
-- Cast of 8 human characters designed (`cast/`), with ChatGPT prompts. **No cast art yet.**
+- Cast of 8 human characters designed (`cast/`), with ChatGPT prompts, and **all 8 have their
+  turnaround + acting sheets** in `cast/<id>/art/`, imported and checked with
+  `studio/check_cast_art.py` (pose split, mouth-closed vs mouth-open alignment; see each
+  `profile.json` -> `art.mouth` for how that character lip-syncs). Puppets not built yet.
+- Open question for the owner: Mia's mint hoodie + messy dark ponytail resembles Vanellope
+  (Wreck-It Ralph); suggested regenerating with a different hoodie colour/hairstyle.
 
 Next:
-1. Owner generates art: Foxley full-body acting sheet; Barnaby, Penelope, Marco, Rocky, Mia
-   (turnaround + acting sheet each); 2-3 backgrounds (mansion living room, garden, street).
+1. Owner generates art: Foxley full-body acting sheet (prompt at the end of `cast/CAST.md`);
+   2-3 backgrounds (mansion living room with an empty frame, garden, town street with a post office).
 2. Build the story/scene engine: multiple shots and backgrounds, camera moves, several
    characters per shot, per-character voices, word-by-word captions, numbered line-up.
 3. Music and SFX: an original mystery score synthesized from the timeline (see
