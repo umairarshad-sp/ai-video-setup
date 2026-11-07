@@ -1,0 +1,25 @@
+{
+  "floor_line": 0.614,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "chalkboard": {
+      "box": [
+        318,
+        179,
+        638,
+        433
+      ],
+      "text": "",
+      "colour": [
+        93,
+        68,
+        53
+      ],
+      "note": "blank chalkboard menu; write opening hours or prices in chalk-white text when a clue needs it"
+    }
+  },
+  "notes": "Bakery for ep 9 (Mobile Ki Gawahi: Raju's alibi). Cake display counter left, cash register centre-right, bread shelves right, window left."
+}
