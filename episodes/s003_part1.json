@@ -1,0 +1,278 @@
+{
+  "number": 3,
+  "part": 1,
+  "title": {
+    "ur": "KHEER KIS NE KHAYI?",
+    "en": "WHO ATE THE KHEER?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "rafiq",
+          "x": 0.55,
+          "pose": "shocked"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.2,
+            0.4
+          ],
+          "zoom": 1.6
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "dur": 1.8,
+        "ease": "power2.out"
+      },
+      "title": {
+        "ur": "KHEER KIS NE KHAYI?",
+        "en": "WHO ATE THE KHEER?"
+      },
+      "title_dur": 3.2,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "rafiq",
+          "en": "My Eid kheer! The whole pot is empty!",
+          "caption": "Meri Eid ki kheer! Poori degchi khaali hai!",
+          "say": "मेरी ईद की खीर! पूरी देगची ख़ाली है!",
+          "pose": "shocked"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.32
+        }
+      },
+      "sfx": [
+        [
+          "pop",
+          0.05
+        ]
+      ],
+      "transition": "whoosh",
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "A whole pot of kheer, gone in ten minutes. Someone has a sweet tooth.",
+          "caption": "Dus minute mein poori kheer gayab. Kisi ko meetha bohot pasand hai.",
+          "say": "दस मिनट में पूरी खीर ग़ायब। किसी को मीठा बहुत पसंद है।"
+        },
+        {
+          "who": "bilal",
+          "en": "Arrest the ants! Ants love sweets!",
+          "caption": "Cheentiyon ko giraftaar karo! Cheentiyan meetha khaati hain!",
+          "say": "चींटियों को गिरफ़्तार करो! चींटियाँ मीठा खाती हैं!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Ants don't eat a whole pot, Bilal.",
+          "caption": "Cheentiyan poori degchi nahi khaati, Bilal.",
+          "say": "चींटियाँ पूरी देगची नहीं खातीं, बिलाल।",
+          "after": "thinking"
+        }
+      ]
+    },
+    {
+      "set": "garden",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "zara",
+          "en": "I was in the garden taking photos. I didn't even go inside.",
+          "caption": "Main baagh mein photos le rahi thi. Andar gayi hi nahi.",
+          "say": "मैं बाग़ में फ़ोटोज़ ले रही थी। अंदर गई ही नहीं।",
+          "after": "signature_filming"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "prop": "kheer"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.5
+        }
+      },
+      "lines": [
+        {
+          "who": "faisal",
+          "en": "I just arrived with a parcel. I never went near the kitchen!",
+          "caption": "Main to abhi parcel le ke aaya hoon. Kitchen ke paas bhi nahi gaya!",
+          "say": "मैं तो अभी पार्सल ले के आया हूँ। किचन के पास भी नहीं गया!"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "apartment_hallway",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "en": "I was upstairs, fixing the tap in the bathroom.",
+          "caption": "Main upar bathroom mein nal theek kar raha tha.",
+          "say": "मैं ऊपर बाथरूम में नल ठीक कर रहा था।",
+          "after": "signature_wrench"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "kitchen",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.2
+        },
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "prop": "kheer"
+        },
+        {
+          "id": "raju",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "zara",
+        "faisal",
+        "raju"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Look closely. Who ate the kheer?",
+          "caption": "Ghaur se dekhiye. Kheer kis ne khayi?",
+          "say": "ग़ौर से देखिए। खीर किस ने खाई?"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.06
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 5,
+      "cta": {
+        "after_timer": true
+      },
+      "hold": 2.2
+    }
+  ],
+  "answer_note": "Faisal (2) is lying: he says he never went near the kitchen, but there is fresh kheer on his moustache."
+}

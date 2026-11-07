@@ -1,0 +1,268 @@
+{
+  "number": 4,
+  "part": 2,
+  "title": {
+    "ur": "HEERA KIS NE CHURAYA?",
+    "en": "WHO STOLE THE DIAMOND?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "museum_gallery",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "ayesha",
+        "raju",
+        "sherkhan"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Let's check the alibis, detectives.",
+          "caption": "Chalo jasooso, sab ki kahani jaanchte hain.",
+          "say": "चलो जासूसो, सब की कहानी जाँचते हैं।"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "title": {
+        "ur": "HEERA KIS NE CHURAYA?",
+        "en": "WHO STOLE THE DIAMOND?"
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.25,
+          "face": "right",
+          "pose": "thinking"
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.62,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.2
+        },
+        "to": {
+          "focus": "sherkhan",
+          "zoom": 1.6
+        },
+        "ease": "power2.inOut"
+      },
+      "answer": {
+        "text": {
+          "ur": "Barish ke baad bhi bilkul sookha?",
+          "en": "Bone dry after a night of rain?"
+        },
+        "at": 3.0,
+        "y": 210
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Sher Khan stood at an open gate all night, in pouring rain.",
+          "caption": "Sher Khan saari raat khule gate pe khara raha, moosladhaar barish mein.",
+          "say": "शेर ख़ान सारी रात खुले गेट पे खड़ा रहा, मूसलाधार बारिश में।",
+          "pose": "thinking"
+        },
+        {
+          "who": "foxley",
+          "en": "But his uniform, his cap and his boots are completely dry!",
+          "caption": "Lekin uski wardi, topi aur joote bilkul sookhe hain!",
+          "say": "लेकिन उसकी वर्दी, टोपी और जूते बिल्कुल सूखे हैं!",
+          "sfx_before": "reveal",
+          "pose": "examine"
+        }
+      ],
+      "caption_y": 1500,
+      "hold": 0.4
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.28,
+          "face": "right",
+          "pose": "point"
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.72,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.22
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "sherkhan",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "You were inside all night, Sher Khan!",
+          "caption": "Aap saari raat andar the, Sher Khan!",
+          "say": "आप सारी रात अंदर थे, शेर ख़ान!",
+          "pose": "point"
+        },
+        {
+          "who": "sherkhan",
+          "en": "It was raining... I only went in to stay dry. And the diamond was so shiny.",
+          "caption": "Barish ho rahi thi... main bas sookhne andar gaya. Aur heera itna chamak raha tha.",
+          "say": "बारिश हो रही थी... मैं बस सूखने अंदर गया। और हीरा इतना चमक रहा था।",
+          "pose": "guilty"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "museum_gallery",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": "CASE CLOSED!",
+        "on": "foxley",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "bilal",
+          "en": "I knew it! I always knew it!",
+          "caption": "Mujhe pata tha! Mujhe hamesha se pata tha!",
+          "say": "मुझे पता था! मुझे हमेशा से पता था!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Case closed!",
+          "caption": "Case closed!",
+          "say": "केस क्लोज़्ड!",
+          "pose": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "set": "museum_gallery",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.5,
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.18
+        }
+      },
+      "cta": {
+        "at": 0.2,
+        "y": 560
+      },
+      "caption_y": 230,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Follow for tomorrow's case. Stay sharp, detectives!",
+          "caption": "Kal ke naye case ke liye follow karein. Hoshiyar rahiye, jasooso!",
+          "say": "कल के नए केस के लिए फ़ॉलो करें। होशियार रहिए, जासूसो!",
+          "after": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 1.5
+    }
+  ]
+}

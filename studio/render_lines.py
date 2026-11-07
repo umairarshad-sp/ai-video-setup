@@ -1,6 +1,6 @@
 """Render every spoken line of one or more episodes with each character's LOCKED voice.
 
-    .venv-parler/bin/python studio/render_lines.py episodes/s001_part1.json episodes/s001_part2.json
+    .venv-parler/bin/python studio/render_lines.py episodes/s001_part1.json episodes/s001_part2.json [--lang ur,en]
 
 Voices come from cast/<id>/profile.json -> "voice" (approved by the owner; do not change them):
   engine "elevenlabs"        ElevenLabs text-to-speech (needs ELEVENLABS_API_KEY)
@@ -28,6 +28,14 @@ def profile(cid):
 
 
 PROC = "p2"  # bump when the post-processing below changes; raw takes are kept and reused
+
+
+def voice_for(cid, lang="ur"):
+    """the character's locked voice, set up for the episode language (same voice, other language)"""
+    v = dict(profile(cid)["voice"])
+    if lang == "en" and v["engine"] == "elevenlabs":
+        v["language_code"] = "en"
+    return v
 
 
 def raw_path(cid, text, voice):
@@ -129,8 +137,8 @@ def target_pitch(cid):
     return _targets[cid]
 
 
-def render(eng, cid, text):
-    v = profile(cid)["voice"]
+def render(eng, cid, text, lang="ur"):
+    v = voice_for(cid, lang)
     out = cache_path(cid, text, v)
     if os.path.exists(out):
         return out, "cached"
@@ -166,13 +174,21 @@ def render(eng, cid, text):
 def main():
     eng = Engines()
     n = 0
-    for path in sys.argv[1:]:
-        ep = json.load(open(path))
+    args = sys.argv[1:]
+    langs = ["ur"]
+    if "--lang" in args:
+        i = args.index("--lang")
+        langs = args[i + 1].split(",")
+        del args[i:i + 2]
+    for path in args:
+      ep = json.load(open(path))
+      for lang in langs:
         for sh in ep["shots"]:
             for ln in sh.get("lines", []):
-                p, note = render(eng, ln["who"], ln["say"])
+                text = ln["en"] if lang == "en" else ln["say"]
+                p, note = render(eng, ln["who"], text, lang)
                 n += 1
-                print(f"{os.path.basename(path)}  {ln['who']:8s} {note:22s} {ln.get('caption', ln['say'])[:50]}", flush=True)
+                print(f"{os.path.basename(path)} {lang} {ln['who']:8s} {note:22s} {text[:50] if lang == 'en' else ln.get('caption', text)[:50]}", flush=True)
     print(f"{n} lines ready in {CACHE}")
 
 

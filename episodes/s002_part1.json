@@ -1,0 +1,284 @@
+{
+  "number": 2,
+  "part": 1,
+  "title": {
+    "ur": "HAAR KIS NE CHURAYA?",
+    "en": "WHO TOOK THE NECKLACE?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "mansion_living_room",
+      "dark": 0.55,
+      "cast": [
+        {
+          "id": "nusrat",
+          "x": 0.5,
+          "pose": "shocked"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.4
+          ],
+          "zoom": 1.6
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "dur": 1.8,
+        "ease": "power2.out"
+      },
+      "title": {
+        "ur": "HAAR KIS NE CHURAYA?",
+        "en": "WHO TOOK THE NECKLACE?"
+      },
+      "title_dur": 3.2,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "nusrat",
+          "en": "My pearl necklace! Someone took it in the dark!",
+          "caption": "Mera motiyon ka haar! Andhere mein kisi ne utha liya!",
+          "say": "मेरा मोतियों का हार! अंधेरे में किसी ने उठा लिया!",
+          "pose": "shocked",
+          "after": "signature_faint"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.32
+        }
+      },
+      "sfx": [
+        [
+          "pop",
+          0.05
+        ]
+      ],
+      "transition": "whoosh",
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Two hours of load-shedding, no electricity on the whole street. Someone used the dark.",
+          "caption": "Do ghante ki load-shedding, poori gali mein bijli nahi thi. Kisi ne andhere ka faida uthaya.",
+          "say": "दो घंटे की लोड शेडिंग, पूरी गली में बिजली नहीं थी। किसी ने अंधेरे का फ़ायदा उठाया।"
+        },
+        {
+          "who": "bilal",
+          "en": "Then it was the generator! Generators are always suspicious!",
+          "caption": "Phir to generator ne kiya! Generator hamesha mashkook hota hai!",
+          "say": "फिर तो जनरेटर ने किया! जनरेटर हमेशा मशकूक होता है!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Generators don't steal, Bilal.",
+          "caption": "Generator chori nahi karte, Bilal.",
+          "say": "जनरेटर चोरी नहीं करते, बिलाल।",
+          "after": "thinking"
+        }
+      ],
+      "dark": 0.45
+    },
+    {
+      "set": "night_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.35
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "en": "I was outside the whole time, trying to start the generator!",
+          "caption": "Main poora waqt bahar generator chalane ki koshish kar raha tha!",
+          "say": "मैं पूरा वक़्त बाहर जनरेटर चलाने की कोशिश कर रहा था!",
+          "after": "signature_wrench"
+        }
+      ],
+      "hold": 0.3,
+      "dark": 0.3
+    },
+    {
+      "set": "apartment_hallway",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "zara",
+          "en": "I was sitting in the dark, talking to my friend on the phone.",
+          "caption": "Main andhere mein baith ke apni dost se phone pe baat kar rahi thi.",
+          "say": "मैं अंधेरे में बैठ के अपनी दोस्त से फ़ोन पे बात कर रही थी।",
+          "after": "signature_filming"
+        }
+      ],
+      "hold": 0.3,
+      "dark": 0.5
+    },
+    {
+      "set": "small_bedroom",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "jamil",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "jamil",
+          "en": "I watched the cricket match on TV all evening. What a last over!",
+          "caption": "Main saari shaam TV pe cricket match dekh raha tha. Kya aakhri over tha!",
+          "say": "मैं सारी शाम टीवी पे क्रिकेट मैच देख रहा था। क्या आख़िरी ओवर था!",
+          "after": "signature_cane_shake"
+        }
+      ],
+      "hold": 0.3,
+      "dark": 0.5
+    },
+    {
+      "set": "mansion_living_room",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "zara",
+          "x": 0.5
+        },
+        {
+          "id": "jamil",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "raju",
+        "zara",
+        "jamil"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "One of them is lying. Who took the necklace?",
+          "caption": "Inn mein se ek jhoot bol raha hai. Haar kis ne churaya?",
+          "say": "इनमें से एक झूठ बोल रहा है। हार किस ने चुराया?"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.06
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 5,
+      "cta": {
+        "after_timer": true
+      },
+      "hold": 2.2,
+      "dark": 0.35
+    }
+  ],
+  "answer_note": "Chacha Jamil (3) is lying: there was no electricity during the load-shedding, so his TV could not have been on."
+}

@@ -1,0 +1,278 @@
+{
+  "number": 4,
+  "part": 1,
+  "title": {
+    "ur": "HEERA KIS NE CHURAYA?",
+    "en": "WHO STOLE THE DIAMOND?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "museum_gallery",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.55,
+          "pose": "shocked"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.12,
+            0.43
+          ],
+          "zoom": 1.8
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "dur": 1.8,
+        "ease": "power2.out"
+      },
+      "title": {
+        "ur": "HEERA KIS NE CHURAYA?",
+        "en": "WHO STOLE THE DIAMOND?"
+      },
+      "title_dur": 3.2,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "ayesha",
+          "en": "The museum's diamond is gone! The display case is empty!",
+          "caption": "Museum ka heera gayab hai! Display case khaali hai!",
+          "say": "म्यूज़ियम का हीरा ग़ायब है! डिस्प्ले केस ख़ाली है!",
+          "pose": "shocked"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "night_street",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.32
+        }
+      },
+      "sfx": [
+        [
+          "pop",
+          0.05
+        ]
+      ],
+      "transition": "whoosh",
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Last night it poured, all night long. Not one dry inch on this street.",
+          "caption": "Kal saari raat moosladhaar barish hui. Is gali mein ek inch bhi sookha nahi bacha.",
+          "say": "कल सारी रात मूसलाधार बारिश हुई। इस गली में एक इंच भी सूखा नहीं बचा।"
+        },
+        {
+          "who": "bilal",
+          "en": "Maybe the rain took it! Rain gets in everywhere!",
+          "caption": "Shayad barish ne churaya! Barish har jagah ghus jaati hai!",
+          "say": "शायद बारिश ने चुराया! बारिश हर जगह घुस जाती है!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Rain doesn't steal diamonds, Bilal.",
+          "caption": "Barish heere nahi churati, Bilal.",
+          "say": "बारिश हीरे नहीं चुराती, बिलाल।",
+          "after": "thinking"
+        }
+      ],
+      "rain": true
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "ayesha",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "ayesha",
+          "en": "I locked my office and left at six o'clock.",
+          "caption": "Main ne apna daftar band kiya aur chhe baje chali gayi.",
+          "say": "मैंने अपना दफ़्तर बंद किया और छह बजे चली गई।",
+          "after": "signature_glasses_push"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.4
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "en": "I was inside, fixing the gallery lights till midnight.",
+          "caption": "Main aadhi raat tak andar gallery ki lights theek kar raha tha.",
+          "say": "मैं आधी रात तक अंदर गैलरी की लाइट्स ठीक कर रहा था।",
+          "after": "signature_wrench"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "sherkhan",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "sherkhan",
+          "zoom": 1.35
+        }
+      },
+      "lines": [
+        {
+          "who": "sherkhan",
+          "en": "I stood at the open front gate all night. Not even a bird got past me!",
+          "caption": "Main saari raat khule gate pe khara raha. Ek parinda bhi nahi guzra!",
+          "say": "मैं सारी रात खुले गेट पे खड़ा रहा। एक परिंदा भी नहीं गुज़रा!",
+          "after": "signature_salute"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "ayesha",
+        "raju",
+        "sherkhan"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "One of them is lying. Who stole the diamond?",
+          "caption": "Inn mein se ek jhoot bol raha hai. Heera kis ne churaya?",
+          "say": "इनमें से एक झूठ बोल रहा है। हीरा किस ने चुराया?"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.06
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 5,
+      "cta": {
+        "after_timer": true
+      },
+      "hold": 2.2
+    }
+  ],
+  "answer_note": "Sher Khan (3) is lying: it rained heavily all night, yet his uniform, cap and boots are completely dry."
+}

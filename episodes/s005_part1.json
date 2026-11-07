@@ -1,0 +1,277 @@
+{
+  "number": 5,
+  "part": 1,
+  "title": {
+    "ur": "SHEESHA KIS NE TODA?",
+    "en": "WHO BROKE THE WINDOW?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "apartment_hallway",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5,
+          "pose": "shocked"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.25
+          ],
+          "zoom": 1.7
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "dur": 1.8,
+        "ease": "power2.out"
+      },
+      "title": {
+        "ur": "SHEESHA KIS NE TODA?",
+        "en": "WHO BROKE THE WINDOW?"
+      },
+      "title_dur": 3.2,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "lines": [
+        {
+          "who": "jamil",
+          "en": "Someone smashed my window with a cricket ball! And the ball is gone!",
+          "caption": "Kisi ne cricket ball se meri khirki tor di! Aur ball bhi gayab hai!",
+          "say": "किसी ने क्रिकेट बॉल से मेरी खिड़की तोड़ दी! और बॉल भी ग़ायब है!",
+          "pose": "shocked",
+          "after": "signature_cane_shake"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "gali_street",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.32
+        }
+      },
+      "sfx": [
+        [
+          "pop",
+          0.05
+        ]
+      ],
+      "transition": "whoosh",
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "A broken window, and nobody knows where the ball went.",
+          "caption": "Toota sheesha, aur kisi ko nahi pata ball kahan gayi.",
+          "say": "टूटा शीशा, और किसी को नहीं पता बॉल कहाँ गई।"
+        },
+        {
+          "who": "bilal",
+          "en": "Simple! The window was old, it broke by itself!",
+          "caption": "Seedhi baat! Khirki purani thi, khud hi toot gayi!",
+          "say": "सीधी बात! खिड़की पुरानी थी, ख़ुद ही टूट गई!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Windows don't throw cricket balls, Bilal.",
+          "caption": "Khirkiyan cricket ball nahi phainkti, Bilal.",
+          "say": "खिड़कियाँ क्रिकेट बॉल नहीं फेंकतीं, बिलाल।",
+          "after": "thinking"
+        }
+      ]
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "bunty",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "bunty",
+          "en": "I didn't even see the window! And anyway, the ball must have rolled under the sofa.",
+          "caption": "Main ne to khirki dekhi bhi nahi! Aur waise bhi, ball sofa ke neeche gayi hogi.",
+          "say": "मैंने तो खिड़की देखी भी नहीं! और वैसे भी, बॉल सोफ़े के नीचे गई होगी।"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.55
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "zara",
+          "en": "I was on the rooftop, recording a dance video.",
+          "caption": "Main chhat pe dance video bana rahi thi.",
+          "say": "मैं छत पे डांस वीडियो बना रही थी।",
+          "after": "signature_filming"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.4
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.2
+        }
+      },
+      "lines": [
+        {
+          "who": "faisal",
+          "en": "I was delivering parcels on the next street.",
+          "caption": "Main agli gali mein parcel de raha tha.",
+          "say": "मैं अगली गली में पार्सल दे रहा था।",
+          "after": "signature_running"
+        }
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.2
+        },
+        {
+          "id": "zara",
+          "x": 0.5
+        },
+        {
+          "id": "faisal",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "bunty",
+        "zara",
+        "faisal"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "One of them just gave it away. Who broke the window?",
+          "caption": "Inn mein se ek ne khud hi raaz khol diya. Sheesha kis ne toda?",
+          "say": "इनमें से एक ने ख़ुद ही राज़ खोल दिया। शीशा किस ने तोड़ा?"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.06
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 5,
+      "cta": {
+        "after_timer": true
+      },
+      "hold": 2.2
+    }
+  ],
+  "answer_note": "Bunty (1) gave himself away: nobody had said where the ball landed, yet he knew it rolled under the sofa."
+}

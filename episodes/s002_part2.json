@@ -1,0 +1,271 @@
+{
+  "number": 2,
+  "part": 2,
+  "title": {
+    "ur": "HAAR KIS NE CHURAYA?",
+    "en": "WHO TOOK THE NECKLACE?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "zara",
+          "x": 0.5
+        },
+        {
+          "id": "jamil",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "raju",
+        "zara",
+        "jamil"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Let's check the alibis, detectives.",
+          "caption": "Chalo jasooso, sab ki kahani jaanchte hain.",
+          "say": "चलो जासूसो, सब की कहानी जाँचते हैं।"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "title": {
+        "ur": "HAAR KIS NE CHURAYA?",
+        "en": "WHO TOOK THE NECKLACE?"
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "hold": 0.3,
+      "dark": 0.35
+    },
+    {
+      "set": "small_bedroom",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.25,
+          "face": "right",
+          "pose": "thinking"
+        },
+        {
+          "id": "jamil",
+          "x": 0.62,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.2
+        },
+        "to": {
+          "focus": "jamil",
+          "zoom": 1.6
+        },
+        "ease": "power2.inOut"
+      },
+      "answer": {
+        "text": {
+          "ur": "Bijli nahi thi, to TV kaise chala?",
+          "en": "No power, so no TV!"
+        },
+        "at": 3.0,
+        "y": 210
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Chacha Jamil says he watched cricket on TV all evening.",
+          "caption": "Chacha Jamil kehte hain woh saari shaam TV pe cricket dekh rahe the.",
+          "say": "चाचा जमील कहते हैं वो सारी शाम टीवी पे क्रिकेट देख रहे थे।",
+          "pose": "thinking"
+        },
+        {
+          "who": "foxley",
+          "en": "But there was no electricity! The TV could not have been on.",
+          "caption": "Lekin bijli thi hi nahi! TV chal hi nahi sakta tha.",
+          "say": "लेकिन बिजली थी ही नहीं! टीवी चल ही नहीं सकता था।",
+          "sfx_before": "reveal",
+          "pose": "examine"
+        }
+      ],
+      "caption_y": 1500,
+      "hold": 0.4,
+      "dark": 0.45
+    },
+    {
+      "set": "mansion_living_room",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.28,
+          "face": "right",
+          "pose": "point"
+        },
+        {
+          "id": "jamil",
+          "x": 0.72,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.22
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "jamil",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "You were never watching cricket, Chacha!",
+          "caption": "Aap cricket dekh hi nahi rahe the, Chacha!",
+          "say": "आप क्रिकेट देख ही नहीं रहे थे, चाचा!",
+          "pose": "point"
+        },
+        {
+          "who": "jamil",
+          "en": "Arey... I only wanted to check if the pearls were real!",
+          "caption": "Arey... main to bas dekhna chahta tha ke moti asli hain ya nahi!",
+          "say": "अरे... मैं तो बस देखना चाहता था के मोती असली हैं या नहीं!",
+          "pose": "guilty"
+        }
+      ],
+      "hold": 0.6,
+      "dark": 0.2
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": "CASE CLOSED!",
+        "on": "foxley",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "bilal",
+          "en": "I knew it! I always knew it!",
+          "caption": "Mujhe pata tha! Mujhe hamesha se pata tha!",
+          "say": "मुझे पता था! मुझे हमेशा से पता था!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Case closed!",
+          "caption": "Case closed!",
+          "say": "केस क्लोज़्ड!",
+          "pose": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "set": "mansion_living_room",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.5,
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.18
+        }
+      },
+      "cta": {
+        "at": 0.2,
+        "y": 560
+      },
+      "caption_y": 230,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Follow for tomorrow's case. Stay sharp, detectives!",
+          "caption": "Kal ke naye case ke liye follow karein. Hoshiyar rahiye, jasooso!",
+          "say": "कल के नए केस के लिए फ़ॉलो करें। होशियार रहिए, जासूसो!",
+          "after": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 1.5
+    }
+  ]
+}

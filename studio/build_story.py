@@ -32,10 +32,13 @@ import audio  # noqa: E402
 class LineCache:
     """Locked character voices, pre-rendered by studio/render_lines.py (run it with .venv-parler)."""
 
+    def __init__(self, lang="ur"):
+        self.lang = lang
+
     def line(self, cid, text):
         sys.path.insert(0, os.path.join(ROOT, "studio"))
-        from render_lines import cache_path, profile
-        p = cache_path(cid, text, profile(cid)["voice"])
+        from render_lines import cache_path, voice_for
+        p = cache_path(cid, text, voice_for(cid, self.lang))
         if not os.path.exists(p):
             raise SystemExit(f"missing voice line for {cid}: {text!r}\n"
                              f"run: .venv-parler/bin/python studio/render_lines.py <episode.json>")
@@ -56,8 +59,29 @@ GAP, PAD_IN, PAD_OUT = 0.22, 0.25, 0.35
 CAPTION_TOP = 300
 
 # on-screen text defaults (Roman Urdu/Hindi: readable for Pakistani and Indian viewers)
-TEXT = {"cta1": "1, 2 YA 3? COMMENT KAREIN!", "sub1": "Jawab kal aayega · follow {handle}",
-        "cta2": "AAP KA JAWAB SAHI THA?", "sub2": "Roz ek naya case · follow {handle}", "clue": "SURAAG"}
+TEXTS = {
+    "ur": {"cta1": "1, 2 YA 3? COMMENT KAREIN!", "sub1": "Jawab kal aayega · follow {handle}",
+           "cta2": "AAP KA JAWAB SAHI THA?", "sub2": "Roz ek naya case · follow {handle}", "clue": "SURAAG"},
+    "en": {"cta1": "1, 2 OR 3? COMMENT NOW!", "sub1": "Answer drops tomorrow · follow {handle}",
+           "cta2": "DID YOU GET IT RIGHT?", "sub2": "A new case every day · follow {handle}", "clue": "THE CLUE"},
+}
+TEXT = dict(TEXTS["ur"])
+LANG = "ur"
+
+
+def L(x):
+    """pick the current language from a {"ur": ..., "en": ...} value; plain values pass through"""
+    if isinstance(x, dict) and ("ur" in x or "en" in x):
+        return x.get(LANG, x.get("ur", x.get("en")))
+    return x
+
+
+def say_text(ln):
+    return ln["en"] if LANG == "en" else ln["say"]
+
+
+def caption_text(ln):
+    return ln["en"] if LANG == "en" else ln.get("caption", ln["say"])
 
 _PROFILES = {}
 
@@ -93,7 +117,7 @@ def plan(ep, voice):
         t += PAD_IN if sh.get("lines") else 0.1
         lines = []
         for li, ln in enumerate(sh.get("lines", [])):
-            a = voice.line(ln["who"], ln["say"])
+            a = voice.line(ln["who"], say_text(ln))
             dur = len(a) / VSR
             lines.append({**ln, "start": t, "end": t + dur, "audio": a})
             if ln.get("sfx_after"):
@@ -133,6 +157,32 @@ def camera_xy(focus, zoom):
     return round(x, 1), round(y, 1), round(zoom, 4)
 
 
+def mouth_centre(cid):
+    """mouth position on the puppet canvas, from the open-mouth layer"""
+    from PIL import Image
+    a = np.asarray(Image.open(os.path.join(ROOT, "puppet", "cast", cid, "mouth_open.png")))[..., 3]
+    ys, xs = np.nonzero(a > 40)
+    return float(xs.mean()), float(ys.mean())
+
+
+def weather_html(sid, sh, s0, s1, add):
+    """night tint (power cut) and rain, layered over the world but under the text"""
+    out = ""
+    if sh.get("dark"):
+        out += f'<div class="dark" style="opacity:{sh["dark"]}"></div>'
+    if sh.get("rain"):
+        rr = random.Random(sid)
+        drops = []
+        for k in range(70):
+            x, d, ln = rr.uniform(-60, W + 60), rr.uniform(0.45, 0.8), rr.uniform(50, 110)
+            ph = rr.uniform(0, d)
+            drops.append(f'<i id="{sid}-r{k}" style="left:{x:.0f}px;height:{ln:.0f}px"></i>')
+            reps = int((s1 - s0) / d) + 2
+            add(f'tl.fromTo("#{sid}-r{k}", {{y: -200, x: 0}}, {{y: {H+200}, x: -120, duration: {d:.2f}, ease: "none", repeat: {reps}}}, {s0 - ph:.3f});')
+        out += f'<div class="rain">{"".join(drops)}</div>'
+    return out
+
+
 def build_html(ep, shots, total):
     js, html = [], []
     add = js.append
@@ -165,6 +215,10 @@ def build_html(ep, shots, total):
                               "pose": c.get("pose", rig["talk_pose"]), "s": s}
             layers = "".join(f'<img id="{eid}-p-{p}" class="part" src="cast/{c["id"]}/pose_{p}.png" alt="">' for p in rig["poses"])
             layers += "".join(f'<img id="{eid}-m-{m}" class="part" src="cast/{c["id"]}/mouth_{m}.png" alt="">' for m in rig["mouth"]["shapes"])
+            if c.get("prop") == "kheer":
+                mx, my = mouth_centre(c["id"])
+                layers += (f'<div class="prop-kheer" style="left:{(mx-30)/CW*100:.2f}%;top:{(my-30)/CH*100:.2f}%;'
+                           f'width:{60/CW*100:.2f}%;height:{22/CH*100:.2f}%"><i></i></div>')
             ch_html.append(
                 f'<div class="ch" style="left:{left:.1f}px;top:{top:.1f}px;width:{CW*s:.1f}px;height:{CH*s:.1f}px;z-index:{10+ci}">'
                 f'<div class="fl{" flip" if flip else ""}"><div id="{eid}-br" class="br"><div id="{eid}-sq" class="sq">{layers}</div></div></div></div>')
@@ -225,6 +279,11 @@ def build_html(ep, shots, total):
         # ---- set signs (text drawn in code so it is always spelled right)
         sign_html = []
         for key, sg in smeta.get("signs", {}).items():
+            sg = dict(sg)
+            if key in sh.get("signs", {}):
+                sg["text"] = L(sh["signs"][key])
+            if not sg.get("text"):
+                continue
             x0, y0, x1, y1 = sg["box"]
             if key == "facade":
                 y0 = y0 + (y1 - y0) * 0.3
@@ -283,13 +342,13 @@ def build_html(ep, shots, total):
             on = chars[stp["on"]]
             at = sh["lines"][stp["line"]]["start"] if "line" in stp else s0 + stp.get("at", 0.5)
             hx, hy = on["head"]
-            stamp_overlay = f'<div id="{sid}-stamp" class="stamp" style="left:{(W-460)/2:.0f}px;top:{stp.get("y", 1240)}px">{esc(stp["text"])}</div>'
+            stamp_overlay = f'<div id="{sid}-stamp" class="stamp" style="left:{(W-460)/2:.0f}px;top:{stp.get("y", 1240)}px">{esc(L(stp["text"]))}</div>'
             add(f'tl.fromTo("#{sid}-stamp", {{opacity: 0, scale: 2.6, rotation: -24}}, {{opacity: 1, scale: 1, rotation: -11, duration: 0.25, ease: "power4.in"}}, {at:.3f});')
             add(f'tl.fromTo("#{sid}-k", {{scale: 1.05}}, {{scale: 1, duration: 0.35, ease: "power3.out", immediateRender: false}}, {at+0.25:.3f});')
             js.append(f'audio_stamp({at+0.22:.3f});')
 
         bg = f'<img class="bg" src="sets/{sh["set"]}.png" alt="">'
-        html.append(f'<div id="{sid}" class="shot"><div id="{sid}-k" class="shake"><div id="{sid}-w" class="world">{bg}{"".join(sign_html)}{"".join(ch_html)}{"".join(lu_html)}{st_html}</div></div></div>')
+        html.append(f'<div id="{sid}" class="shot"><div id="{sid}-k" class="shake"><div id="{sid}-w" class="world">{bg}{"".join(sign_html)}{"".join(ch_html)}{"".join(lu_html)}{st_html}</div>{weather_html(sid, sh, s0, s1, add)}</div></div>')
         add(f'tl.set("#{sid}", {{opacity: 1}}, {s0}); tl.set("#{sid}", {{opacity: 0}}, {s1});')
         if stamp_overlay:
             html.append(stamp_overlay)
@@ -297,7 +356,7 @@ def build_html(ep, shots, total):
 
         # ---- frame overlays: title, timer, cta, answer
         if sh.get("title"):
-            html.append(f'<div id="{sid}-title" class="title"><span>{esc(sh["title"])}</span></div>')
+            html.append(f'<div id="{sid}-title" class="title"><span>{esc(L(sh["title"]))}</span></div>')
             ta = s0 + sh.get("title_at", 0.1)
             add(f'tl.fromTo("#{sid}-title", {{opacity: 0, scale: 0.5}}, {{opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.2)"}}, {ta:.3f});')
             add(f'tl.to("#{sid}-title", {{opacity: 0, duration: 0.25}}, {min(ta + sh.get("title_dur", 2.6), s1 - 0.05):.3f});')
@@ -313,8 +372,8 @@ def build_html(ep, shots, total):
             add(f'tl.to("#{sid}-timer", {{opacity: 0, duration: 0.2}}, {t0+secs:.3f});')
         if sh.get("cta"):
             c = sh["cta"] if isinstance(sh["cta"], dict) else {}
-            main = c.get("main", TEXT["cta1"] if ep.get("part", 1) == 1 else TEXT["cta2"])
-            sub = c.get("sub", (TEXT["sub1"] if ep.get("part", 1) == 1 else TEXT["sub2"]).format(handle=ep.get("handle", "@AskFoxley")))
+            main = L(c.get("main")) or (TEXT["cta1"] if ep.get("part", 1) == 1 else TEXT["cta2"])
+            sub = L(c.get("sub")) or ((TEXT["sub1"] if ep.get("part", 1) == 1 else TEXT["sub2"]).format(handle=ep.get("handle", "@AskFoxley")))
             cy = f' style="top:{c["y"]}px"' if "y" in c else ""
             html.append(f'<div id="{sid}-cta" class="cta"{cy}><div class="cmain">{esc(main)}</div><div class="csub">{esc(sub)}</div></div>')
             ca = (sh["_timer_start"] + sh["timer"]) if c.get("after_timer") and sh.get("timer") else s0 + c.get("at", 0.3)
@@ -324,14 +383,14 @@ def build_html(ep, shots, total):
         if sh.get("answer"):
             a = sh["answer"]
             ay = f' style="top:{a["y"]}px"' if "y" in a else ""
-            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(a.get("label", TEXT["clue"]))}</div><div class="atext">{esc(a["text"])}</div></div>')
+            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(L(a.get("label", TEXT["clue"])))}</div><div class="atext">{esc(L(a["text"]))}</div></div>')
             aa = s0 + a.get("at", 0.3)
             add(f'tl.fromTo("#{sid}-ans", {{opacity: 0, y: -40}}, {{opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}}, {aa:.3f});')
             add(f'tl.set("#{sid}-ans", {{opacity: 0}}, {s1});')
 
         # ---- captions: phrase by phrase, the current word highlighted
         for li, ln in enumerate(sh["lines"]):
-            words = ln.get("caption", ln["say"]).split()
+            words = caption_text(ln).split()
             weights = np.array([len(w) + 2 for w in words], float)
             span = (ln["end"] - ln["start"]) * 0.96
             starts = ln["start"] + np.concatenate([[0], np.cumsum(weights)[:-1]]) / weights.sum() * span
@@ -374,6 +433,12 @@ def build_html(ep, shots, total):
       #root {{ position: relative; width: 100%; height: 100%; font-family: "Nunito", sans-serif; overflow: hidden; }}
       .shot {{ position: absolute; inset: 0; opacity: 0; overflow: hidden; }}
       .shake {{ position: absolute; inset: 0; transform-origin: 50% 45%; }}
+      .dark {{ position: absolute; inset: 0; background: #0B1030; mix-blend-mode: multiply; pointer-events: none; z-index: 40; }}
+      .rain {{ position: absolute; inset: 0; overflow: hidden; z-index: 41; pointer-events: none; }}
+      .rain i {{ position: absolute; top: 0; width: 3px; background: linear-gradient(rgba(200,220,255,0), rgba(200,220,255,0.75));
+                 transform: rotate(14deg); border-radius: 2px; }}
+      .prop-kheer {{ position: absolute; background: #FFF8E6; border-radius: 45% 55% 50% 50%; border: 2px solid #8A7A5A; }}
+      .prop-kheer i {{ position: absolute; left: 58%; top: 18%; width: 22%; height: 55%; background: #6B3A1E; border-radius: 50%; }}
       .world {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; transform-origin: 0 0; }}
       .bg {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; object-fit: cover; }}
       .ch {{ position: absolute; }}
@@ -436,9 +501,13 @@ def main():
     ap.add_argument("episode")
     ap.add_argument("--no-render", action="store_true")
     ap.add_argument("--draft", action="store_true")
+    ap.add_argument("--lang", default="ur", choices=["ur", "en"])
     a = ap.parse_args()
     ep = json.load(open(a.episode))
-    name = f"story_{int(ep['number']):03d}_part{int(ep['part'])}"
+    global LANG
+    LANG = a.lang
+    TEXT.update(TEXTS[LANG])
+    name = f"story_{int(ep['number']):03d}_part{int(ep['part'])}" + ("" if LANG == "ur" and int(ep["number"]) == 1 else f"_{LANG}")
     work = os.path.join(ROOT, "build", name)
     shutil.rmtree(work, ignore_errors=True)
     os.makedirs(os.path.join(work, "vendor"))
@@ -454,7 +523,7 @@ def main():
         shutil.copy(src, os.path.join(work, "sets", f"{sid}.png"))
 
     print("1/4 voices ...")
-    shots, track, events, total = plan(ep, LineCache())
+    shots, track, events, total = plan(ep, LineCache(LANG))
     print(f"    {len(shots)} shots, {total:.1f}s")
     print("2/4 composition ...")
     html, extra = build_html(ep, shots, total)

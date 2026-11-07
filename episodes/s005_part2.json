@@ -1,0 +1,268 @@
+{
+  "number": 5,
+  "part": 2,
+  "title": {
+    "ur": "SHEESHA KIS NE TODA?",
+    "en": "WHO BROKE THE WINDOW?"
+  },
+  "handle": "@AskFoxley",
+  "language": "bilingual: say = Devanagari (ur version voice), caption = Roman Urdu (ur captions), en = English",
+  "music": {
+    "bpm": 92,
+    "gain": 0.5
+  },
+  "shots": [
+    {
+      "set": "gali_street",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.2
+        },
+        {
+          "id": "zara",
+          "x": 0.5
+        },
+        {
+          "id": "faisal",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "bunty",
+        "zara",
+        "faisal"
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Let's check the alibis, detectives.",
+          "caption": "Chalo jasooso, sab ki kahani jaanchte hain.",
+          "say": "चलो जासूसो, सब की कहानी जाँचते हैं।"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "title": {
+        "ur": "SHEESHA KIS NE TODA?",
+        "en": "WHO BROKE THE WINDOW?"
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "hold": 0.3
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.25,
+          "face": "right",
+          "pose": "thinking"
+        },
+        {
+          "id": "bunty",
+          "x": 0.62,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.2
+        },
+        "to": {
+          "focus": "bunty",
+          "zoom": 1.6
+        },
+        "ease": "power2.inOut"
+      },
+      "answer": {
+        "text": {
+          "ur": "Ball kahan gayi, sirf use pata tha!",
+          "en": "Only the batter knew where the ball went!"
+        },
+        "at": 3.0,
+        "y": 210
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Nobody told Bunty where the ball landed.",
+          "caption": "Kisi ne Bunty ko nahi bataya tha ke ball kahan giri.",
+          "say": "किसी ने बंटी को नहीं बताया था के बॉल कहाँ गिरी।",
+          "pose": "thinking"
+        },
+        {
+          "who": "foxley",
+          "en": "So how did he know it rolled under the sofa?",
+          "caption": "To use kaise pata ke ball sofa ke neeche gayi?",
+          "say": "तो उसे कैसे पता के बॉल सोफ़े के नीचे गई?",
+          "sfx_before": "reveal",
+          "pose": "examine"
+        }
+      ],
+      "caption_y": 1500,
+      "hold": 0.4
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.28,
+          "face": "right",
+          "pose": "point"
+        },
+        {
+          "id": "bunty",
+          "x": 0.72,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.22
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "bunty",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "You hit that six, Bunty!",
+          "caption": "Woh chakka tumne maara tha, Bunty!",
+          "say": "वो छक्का तुमने मारा था, बंटी!",
+          "pose": "point"
+        },
+        {
+          "who": "bunty",
+          "en": "It was the best shot of my life! ...Sorry, Chacha.",
+          "caption": "Meri zindagi ka sabse behtareen shot tha! ...Sorry, Chacha.",
+          "say": "मेरी ज़िंदगी का सबसे बेहतरीन शॉट था! ...सॉरी, चाचा।",
+          "pose": "guilty"
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "set": "gali_street",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "bilal",
+          "x": 0.74
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.3
+        }
+      },
+      "stamp": {
+        "text": "CASE CLOSED!",
+        "on": "foxley",
+        "line": 1
+      },
+      "lines": [
+        {
+          "who": "bilal",
+          "en": "I knew it! I always knew it!",
+          "caption": "Mujhe pata tha! Mujhe hamesha se pata tha!",
+          "say": "मुझे पता था! मुझे हमेशा से पता था!",
+          "pose": "signature_point",
+          "sfx_after": "boing"
+        },
+        {
+          "who": "foxley",
+          "en": "Case closed!",
+          "caption": "Case closed!",
+          "say": "केस क्लोज़्ड!",
+          "pose": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "set": "gali_street",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.5,
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.18
+        }
+      },
+      "cta": {
+        "at": 0.2,
+        "y": 560
+      },
+      "caption_y": 230,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Follow for tomorrow's case. Stay sharp, detectives!",
+          "caption": "Kal ke naye case ke liye follow karein. Hoshiyar rahiye, jasooso!",
+          "say": "कल के नए केस के लिए फ़ॉलो करें। होशियार रहिए, जासूसो!",
+          "after": "signature_thumbs_wink"
+        }
+      ],
+      "hold": 1.5
+    }
+  ]
+}
