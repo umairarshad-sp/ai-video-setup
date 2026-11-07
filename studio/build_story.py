@@ -27,7 +27,21 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "studio"))
 from lipsync import mouths  # noqa: E402
 import audio  # noqa: E402
-from voices import Voices  # noqa: E402
+
+
+class LineCache:
+    """Locked character voices, pre-rendered by studio/render_lines.py (run it with .venv-parler)."""
+
+    def line(self, cid, text):
+        sys.path.insert(0, os.path.join(ROOT, "studio"))
+        from render_lines import cache_path, profile
+        p = cache_path(cid, text, profile(cid)["voice"])
+        if not os.path.exists(p):
+            raise SystemExit(f"missing voice line for {cid}: {text!r}\n"
+                             f"run: .venv-parler/bin/python studio/render_lines.py <episode.json>")
+        a, sr = sf.read(p, dtype="float32")
+        assert sr == VSR
+        return a
 
 FPS = 30
 W, H = 1080, 1920
@@ -75,11 +89,7 @@ def plan(ep, voice):
         t += PAD_IN if sh.get("lines") else 0.1
         lines = []
         for li, ln in enumerate(sh.get("lines", [])):
-            rig = load_rig(ln["who"])
-            recipe = dict(ln.get("voice", rig["voice"]))
-            if "speed" in ln:
-                recipe["speed"] = ln["speed"]
-            a = voice.say(ln["say"], recipe)
+            a = voice.line(ln["who"], ln["say"])
             dur = len(a) / VSR
             lines.append({**ln, "start": t, "end": t + dur, "audio": a})
             if ln.get("sfx_after"):
@@ -440,7 +450,7 @@ def main():
         shutil.copy(src, os.path.join(work, "sets", f"{sid}.png"))
 
     print("1/4 voices ...")
-    shots, track, events, total = plan(ep, Voices())
+    shots, track, events, total = plan(ep, LineCache())
     print(f"    {len(shots)} shots, {total:.1f}s")
     print("2/4 composition ...")
     html, extra = build_html(ep, shots, total)

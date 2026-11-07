@@ -1,0 +1,47 @@
+{
+  "id": "faisal",
+  "name": "Faisal",
+  "canvas": [
+    385,
+    696
+  ],
+  "figure_height": 672,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_running"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      134,
+      226
+    ],
+    "radius": [
+      30,
+      18
+    ],
+    "offset": [
+      22,
+      0
+    ],
+    "match": 19.8
+  },
+  "voice": {
+    "engine": "elevenlabs",
+    "voice_name": "Liam",
+    "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+    "model_id": "eleven_v3",
+    "language_code": "hi",
+    "approved": "2026-11-07"
+  },
+  "height": 0.95
+}

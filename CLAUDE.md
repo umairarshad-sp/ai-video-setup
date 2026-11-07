@@ -49,6 +49,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `studio/build_episode.py` | Episode script (JSON) -> Kokoro voice -> lip sync -> HyperFrames HTML -> MP4 in `output/` |
 | `studio/build_story.py` | Story episodes: shots on sets, cast puppets, per-character Kokoro voices, lip sync, word-by-word captions, camera moves, line-up, timer, stamps, music + SFX mix |
 | `studio/make_cast_puppet.py` | Cuts `cast/<id>/art/acting.png` into `puppet/cast/<id>/` (poses on one canvas, feet on the bottom edge, talking mouths) |
+| `studio/render_lines.py` | Renders every episode line with the LOCKED voice (ElevenLabs / Indic Parler-TTS), pitch-locked to `cast/<id>/voice/sample.mp3`, cached in `work/voicecache/`; run with `.venv-parler` before `build_story.py` |
 | `studio/voices.py` | Kokoro voices per character: Hindi base voice + blend + speed + pitch (rubberband); `python studio/voices.py` writes an audition to `work/voices/` |
 | `studio/audio.py` | Original music (D-minor detective loop) and SFX synthesized in code; ducking; loudnorm to -14 LUFS |
 | `studio/lipsync.py` | Audio-only lip sync: loudness + brightness -> mouth shape per frame (A-G, None) |
@@ -70,7 +71,8 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 Story episodes (the main format):
 
 ```bash
-.venv/bin/python studio/build_story.py episodes/s001_part1.json            # render to output/story_001_part1.mp4
+.venv-parler/bin/python studio/render_lines.py episodes/s001_part1.json   # 1) voice lines (locked voices)
+.venv/bin/python studio/build_story.py episodes/s001_part1.json            # 2) render to output/story_001_part1.mp4
 .venv/bin/python studio/make_cast_puppet.py all                           # rebuild cast puppets from cast/<id>/art
 ```
 
@@ -130,8 +132,7 @@ Done:
 Next:
 1. Voices are locked. Next: wire the locked voices (ElevenLabs + Parler, pitch-locked) into
    `studio/build_story.py`, then redo Episode 1, only when the owner asks.
-2. Build puppets for ayesha, jamil, faisal (set their mouth centre in profile.json first).
-   sherkhan, bunty and kareem puppets are done (2026-11-07); all 12 characters have locked voices.
+2. All 12 characters have puppets (`puppet/cast/`) and locked voices (2026-11-07).
 3. Motion upgrades from MOTION.md: blinks for the cast, head tilt on a separate head layer,
    a moment of silence/music drop before the reveal (QA asks for it).
 4. Known nit: Rafiq's shocked pose loses a sliver of his hat (poses touch on his sheet).

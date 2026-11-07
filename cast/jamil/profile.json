@@ -34,13 +34,22 @@
     ],
     "mouth": {
       "pose": "neutral",
-      "method": "patch the area under the moustache from pose 2, else draw",
+      "method": "patch",
       "pose2_offset": [
         26,
         1
       ],
       "match_score": 25.1,
-      "note": "The mouth sits under the walrus moustache. Pose 2's brows and eyes are a little angrier, so patch only below the nose, never the eyes."
+      "note": "The mouth sits under the walrus moustache. Pose 2's brows and eyes are a little angrier, so patch only below the nose, never the eyes.",
+      "center": [
+        123,
+        375
+      ],
+      "radius": [
+        34,
+        20
+      ],
+      "feather": 2
     }
   },
   "label": "CHACHA JAMIL",

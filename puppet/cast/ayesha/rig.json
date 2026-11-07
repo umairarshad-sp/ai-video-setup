@@ -1,0 +1,46 @@
+{
+  "id": "ayesha",
+  "name": "Dr. Ayesha",
+  "canvas": [
+    385,
+    789
+  ],
+  "figure_height": 758,
+  "facing": "left",
+  "poses": [
+    "neutral",
+    "talk",
+    "nervous",
+    "shocked",
+    "guilty",
+    "signature_glasses_push"
+  ],
+  "talk_pose": "neutral",
+  "mouth": {
+    "method": "patch",
+    "shapes": [
+      "open"
+    ],
+    "center": [
+      135,
+      287
+    ],
+    "radius": [
+      32,
+      20
+    ],
+    "offset": [
+      46,
+      -2
+    ],
+    "match": 35.4
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rani speaks in a calm, precise and measured voice with a moderate pitch at a moderate pace. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  },
+  "height": 0.95
+}

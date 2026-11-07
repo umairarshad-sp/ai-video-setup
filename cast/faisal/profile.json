@@ -34,13 +34,22 @@
     ],
     "mouth": {
       "pose": "neutral",
-      "method": "patch_from_pose_2",
+      "method": "patch",
       "pose2_offset": [
         22,
         0
       ],
       "match_score": 19.8,
-      "note": "Same head angle in poses 1 and 2; patch the mouth under the moustache."
+      "note": "Same head angle in poses 1 and 2; patch the mouth under the moustache.",
+      "center": [
+        134,
+        341
+      ],
+      "radius": [
+        30,
+        18
+      ],
+      "feather": 2
     }
   },
   "label": "FAISAL",
