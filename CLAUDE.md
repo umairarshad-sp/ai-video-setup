@@ -97,9 +97,9 @@ Done:
   (Wreck-It Ralph); suggested regenerating with a different hoodie colour/hairstyle.
 
 Next:
-1. Owner generates art (Foxley's full-body acting sheet is in `cast/foxley/art/`):
-   the 4 episode-1 sets in `sets/SETS.md` (mansion_living_room, garden, post_office_street,
-   small_bedroom). Signs are generated blank; clue text is drawn in code.
+1. All episode-1 art is in: Foxley's acting sheet, the 8 cast members, and the 4 sets
+   (mansion_living_room, garden, post_office_street, small_bedroom), each with a `set.json`
+   (floor line, sign boxes, notes). Signs are blank; clue text is drawn in code.
 2. Build the story/scene engine: multiple shots and backgrounds, camera moves, several
    characters per shot, per-character voices, word-by-word captions, numbered line-up.
 3. Music and SFX: an original mystery score synthesized from the timeline (see
