@@ -38,6 +38,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `cast/<id>/` | Each character: `profile.json` (look, voice, height) and `art/` (turnaround + acting sheets) |
 | `cast/CAST.md` | Cast list, descriptions and the ChatGPT prompts to generate each character's art |
 | `episodes/NNN_partK.json` | Episode scripts |
+| `sets/<id>/background.png` | Reusable scene backgrounds; descriptions and the ChatGPT prompt in `sets/SETS.md` |
 | `MOTION.md` | Animation rules (rossark-motion-skill method + this project's rig limits) |
 | `.claude/skills/` | `video-director` (directing, timing, sound, QA) and `rossark-motion-skill` (making characters feel alive) |
 
@@ -97,7 +98,8 @@ Done:
 
 Next:
 1. Owner generates art (Foxley's full-body acting sheet is in `cast/foxley/art/`):
-   2-3 backgrounds (mansion living room with an empty frame, garden, town street with a post office).
+   the 4 episode-1 sets in `sets/SETS.md` (mansion_living_room, garden, post_office_street,
+   small_bedroom). Signs are generated blank; clue text is drawn in code.
 2. Build the story/scene engine: multiple shots and backgrounds, camera moves, several
    characters per shot, per-character voices, word-by-word captions, numbered line-up.
 3. Music and SFX: an original mystery score synthesized from the timeline (see
