@@ -1,0 +1,40 @@
+{
+  "floor_line": 0.617,
+  "size": [
+    941,
+    1672
+  ],
+  "signs": {
+    "facade": {
+      "box": [
+        261,
+        294,
+        682,
+        417
+      ],
+      "text": "POST OFFICE",
+      "colour": [
+        254,
+        229,
+        187
+      ],
+      "note": "arched board above the door; the arch makes the top edge curved, keep text in the lower part (y 330-410)"
+    },
+    "door": {
+      "box": [
+        397,
+        714,
+        540,
+        814
+      ],
+      "text": "CLOSED ON SUNDAYS",
+      "colour": [
+        252,
+        231,
+        204
+      ],
+      "note": "the clue; hangs on the shut green door, zoom the camera here for the close-up"
+    }
+  },
+  "notes": "Marco's alibi. Building base meets the pavement at 62%; kerb at about 68%. Bakery left, flower shop and lamp post right, red post box beside the door."
+}
