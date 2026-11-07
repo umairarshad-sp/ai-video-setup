@@ -433,7 +433,7 @@ def build_html(ep, shots, total):
       #root {{ position: relative; width: 100%; height: 100%; font-family: "Nunito", sans-serif; overflow: hidden; }}
       .shot {{ position: absolute; inset: 0; opacity: 0; overflow: hidden; }}
       .shake {{ position: absolute; inset: 0; transform-origin: 50% 45%; }}
-      .dark {{ position: absolute; inset: 0; background: #0B1030; mix-blend-mode: multiply; pointer-events: none; z-index: 40; }}
+      .dark {{ position: absolute; inset: 0; background: #070B24; pointer-events: none; z-index: 40; }}
       .rain {{ position: absolute; inset: 0; overflow: hidden; z-index: 41; pointer-events: none; }}
       .rain i {{ position: absolute; top: 0; width: 3px; background: linear-gradient(rgba(200,220,255,0), rgba(200,220,255,0.75));
                  transform: rotate(14deg); border-radius: 2px; }}

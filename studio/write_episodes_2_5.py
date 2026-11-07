@@ -47,7 +47,7 @@ def lineup(set_id, ids, line, dark=0, props=None, title=None, part=1):
           "lineup": ids, "lines": [line]}
     if part == 1:
         sh.update({"camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.0}, "to": {"focus": [0.5, 0.62], "zoom": 1.06}},
-                   "sfx": [["riser", 0.0]], "timer": 5, "cta": {"after_timer": True}, "hold": 2.2})
+                   "sfx": [["riser", 0.0]], "timer": 5, "cta": {"after_timer": True, "y": 430}, "hold": 2.2})
     else:
         sh.pop("transition")
         sh.update({"camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.12}, "to": {"focus": [0.5, 0.62], "zoom": 1.0}},
@@ -120,7 +120,7 @@ def episode(n, part, title, shots, note=None):
 T2 = {"ur": "HAAR KIS NE CHURAYA?", "en": "WHO TOOK THE NECKLACE?"}
 S2 = ["raju", "zara", "jamil"]
 episode(2, 1, T2, [
-    {"set": "mansion_living_room", "dark": 0.55, "cast": [{"id": "nusrat", "x": 0.5, "pose": "shocked"}],
+    {"set": "mansion_living_room", "dark": 0.7, "cast": [{"id": "nusrat", "x": 0.5, "pose": "shocked"}],
      "camera": {"from": {"focus": [0.5, 0.4], "zoom": 1.6}, "to": {"focus": [0.5, 0.62], "zoom": 1.12}, "dur": 1.8, "ease": "power2.out"},
      "title": T2, "title_dur": 3.2, "sfx": [["sting", 0.0]],
      "lines": [ln("nusrat", "My pearl necklace! Someone took it in the dark!", "Mera motiyon ka haar! Andhere mein kisi ne utha liya!",
@@ -133,18 +133,18 @@ episode(2, 1, T2, [
            "Phir to generator ne kiya! Generator hamesha mashkook hota hai!",
            "फिर तो जनरेटर ने किया! जनरेटर हमेशा मशकूक होता है!", pose="signature_point", sfx_after="boing"),
         ln("foxley", "Generators don't steal, Bilal.", "Generator chori nahi karte, Bilal.", "जनरेटर चोरी नहीं करते, बिलाल।", after="thinking"),
-    ], dark=0.45),
+    ], dark=0.62),
     alibi("night_street", "raju", ln("raju", "I was outside the whole time, trying to start the generator!",
           "Main poora waqt bahar generator chalane ki koshish kar raha tha!",
-          "मैं पूरा वक़्त बाहर जनरेटर चलाने की कोशिश कर रहा था!", after="signature_wrench"), x=0.35, dark=0.3),
+          "मैं पूरा वक़्त बाहर जनरेटर चलाने की कोशिश कर रहा था!", after="signature_wrench"), x=0.35, dark=0.45),
     alibi("apartment_hallway", "zara", ln("zara", "I was sitting in the dark, talking to my friend on the phone.",
           "Main andhere mein baith ke apni dost se phone pe baat kar rahi thi.",
-          "मैं अंधेरे में बैठ के अपनी दोस्त से फ़ोन पे बात कर रही थी।", after="signature_filming"), dark=0.5),
+          "मैं अंधेरे में बैठ के अपनी दोस्त से फ़ोन पे बात कर रही थी।", after="signature_filming"), dark=0.68),
     alibi("small_bedroom", "jamil", ln("jamil", "I watched the cricket match on TV all evening. What a last over!",
           "Main saari shaam TV pe cricket match dekh raha tha. Kya aakhri over tha!",
-          "मैं सारी शाम टीवी पे क्रिकेट मैच देख रहा था। क्या आख़िरी ओवर था!", after="signature_cane_shake"), dark=0.5),
+          "मैं सारी शाम टीवी पे क्रिकेट मैच देख रहा था। क्या आख़िरी ओवर था!", after="signature_cane_shake"), dark=0.68),
     lineup("mansion_living_room", S2, ln("foxley", "One of them is lying. Who took the necklace?",
-           "Inn mein se ek jhoot bol raha hai. Haar kis ne churaya?", "इनमें से एक झूठ बोल रहा है। हार किस ने चुराया?"), dark=0.35),
+           "Inn mein se ek jhoot bol raha hai. Haar kis ne churaya?", "इनमें से एक झूठ बोल रहा है। हार किस ने चुराया?"), dark=0.5),
 ], note="Chacha Jamil (3) is lying: there was no electricity during the load-shedding, so his TV could not have been on.")
 episode(2, 2, T2, [
     lineup("mansion_living_room", S2, LETS_CHECK, dark=0.35, title=T2, part=2),
@@ -154,7 +154,7 @@ episode(2, 2, T2, [
               "चाचा जमील कहते हैं वो सारी शाम टीवी पे क्रिकेट देख रहे थे।"),
            ln("foxley", "But there was no electricity! The TV could not have been on.",
               "Lekin bijli thi hi nahi! TV chal hi nahi sakta tha.", "लेकिन बिजली थी ही नहीं! टीवी चल ही नहीं सकता था।"),
-           {"ur": "Bijli nahi thi, to TV kaise chala?", "en": "No power, so no TV!"}, dark=0.45),
+           {"ur": "Bijli nahi thi, to TV kaise chala?", "en": "No power, so no TV!"}, dark=0.62),
     guilty("mansion_living_room", "jamil",
            ln("foxley", "You were never watching cricket, Chacha!", "Aap cricket dekh hi nahi rahe the, Chacha!",
               "आप क्रिकेट देख ही नहीं रहे थे, चाचा!"),

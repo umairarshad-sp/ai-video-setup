@@ -269,7 +269,8 @@
       ],
       "timer": 5,
       "cta": {
-        "after_timer": true
+        "after_timer": true,
+        "y": 430
       },
       "hold": 2.2
     }
