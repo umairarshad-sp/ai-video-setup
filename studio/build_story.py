@@ -173,13 +173,13 @@ def weather_html(sid, sh, s0, s1, add):
     if sh.get("rain"):
         rr = random.Random(sid)
         drops = []
-        for k in range(70):
-            x, d, ln = rr.uniform(-60, W + 60), rr.uniform(0.45, 0.8), rr.uniform(50, 110)
+        for k in range(150):
+            x, d, ln = rr.uniform(-60, W + 160), rr.uniform(0.35, 0.6), rr.uniform(70, 150)
             ph = rr.uniform(0, d)
             drops.append(f'<i id="{sid}-r{k}" style="left:{x:.0f}px;height:{ln:.0f}px"></i>')
             reps = int((s1 - s0) / d) + 2
             add(f'tl.fromTo("#{sid}-r{k}", {{y: -200, x: 0}}, {{y: {H+200}, x: -120, duration: {d:.2f}, ease: "none", repeat: {reps}}}, {s0 - ph:.3f});')
-        out += f'<div class="rain">{"".join(drops)}</div>'
+        out += f'<div class="rain"><b></b>{"".join(drops)}</div>'
     return out
 
 
@@ -439,8 +439,9 @@ def build_html(ep, shots, total):
       .shake {{ position: absolute; inset: 0; transform-origin: 50% 45%; }}
       .dark {{ position: absolute; inset: 0; background: #070B24; pointer-events: none; z-index: 40; }}
       .rain {{ position: absolute; inset: 0; overflow: hidden; z-index: 41; pointer-events: none; }}
-      .rain i {{ position: absolute; top: 0; width: 3px; background: linear-gradient(rgba(200,220,255,0), rgba(200,220,255,0.75));
+      .rain i {{ position: absolute; top: 0; width: 4px; background: linear-gradient(rgba(210,225,255,0), rgba(225,235,255,0.95));
                  transform: rotate(14deg); border-radius: 2px; }}
+      .rain b {{ position: absolute; inset: 0; background: rgba(40,60,110,0.22); }}
       .prop {{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; }}
       .world {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; transform-origin: 0 0; }}
       .bg {{ position: absolute; left: 0; top: 0; width: {W}px; height: {H}px; object-fit: cover; }}
