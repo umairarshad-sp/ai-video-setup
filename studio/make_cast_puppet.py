@@ -56,6 +56,34 @@ def clean_figure(rgba):
     return out
 
 
+def clear_enclosed_white(rgba, head_frac=0.36, min_size=120):
+    """Background white trapped inside the figure (between an arm and the body, between the
+    legs, behind a cane) survives the edge flood-fill in remove_white. Clear such patches when
+    they sit below the head; patches in the head are eye whites and teeth, so they stay.
+    Returns the cleaned image and the number of patches cleared."""
+    out = rgba.copy()
+    rgb, al = out[..., :3].astype(int), out[..., 3]
+    ys = np.nonzero((al > 128).any(axis=1))[0]
+    if not len(ys):
+        return out, 0
+    top, bot = ys[0], ys[-1]
+    head_line = top + head_frac * (bot - top)
+    white = (al > 200) & (rgb.min(axis=2) > 243) & ((rgb.max(axis=2) - rgb.min(axis=2)) < 14)
+    lab, n = ndi.label(white)
+    cleared = 0
+    for i, o in enumerate(ndi.find_objects(lab)):
+        m = lab[o] == i + 1
+        if m.sum() < min_size or o[0].start < head_line:
+            continue
+        # soften the cut: take the patch plus a 1px ring of near-white anti-aliasing
+        full = np.zeros(al.shape, bool)
+        full[o] = m
+        ring = ndi.binary_dilation(full, iterations=1) & (rgb.min(axis=2) > 225)
+        out[..., 3] = np.where(full | ring, 0, out[..., 3])
+        cleared += 1
+    return out, cleared
+
+
 def figure_anchor(rgba):
     """feet bottom and the horizontal centre of the legs (bottom 20% of the figure)"""
     al = rgba[..., 3] > 128
@@ -162,7 +190,9 @@ def build(cid):
     poses = {}
     for name, c in zip(names, crops):
         rgba = np.asarray(remove_white(Image.fromarray(c.astype(np.uint8)))).copy()
-        poses[name] = clean_figure(rgba)
+        fig = clean_figure(rgba)
+        fig, k = clear_enclosed_white(fig, art.get("head_frac", 0.36))
+        poses[name] = fig
 
     # mouths on the neutral pose (pose 1)
     p1 = crops[0]

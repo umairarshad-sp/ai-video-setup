@@ -36,10 +36,11 @@
     "match": 29.2
   },
   "voice": {
-    "base": "hf_beta",
-    "blend": [],
-    "speed": 0.9,
-    "pitch": -1.5
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Divya speaks in a proud, dramatic and slightly low-pitched voice at a slow pace, very expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
   },
   "height": 0.95
 }

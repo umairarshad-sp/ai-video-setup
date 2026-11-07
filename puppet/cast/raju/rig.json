@@ -36,10 +36,11 @@
     "match": 18.9
   },
   "voice": {
-    "base": "hm_psi",
-    "blend": [],
-    "speed": 1.0,
-    "pitch": -1.0
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Aman speaks in a friendly, casual and slightly nervous voice with a moderate pitch at a moderate pace. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
   },
   "height": 1.0
 }

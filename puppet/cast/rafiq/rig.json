@@ -36,15 +36,12 @@
     "match": 19.9
   },
   "voice": {
-    "base": "hm_omega",
-    "blend": [
-      [
-        "am_onyx",
-        0.3
-      ]
-    ],
-    "speed": 0.95,
-    "pitch": -2.0
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rohit speaks in a loud, deep, dramatic voice with a low pitch at a moderate pace, very expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 7,
+    "approved": "2026-11-07",
+    "note": "Seed 7 chosen by studio/tune_parler.py: steadiest pitch and timbre across sentences."
   },
   "height": 0.85
 }

@@ -36,10 +36,12 @@
     "match": 25.8
   },
   "voice": {
-    "base": "hm_omega",
-    "blend": [],
-    "speed": 1.0,
-    "pitch": 0.0
+    "engine": "elevenlabs",
+    "voice_name": "Callum",
+    "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+    "model_id": "eleven_v3",
+    "language_code": "hi",
+    "approved": "2026-11-07"
   },
   "height": 1.0
 }

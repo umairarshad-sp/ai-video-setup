@@ -36,10 +36,12 @@
     "match": 25.9
   },
   "voice": {
-    "base": "hf_alpha",
-    "blend": [],
-    "speed": 1.08,
-    "pitch": 1.5
+    "engine": "elevenlabs",
+    "voice_name": "Jessica",
+    "voice_id": "cgSgspJ2msm6clMCkdW9",
+    "model_id": "eleven_v3",
+    "language_code": "hi",
+    "approved": "2026-11-07"
   },
   "height": 0.8
 }
