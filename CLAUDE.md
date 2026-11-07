@@ -96,7 +96,7 @@ Done:
   (Wreck-It Ralph); suggested regenerating with a different hoodie colour/hairstyle.
 
 Next:
-1. Owner generates art: Foxley full-body acting sheet (prompt at the end of `cast/CAST.md`);
+1. Owner generates art (Foxley's full-body acting sheet is in `cast/foxley/art/`):
    2-3 backgrounds (mansion living room with an empty frame, garden, town street with a post office).
 2. Build the story/scene engine: multiple shots and backgrounds, camera moves, several
    characters per shot, per-character voices, word-by-word captions, numbered line-up.

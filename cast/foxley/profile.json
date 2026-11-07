@@ -11,5 +11,38 @@
     "#E8762B",
     "#1F4E5F",
     "#F2B134"
-  ]
+  ],
+  "art": {
+    "turnaround": "../../source/turnaround.png",
+    "acting": "art/acting.png",
+    "acting_poses": [
+      "neutral",
+      "talk",
+      "point",
+      "examine",
+      "thinking",
+      "signature_thumbs_wink"
+    ],
+    "facing": "right",
+    "pose_columns": [
+      0,
+      308,
+      592,
+      889,
+      1232,
+      1513,
+      1774
+    ],
+    "talk_head_puppet": "puppet/foxley (front-facing bust with 7 mouth shapes, for close-ups)",
+    "mouth": {
+      "pose": "neutral",
+      "method": "patch_from_pose_2",
+      "pose2_offset": [
+        25,
+        1
+      ],
+      "match_score": 25.8,
+      "note": "Same face angle in poses 1 and 2; patch the mouth only (the magnifier and coat edges differ)."
+    }
+  }
 }
