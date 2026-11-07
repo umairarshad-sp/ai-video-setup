@@ -82,6 +82,15 @@ Attach Foxley's image, then paste this with the set's description:
 | `train_station` | a small old-fashioned train station platform: a waiting bench, a big round station clock with no numbers, a ticket window, luggage trolley, the platform edge as the open floor, a train track at the back |
 | `night_street` | the same small-town street as `post_office_street` but at night: warm street lamps, dark blue sky with stars, glowing shop windows, a wet pavement with soft reflections |
 
+## Sets added for the 30-episode plan (see planning/riddle_tracker.xlsx)
+
+| ID | Description to paste in |
+|---|---|
+| `gali_street` | a narrow, lively desi mohalla lane in the afternoon: colourful two-storey houses with small balconies and potted plants, tangled electric wires overhead, a small corner shop with a blank signboard, a few closed shutters, a parked bicycle at one side, a dusty open stretch of lane in the front where kids play cricket |
+| `shaadi_hall` | a decorated wedding hall in the evening: a flower-covered stage with two empty chairs at the back, strings of fairy lights and marigold garlands, round tables with white cloths at the sides, and a small mehndi stall with cones and a blank sign at one edge, an open carpeted floor in front |
+| `kareem_shop` | inside a cluttered old spice-and-antiques shop: shelves of glass jars with colourful spices (red chilli, yellow haldi, green herbs), old wall clocks, brass pots and a brass weighing scale on a wooden counter, a glass display window with a few antiques, a tiled floor |
+| `apartment_lobby` | the ground-floor lobby of a modest apartment building: a steel lift door in the centre of the back wall with a BLANK sign hanging on it, a row of metal mailboxes, a guard's small desk with a register and a chair at the side, a tiled floor |
+
 ## Adding a set later
 
 Make a folder `sets/<id>/`, write a description like the ones above (place, time of day,
