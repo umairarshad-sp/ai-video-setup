@@ -5,12 +5,6 @@
   "look": "a stocky, friendly handyman with tan skin, short black stubble, a cheeky gap-toothed grin and a backwards red cap; faded blue overalls over a yellow T-shirt, a brown toolbelt with a hammer and wrench, scuffed work boots",
   "personality": "Friendly handyman who looks guilty in every scene and is usually innocent.",
   "catchphrase": "Arey, main to bas cheezein theek karta hoon!",
-  "voice": {
-    "base": "hm_psi",
-    "blend": [],
-    "speed": 1.0,
-    "pitch": -2.0
-  },
   "height": 1.0,
   "colors": [
     "#3E6FA8",
@@ -50,5 +44,18 @@
   "label": "RAJU MISTRI",
   "accent": "#3E6FA8",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "अरे, मैं तो बस चीज़ें ठीक करता हूँ!"
+  "catchphrase_say": "अरे, मैं तो बस चीज़ें ठीक करता हूँ!",
+  "voice_kokoro_old": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": -2.0
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Aman speaks in a friendly, casual and slightly nervous voice with a moderate pitch at a moderate pace. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  }
 }

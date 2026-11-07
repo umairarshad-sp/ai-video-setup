@@ -5,12 +5,6 @@
   "look": "a clever teenage girl with long dark-brown wavy hair in a high messy ponytail with a mint scrunchie, warm tan skin and a confident smirk; an oversized mint-green hoodie, big white headphones around her neck, black leggings, chunky white sneakers, always holding her phone",
   "personality": "Sarcastic, observant teenager who films everything on her phone.",
   "catchphrase": "Ruko, mere paas iski video hai!",
-  "voice": {
-    "base": "hf_alpha",
-    "blend": [],
-    "speed": 1.08,
-    "pitch": 1.5
-  },
   "height": 0.8,
   "colors": [
     "#8FD3B6",
@@ -59,5 +53,19 @@
   "label": "ZARA",
   "accent": "#2F9E77",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "रुको, मेरे पास इसकी वीडियो है!"
+  "catchphrase_say": "रुको, मेरे पास इसकी वीडियो है!",
+  "voice_kokoro_old": {
+    "base": "hf_alpha",
+    "blend": [],
+    "speed": 1.08,
+    "pitch": 1.5
+  },
+  "voice": {
+    "engine": "elevenlabs",
+    "voice_name": "Jessica",
+    "voice_id": "cgSgspJ2msm6clMCkdW9",
+    "model_id": "eleven_v3",
+    "language_code": "hi",
+    "approved": "2026-11-07"
+  }
 }

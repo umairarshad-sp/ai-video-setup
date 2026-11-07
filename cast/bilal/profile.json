@@ -5,12 +5,6 @@
   "look": "a tall, skinny young police officer with a long neck, a big nose, freckles and messy ginger hair; an oversized navy police cap that slips over his eyes, a navy uniform a size too big, a shiny badge, a small notepad and pencil",
   "personality": "Eager, loyal police constable, always sure he has solved it, always wrong.",
   "catchphrase": "Mujhe pata tha! ...Acha, mujhe nahi pata tha.",
-  "voice": {
-    "base": "hm_psi",
-    "blend": [],
-    "speed": 1.1,
-    "pitch": 3.0
-  },
   "height": 1.1,
   "colors": [
     "#22356B",
@@ -57,5 +51,18 @@
   "label": "CONSTABLE BILAL",
   "accent": "#2E4B8F",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "मुझे पता था! अच्छा... मुझे नहीं पता था।"
+  "catchphrase_say": "मुझे पता था! अच्छा... मुझे नहीं पता था।",
+  "voice_kokoro_old": {
+    "base": "hm_psi",
+    "blend": [],
+    "speed": 1.1,
+    "pitch": 3.0
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Aman speaks in an excited, eager, high-pitched voice at a fast pace, very expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  }
 }

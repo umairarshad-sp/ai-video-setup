@@ -5,12 +5,6 @@
   "look": "a brilliant museum curator and scientist with brown skin, a big high puff of brown curls with loose curls framing her face, and gold hoop earrings; a white lab coat over an orange turtleneck, dark wide trousers, brown boots, round tortoiseshell glasses, holding a brown clipboard",
   "personality": "Precise, calm museum curator and scientist; a bit of a know-it-all.",
   "catchphrase": "Technically dekha jaye to...",
-  "voice": {
-    "base": "hf_beta",
-    "blend": [],
-    "speed": 1.0,
-    "pitch": 0.5
-  },
   "height": 0.95,
   "colors": [
     "#FFFFFF",
@@ -52,5 +46,18 @@
   "label": "DR. AYESHA",
   "accent": "#E07B2A",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "टेक्निकली देखा जाए तो..."
+  "catchphrase_say": "टेक्निकली देखा जाए तो...",
+  "voice_kokoro_old": {
+    "base": "hf_beta",
+    "blend": [],
+    "speed": 1.0,
+    "pitch": 0.5
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rani speaks in a calm, precise and measured voice with a moderate pitch at a moderate pace. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  }
 }

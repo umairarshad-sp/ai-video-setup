@@ -5,17 +5,6 @@
   "look": "a short, round, jolly chef with rosy cheeks, a huge curly black moustache and thick eyebrows; a very tall white chef hat, a white double-breasted chef jacket, a red neckerchief and a red-and-white checked apron, holding a wooden spoon",
   "personality": "Loud, dramatic cook, takes everything personally, always near food.",
   "catchphrase": "Arey bhai, main to apne kitchen mein tha!",
-  "voice": {
-    "base": "hm_omega",
-    "blend": [
-      [
-        "am_onyx",
-        0.3
-      ]
-    ],
-    "speed": 0.95,
-    "pitch": -2.0
-  },
   "height": 0.85,
   "colors": [
     "#FFFFFF",
@@ -55,5 +44,23 @@
   "label": "USTAD RAFIQ",
   "accent": "#C8342B",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "अरे भाई, मैं तो अपने किचन में था!"
+  "catchphrase_say": "अरे भाई, मैं तो अपने किचन में था!",
+  "voice_kokoro_old": {
+    "base": "hm_omega",
+    "blend": [
+      [
+        "am_onyx",
+        0.3
+      ]
+    ],
+    "speed": 0.95,
+    "pitch": -2.0
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rohit speaks in a loud, deep, dramatic voice with a low pitch at a moderate pace, very expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  }
 }

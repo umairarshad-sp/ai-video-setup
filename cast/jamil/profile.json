@@ -5,17 +5,6 @@
   "look": "a grumpy old man with a bald head, tufts of white hair at the sides, huge bushy white eyebrows in a permanent scowl and a big white walrus moustache, slightly hunched; a brown knitted cardigan with leather elbow patches over a cream shirt, beige trousers rolled at the ankle, plaid slippers, leaning on a wooden cane",
   "personality": "Grumpy old neighbour who complains about everything and notices everything.",
   "catchphrase": "Hamare zamane mein koi chori nahi karta tha!",
-  "voice": {
-    "base": "hm_omega",
-    "blend": [
-      [
-        "bm_george",
-        0.3
-      ]
-    ],
-    "speed": 0.85,
-    "pitch": -7.0
-  },
   "height": 0.85,
   "colors": [
     "#8B5A2B",
@@ -57,5 +46,23 @@
   "label": "CHACHA JAMIL",
   "accent": "#8B5A2B",
   "language": "hi (Hindustani: Hindi/Urdu)",
-  "catchphrase_say": "हमारे ज़माने में कोई चोरी नहीं करता था!"
+  "catchphrase_say": "हमारे ज़माने में कोई चोरी नहीं करता था!",
+  "voice_kokoro_old": {
+    "base": "hm_omega",
+    "blend": [
+      [
+        "bm_george",
+        0.3
+      ]
+    ],
+    "speed": 0.85,
+    "pitch": -7.0
+  },
+  "voice": {
+    "engine": "indic-parler-tts",
+    "model": "ai4bharat/indic-parler-tts",
+    "description": "Rohit speaks in a very low-pitched, gruff and grumpy voice of an old man at a slow pace, expressive. The recording is very clear, close-sounding, with no background noise.",
+    "seed": 1001,
+    "approved": "2026-11-07"
+  }
 }
