@@ -149,6 +149,18 @@ Next:
    Build with `--lang ur|en` (render_lines.py takes `--lang ur,en`); outputs
    `output/story_00N_partK_{ur,en}.mp4`. Shot extras: `dark`, `rain`, cast `prop: kheer`, per-shot `signs`.
    English uses the SAME locked voices. Next: episodes 6+ from planning/riddle_tracker.xlsx.
+6. New episode format (2026-11-09, owner approved on episode 2; apply to every episode from now on):
+   - Part 1 ends with an extra shot in `foxley_study`: Foxley says "Raaz kal khulega! Follow karo,
+     warna mujrim bach jayega!" under a big `banner` (RAAZ KAL KHULEGA! + pulsing FOLLOW @AskFoxley).
+     On-screen calls to the audience use "karo" (casual), not "karein".
+   - Part 2 checks EVERY alibi: one shot per innocent suspect (Foxley explains why the story holds,
+     shot key `verdicts: [{"on": id, "ok": true, "line": 0}]` -> green "✓ SACH"), then the culprit
+     last with `ok: false` -> red "✗ JHOOT", a beat of silence (`hold` ~1.1), then the MUJRIM stamp.
+     Badge height above the head: `lift` (default 150). Badges and line-up numbers sit on a second
+     world layer (`-w2`) above the night tint, so they stay bright.
+   - `episodes/s002_part1/2.json` were edited by hand for this; do NOT re-run
+     `write_episodes_2_5.py` for episode 2 (it would overwrite them). Episode 2 Urdu re-rendered
+     with the cleaned puppets. Episodes 3-5 still use the old format.
 
 ## Environment notes (cloud sessions)
 

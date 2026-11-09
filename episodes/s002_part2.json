@@ -71,6 +71,92 @@
       "dark": 0.35
     },
     {
+      "set": "night_street",
+      "transition": "whoosh",
+      "dark": 0.45,
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "raju",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1500,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Raju was trying to start the generator. It never started, that's why the street stayed dark. His story checks out.",
+          "caption": "Raju generator chalane ki koshish kar raha tha. Woh chala hi nahi, isi liye gali andheri rahi. Yeh sach hai.",
+          "say": "राजू जनरेटर चलाने की कोशिश कर रहा था। वो चला ही नहीं, इसी लिए गली अंधेरी रही। ये सच है।"
+        }
+      ]
+    },
+    {
+      "set": "apartment_hallway",
+      "transition": "whoosh",
+      "dark": 0.6,
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "zara",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "zara",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1500,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Zara was talking on her phone. A phone runs on its battery, even in a power cut. True again.",
+          "caption": "Zara phone pe baat kar rahi thi. Phone battery pe chalta hai, bijli na ho tab bhi. Yeh bhi sach hai.",
+          "say": "ज़ारा फ़ोन पे बात कर रही थी। फ़ोन बैटरी पे चलता है, बिजली न हो तब भी। ये भी सच है।"
+        }
+      ]
+    },
+    {
       "set": "small_bedroom",
       "transition": "whoosh",
       "cast": [
@@ -93,7 +179,7 @@
         },
         "to": {
           "focus": "jamil",
-          "zoom": 1.6
+          "zoom": 1.3
         },
         "ease": "power2.inOut"
       },
@@ -123,8 +209,17 @@
         }
       ],
       "caption_y": 1500,
-      "hold": 0.4,
-      "dark": 0.62
+      "hold": 1.1,
+      "dark": 0.62,
+      "verdicts": [
+        {
+          "on": "jamil",
+          "ok": false,
+          "line": 1,
+          "at": 0.15,
+          "lift": 120
+        }
+      ]
     },
     {
       "set": "mansion_living_room",

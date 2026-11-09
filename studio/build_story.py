@@ -60,10 +60,12 @@ CAPTION_TOP = 300
 
 # on-screen text defaults (Roman Urdu/Hindi: readable for Pakistani and Indian viewers)
 TEXTS = {
-    "ur": {"cta1": "1, 2 YA 3? COMMENT KAREIN!", "sub1": "Jawab kal aayega · follow {handle}",
-           "cta2": "AAP KA JAWAB SAHI THA?", "sub2": "Roz ek naya case · follow {handle}", "clue": "SURAAG"},
+    "ur": {"cta1": "1, 2 YA 3? COMMENT KARO!", "sub1": "Jawab kal aayega · follow {handle}",
+           "cta2": "AAP KA JAWAB SAHI THA?", "sub2": "Roz ek naya case · follow {handle}", "clue": "SURAAG",
+           "true": "SACH", "lie": "JHOOT", "banner": "RAAZ KAL KHULEGA!", "follow": "FOLLOW {handle}"},
     "en": {"cta1": "1, 2 OR 3? COMMENT NOW!", "sub1": "Answer drops tomorrow · follow {handle}",
-           "cta2": "DID YOU GET IT RIGHT?", "sub2": "A new case every day · follow {handle}", "clue": "THE CLUE"},
+           "cta2": "DID YOU GET IT RIGHT?", "sub2": "A new case every day · follow {handle}", "clue": "THE CLUE",
+           "true": "TRUE", "lie": "LIE", "banner": "ANSWER TOMORROW!", "follow": "FOLLOW {handle}"},
 }
 TEXT = dict(TEXTS["ur"])
 LANG = "ur"
@@ -328,6 +330,9 @@ def build_html(ep, shots, total):
         x1c, y1c, z1 = resolve(cam.get("to", cam.get("from", {"zoom": 1.0})))
         add(f'tl.fromTo("#{sid}-w", {{x: {x0c}, y: {y0c}, scale: {z0}}}, {{x: {x1c}, y: {y1c}, scale: {z1}, duration: {cam.get("dur", dur):.3f}, ease: "{cam.get("ease", "sine.inOut")}", immediateRender: false}}, {s0});')
         add(f'tl.set("#{sid}-w", {{x: {x0c}, y: {y0c}, scale: {z0}}}, {s0});')
+        # badges and line-up numbers ride a second world layer above the night tint and rain, so they stay bright
+        add(f'tl.fromTo("#{sid}-w2", {{x: {x0c}, y: {y0c}, scale: {z0}}}, {{x: {x1c}, y: {y1c}, scale: {z1}, duration: {cam.get("dur", dur):.3f}, ease: "{cam.get("ease", "sine.inOut")}", immediateRender: false}}, {s0});')
+        add(f'tl.set("#{sid}-w2", {{x: {x0c}, y: {y0c}, scale: {z0}}}, {s0});')
 
         # ---- lineup numbers
         lu_html = []
@@ -351,8 +356,24 @@ def build_html(ep, shots, total):
             add(f'tl.fromTo("#{sid}-k", {{scale: 1.05}}, {{scale: 1, duration: 0.35, ease: "power3.out", immediateRender: false}}, {at+0.25:.3f});')
             js.append(f'audio_stamp({at+0.22:.3f});')
 
+        # ---- alibi verdicts: a green "true" or red "lie" badge above a suspect's head
+        for vi, v in enumerate(sh.get("verdicts", [])):
+            on = chars[v["on"]]
+            hx, _ = on["head"]
+            ok = v.get("ok", True)
+            ln_ = sh["lines"][v.get("line", -1)]
+            at = ln_["end"] + v.get("at", -0.6)
+            icon = ('<svg viewBox="0 0 40 40"><path d="M8 21 l8 8 l16 -18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>' if ok else
+                    '<svg viewBox="0 0 40 40"><path d="M10 10 L30 30 M30 10 L10 30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>')
+            label = L(v.get("text")) or TEXT["true" if ok else "lie"]
+            st_html += (f'<div id="{sid}-v{vi}" class="verdict {"vok" if ok else "vno"}" style="left:{hx-190:.1f}px;top:{on["top"]-v.get("lift", 150):.1f}px">'
+                        f'{icon}<span>{esc(label)}</span></div>')
+            add(f'tl.fromTo("#{sid}-v{vi}", {{opacity: 0, scale: 2.2, rotation: {-14 if ok else 14}}}, {{opacity: 1, scale: 1, rotation: {-4 if ok else 4}, duration: 0.28, ease: "back.out(2.4)"}}, {at:.3f});')
+            js.append(f'audio_{"pop" if ok else "stamp"}({at+0.05:.3f});')
+
         bg = f'<img class="bg" src="sets/{sh["set"]}.png" alt="">'
-        html.append(f'<div id="{sid}" class="shot"><div id="{sid}-k" class="shake"><div id="{sid}-w" class="world">{bg}{"".join(sign_html)}{"".join(ch_html)}{"".join(lu_html)}{st_html}</div>{weather_html(sid, sh, s0, s1, add)}</div></div>')
+        html.append(f'<div id="{sid}" class="shot"><div id="{sid}-k" class="shake"><div id="{sid}-w" class="world">{bg}{"".join(sign_html)}{"".join(ch_html)}</div>{weather_html(sid, sh, s0, s1, add)}'
+                    f'<div id="{sid}-w2" class="world" style="z-index:45">{"".join(lu_html)}{st_html}</div></div></div>')
         add(f'tl.set("#{sid}", {{opacity: 1}}, {s0}); tl.set("#{sid}", {{opacity: 0}}, {s1});')
         if stamp_overlay:
             html.append(stamp_overlay)
@@ -384,6 +405,22 @@ def build_html(ep, shots, total):
             add(f'tl.fromTo("#{sid}-cta", {{opacity: 0, scale: 0.6}}, {{opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.2)"}}, {ca:.3f});')
             if si < len(shots) - 1:
                 add(f'tl.set("#{sid}-cta", {{opacity: 0}}, {s1});')
+        if sh.get("banner"):
+            # Part 1 end card: a big "answer tomorrow" banner and a pulsing follow button
+            b = sh["banner"]
+            by = f' style="top:{b["y"]}px"' if "y" in b else ""
+            sub = (L(b.get("sub")) or TEXT["follow"]).format(handle=ep.get("handle", "@AskFoxley"))
+            html.append(f'<div id="{sid}-ban" class="banner"{by}><div class="bmain">{esc(L(b.get("text")) or TEXT["banner"])}</div>'
+                        f'<div><div id="{sid}-fol" class="bfol">{esc(sub)}</div></div></div>')
+            ba = s0 + b.get("at", 0.2)
+            add(f'tl.fromTo("#{sid}-ban", {{opacity: 0, scale: 2.4, rotation: -8}}, {{opacity: 1, scale: 1, rotation: -3, duration: 0.3, ease: "power4.in"}}, {ba:.3f});')
+            add(f'tl.fromTo("#{sid}-k", {{scale: 1.04}}, {{scale: 1, duration: 0.35, ease: "power3.out", immediateRender: false}}, {ba+0.3:.3f});')
+            js.append(f'audio_stamp({ba+0.27:.3f});')
+            add(f'tl.fromTo("#{sid}-fol", {{opacity: 0, scale: 0.4}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {ba+0.7:.3f});')
+            js.append(f'audio_pop({ba+0.7:.3f});')
+            add(f'tl.to("#{sid}-fol", {{scale: 1.08, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: {max(int((s1-ba-1.0)/0.45), 1)}}}, {ba+1.0:.3f});')
+            if si < len(shots) - 1:
+                add(f'tl.set("#{sid}-ban", {{opacity: 0}}, {s1});')
         if sh.get("answer"):
             a = sh["answer"]
             ay = f' style="top:{a["y"]}px"' if "y" in a else ""
@@ -470,6 +507,17 @@ def build_html(ep, shots, total):
                 border-radius: 28px; border: 8px solid var(--ink); box-shadow: 0 10px 0 var(--ink); }}
       .csub {{ display: inline-block; margin-top: 18px; background: rgba(255,250,240,0.95); color: var(--ink); font-weight: 800; font-size: 34px;
                padding: 8px 24px; border-radius: 30px; border: 5px solid var(--ink); }}
+      .verdict {{ position: absolute; width: 380px; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 14px 0;
+                  border: 8px solid var(--ink); border-radius: 26px; box-shadow: 0 9px 0 var(--ink); color: #fff; font-weight: 900; font-size: 64px;
+                  letter-spacing: 0.04em; opacity: 0; z-index: 60; }}
+      .verdict svg {{ width: 62px; height: 62px; }}
+      .vok {{ background: #2E9E4F; }}
+      .vno {{ background: var(--red); }}
+      .banner {{ position: absolute; left: 50px; right: 50px; top: 520px; text-align: center; opacity: 0; z-index: 86; }}
+      .bmain {{ display: inline-block; background: var(--red); color: #fff; font-weight: 900; font-size: 104px; line-height: 1.02; padding: 26px 40px;
+                border-radius: 34px; border: 10px solid var(--ink); box-shadow: 0 16px 0 var(--ink); }}
+      .bfol {{ display: inline-block; margin-top: 34px; background: var(--teal); color: #fff; font-weight: 900; font-size: 56px; padding: 16px 40px;
+               border-radius: 60px; border: 8px solid var(--ink); box-shadow: 0 10px 0 var(--ink); opacity: 0; }}
       .ans {{ position: absolute; left: 70px; right: 70px; top: 520px; background: var(--mustard); border: 8px solid var(--ink); border-radius: 36px;
               box-shadow: 0 12px 0 var(--ink); padding: 20px 34px 28px; text-align: center; opacity: 0; z-index: 85; }}
       .alab {{ font-weight: 900; font-size: 34px; letter-spacing: 0.14em; color: var(--teal); }}
