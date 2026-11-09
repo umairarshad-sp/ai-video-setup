@@ -111,7 +111,10 @@ Answer: Sher Khan! All night in the rain and completely dry? 🌧️❌ Did you 
 
 ---
 
-## URDU/HINDI VERSION
+## URDU/HINDI VERSION (rebuilt 2026-11-09, use these)
+
+Matches `output/story_004_part1_ur.mp4` and `output/story_004_part2_ur.mp4`: English subtitles
+burned in, Part 1 ends with "Raaz kal khulega!", and Part 2 checks every alibi (Ayesha ✓, Raju ✓, Sher Khan ✗).
 
 ### Part 1 (day 1)
 
@@ -122,17 +125,19 @@ Toofani Raat Mein Museum Ka Heera Chori! Jhoot Kaun Bol Raha Hai? 💎 #Shorts
 
 **YouTube Shorts: description**
 ```
-Saari raat mooslaadhaar barish… aur museum ka heera gayab! Teen suspects, teen alibis, aur ek jhoot bol raha hai. 🦊
+Saari raat mooslaadhaar barish… aur museum ka heera gayab! 💎🌧️
+Teen suspects, teen kahaniyan, aur ek jhoot bol raha hai. 🦊
 
 Heera kis ne churaya?
 1️⃣ Dr. Ayesha: "Main ne office band kiya aur chhe baje chali gayi."
 2️⃣ Raju Mistri: "Main aadhi raat tak andar gallery ki lights theek kar raha tha."
 3️⃣ Sher Khan: "Main saari raat khule gate par khara raha. Ek parinda bhi nahi guzra!"
 
-Mausam yaad rakhein, aur ghaur se dekhein. 👀
-Comment karein 1, 2 ya 3! Jawab kal aayega. Subscribe karein.
+🌧️ Mausam yaad rakho, aur ghaur se dekho!
+Apna jawab comment karo: 1, 2 ya 3? 👇
+Raaz kal khulega! Subscribe karo, warna mujrim bach jayega. 😉
 
-Har roz nayi paheli, Professor Foxley ke saath.
+English subtitles included.
 #paheli #mystery #jasoos
 ```
 
@@ -147,23 +152,23 @@ Toofani raat… aur museum ka heera gayab! 💎🌧️
 
 In teeno mein se ek jhoot bol raha hai:
 1️⃣ Dr. Ayesha: chhe baje office band kar ke chali gayi
-2️⃣ Raju: aadhi raat tak lights theek kar raha tha
+2️⃣ Raju: aadhi raat tak andar lights theek kar raha tha
 3️⃣ Sher Khan: saari raat khule gate par pehra de raha tha
 
-🌧️ Barish saari raat hui. Kis ki kahani nahi milti? Comment karein 1, 2 ya 3 👇
-Jawab kal! Follow karein @askfoxley
+🌧️ Barish saari raat hui. Kis ki kahani nahi milti? Comment karo 1, 2 ya 3 👇
+Raaz kal khulega! Follow karo @askfoxley, warna mujrim bach jayega 😉
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **TikTok: caption**
 ```
-Barish ki raat, museum ka heera gayab 💎🌧️ Ek jhoot bol raha hai! Comment karein 1, 2 ya 3. Jawab kal 🦊 #paheli #mystery #jasoos #urdu #hindi
+Barish ki raat, museum ka heera gayab 💎🌧️ Ek jhoot bol raha hai! Comment karo 1, 2 ya 3. Raaz kal khulega 🦊 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **Pinned comment (all three)**
 ```
-🦊 Yaad rakhein: saari raat barish hui. Teeno ko dobara dekhein. 1, 2 ya 3?
+🦊 Yaad rakho: saari raat barish hui. Teeno ko dobara dekho. 1, 2 ya 3?
 ```
 
 ### Part 2 (day 2)
@@ -175,12 +180,17 @@ JAWAB: Heera Kis Ne Churaya? Barish Mein Bhi Sookha! 🦊 #Shorts
 
 **YouTube Shorts: description**
 ```
-Kal ka case solve! Kya aap ka jawab sahi tha? 🔍
+Raaz khul gaya! Kya aap ka jawab sahi tha? 🔍
 
-Mujrim tha Sher Khan (3)! Kehta tha saari raat barish mein khule gate par khara raha, lekin uski wardi, topi aur boot bilkul sookhe the. Woh saari raat andar tha… heere ke saath.
+Foxley ne har kahani check ki:
+✅ Dr. Ayesha: chhe baje chali gayi, museum ka register bhi yahi kehta hai. SACH!
+✅ Raju: poori raat andar tha, to sookha hona banta hai. SACH!
+❌ Sher Khan: saari raat barish mein khule gate par… aur wardi, topi, boot bilkul sookhe? JHOOT!
 
-Paheli miss ho gayi? Pehle Part 1 dekhein (upar link hai).
-Har roz naya case. Follow karein, jasooso!
+Mujrim tha Sher Khan (3)! Woh saari raat andar tha… heere ke saath. 💎
+
+Paheli miss ho gayi? Pehle Part 1 dekho (upar link hai).
+Har roz naya case. Follow karo, jasooso!
 #paheli #mystery #jasoos
 ```
 
@@ -193,10 +203,12 @@ paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mys
 ```
 CASE CLOSED ✅ Kya aap ne pakra?
 
-Mujrim tha Sher Khan (3)! Saari raat barish mein gate par… aur bilkul sookha? 🌧️👮‍♂️❌
+✅ Dr. Ayesha: SACH
+✅ Raju: SACH
+❌ Sher Khan: JHOOT! Saari raat barish mein gate par… aur bilkul sookha? 🌧️👮‍♂️
 
 "Barish ho rahi thi… bas sookha rehne andar gaya. Aur heera itna chamakdar tha." 💎
-Sahi jawab diya? Comment karein 🙋 aur follow karein @askfoxley
+Sahi jawab diya? Comment karo 🙋 aur follow karo @askfoxley
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
@@ -208,5 +220,5 @@ Jawab: Sher Khan! Saari raat barish aur wardi bilkul sookhi? 🌧️❌ Aap ka j
 
 **Pinned comment (all three)**
 ```
-🦊 Toofani raat ke baad sookhe boot? Pakar liya to "SOLVED" likhein!
+🦊 Toofani raat ke baad sookhe boot? Pakar liya to "SOLVED" likho!
 ```

@@ -111,7 +111,10 @@ Answer: Bunty! How did he know the ball was under the sofa? 🛋️🏏 Did you 
 
 ---
 
-## URDU/HINDI VERSION
+## URDU/HINDI VERSION (rebuilt 2026-11-09, use these)
+
+Matches `output/story_005_part1_ur.mp4` and `output/story_005_part2_ur.mp4`: English subtitles
+burned in, Part 1 ends with "Raaz kal khulega!", and Part 2 checks every alibi (Zara ✓, Faisal ✓, Bunty ✗).
 
 ### Part 1 (day 1)
 
@@ -122,17 +125,19 @@ Cricket Ball Se Sheesha Toot Gaya! Kis Ne Khud Ko Phansaya? 🏏 #Shorts
 
 **YouTube Shorts: description**
 ```
-Chacha Jamil ki khirki ka sheesha cricket ball se toot gaya, aur ball gayab! Teen suspects, aur ek ne khud hi raaz khol diya. 🦊
+Chacha Jamil ki khirki ka sheesha cricket ball se toot gaya, aur ball gayab! 🏏💥
+Teen suspects, aur ek ne khud hi raaz khol diya. 🦊
 
 Sheesha kis ne toda?
 1️⃣ Bunty: "Main ne to khirki dekhi bhi nahi! Waise bhi ball sofa ke neeche lurhak gayi hogi."
 2️⃣ Zara: "Main chhat par dance video bana rahi thi."
 3️⃣ Faisal: "Main agli gali mein parcel de raha tha."
 
-Har lafz ghaur se sunein. 👂
-Comment karein 1, 2 ya 3! Jawab kal aayega. Subscribe karein.
+👂 Har lafz ghaur se suno!
+Apna jawab comment karo: 1, 2 ya 3? 👇
+Raaz kal khulega! Subscribe karo, warna mujrim bach jayega. 😉
 
-Har roz nayi paheli, Professor Foxley ke saath.
+English subtitles included.
 #paheli #mystery #jasoos
 ```
 
@@ -150,20 +155,20 @@ In teeno mein se ek ne khud hi bata diya:
 2️⃣ Zara: chhat par dance video bana rahi thi
 3️⃣ Faisal: agli gali mein parcel de raha tha
 
-👂 Ghaur se sunein! Sheesha kis ne toda? Comment karein 1, 2 ya 3 👇
-Jawab kal! Follow karein @askfoxley
+👂 Ghaur se suno! Comment karo 1, 2 ya 3 👇
+Raaz kal khulega! Follow karo @askfoxley, warna mujrim bach jayega 😉
 
 #paheli #mystery #jasoos #cricket #urdu
 ```
 
 **TikTok: caption**
 ```
-Gali cricket, toota sheesha 🏏💥 Ek ne khud hi raaz khol diya! Aap ne suna? Comment karein 1, 2 ya 3. Jawab kal 🦊 #paheli #mystery #jasoos #cricket #urdu
+Gali cricket, toota sheesha 🏏💥 Ek ne khud hi raaz khol diya! Tum ne suna? Comment karo 1, 2 ya 3. Raaz kal khulega 🦊 #paheli #mystery #jasoos #cricket #urdu
 ```
 
 **Pinned comment (all three)**
 ```
-🦊 Video dobara sunein. Kisi ne zaroorat se zyada bol diya! 1, 2 ya 3?
+🦊 Video dobara suno. Kisi ne zaroorat se zyada bol diya! 1, 2 ya 3?
 ```
 
 ### Part 2 (day 2)
@@ -175,12 +180,17 @@ JAWAB: Sheesha Kis Ne Toda? Zubaan Phisal Gayi! 🏏 #Shorts
 
 **YouTube Shorts: description**
 ```
-Kal ka case solve! Kya aap ne pakra? 🔍
+Raaz khul gaya! Kya aap ne pakra? 🔍
 
-Mujrim tha Bunty (1)! Kisi ne nahi bataya tha ke ball kahan gayi, phir bhi use pata tha ke ball sofa ke neeche hai. Yeh sirf maarne wala hi jaanta hai! "Meri zindagi ka sab se achha shot tha! …Sorry, Chacha." 😅
+Foxley ne har kahani check ki:
+✅ Zara: uski dance video mein woh poora waqt naach rahi hai. SACH!
+✅ Faisal: delivery app mein har parcel ka waqt likha hai. SACH!
+❌ Bunty: kisi ne nahi bataya ball kahan gayi, phir bhi use pata tha "sofa ke neeche"! JHOOT!
 
-Paheli miss ho gayi? Pehle Part 1 dekhein (upar link hai).
-Har roz naya case. Follow karein, jasooso!
+Mujrim tha Bunty (1)! "Meri zindagi ka sab se achha shot tha! …Sorry, Chacha." 😅
+
+Paheli miss ho gayi? Pehle Part 1 dekho (upar link hai).
+Har roz naya case. Follow karo, jasooso!
 #paheli #mystery #jasoos
 ```
 
@@ -193,20 +203,22 @@ paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mys
 ```
 CASE CLOSED ✅ Kya aap ne suna?
 
-Mujrim tha Bunty (1)! Kisi ne nahi bataya ball kahan gayi, phir bhi use pata tha: "sofa ke neeche" 🛋️🏏
+✅ Zara: SACH
+✅ Faisal: SACH
+❌ Bunty: JHOOT! Kisi ne nahi bataya ball kahan gayi, phir bhi use pata tha: "sofa ke neeche" 🛋️🏏
 
 "Zindagi ka sab se achha shot! …Sorry, Chacha." 😅
-Sahi jawab diya? Comment karein 🙋 aur follow karein @askfoxley
+Sahi jawab diya? Comment karo 🙋 aur follow karo @askfoxley
 
 #paheli #mystery #jasoos #cricket #urdu
 ```
 
 **TikTok: caption**
 ```
-Jawab: Bunty! Use kaise pata tha ball sofa ke neeche hai? 🛋️🏏 Aap ne pakra? Kal naya case 🦊 #paheli #mystery #jasoos #cricket #urdu
+Jawab: Bunty! Use kaise pata tha ball sofa ke neeche hai? 🛋️🏏 Tum ne pakra? Kal naya case 🦊 #paheli #mystery #jasoos #cricket #urdu
 ```
 
 **Pinned comment (all three)**
 ```
-🦊 "Sofa ke neeche" ne pakarwa diya! Sahi jawab diya to "SOLVED" likhein.
+🦊 "Sofa ke neeche" ne pakarwa diya! Sahi jawab diya to "SOLVED" likho.
 ```

@@ -112,7 +112,10 @@ Answer: Faisal! Kheer on the moustache gave him away 🍮😂 Did you spot it? F
 
 ---
 
-## URDU/HINDI VERSION
+## URDU/HINDI VERSION (rebuilt 2026-11-09, use these)
+
+Matches `output/story_003_part1_ur.mp4` and `output/story_003_part2_ur.mp4`: English subtitles
+burned in, Part 1 ends with "Raaz kal khulega!", and Part 2 checks every alibi (Zara ✓, Raju ✓, Faisal ✗).
 
 ### Part 1 (day 1)
 
@@ -123,23 +126,25 @@ Answer: Faisal! Kheer on the moustache gave him away 🍮😂 Did you spot it? F
 
 **YouTube Shorts: description**
 ```
-Ustad Rafiq ki Eid wali kheer, poori deg, sirf das minute mein khatam! Teen suspects, teen alibis, aur ek jhoot bol raha hai. 🦊
+Ustad Rafiq ki Eid wali kheer, poori deg, sirf das minute mein khatam! 🍮😱
+Teen suspects, teen kahaniyan, aur ek jhoot bol raha hai. 🦊
 
 Kheer kis ne khayi?
 1️⃣ Zara: "Main garden mein photos le rahi thi."
 2️⃣ Faisal: "Main abhi parcel le kar aaya hoon. Kitchen ke paas bhi nahi gaya!"
 3️⃣ Raju Mistri: "Main upar bathroom ka nalka theek kar raha tha."
 
-Ghaur se dekhein, suraag screen par hai. 👀
-Comment karein 1, 2 ya 3! Jawab kal aayega. Subscribe karein.
+👀 Ghaur se dekho, suraag screen par hai!
+Apna jawab comment karo: 1, 2 ya 3? 👇
+Raaz kal khulega! Subscribe karo, warna mujrim bach jayega. 😉
 
-Har roz nayi paheli, Professor Foxley ke saath.
+English subtitles included.
 #paheli #mystery #jasoos
 ```
 
 **YouTube tags**
 ```
-paheli, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, kheer, eid, kaun jhoot bol raha hai, Professor Foxley, AskFoxley
+paheli, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, kheer, eid, kaun jhoot bol raha hai, spot the clue, Professor Foxley, AskFoxley
 ```
 
 **Instagram Reels: caption**
@@ -151,20 +156,20 @@ In teeno mein se ek jhoot bol raha hai:
 2️⃣ Faisal: parcel le kar aaya, "kitchen ke paas bhi nahi gaya"
 3️⃣ Raju: upar nalka theek kar raha tha
 
-👀 Suraag saamne hai! Kheer kis ne khayi? Comment karein 1, 2 ya 3 👇
-Jawab kal! Follow karein @askfoxley
+👀 Suraag saamne hai! Comment karo 1, 2 ya 3 👇
+Raaz kal khulega! Follow karo @askfoxley, warna mujrim bach jayega 😉
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **TikTok: caption**
 ```
-Poori deg ki kheer gayab 🍮 Suraag screen par hai 👀 Comment karein 1, 2 ya 3. Jawab kal 🦊 #paheli #mystery #jasoos #urdu #hindi
+Poori deg ki kheer gayab 🍮 Suraag screen par hai 👀 Comment karo 1, 2 ya 3. Raaz kal khulega 🦊 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **Pinned comment (all three)**
 ```
-🦊 Video rok kar teeno ko ghaur se dekhein. Aap ka jawab: 1, 2 ya 3?
+🦊 Video rok kar teeno ko ghaur se dekho. Tumhara jawab: 1, 2 ya 3?
 ```
 
 ### Part 2 (day 2)
@@ -176,28 +181,35 @@ JAWAB: Kheer Kis Ne Khayi? Saboot Moonchh Par Tha! 😂 #Shorts
 
 **YouTube Shorts: description**
 ```
-Kal ka case solve! Kya aap ne pakra? 🔍
+Raaz khul gaya! Kya aap ne pakra? 🔍
 
-Mujrim tha Faisal (2)! Kehta tha kitchen ke paas bhi nahi gaya, lekin moonchh par taaza kheer lagi thi. "Bas ek chamach… achha, pachaas chamach." 😂
+Foxley ne har kahani check ki:
+✅ Zara: chehra bilkul saaf, kheer ka ek daana bhi nahi. SACH!
+✅ Raju: haath mein ab bhi paana, chehra saaf. SACH!
+❌ Faisal: "kitchen ke paas bhi nahi gaya"… aur moonchh par taaza kheer! JHOOT!
 
-Paheli miss ho gayi? Pehle Part 1 dekhein (upar link hai).
-Har roz naya case. Follow karein, jasooso!
+Mujrim tha Faisal (2)! "Bas ek chamach… achha, pachaas chamach." 😂
+
+Paheli miss ho gayi? Pehle Part 1 dekho (upar link hai).
+Har roz naya case. Follow karo, jasooso!
 #paheli #mystery #jasoos
 ```
 
 **YouTube tags**
 ```
-paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, Professor Foxley, AskFoxley
+paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, kheer, Professor Foxley, AskFoxley
 ```
 
 **Instagram Reels: caption**
 ```
 CASE CLOSED ✅ Kya aap ne dekha?
 
-Mujrim tha Faisal (2)! "Kitchen ke paas bhi nahi gaya"… aur moonchh par taaza kheer 🍮👨
+✅ Zara: SACH
+✅ Raju: SACH
+❌ Faisal: JHOOT! Moonchh par taaza kheer 🍮👨
 
 "Bas ek chamach. Achha, pachaas chamach." 😂
-Sahi jawab diya? Comment karein 🙋 aur follow karein @askfoxley
+Sahi jawab diya? Comment karo 🙋 aur follow karo @askfoxley
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
@@ -209,5 +221,5 @@ Jawab: Faisal! Moonchh par lagi kheer ne pakarwa diya 🍮😂 Aap ne dekha? Kal
 
 **Pinned comment (all three)**
 ```
-🦊 Moonchh dekhi thi? Sahi jawab diya to "SOLVED" likhein!
+🦊 Moonchh dekhi thi? Sahi jawab diya to "SOLVED" likho!
 ```
