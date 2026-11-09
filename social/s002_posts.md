@@ -120,10 +120,12 @@ Answer: it was Chacha Jamil! No electricity = no TV 📺❌ Did you get it right
 
 ---
 
-## URDU/HINDI VERSION
+## URDU/HINDI VERSION (rebuilt 2026-11-09, use these)
 
-Roman Urdu is used so the same text works for Urdu and Hindi speakers. Hashtags mix English
-and Hindi/Urdu terms so both audiences find the video.
+Matches the rebuilt videos `output/story_002_part1_ur.mp4` and `output/story_002_part2_ur.mp4`:
+Part 1 ends with "Raaz kal khulega!", and Part 2 checks every alibi (Raju ✓ SACH, Zara ✓ SACH,
+Jamil ✗ JHOOT). Written in Roman Urdu so Urdu and Hindi speakers can both read it, using the
+casual "karo" to match the videos.
 
 ### Part 1 (day 1)
 
@@ -134,22 +136,24 @@ Andhere Mein Haar Gayab! Jhoot Kaun Bol Raha Hai? 🔍 #Shorts
 
 **YouTube Shorts: description**
 ```
-Load-shedding ke do ghante… aur Begum Nusrat ka moti ka haar gayab! Teen suspects, teen alibis, aur ek jhoot bol raha hai. 🦊
+Load-shedding ke do ghante… aur Begum Nusrat ka moti ka haar gayab! 💎🔦
+Teen suspects, teen kahaniyan, aur ek jhoot bol raha hai. 🦊
 
 Haar kis ne churaya?
-1️⃣ Raju Mistri: "Main bahar generator chala raha tha."
-2️⃣ Zara: "Main andhere mein phone par baat kar rahi thi."
-3️⃣ Chacha Jamil: "Main saari shaam TV par cricket match dekh raha tha."
+1️⃣ Raju Mistri: "Main bahar generator chalane ki koshish kar raha tha."
+2️⃣ Zara: "Main andhere mein phone pe baat kar rahi thi."
+3️⃣ Chacha Jamil: "Main saari shaam TV pe cricket match dekh raha tha."
 
-Comment karein 1, 2 ya 3! Jawab kal aayega. Subscribe karein taake miss na ho.
+Apna jawab comment karo: 1, 2 ya 3? 👇
+Raaz kal khulega! Subscribe karo, warna mujrim bach jayega. 😉
 
 Har roz nayi paheli, Professor Foxley ke saath.
 #paheli #mystery #jasoos
 ```
 
-**YouTube tags**
+**YouTube tags** (Details > Tags)
 ```
-paheli, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, detective riddle, kaun jhoot bol raha hai, dimagi paheli, Professor Foxley, AskFoxley
+paheli, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, kaun jhoot bol raha hai, dimagi paheli, load shedding, Professor Foxley, AskFoxley
 ```
 
 **Instagram Reels: caption**
@@ -157,56 +161,63 @@ paheli, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in h
 Bijli gayi… aur haar bhi! 💎🔦
 
 Load-shedding mein moti ka haar chori ho gaya. In teeno mein se ek jhoot bol raha hai:
-1️⃣ Raju: bahar generator theek kar raha tha
-2️⃣ Zara: andhere mein phone par thi
-3️⃣ Chacha Jamil: saari shaam TV par cricket dekh raha tha
+1️⃣ Raju: bahar generator chala raha tha
+2️⃣ Zara: andhere mein phone pe thi
+3️⃣ Chacha Jamil: saari shaam TV pe cricket dekh raha tha
 
-Mujrim kaun? Comment karein 1, 2 ya 3 👇
-Jawab kal! Follow karein @askfoxley
+Mujrim kaun? Comment karo 1, 2 ya 3 👇
+Raaz kal khulega! Follow karo @askfoxley, warna mujrim bach jayega 😉
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **TikTok: caption**
 ```
-Load-shedding mein haar gayab 🔦 Ek jhoot bol raha hai! Comment karein 1, 2 ya 3. Jawab kal 🦊 #paheli #mystery #jasoos #urdu #hindi
+Load-shedding mein haar gayab 🔦💎 Ek jhoot bol raha hai! Comment karo 1, 2 ya 3. Raaz kal khulega 🦊 #paheli #mystery #jasoos #urdu #hindi
 ```
 
 **Pinned comment (all three)**
 ```
-🦊 Kal se pehle apna jawab likh dein: 1, 2 ya 3? Sirf asli jasoos jhoot pakar sakta hai!
+🦊 Kal se pehle apna jawab likh do: 1, 2 ya 3? Sirf asli jasoos jhoot pakar sakta hai!
 ```
 
 ### Part 2 (day 2)
 
 **YouTube Shorts: title**
 ```
-JAWAB: Haar Kis Ne Churaya? Mujrim Pakra Gaya! 🦊 #Shorts
+JAWAB: Haar Kis Ne Churaya? Ek Ek Alibi Check! 🦊 #Shorts
 ```
 
 **YouTube Shorts: description**
 ```
-Kal ka case solve! Kya aap ka jawab sahi tha? 🔍
+Raaz khul gaya! Kya aap ka jawab sahi tha? 🔍
 
-Mujrim tha Chacha Jamil (3)! Unhon ne kaha saari shaam TV par cricket dekha, lekin load-shedding mein poori gali mein bijli hi nahi thi. Bijli nahi, to TV kaise chala?
+Foxley ne har kahani check ki:
+✅ Raju: generator chala hi nahi, isi liye gali andheri rahi. SACH!
+✅ Zara: phone battery pe chalta hai, bijli na ho tab bhi. SACH!
+❌ Chacha Jamil: saari shaam TV pe cricket? Bijli thi hi nahi! JHOOT!
 
-Paheli miss ho gayi? Pehle Part 1 dekhein (upar link hai).
-Har roz naya case. Follow karein, jasooso!
+Mujrim tha Chacha Jamil (3)! 📺⚡
+
+Paheli miss ho gayi? Pehle Part 1 dekho (upar link hai).
+Har roz naya case. Follow karo, jasooso!
 #paheli #mystery #jasoos
 ```
 
 **YouTube tags**
 ```
-paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, detective riddle, Professor Foxley, AskFoxley
+paheli ka jawab, urdu paheli, hindi paheli, jasoosi kahani, mystery in urdu, mystery in hindi, kaun jhoot bol raha tha, Professor Foxley, AskFoxley
 ```
 
 **Instagram Reels: caption**
 ```
 CASE CLOSED ✅ Kya aap ne jhoot pakra?
 
-Mujrim tha Chacha Jamil (3)! Load-shedding mein "TV par cricket"? 📺⚡❌ Bijli hi nahi thi!
+✅ Raju: SACH
+✅ Zara: SACH
+❌ Chacha Jamil: JHOOT! Load-shedding mein "TV pe cricket"? Bijli hi nahi thi! 📺⚡
 
-Sahi jawab diya tha? Comment karein 🙋 aur kal ke case ke liye follow karein @askfoxley
+Sahi jawab diya tha? Comment karo 🙋 aur kal ke case ke liye follow karo @askfoxley
 
 #paheli #mystery #jasoos #urdu #hindi
 ```
@@ -218,5 +229,5 @@ Jawab: Chacha Jamil! Bijli nahi thi, to TV kaise chala? 📺❌ Aap ka jawab sah
 
 **Pinned comment (all three)**
 ```
-🦊 Sahi jawab diya? "SOLVED" likhein! Kal ka case aur mushkil hai.
+🦊 Sahi jawab diya? "SOLVED" likho! Kal ka case aur bhi mushkil hai 😏
 ```
