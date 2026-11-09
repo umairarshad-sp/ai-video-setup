@@ -27,7 +27,9 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
   character's voice without the owner's approval. Pitch-lock each generated line to the
   character's median pitch so voices stay consistent. The owner will buy ElevenLabs Starter
   before monetizing (free plan is non-commercial).
-- Voices are finalized BEFORE any video work; the owner wants to approve audio first.
+- Voice approval (updated 2026-11-09): the 12 current voices are approved, so new lines for
+  existing characters can be rendered and used straight away. Only a NEW character's voice needs
+  the owner's approval (send audio options first, before any video with that character).
 - **Urdu only for now (2026-11-09).** Redos and new episodes are made in Urdu/Hindi only
   (`--lang ur`). Do not make English videos until the owner asks; keep the `en` text in episode
   JSON so English can be added later.
@@ -160,7 +162,8 @@ Next:
      world layer (`-w2`) above the night tint, so they stay bright.
    - `episodes/s002_part1/2.json` were edited by hand for this; do NOT re-run
      `write_episodes_2_5.py` for episode 2 (it would overwrite them). Episode 2 Urdu re-rendered
-     with the cleaned puppets. Episodes 3-5 still use the old format.
+     with the cleaned puppets. Episodes 3-5 converted the same way (2026-11-09, Urdu + English subs,
+     cleaned puppets); their JSON is hand-edited too, so do NOT re-run `write_episodes_2_5.py`.
    - English subtitles on the Urdu version (2026-11-09, owner asked): `build_story.py --lang ur` burns in
      each line's `en` text under the Roman Urdu caption (`SUBS`, `--no-subs` turns it off), plus an
      English line in the clue box and banner. Keep `caption_y` at or above ~1300 so the English line

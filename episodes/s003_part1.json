@@ -272,7 +272,49 @@
         "after_timer": true,
         "y": 430
       },
-      "hold": 2.2
+      "hold": 1.2
+    },
+    {
+      "set": "foxley_study",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.5,
+          "face": "right"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.12
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.66
+          ],
+          "zoom": 1.2
+        }
+      },
+      "banner": {
+        "at": 0.15,
+        "y": 640
+      },
+      "caption_y": 230,
+      "hold": 1.6,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "The secret comes out tomorrow! Follow, or the culprit gets away!",
+          "caption": "Raaz kal khulega! Follow karo, warna mujrim bach jayega!",
+          "say": "राज़ कल खुलेगा! फ़ॉलो करो, वरना मुजरिम बच जाएगा!",
+          "after": "signature_thumbs_wink"
+        }
+      ]
     }
   ],
   "answer_note": "Faisal (2) is lying: he says he never went near the kitchen, but there is fresh kheer on his moustache."

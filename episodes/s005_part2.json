@@ -75,6 +75,90 @@
       "cast": [
         {
           "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "zara",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "zara",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Zara was making a dance video on the rooftop. She's dancing in it the whole time. True.",
+          "caption": "Zara chhat pe dance video bana rahi thi. Uski video mein woh poora waqt naachti dikh rahi hai. Yeh sach hai.",
+          "say": "ज़ारा छत पे डांस वीडियो बना रही थी। उसकी वीडियो में वो पूरा वक़्त नाचती दिख रही है। ये सच है।"
+        }
+      ]
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "faisal",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "faisal",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Faisal was delivering parcels on the next street. His app shows the time of every parcel. True again.",
+          "caption": "Faisal agli gali mein parcel de raha tha. Uski delivery app mein har parcel ka waqt likha hai. Yeh bhi sach hai.",
+          "say": "फ़ैसल अगली गली में पार्सल दे रहा था। उसकी डिलीवरी ऐप में हर पार्सल का वक़्त लिखा है। ये भी सच है।"
+        }
+      ]
+    },
+    {
+      "set": "gali_street",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
           "x": 0.25,
           "face": "right",
           "pose": "thinking"
@@ -92,7 +176,7 @@
         },
         "to": {
           "focus": "bunty",
-          "zoom": 1.6
+          "zoom": 1.3
         },
         "ease": "power2.inOut"
       },
@@ -121,8 +205,17 @@
           "pose": "examine"
         }
       ],
-      "caption_y": 1500,
-      "hold": 0.4
+      "caption_y": 1290,
+      "hold": 1.1,
+      "verdicts": [
+        {
+          "on": "bunty",
+          "ok": false,
+          "line": 1,
+          "at": 0.15,
+          "lift": 120
+        }
+      ]
     },
     {
       "set": "gali_street",
@@ -250,7 +343,7 @@
       },
       "cta": {
         "at": 0.2,
-        "y": 560
+        "y": 660
       },
       "caption_y": 230,
       "lines": [

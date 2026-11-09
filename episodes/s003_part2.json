@@ -71,6 +71,90 @@
       "hold": 0.3
     },
     {
+      "set": "garden",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "zara",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "zara",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Zara's face is spotless, not a single grain of kheer. She really was in the garden. True.",
+          "caption": "Zara ka chehra bilkul saaf hai, kheer ka ek daana bhi nahi. Woh sach mein garden mein thi. Yeh sach hai.",
+          "say": "ज़ारा का चेहरा बिल्कुल साफ़ है, खीर का एक दाना भी नहीं। वो सच में गार्डन में थी। ये सच है।"
+        }
+      ]
+    },
+    {
+      "set": "apartment_hallway",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "raju",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Raju still has his wrench, and his face is clean. He really was fixing the tap. True again.",
+          "caption": "Raju ke haath mein ab bhi paana hai, aur chehra bilkul saaf. Woh upar nalka hi theek kar raha tha. Yeh bhi sach hai.",
+          "say": "राजू के हाथ में अब भी पाना है, और चेहरा बिल्कुल साफ़। वो ऊपर नलका ही ठीक कर रहा था। ये भी सच है।"
+        }
+      ]
+    },
+    {
       "set": "gali_street",
       "transition": "whoosh",
       "cast": [
@@ -94,7 +178,7 @@
         },
         "to": {
           "focus": "faisal",
-          "zoom": 1.6
+          "zoom": 1.3
         },
         "ease": "power2.inOut"
       },
@@ -123,8 +207,17 @@
           "pose": "examine"
         }
       ],
-      "caption_y": 1500,
-      "hold": 0.4
+      "caption_y": 1290,
+      "hold": 1.1,
+      "verdicts": [
+        {
+          "on": "faisal",
+          "ok": false,
+          "line": 1,
+          "at": 0.15,
+          "lift": 120
+        }
+      ]
     },
     {
       "set": "kitchen",
@@ -253,7 +346,7 @@
       },
       "cta": {
         "at": 0.2,
-        "y": 560
+        "y": 660
       },
       "caption_y": 230,
       "lines": [

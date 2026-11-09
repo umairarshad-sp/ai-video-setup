@@ -75,6 +75,90 @@
       "cast": [
         {
           "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "ayesha",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "ayesha",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Dr. Ayesha locked her office and left at six. The museum register says so too. True.",
+          "caption": "Dr. Ayesha chhe baje office band kar ke chali gayi thin. Museum ka register bhi yahi kehta hai. Yeh sach hai.",
+          "say": "डॉक्टर आयशा छह बजे ऑफ़िस बंद कर के चली गई थीं। म्यूज़ियम का रजिस्टर भी यही कहता है। ये सच है।"
+        }
+      ]
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
+          "x": 0.27,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.68
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.15
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.25
+        }
+      },
+      "verdicts": [
+        {
+          "on": "raju",
+          "ok": true,
+          "line": 0
+        }
+      ],
+      "caption_y": 1290,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "en": "Raju was inside fixing the lights. Someone inside would stay dry. True again.",
+          "caption": "Raju poori raat andar lights theek kar raha tha. Andar rehne wala to sookha hi hoga. Yeh bhi sach hai.",
+          "say": "राजू पूरी रात अंदर लाइट्स ठीक कर रहा था। अंदर रहने वाला तो सूखा ही होगा। ये भी सच है।"
+        }
+      ]
+    },
+    {
+      "set": "museum_gallery",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "foxley",
           "x": 0.25,
           "face": "right",
           "pose": "thinking"
@@ -92,7 +176,7 @@
         },
         "to": {
           "focus": "sherkhan",
-          "zoom": 1.6
+          "zoom": 1.3
         },
         "ease": "power2.inOut"
       },
@@ -121,8 +205,17 @@
           "pose": "examine"
         }
       ],
-      "caption_y": 1500,
-      "hold": 0.4
+      "caption_y": 1290,
+      "hold": 1.1,
+      "verdicts": [
+        {
+          "on": "sherkhan",
+          "ok": false,
+          "line": 1,
+          "at": 0.15,
+          "lift": 120
+        }
+      ]
     },
     {
       "set": "museum_gallery",
@@ -250,7 +343,7 @@
       },
       "cta": {
         "at": 0.2,
-        "y": 560
+        "y": 660
       },
       "caption_y": 230,
       "lines": [
