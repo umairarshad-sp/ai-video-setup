@@ -28,6 +28,9 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
   character's median pitch so voices stay consistent. The owner will buy ElevenLabs Starter
   before monetizing (free plan is non-commercial).
 - Voices are finalized BEFORE any video work; the owner wants to approve audio first.
+- **Urdu only for now (2026-11-09).** Redos and new episodes are made in Urdu/Hindi only
+  (`--lang ur`). Do not make English videos until the owner asks; keep the `en` text in episode
+  JSON so English can be added later.
 - **Cast names are Pakistani/Indian:** Constable Bilal (sidekick), Ustad Rafiq (cook), Begum
   Nusrat, Raju Mistri, Zara, Dr. Ayesha, Chacha Jamil, Faisal, Sher Khan (guard), Bunty (kid),
   Seth Kareem (shopkeeper). Folder ids: bilal, rafiq, nusrat, raju, zara, ayesha, jamil, faisal,
