@@ -161,6 +161,10 @@ Next:
    - `episodes/s002_part1/2.json` were edited by hand for this; do NOT re-run
      `write_episodes_2_5.py` for episode 2 (it would overwrite them). Episode 2 Urdu re-rendered
      with the cleaned puppets. Episodes 3-5 still use the old format.
+   - English subtitles on the Urdu version (2026-11-09, owner asked): `build_story.py --lang ur` burns in
+     each line's `en` text under the Roman Urdu caption (`SUBS`, `--no-subs` turns it off), plus an
+     English line in the clue box and banner. Keep `caption_y` at or above ~1300 so the English line
+     stays clear of the TikTok/Reels buttons; the title moves to y 700 when subtitles are on.
 
 ## Environment notes (cloud sessions)
 

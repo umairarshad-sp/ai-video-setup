@@ -69,6 +69,8 @@ TEXTS = {
 }
 TEXT = dict(TEXTS["ur"])
 LANG = "ur"
+SUBS = False   # English subtitles under the Roman Urdu captions (on by default for the Urdu version)
+SUB_GAP = 240  # px from the top of a caption block to its English subtitle
 
 
 def L(x):
@@ -410,7 +412,8 @@ def build_html(ep, shots, total):
             b = sh["banner"]
             by = f' style="top:{b["y"]}px"' if "y" in b else ""
             sub = (L(b.get("sub")) or TEXT["follow"]).format(handle=ep.get("handle", "@AskFoxley"))
-            html.append(f'<div id="{sid}-ban" class="banner"{by}><div class="bmain">{esc(L(b.get("text")) or TEXT["banner"])}</div>'
+            html.append(f'<div id="{sid}-ban" class="banner"{by}><div class="bmain">{esc(L(b.get("text")) or TEXT["banner"])}'
+                        + (f'<div class="ben">{esc(TEXTS["en"]["banner"])}</div>' if SUBS else "") + '</div>'
                         f'<div><div id="{sid}-fol" class="bfol">{esc(sub)}</div></div></div>')
             ba = s0 + b.get("at", 0.2)
             add(f'tl.fromTo("#{sid}-ban", {{opacity: 0, scale: 2.4, rotation: -8}}, {{opacity: 1, scale: 1, rotation: -3, duration: 0.3, ease: "power4.in"}}, {ba:.3f});')
@@ -424,7 +427,8 @@ def build_html(ep, shots, total):
         if sh.get("answer"):
             a = sh["answer"]
             ay = f' style="top:{a["y"]}px"' if "y" in a else ""
-            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(L(a.get("label", TEXT["clue"])))}</div><div class="atext">{esc(L(a["text"]))}</div></div>')
+            html.append(f'<div id="{sid}-ans" class="ans"{ay}><div class="alab">{esc(L(a.get("label", TEXT["clue"])))}</div><div class="atext">{esc(L(a["text"]))}</div>'
+                        + (f'<div class="aen">{esc(a["text"]["en"])}</div>' if SUBS and isinstance(a["text"], dict) and a["text"].get("en") else "") + '</div>')
             aa = s0 + a.get("at", 0.3)
             add(f'tl.fromTo("#{sid}-ans", {{opacity: 0, y: -40}}, {{opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}}, {aa:.3f});')
             add(f'tl.set("#{sid}-ans", {{opacity: 0}}, {s1});')
@@ -446,6 +450,12 @@ def build_html(ep, shots, total):
             prof = profile(ln["who"])
             col = prof.get("accent", "#E8762B")
             name = prof.get("label", prof["name"].upper())
+            if SUBS and ln.get("en"):
+                # the whole English sentence for the line, under the word-by-word Roman Urdu
+                top = sh.get("caption_y", CAPTION_TOP) + SUB_GAP
+                eid_ = f"{sid}l{li}en"
+                cap_html.append(f'<div id="{eid_}" class="sub" style="top:{top}px"><span>{esc(ln["en"])}</span></div>')
+                add(f'tl.set("#{eid_}", {{opacity: 1}}, {ln["start"]:.3f}); tl.set("#{eid_}", {{opacity: 0}}, {ln["end"] + 0.15:.3f});')
             for ki, ch in enumerate(chunks):
                 cid = f"{sid}l{li}k{ki}"
                 spans = "".join(f'<span id="{cid}w{wi}" class="w">{esc(words[wi])}</span> ' for wi in ch)
@@ -494,8 +504,8 @@ def build_html(ep, shots, total):
               display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 70px; color: var(--ink); opacity: 0; z-index: 50; }}
       .stamp {{ position: absolute; width: 460px; padding: 12px 0; text-align: center; border: 12px solid var(--red); border-radius: 22px;
                 color: var(--red); font-weight: 900; font-size: 92px; letter-spacing: 0.06em; background: rgba(255,255,255,0.85); opacity: 0; z-index: 88; }}
-      .title {{ position: absolute; left: 60px; right: 60px; top: 560px; text-align: center; opacity: 0; z-index: 80; }}
-      .title span {{ display: inline-block; background: var(--red); color: #fff; font-weight: 900; font-size: 84px; line-height: 1.05;
+      .title {{ position: absolute; left: 40px; right: 40px; top: {700 if SUBS else 560}px; text-align: center; opacity: 0; z-index: 80; }}
+      .title span {{ display: inline-block; background: var(--red); color: #fff; font-weight: 900; font-size: {68 if SUBS else 84}px; line-height: 1.05;
                      padding: 22px 34px; border-radius: 30px; border: 9px solid var(--ink); box-shadow: 0 14px 0 var(--ink); }}
       .timer {{ position: absolute; left: 120px; right: 120px; top: 620px; display: flex; align-items: center; gap: 22px; opacity: 0; z-index: 80; }}
       .badge {{ position: relative; width: 140px; height: 140px; flex: none; border-radius: 50%; background: var(--red); border: 8px solid var(--ink); }}
@@ -521,6 +531,11 @@ def build_html(ep, shots, total):
       .ans {{ position: absolute; left: 70px; right: 70px; top: 520px; background: var(--mustard); border: 8px solid var(--ink); border-radius: 36px;
               box-shadow: 0 12px 0 var(--ink); padding: 20px 34px 28px; text-align: center; opacity: 0; z-index: 85; }}
       .alab {{ font-weight: 900; font-size: 34px; letter-spacing: 0.14em; color: var(--teal); }}
+      .aen {{ font-weight: 800; font-size: 36px; line-height: 1.15; color: var(--teal); margin-top: 6px; }}
+      .ben {{ font-size: 40px; font-weight: 800; letter-spacing: 0.04em; margin-top: 8px; color: #FFE9A8; }}
+      .sub {{ position: absolute; left: 70px; right: 70px; text-align: center; opacity: 0; z-index: 90; }}
+      .sub span {{ display: inline; background: rgba(15,18,30,0.78); color: #fff; font-weight: 800; font-size: 40px; line-height: 1.5;
+                   padding: 4px 14px; border-radius: 10px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }}
       .atext {{ font-weight: 900; font-size: 58px; line-height: 1.12; color: var(--ink); }}
       .cap {{ position: absolute; left: 50px; right: 50px; top: {CAPTION_TOP}px; text-align: center; opacity: 0; z-index: 90; }}
       .who {{ display: inline-block; color: #fff; font-weight: 900; font-size: 32px; letter-spacing: 0.08em; padding: 6px 20px;
@@ -554,10 +569,12 @@ def main():
     ap.add_argument("--no-render", action="store_true")
     ap.add_argument("--draft", action="store_true")
     ap.add_argument("--lang", default="ur", choices=["ur", "en"])
+    ap.add_argument("--no-subs", action="store_true", help="no English subtitles on the Urdu version")
     a = ap.parse_args()
     ep = json.load(open(a.episode))
-    global LANG
+    global LANG, SUBS
     LANG = a.lang
+    SUBS = LANG == "ur" and not a.no_subs
     TEXT.update(TEXTS[LANG])
     name = f"story_{int(ep['number']):03d}_part{int(ep['part'])}" + ("" if LANG == "ur" and int(ep["number"]) == 1 else f"_{LANG}")
     work = os.path.join(ROOT, "build", name)

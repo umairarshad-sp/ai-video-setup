@@ -102,7 +102,7 @@
           "line": 0
         }
       ],
-      "caption_y": 1500,
+      "caption_y": 1290,
       "hold": 0.5,
       "lines": [
         {
@@ -145,7 +145,7 @@
           "line": 0
         }
       ],
-      "caption_y": 1500,
+      "caption_y": 1290,
       "hold": 0.5,
       "lines": [
         {
@@ -208,7 +208,7 @@
           "pose": "examine"
         }
       ],
-      "caption_y": 1500,
+      "caption_y": 1290,
       "hold": 1.1,
       "dark": 0.62,
       "verdicts": [
@@ -348,7 +348,7 @@
       },
       "cta": {
         "at": 0.2,
-        "y": 560
+        "y": 660
       },
       "caption_y": 230,
       "lines": [
