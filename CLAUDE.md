@@ -66,6 +66,7 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 | `cast/CAST.md` | Cast list, descriptions and the ChatGPT prompts to generate each character's art |
 | `episodes/NNN_partK.json` | Episode scripts |
 | `sets/<id>/background.png` | Reusable scene backgrounds; descriptions and the ChatGPT prompt in `sets/SETS.md` |
+| `studio/make_thumbnails.js` | `node studio/make_thumbnails.js 2 3 4 5` -> 1080x1920 covers in `branding/thumbnails/story_00N_partK_ur.jpg` (set + line-up + Foxley; Part 2 never shows the culprit; key content inside y 240-1680 for Instagram's 3:4 grid crop). Uses Nunito from the HyperFrames font cache |
 | `branding/avatar_*.png` | @AskFoxley profile pictures (1080x1080, circle-safe), made by `studio/make_avatar.py`; teal is the recommended one |
 | `planning/riddle_tracker.xlsx` | The 30-episode plan (suspects, alibis, culprit, clue, sets, new art) and status tracker; built by `studio/make_riddle_plan.py` |
 | `MOTION.md` | Animation rules (rossark-motion-skill method + this project's rig limits) |
