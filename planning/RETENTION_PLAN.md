@@ -1,5 +1,8 @@
 # Keeping viewers watching: review and new formats (2026-11-15)
 
+Platforms: Instagram Reels and TikTok only, Urdu/Hindi (with English subtitles). Episodes 1-5 are
+already released, so tests use NEW riddles, not remakes.
+
 Problem (owner): viewers skip the riddle Reels. This file reviews why, using our own videos and
 outside research, and proposes formats to test. Nothing here is built yet.
 
@@ -106,9 +109,8 @@ New:
 - **Week 1:** 1 Reel a day, rotating formats A, B, C, D (Urdu, English subtitles), all under
   30 s.
 - **Measure per video:**
-  - YouTube Studio: "viewed vs swiped away", average % viewed.
-  - Instagram: 3-second hold rate, average watch time, sends.
-  - TikTok: average watch time, % watched in full.
+  - Instagram: 3-second hold rate (skip rate), average watch time, sends.
+  - TikTok: average watch time, % watched in full, retention at 3 s.
 - **Week 2:** double down on the best two formats and test only the first 2 seconds (hook text
   and wording).
 - Keep a simple sheet (or a dashboard artifact) with these numbers per video.

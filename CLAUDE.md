@@ -30,6 +30,8 @@ Then read `MOTION.md` (animation rules) and `cast/CAST.md` (the characters).
 - Voice approval (updated 2026-11-09): the 12 current voices are approved, so new lines for
   existing characters can be rendered and used straight away. Only a NEW character's voice needs
   the owner's approval (send audio options first, before any video with that character).
+- **Platforms (2026-11-15): Instagram Reels and TikTok only, Urdu/Hindi only.** Episodes 1-5 are
+  released. YouTube is not a target for now. New formats to test are in `planning/RETENTION_PLAN.md`.
 - **Urdu only for now (2026-11-09).** Redos and new episodes are made in Urdu/Hindi only
   (`--lang ur`). Do not make English videos until the owner asks; keep the `en` text in episode
   JSON so English can be added later.
