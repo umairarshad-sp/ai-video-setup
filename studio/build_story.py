@@ -19,7 +19,8 @@ Episode JSON (see episodes/s001_part1.json):
 A line's "pose" is held while it is spoken: the talk pose lip-syncs; any other pose is a
 drawn expression (use it for shouts). "after" is the pose taken when the line ends.
 """
-import argparse, json, os, random, shutil, subprocess, sys
+import argparse
+import re, json, os, random, shutil, subprocess, sys
 import numpy as np
 import soundfile as sf
 
@@ -389,6 +390,24 @@ def build_html(ep, shots, total):
             add(f'tl.set("#{sid}-stamp", {{opacity: 0}}, {s1});')
 
         # ---- frame overlays: title, timer, cta, answer
+        if sh.get("overlay"):
+            # custom drawn props for a shot (camels, doors, ...): raw HTML/SVG plus GSAP lines.
+            # Tokens: {sid} = this shot's id; @S/@X = shot start/end; @L<n>/@E<n> = start/end of line n.
+            ov = sh["overlay"]
+            def _tok(m):
+                k = m.group(1)
+                if k == "S": return f"{s0:.3f}"
+                if k == "X": return f"{s1:.3f}"
+                i = int(k[1:])
+                return f'{sh["lines"][i]["start" if k[0] == "L" else "end"]:.3f}'
+            def tr(x):
+                return re.sub(r"@(S|X|[LE]\d+)", _tok, x.replace("{sid}", sid))
+            html.append(f'<div id="{sid}-ov" class="ov">{tr(ov["html"])}</div>')
+            add(f'tl.set("#{sid}-ov", {{opacity: 1}}, {s0}); tl.set("#{sid}-ov", {{opacity: 0}}, {s1});')
+            for line in ov.get("js", []):
+                add(tr(line))
+            for name, when in ov.get("sfx", []):
+                js.append(f'audio_{name}({eval(tr(when), {"__builtins__": {}}):.3f});')
         if sh.get("hook"):
             # the scroll-stopper: big text that is on screen from the very first frame of the shot
             hk = sh["hook"]
@@ -564,6 +583,7 @@ def build_html(ep, shots, total):
                 border-radius: 34px; border: 10px solid var(--ink); box-shadow: 0 16px 0 var(--ink); }}
       .bfol {{ display: inline-block; margin-top: 34px; background: var(--teal); color: #fff; font-weight: 900; font-size: 56px; padding: 16px 40px;
                border-radius: 60px; border: 8px solid var(--ink); box-shadow: 0 10px 0 var(--ink); opacity: 0; }}
+      .ov {{ position: absolute; inset: 0; opacity: 0; z-index: 83; pointer-events: none; }}
       .hook {{ position: absolute; left: 40px; right: 40px; top: 700px; text-align: center; opacity: 0; z-index: 87; }}
       .hmain {{ display: inline-block; background: #FFD23F; color: var(--ink); font-weight: 900; font-size: 74px; line-height: 1.05;
                 padding: 18px 30px 22px; border-radius: 28px; border: 9px solid var(--ink); box-shadow: 0 12px 0 var(--ink); transform: rotate(-2deg); }}
