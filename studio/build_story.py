@@ -338,12 +338,19 @@ def build_html(ep, shots, total):
 
         # ---- lineup numbers
         lu_html = []
-        for k, cid in enumerate(sh.get("lineup", [])):
+        # numbers: a line-up (1, 2, 3 in order) or a "num" on single cast members (alibi close-ups)
+        numbered = [(cid, k + 1) for k, cid in enumerate(sh.get("lineup", []))]
+        numbered += [(c["id"], c["num"]) for c in sh.get("cast", []) if c.get("num")]
+        lu_at = sh.get("lineup_at", 0.35)
+        for k, (cid, n) in enumerate(numbered):
             hx, _ = chars[cid]["head"]
             ty = chars[cid]["top"] - 120
-            lu_html.append(f'<div id="{sid}-n{k}" class="num" style="left:{hx-60:.1f}px;top:{ty:.1f}px">{k+1}</div>')
-            add(f'tl.fromTo("#{sid}-n{k}", {{opacity: 0, scale: 0.3}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {s0 + 0.35 + 0.25*k:.3f});')
-            js.append(f'audio_pop({s0 + 0.35 + 0.25*k:.3f});')
+            lu_html.append(f'<div id="{sid}-n{k}" class="num" style="left:{hx-60:.1f}px;top:{ty:.1f}px">{n}</div>')
+            if lu_at <= 0:   # already there on the first frame (hook shots)
+                add(f'tl.set("#{sid}-n{k}", {{opacity: 1}}, {s0});')
+            else:
+                add(f'tl.fromTo("#{sid}-n{k}", {{opacity: 0, scale: 0.3}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {s0 + lu_at + 0.25*k:.3f});')
+                js.append(f'audio_pop({s0 + lu_at + 0.25*k:.3f});')
 
         # ---- stamp on a character
         st_html = ""
@@ -382,6 +389,34 @@ def build_html(ep, shots, total):
             add(f'tl.set("#{sid}-stamp", {{opacity: 0}}, {s1});')
 
         # ---- frame overlays: title, timer, cta, answer
+        if sh.get("hook"):
+            # the scroll-stopper: big text that is on screen from the very first frame of the shot
+            hk = sh["hook"]
+            hy = f' style="top:{hk["y"]}px"' if "y" in hk else ""
+            sub = f'<div class="hsub">{esc(L(hk["sub"]))}</div>' if hk.get("sub") else ""
+            html.append(f'<div id="{sid}-hook" class="hook"{hy}><div class="hmain">{esc(L(hk["text"]))}</div>{sub}</div>')
+            add(f'tl.set("#{sid}-hook", {{opacity: 1}}, {s0});')
+            add(f'tl.fromTo("#{sid}-hook", {{scale: 1}}, {{scale: 1.05, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 3}}, {s0 + 0.05:.3f});')
+            add(f'tl.set("#{sid}-hook", {{opacity: 0}}, {min(s0 + hk.get("dur", dur), s1):.3f});')
+        if sh.get("card"):
+            # a prop the viewer can read (ticket, note, receipt); "mark" circles one row in red
+            cd = sh["card"]
+            rows = "".join(f'<div class="crow" id="{sid}-cr{i}"><span>{esc(L(r[0]))}</span><b>{esc(L(r[1]))}</b></div>' for i, r in enumerate(cd["rows"]))
+            html.append(f'<div id="{sid}-card" class="card" style="top:{cd.get("y", 1080)}px;transform:rotate({cd.get("rot", -4)}deg)">'
+                        f'<div class="ctitle">{esc(L(cd["title"]))}</div>{rows}'
+                        + (f'<div id="{sid}-mark" class="mark" style="top:{cd.get("mark_top", 0)}px"></div>' if "mark" in cd else "") + '</div>')
+            ln_ = sh["lines"][cd["line"]] if "line" in cd else None
+            ca = (ln_["start"] if ln_ else s0) + cd.get("at", 0.0)
+            if cd.get("at", 0.0) < 0 or (not ln_ and cd.get("at", 0) == 0):
+                add(f'tl.set("#{sid}-card", {{opacity: 1}}, {s0});')
+            else:
+                add(f'tl.fromTo("#{sid}-card", {{opacity: 0, y: 260, rotation: 12}}, {{opacity: 1, y: 0, rotation: {cd.get("rot", -4)}, duration: 0.4, ease: "back.out(1.8)"}}, {ca:.3f});')
+                js.append(f'audio_whoosh({ca:.3f});')
+            if "mark" in cd:
+                ma = (sh["lines"][cd["mark_line"]]["start"] if "mark_line" in cd else s0) + cd.get("mark_at", 0.5)
+                add(f'tl.fromTo("#{sid}-mark", {{opacity: 0, scale: 1.6}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)"}}, {ma:.3f});')
+                js.append(f'audio_pop({ma:.3f});')
+            add(f'tl.set("#{sid}-card", {{opacity: 0}}, {s1});')
         if sh.get("title"):
             html.append(f'<div id="{sid}-title" class="title"><span>{esc(L(sh["title"]))}</span></div>')
             ta = s0 + sh.get("title_at", 0.1)
@@ -528,6 +563,19 @@ def build_html(ep, shots, total):
                 border-radius: 34px; border: 10px solid var(--ink); box-shadow: 0 16px 0 var(--ink); }}
       .bfol {{ display: inline-block; margin-top: 34px; background: var(--teal); color: #fff; font-weight: 900; font-size: 56px; padding: 16px 40px;
                border-radius: 60px; border: 8px solid var(--ink); box-shadow: 0 10px 0 var(--ink); opacity: 0; }}
+      .hook {{ position: absolute; left: 40px; right: 40px; top: 700px; text-align: center; opacity: 0; z-index: 87; }}
+      .hmain {{ display: inline-block; background: #FFD23F; color: var(--ink); font-weight: 900; font-size: 74px; line-height: 1.05;
+                padding: 18px 30px 22px; border-radius: 28px; border: 9px solid var(--ink); box-shadow: 0 12px 0 var(--ink); transform: rotate(-2deg); }}
+      .hsub {{ display: inline-block; margin-top: 22px; background: var(--red); color: #fff; font-weight: 900; font-size: 52px; padding: 10px 28px;
+               border-radius: 22px; border: 7px solid var(--ink); }}
+      .card {{ position: absolute; left: 150px; width: 780px; background: #FFF8E6; border: 8px solid var(--ink); border-radius: 26px;
+               box-shadow: 0 14px 0 var(--ink); padding: 22px 34px 26px; opacity: 0; z-index: 84; }}
+      .ctitle {{ font-weight: 900; font-size: 44px; letter-spacing: 0.12em; color: #fff; background: var(--teal); border-radius: 14px;
+                 text-align: center; padding: 6px 0 8px; margin-bottom: 14px; }}
+      .crow {{ display: flex; justify-content: space-between; align-items: baseline; border-bottom: 4px dashed #C9B48A; padding: 10px 4px; }}
+      .crow span {{ font-weight: 800; font-size: 36px; color: #7A6A4A; letter-spacing: 0.06em; }}
+      .crow b {{ font-weight: 900; font-size: 50px; color: var(--ink); }}
+      .mark {{ position: absolute; left: 10px; right: 10px; height: 96px; border: 9px solid var(--red); border-radius: 50%; opacity: 0; }}
       .ans {{ position: absolute; left: 70px; right: 70px; top: 520px; background: var(--mustard); border: 8px solid var(--ink); border-radius: 36px;
               box-shadow: 0 12px 0 var(--ink); padding: 20px 34px 28px; text-align: center; opacity: 0; z-index: 85; }}
       .alab {{ font-weight: 900; font-size: 34px; letter-spacing: 0.14em; color: var(--teal); }}
@@ -577,6 +625,8 @@ def main():
     SUBS = LANG == "ur" and not a.no_subs
     TEXT.update(TEXTS[LANG])
     name = f"story_{int(ep['number']):03d}_part{int(ep['part'])}" + ("" if LANG == "ur" and int(ep["number"]) == 1 else f"_{LANG}")
+    if ep.get("slug"):   # test formats: output/<slug>_<lang>.mp4
+        name = f"{ep['slug']}_{LANG}"
     work = os.path.join(ROOT, "build", name)
     shutil.rmtree(work, ignore_errors=True)
     os.makedirs(os.path.join(work, "vendor"))

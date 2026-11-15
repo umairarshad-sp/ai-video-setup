@@ -1,0 +1,218 @@
+{
+  "number": 101,
+  "part": 1,
+  "slug": "puzzle_001",
+  "format": "B: pause and find the lie in the picture",
+  "title": {
+    "ur": "JHOOT DHOONDO!",
+    "en": "FIND THE LIE!"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "The lobby sign says the lift is out of order, so Faisal can't have taken the lift.",
+  "shots": [
+    {
+      "set": "apartment_lobby",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.66
+        }
+      ],
+      "signs": {
+        "lift_sign": "LIFT KHARAB HAI"
+      },
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.04
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "hold": 0.1,
+      "hook": {
+        "text": "IS TASVEER MEIN EK JHOOT HAI!",
+        "y": 660
+      },
+      "lines": [
+        {
+          "who": "faisal",
+          "caption": "Main abhi lift se dasvi manzil pe parcel de kar aaya hoon!",
+          "say": "मैं अभी लिफ़्ट से दसवीं मंज़िल पे पार्सल दे कर आया हूँ!",
+          "en": "I just took the lift up to the 10th floor to deliver a parcel!"
+        }
+      ]
+    },
+    {
+      "set": "apartment_lobby",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.66
+        }
+      ],
+      "signs": {
+        "lift_sign": "LIFT KHARAB HAI"
+      },
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.04
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.08
+        }
+      },
+      "timer": 3,
+      "hook": {
+        "text": "PAUSE KARO AUR DHOONDO!",
+        "y": 300
+      },
+      "hold": 0.2,
+      "lines": []
+    },
+    {
+      "set": "apartment_lobby",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.66
+        }
+      ],
+      "signs": {
+        "lift_sign": "LIFT KHARAB HAI"
+      },
+      "highlight": "lift_sign",
+      "highlight_at": 0.2,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": "sign:lift_sign",
+          "zoom": 1.5
+        },
+        "dur": 1.2,
+        "ease": "power2.inOut"
+      },
+      "caption_y": 1290,
+      "hold": 0.3,
+      "sfx": [
+        [
+          "reveal",
+          0.1
+        ]
+      ],
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Lift to kharab hai! Faisal, tum upar gaye kaise?",
+          "say": "लिफ़्ट तो ख़राब है! फ़ैसल, तुम ऊपर गए कैसे?",
+          "en": "The lift is out of order! Faisal, how did you get up there?"
+        }
+      ]
+    },
+    {
+      "set": "apartment_lobby",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "pose": "guilty"
+        }
+      ],
+      "signs": {
+        "lift_sign": "LIFT KHARAB HAI"
+      },
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.3
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.4
+        }
+      },
+      "verdicts": [
+        {
+          "on": "faisal",
+          "ok": false,
+          "line": 0,
+          "at": -0.8,
+          "lift": 110
+        }
+      ],
+      "hold": 0.4,
+      "lines": [
+        {
+          "who": "faisal",
+          "caption": "Achha achha... main upar gaya hi nahi tha!",
+          "say": "अच्छा अच्छा... मैं ऊपर गया ही नहीं था!",
+          "en": "Okay, okay... I never went up at all!",
+          "pose": "guilty"
+        }
+      ]
+    },
+    {
+      "set": "apartment_lobby",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.66
+        }
+      ],
+      "signs": {
+        "lift_sign": "LIFT KHARAB HAI"
+      },
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "zoom": 1.04
+        }
+      },
+      "hold": 0.5
+    }
+  ]
+}

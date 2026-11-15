@@ -1,0 +1,383 @@
+{
+  "number": 6,
+  "part": 1,
+  "slug": "short_006",
+  "format": "A: 30-second single reel, answer included, loops",
+  "title": {
+    "ur": "BATWA KIS NE CHURAYA?",
+    "en": "WHO TOOK THE WALLET?"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "Raju (2): his bus ticket is dated 31 November, a date that does not exist.",
+  "shots": [
+    {
+      "set": "police_station",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "zara",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "faisal",
+        "raju",
+        "zara"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        }
+      },
+      "hook": {
+        "text": "SIRF 5% LOG JHOOTA PAKAR PAATE HAIN!",
+        "y": 660,
+        "dur": 3.6
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "hold": 0.0,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Constable Bilal ka batwa chori ho gaya! Teen suspects, ek jhoota.",
+          "say": "कांस्टेबल बिलाल का बटवा चोरी हो गया! तीन सस्पेक्ट, एक झूठा।",
+          "en": "Constable Bilal's wallet is stolen! Three suspects, one liar."
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "num": 1
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.4
+        }
+      },
+      "hold": 0.1,
+      "lines": [
+        {
+          "who": "faisal",
+          "caption": "Main to saara din parcel baant raha tha!",
+          "say": "मैं तो सारा दिन पार्सल बाँट रहा था!",
+          "en": "I was delivering parcels all day!"
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5,
+          "num": 2
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "raju",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.4
+        }
+      },
+      "hold": 1.3,
+      "card": {
+        "title": "BUS TICKET",
+        "rows": [
+          [
+            "SE",
+            "LAHORE"
+          ],
+          [
+            "TAK",
+            "KARACHI"
+          ],
+          [
+            "TAREEKH",
+            "31 NOVEMBER"
+          ],
+          [
+            "SEAT",
+            "14-B"
+          ]
+        ],
+        "y": 960,
+        "line": 0,
+        "at": 1.6
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "caption": "Main shehar se bahar tha. Yeh dekho, meri bus ki ticket!",
+          "say": "मैं शहर से बाहर था। ये देखो, मेरी बस की टिकट!",
+          "en": "I was out of town. Look, here's my bus ticket!"
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5,
+          "num": 3
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "zara",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.4
+        }
+      },
+      "hold": 0.1,
+      "lines": [
+        {
+          "who": "zara",
+          "caption": "Main college mein thi. Meri saari dostein gawah hain!",
+          "say": "मैं कॉलेज में थी। मेरी सारी दोस्तें गवाह हैं!",
+          "en": "I was at college. All my friends saw me!"
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "zara",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "faisal",
+        "raju",
+        "zara"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        }
+      },
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 3,
+      "cta": {
+        "after_timer": true,
+        "y": 430,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "hold": 0.6,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaun jhoota hai? Teen second!",
+          "say": "कौन झूठा है? तीन सेकंड!",
+          "en": "Who's lying? Three seconds!"
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "raju",
+          "zoom": 1.3
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.45
+        }
+      },
+      "card": {
+        "title": "BUS TICKET",
+        "rows": [
+          [
+            "SE",
+            "LAHORE"
+          ],
+          [
+            "TAK",
+            "KARACHI"
+          ],
+          [
+            "TAREEKH",
+            "31 NOVEMBER"
+          ],
+          [
+            "SEAT",
+            "14-B"
+          ]
+        ],
+        "y": 960,
+        "at": -1,
+        "mark": 2,
+        "mark_top": 0,
+        "mark_line": 0,
+        "mark_at": 0.6
+      },
+      "verdicts": [
+        {
+          "on": "raju",
+          "ok": false,
+          "line": 1,
+          "at": 0.1,
+          "lift": 110
+        }
+      ],
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "raju",
+        "line": 2,
+        "y": 1500
+      },
+      "caption_y": 230,
+      "hold": 0.5,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Ticket pe likha hai, ikattees November!",
+          "say": "टिकट पे लिखा है, इकत्तीस नवंबर!",
+          "en": "The ticket says 31 November!",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Lekin November mein sirf tees din hote hain!",
+          "say": "लेकिन नवंबर में सिर्फ़ तीस दिन होते हैं!",
+          "en": "But November only has 30 days!"
+        },
+        {
+          "who": "raju",
+          "caption": "Arey... ticket main ne khud chhapi thi!",
+          "say": "अरे... टिकट मैंने ख़ुद छापी थी!",
+          "en": "Uh... I printed that ticket myself!",
+          "pose": "guilty"
+        }
+      ]
+    },
+    {
+      "set": "police_station",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "zara",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "faisal",
+        "raju",
+        "zara"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        }
+      },
+      "hold": 0.5
+    }
+  ]
+}
