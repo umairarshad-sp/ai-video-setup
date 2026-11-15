@@ -38,7 +38,7 @@ SPLIT = ([(80 + (i % 3) * 110, PANEL_Y + 78 + (i // 3) * 92) for i in range(9)] 
          [(450 + (i % 2) * 110, PANEL_Y + 78 + (i // 2) * 92) for i in range(6)] +         # Faisal 6
          [(700, PANEL_Y + 78 + i * 92) for i in range(2)] +                                  # Zara 2
          [(885, PANEL_Y + 170)])                                                             # the extra camel
-LABELS = [("RAJU · 9", 70, 330), ("FAISAL · 6", 440, 230), ("ZARA · 2", 690, 140), ("BACHA · 1", 850, 170)]
+LABELS = [("RAJU 9", 80, 310), ("FAISAL 6", 445, 220), ("ZARA 2", 680, 150), ("BACHA 1", 845, 175)]
 
 
 def camels_overlay(n=17, extra=False, start_split=False, extra_at=None, split_at=None, home_at=None):
@@ -63,7 +63,7 @@ def camels_overlay(n=17, extra=False, start_split=False, extra_at=None, split_at
     if split_at or start_split:
         for k, (t, x, w) in enumerate(LABELS):
             labels += (f'<div id="{{sid}}-lb{k}" style="position:absolute;left:{x}px;top:{PANEL_Y + 14}px;width:{w}px;text-align:center;'
-                       f'font-weight:900;font-size:34px;color:#fff;background:{"#C8342B" if k == 3 else "#1F4E5F"};border:5px solid {INK};border-radius:16px;'
+                       f'font-weight:900;font-size:32px;white-space:nowrap;color:#fff;background:{"#C8342B" if k == 3 else "#1F4E5F"};border:5px solid {INK};border-radius:16px;'
                        f'opacity:{1 if start_split else 0}">{t}</div>')
             if split_at:
                 js.append(f'tl.fromTo("#{{sid}}-lb{k}", {{opacity: 0, scale: 0.5}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {split_at}+{0.7 + 0.35 * k:.2f});')
@@ -73,6 +73,11 @@ def camels_overlay(n=17, extra=False, start_split=False, extra_at=None, split_at
     panel = (f'<div style="position:absolute;left:40px;right:40px;top:{PANEL_Y}px;height:{350 if (split_at or start_split) else 340}px;'
              f'background:rgba(255,248,230,0.92);border:8px solid {INK};border-radius:30px;box-shadow:0 12px 0 {INK}"></div>')
     counter = ""
+    if extra and extra_at and split_at:   # "17 + 1 = 18" while the extra camel arrives, gone when they split
+        counter = (f'<div id="{{sid}}-cnt" style="position:absolute;right:60px;top:{PANEL_Y - 40}px;background:#C8342B;color:#fff;font-weight:900;font-size:44px;'
+                   f'padding:4px 22px;border:6px solid {INK};border-radius:22px;opacity:0">17 + 1 = 18</div>')
+        js.append(f'tl.fromTo("#{{sid}}-cnt", {{opacity: 0, scale: 0.4}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {extra_at}+0.4);')
+        js.append(f'tl.to("#{{sid}}-cnt", {{opacity: 0, duration: 0.2}}, {split_at});')
     if not (split_at or start_split):
         counter = (f'<div style="position:absolute;right:60px;top:{PANEL_Y - 40}px;background:#C8342B;color:#fff;font-weight:900;font-size:44px;'
                    f'padding:4px 22px;border:6px solid {INK};border-radius:22px">{"18" if extra else "17"} OONT</div>')
@@ -218,7 +223,7 @@ doors = {"number": 202, "part": 1, "slug": "doors_001", "format": "3: choice rid
      "lines": [ln("foxley", "Tum kaunsa chunoge? Teen second!", "तुम कौनसा चुनोगे? तीन सेकंड!", "Which one would you pick? Three seconds!")]},
     {"set": "police_station", "dark": 0.35, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "caption_y": 1300, "hold": 0.5,
      "overlay": doors_overlay(answer="@L0+0.1"),
-     "stamp": {"text": "BACH GAYE!", "on": "bunty", "line": 2, "y": 130},
+     "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 2, "y": 130, "w": 640},
      "lines": [ln("foxley", "Teesra darwaza!", "तीसरा दरवाज़ा!", "Door number three!"),
                ln("foxley", "Jo sher teen saal se bhooka ho... woh kab ka mar chuka hoga!", "जो शेर तीन साल से भूखा हो... वो कब का मर चुका होगा!",
                   "A lion that hasn't eaten in three years... died long ago!"),

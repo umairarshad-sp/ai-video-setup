@@ -275,10 +275,11 @@
         ]
       },
       "stamp": {
-        "text": "BACH GAYE!",
+        "text": "BACH GAYA!",
         "on": "bunty",
         "line": 2,
-        "y": 130
+        "y": 130,
+        "w": 640
       },
       "lines": [
         {

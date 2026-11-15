@@ -361,7 +361,8 @@ def build_html(ep, shots, total):
             on = chars[stp["on"]]
             at = sh["lines"][stp["line"]]["start"] if "line" in stp else s0 + stp.get("at", 0.5)
             hx, hy = on["head"]
-            stamp_overlay = f'<div id="{sid}-stamp" class="stamp" style="left:{(W-460)/2:.0f}px;top:{stp.get("y", 1240)}px">{esc(L(stp["text"]))}</div>'
+            sw_ = stp.get("w", 460)
+            stamp_overlay = f'<div id="{sid}-stamp" class="stamp" style="left:{(W-sw_)/2:.0f}px;top:{stp.get("y", 1240)}px;width:{sw_}px">{esc(L(stp["text"]))}</div>'
             add(f'tl.fromTo("#{sid}-stamp", {{opacity: 0, scale: 2.6, rotation: -24}}, {{opacity: 1, scale: 1, rotation: -11, duration: 0.25, ease: "power4.in"}}, {at:.3f});')
             add(f'tl.fromTo("#{sid}-k", {{scale: 1.05}}, {{scale: 1, duration: 0.35, ease: "power3.out", immediateRender: false}}, {at+0.25:.3f});')
             js.append(f'audio_stamp({at+0.22:.3f});')
