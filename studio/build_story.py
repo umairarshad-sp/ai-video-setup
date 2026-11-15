@@ -426,7 +426,8 @@ def build_html(ep, shots, total):
             secs = int(sh["timer"])
             t0 = sh["_timer_start"]
             digits = "".join(f'<div id="{sid}-tn{k}" class="tnum">{secs-k}</div>' for k in range(secs))
-            html.append(f'<div id="{sid}-timer" class="timer"><div class="badge">{digits}</div><div class="bar"><div id="{sid}-fill" class="fill"></div></div></div>')
+            ty_ = f' style="top:{sh["timer_y"]}px"' if sh.get("timer_y") else ""
+            html.append(f'<div id="{sid}-timer" class="timer"{ty_}><div class="badge">{digits}</div><div class="bar"><div id="{sid}-fill" class="fill"></div></div></div>')
             add(f'tl.fromTo("#{sid}-timer", {{opacity: 0, y: -30}}, {{opacity: 1, y: 0, duration: 0.3, ease: "back.out(2)"}}, {t0:.3f});')
             add(f'tl.fromTo("#{sid}-fill", {{scaleX: 1}}, {{scaleX: 0, duration: {secs}, ease: "none"}}, {t0:.3f});')
             for k in range(secs):
