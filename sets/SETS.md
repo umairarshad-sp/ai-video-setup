@@ -91,6 +91,13 @@ Attach Foxley's image, then paste this with the set's description:
 | `kareem_shop` | inside a cluttered old spice-and-antiques shop: shelves of glass jars with colourful spices (red chilli, yellow haldi, green herbs), old wall clocks, brass pots and a brass weighing scale on a wooden counter, a glass display window with a few antiques, a tiled floor |
 | `apartment_lobby` | the ground-floor lobby of a modest apartment building: a steel lift door in the centre of the back wall with a BLANK sign hanging on it, a row of metal mailboxes, a guard's small desk with a register and a chair at the side, a tiled floor |
 
+## Sets for the new riddle formats (2026-11-17)
+
+| ID | Description to paste in | Used for |
+|---|---|---|
+| `desert_village` | the edge of a small desi village beside a sandy desert in warm late-afternoon light: two or three mud-brick houses with flat roofs and wooden doors at the sides, a stone well with a rope and bucket on one side, a few date palm trees, a low wooden fence of an EMPTY animal pen, soft golden sand dunes in the far back under a clear sky, an open sandy ground in the front | "17 Oont" (the camels are drawn in code on top, so leave the pen empty) |
+| `qila_doors` | a torch-lit stone hall deep inside an old Mughal-style fort (qila): the back wall has exactly THREE identical, large, closed, arched wooden doors with iron studs and rings, evenly spaced across the wall, a blank round stone plaque above each door, burning wall torches between the doors, a stone-tiled floor in the front, warm orange torchlight | "Teen Darwaze" (the code writes 1, 2, 3 on the plaques and shows what is behind each door) |
+
 ## Adding a set later
 
 Make a folder `sets/<id>/`, write a description like the ones above (place, time of day,
