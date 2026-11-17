@@ -203,6 +203,7 @@
       "timer": 3,
       "timer_y": 1500,
       "caption_y": 1290,
+      "feet": 0.93,
       "cta": {
         "after_timer": true,
         "y": 160,
@@ -234,18 +235,25 @@
           "pose": "nervous"
         }
       ],
+      "feet": 0.93,
       "camera": {
         "from": {
-          "focus": "jamil",
-          "zoom": 1.25
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
         },
         "to": {
-          "focus": "jamil",
-          "zoom": 1.25
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
         }
       },
-      "hold": 0.5,
       "caption_y": 230,
+      "hold": 0.5,
       "overlay": {
         "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:360px;background:#D8B98A;border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">KICHAD KE NISHAAN</span></div></div><div style=\"position:absolute;left:110px;top:890px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:220px;top:896px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:238px;top:976px;width:20px;height:20px;border-radius:50%;background:#3A2410\"></div><div id=\"{sid}-r1\" style=\"position:absolute;left:218px;top:956px;width:60px;height:60px;border:7px solid #C8342B;border-radius:50%;opacity:0\"></div><div style=\"position:absolute;left:330px;top:846px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:440px;top:852px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:458px;top:932px;width:20px;height:20px;border-radius:50%;background:#3A2410\"></div><div id=\"{sid}-r3\" style=\"position:absolute;left:438px;top:912px;width:60px;height:60px;border:7px solid #C8342B;border-radius:50%;opacity:0\"></div><div style=\"position:absolute;left:550px;top:802px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:660px;top:808px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:678px;top:888px;width:20px;height:20px;border-radius:50%;background:#3A2410\"></div><div id=\"{sid}-r5\" style=\"position:absolute;left:658px;top:868px;width:60px;height:60px;border:7px solid #C8342B;border-radius:50%;opacity:0\"></div><div style=\"position:absolute;left:770px;top:758px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:880px;top:764px;width:52px;height:76px;transform:rotate(80deg)\"><svg viewBox=\"0 0 50 76\" width=\"100%\" height=\"100%\"><ellipse cx=\"25\" cy=\"44\" rx=\"17\" ry=\"28\" fill=\"#5A3A1E\"/><circle cx=\"10\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"18\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"26\" cy=\"10\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"34\" cy=\"8\" r=\"4.5\" fill=\"#5A3A1E\"/><circle cx=\"42\" cy=\"6\" r=\"4.5\" fill=\"#5A3A1E\"/></svg></div><div style=\"position:absolute;left:898px;top:844px;width:20px;height:20px;border-radius:50%;background:#3A2410\"></div><div id=\"{sid}-r7\" style=\"position:absolute;left:878px;top:824px;width:60px;height:60px;border:7px solid #C8342B;border-radius:50%;opacity:0\"></div><div id=\"{sid}-lbl\" style=\"position:absolute;left:330px;top:680px;background:#C8342B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">CHHADI KE NISHAAN!</div>",
         "js": [
@@ -262,15 +270,6 @@
           ]
         ]
       },
-      "verdicts": [
-        {
-          "on": "jamil",
-          "ok": false,
-          "line": 1,
-          "at": 0.1,
-          "lift": 60
-        }
-      ],
       "stamp": {
         "text": {
           "ur": "MUJRIM!",

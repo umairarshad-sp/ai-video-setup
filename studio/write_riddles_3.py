@@ -60,9 +60,16 @@ def close(set_, cid, num=None, pose=None, fixed=False, **k):
     return {"set": set_, "transition": "whoosh", "cast": [c], "camera": cam, "hold": 0.2, **k}
 
 
+def wide(set_, cid, pose=None, **k):
+    """answer shot with a prop panel on screen: no zoom, so the panel never covers the face"""
+    c = {"id": cid, "x": 0.5, **({"pose": pose} if pose else {})}
+    return {"set": set_, "transition": "whoosh", "cast": [c], "feet": 0.93,
+            "camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.0}, "to": {"focus": [0.5, 0.62], "zoom": 1.03}}, **k}
+
+
 def question(set_, ids, overlay=None, text="Kaun jhoota hai? Teen second!", say="कौन झूठा है? तीन सेकंड!", en="Who's lying? Three seconds!",
              main="1, 2 YA 3? COMMENT KARO!", **k):
-    sh = lineup_shot(set_, ids, transition="whoosh", sfx=[["riser", 0.0]], timer=3, timer_y=1500, caption_y=1290,
+    sh = lineup_shot(set_, ids, transition="whoosh", sfx=[["riser", 0.0]], timer=3, timer_y=1500, caption_y=1290, feet=0.93,
                      cta={"after_timer": True, "y": 160, "main": main, "sub": "Jawab abhi aa raha hai..."}, hold=0.6,
                      lines=[ln("foxley", text, say, en)], **k)
     if overlay: sh["overlay"] = overlay
@@ -77,13 +84,13 @@ def sticks(short=False, mark_at=None):
     html = panel(360, "LATHIYAN")
     js, sfx = [], []
     for k, x in enumerate((230, 520, 810)):
-        h = 250 if not (short and k == 1) else 214
+        h = 250 if not (short and k == 1) else 180
         html += (f'<div style="position:absolute;left:{x}px;top:{base - h}px;width:40px;height:{h}px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);'
                  f'border:5px solid {INK};border-radius:14px"></div>')
         html += numbadge(k + 1, x - 15, base + 6, 66, 40)
     html += f'<div style="position:absolute;left:150px;right:150px;top:{base - 250 - 3}px;border-top:5px dashed #C8342B;opacity:{1 if short else 0}"></div>'
     if mark_at:
-        html += (f'<div id="{{sid}}-gap" style="position:absolute;left:590px;top:{base - 262}px;opacity:0;font-weight:900;color:#C8342B;font-size:38px;white-space:nowrap">'
+        html += (f'<div id="{{sid}}-gap" style="position:absolute;left:575px;top:{base - 236}px;opacity:0;font-weight:900;color:#C8342B;font-size:38px;white-space:nowrap">'
                  f'&larr; 1 INCH KAATI!</div>')
         j, s = pop("gap", mark_at); js += j; sfx += s
     return ov(html, js, sfx)
@@ -97,7 +104,7 @@ EPS["riddle_lathi"] = {"number": 301, "part": 1, "slug": "riddle_lathi", "title"
     {"set": "kareem_shop", "cast": [{"id": "kareem", "x": 0.5}], "camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.05}, "to": {"focus": [0.5, 0.62], "zoom": 1.1}},
      "sfx": [["sting", 0.0]], "caption_y": 1290, "hold": 0.1, "hook": {"text": "CHOR NE KHUD KO PAKARWA DIYA... KAISE?", "y": 110, "dur": 99},
      "lines": [ln("kareem", "Meri dukaan se sone ke sikke chori ho gaye!", "मेरी दुकान से सोने के सिक्के चोरी हो गए!", "Gold coins were stolen from my shop!", after="shocked")]},
-    lineup_shot("kareem_shop", SUSP1, transition="whoosh", caption_y=230, hold=0.2, overlay=sticks(),
+    lineup_shot("kareem_shop", SUSP1, transition="whoosh", caption_y=230, hold=0.2, feet=0.93, overlay=sticks(),
                 lines=[ln("foxley", "Teen log dukaan mein the. Chacha Jamil ne sab ko ek jaisi lathi di.",
                           "तीन लोग दुकान में थे। चाचा जमील ने सब को एक जैसी लाठी दी।",
                           "Three people were in the shop. Chacha Jamil gave each the same stick.")]),
@@ -107,9 +114,8 @@ EPS["riddle_lathi"] = {"number": 301, "part": 1, "slug": "riddle_lathi", "title"
     lineup_shot("kareem_shop", SUSP1, transition="whoosh", dark=0.72, caption_y=1290, hold=0.2, hook={"text": "RAAT GUZAR GAYI...", "y": 660, "dur": 99},
                 lines=[ln("foxley", "Agli subah...", "अगली सुबह...", "The next morning...")]),
     question("kareem_shop", SUSP1, overlay=sticks(short=True), text="Chor kaun hai? Teen second!", say="चोर कौन है? तीन सेकंड!", en="Who is the thief? Three seconds!"),
-    close("kareem_shop", "faisal", pose="nervous", fixed=True, caption_y=230, hold=0.5,
+    wide("kareem_shop", "faisal", pose="nervous", caption_y=230, hold=0.5,
           overlay=sticks(short=True, mark_at="@L1+0.3"),
-          verdicts=[{"on": "faisal", "ok": False, "line": 1, "at": 0.1, "lift": 60}],
           stamp={"text": {"ur": "MUJRIM!", "en": "GUILTY!"}, "on": "faisal", "line": 2, "y": 1560},
           lines=[ln("foxley", "Lathi jaadui thi hi nahi!", "लाठी जादुई थी ही नहीं!", "The stick was never magic!", sfx_before="reveal"),
                  ln("foxley", "Chor ne dar ke maare apni lathi ek inch kaat di!", "चोर ने डर के मारे अपनी लाठी एक इंच काट दी!",
@@ -169,7 +175,7 @@ EPS["riddle_icecream"] = {"number": 302, "part": 1, "slug": "riddle_icecream", "
           lines=[ln("zara", "Main ek ghante se yahan baith ke ice cream kha rahi hoon!", "मैं एक घंटे से यहाँ बैठ के आइसक्रीम खा रही हूँ!",
                     "I've been sitting here eating ice cream for an hour!")]),
     question("town_park", SUSP2, overlay=park_overlay(400)),
-    close("town_park", "zara", fixed=True, caption_y=230, hold=0.5, overlay=park_overlay(1500, with_cone=CONE_AT, mark_at="@L0+0.3"),
+    close("town_park", "zara", fixed=True, caption_y=230, hold=0.5, overlay=park_overlay(640, with_cone=CONE_AT, mark_at="@L0+0.3"),
           verdicts=[{"on": "zara", "ok": False, "line": 1, "at": 0.1, "lift": 60}],
           stamp={"text": {"ur": "MUJRIM!", "en": "GUILTY!"}, "on": "zara", "line": 2, "y": 1560},
           lines=[ln("foxley", "Chaalees degree mein ice cream minton mein pighal jaati hai!", "चालीस डिग्री में आइसक्रीम मिनटों में पिघल जाती है!",
@@ -309,8 +315,7 @@ EPS["riddle_kichad"] = {"number": 304, "part": 1, "slug": "riddle_kichad", "titl
     close("garden", "raju", num=3, lines=[ln("raju", "Main gate pe rang kar raha tha.", "मैं गेट पे रंग कर रहा था।", "I was painting the gate.")]),
     question("garden", SUSP4, overlay=footprints(), text="Nishaan ghaur se dekho! Kaun jhoota?", say="निशान ग़ौर से देखो! कौन झूठा?",
              en="Look closely at the prints! Who's lying?"),
-    close("garden", "jamil", pose="nervous", fixed=True, caption_y=230, hold=0.5, overlay=footprints(mark_at="@L0+0.3"),
-          verdicts=[{"on": "jamil", "ok": False, "line": 1, "at": 0.1, "lift": 60}],
+    wide("garden", "jamil", pose="nervous", caption_y=230, hold=0.5, overlay=footprints(mark_at="@L0+0.3"),
           stamp={"text": {"ur": "MUJRIM!", "en": "GUILTY!"}, "on": "jamil", "line": 2, "y": 1560},
           lines=[ln("foxley", "Har doosre qadam ke saath ek gol nishaan!", "हर दूसरे क़दम के साथ एक गोल निशान!", "A round mark beside every second step!", sfx_before="reveal"),
                  ln("foxley", "Yeh chhadi ka nishaan hai. Aur chhadi sirf Chacha ke paas hai!", "ये छड़ी का निशान है। और छड़ी सिर्फ़ चाचा के पास है!",
