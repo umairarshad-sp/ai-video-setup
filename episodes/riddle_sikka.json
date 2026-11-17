@@ -1,0 +1,336 @@
+{
+  "number": 303,
+  "part": 1,
+  "slug": "riddle_sikka",
+  "title": {
+    "ur": "HALKA SIKKA",
+    "en": "THE LIGHT COIN"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 100,
+    "gain": 0.5
+  },
+  "answer_note": "Split 3-3-3; weigh two groups (the lighter pan, or the third group if they balance, has the fake); then weigh 1 against 1 of those 3.",
+  "shots": [
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "9 SIKKE, 1 NAQLI... SIRF 2 BAAR TARAAZU!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">9 SIKKE</span></div></div><div id=\"{sid}-n0\" style=\"position:absolute;left:95px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n1\" style=\"position:absolute;left:195px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n2\" style=\"position:absolute;left:295px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n3\" style=\"position:absolute;left:395px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n4\" style=\"position:absolute;left:495px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n5\" style=\"position:absolute;left:595px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n6\" style=\"position:absolute;left:695px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n7\" style=\"position:absolute;left:795px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n8\" style=\"position:absolute;left:895px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "kareem",
+          "caption": "Inn nau sikkon mein ek naqli hai. Woh thoda halka hai.",
+          "say": "इन नौ सिक्कों में एक नक़ली है। वो थोड़ा हल्का है।",
+          "en": "One of these nine coins is fake. It's a little lighter."
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div style=\"position:absolute;left:528px;top:710px;width:24px;height:250px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:8px\"></div><div style=\"position:absolute;left:430px;top:950px;width:220px;height:34px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:12px\"></div><div id=\"{sid}-beam\" style=\"position:absolute;left:260px;top:700px;width:560px;height:22px;background:#C98A1C;border:5px solid #2B2B2B;border-radius:12px;transform-origin:50% 50%\"></div><div style=\"position:absolute;left:522px;top:694px;width:36px;height:36px;border-radius:50%;background:#2B2B2B\"></div><div id=\"{sid}-panl\" style=\"position:absolute;left:150px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"></div></div><div id=\"{sid}-panr\" style=\"position:absolute;left:710px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"></div></div>",
+        "js": [],
+        "sfx": []
+      },
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAISE DHOONDOGE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "hold": 0.6,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Taraazu sirf do baar! Naqli sikka kaise dhoondoge?",
+          "say": "तराज़ू सिर्फ़ दो बार! नक़ली सिक्का कैसे ढूँढोगे?",
+          "en": "The scale only twice! How do you find the fake?"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.02
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">9 SIKKE</span></div></div><div id=\"{sid}-n0\" style=\"position:absolute;left:95px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n1\" style=\"position:absolute;left:195px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n2\" style=\"position:absolute;left:295px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n3\" style=\"position:absolute;left:395px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n4\" style=\"position:absolute;left:495px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n5\" style=\"position:absolute;left:595px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n6\" style=\"position:absolute;left:695px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n7\" style=\"position:absolute;left:795px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n8\" style=\"position:absolute;left:895px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-g0\" style=\"position:absolute;left:160px;top:850px;background:#1F4E5F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:490px;top:850px;background:#1F4E5F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:820px;top:850px;background:#1F4E5F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">3</div>",
+        "js": [
+          "tl.to(\"#{sid}-n0\", {x: 0, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n1\", {x: -10, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n2\", {x: -20, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n3\", {x: 30, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n4\", {x: 20, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n5\", {x: 10, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n6\", {x: 60, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n7\", {x: 50, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.to(\"#{sid}-n8\", {x: 40, duration: 0.5, ease: \"power2.inOut\"}, @L0+0.4);",
+          "tl.fromTo(\"#{sid}-g0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.4+0.5);",
+          "tl.fromTo(\"#{sid}-g1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.4+0.5);",
+          "tl.fromTo(\"#{sid}-g2\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.4+0.5);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.4"
+          ]
+        ]
+      },
+      "caption_y": 230,
+      "hold": 0.2,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Pehle teen-teen ke teen hisse banao.",
+          "say": "पहले तीन-तीन के तीन हिस्से बनाओ।",
+          "en": "First, make three groups of three.",
+          "sfx_before": "reveal"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.02
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div style=\"position:absolute;left:528px;top:710px;width:24px;height:250px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:8px\"></div><div style=\"position:absolute;left:430px;top:950px;width:220px;height:34px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:12px\"></div><div id=\"{sid}-beam\" style=\"position:absolute;left:260px;top:700px;width:560px;height:22px;background:#C98A1C;border:5px solid #2B2B2B;border-radius:12px;transform-origin:50% 50%\"></div><div style=\"position:absolute;left:522px;top:694px;width:36px;height:36px;border-radius:50%;background:#2B2B2B\"></div><div id=\"{sid}-panl\" style=\"position:absolute;left:150px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"><div id=\"{sid}-lc0\" style=\"position:absolute;left:30px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-lc1\" style=\"position:absolute;left:82px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-lc2\" style=\"position:absolute;left:134px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div></div></div><div id=\"{sid}-panr\" style=\"position:absolute;left:710px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"><div id=\"{sid}-rc0\" style=\"position:absolute;left:30px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-rc1\" style=\"position:absolute;left:82px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#E9C46A\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-rc2\" style=\"position:absolute;left:134px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div></div></div><div id=\"{sid}-a0\" style=\"position:absolute;left:860px;top:890px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-a1\" style=\"position:absolute;left:924px;top:890px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-a2\" style=\"position:absolute;left:860px;top:832px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-light\" style=\"position:absolute;left:740px;top:600px;background:#C8342B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">HALKA!</div>",
+        "js": [
+          "tl.to(\"#{sid}-beam\", {rotation: -12, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.to(\"#{sid}-panl\", {y: 58, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.to(\"#{sid}-panr\", {y: -58, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.fromTo(\"#{sid}-light\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.6+0.6);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.6"
+          ],
+          [
+            "pop",
+            "@L0+0.6+0.6"
+          ]
+        ]
+      },
+      "caption_y": 230,
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Do hisse taraazu pe. Jo halka, naqli usi mein. Barabar ho to teesre mein.",
+          "say": "दो हिस्से तराज़ू पे। जो हल्का, नक़ली उसी में। बराबर हो तो तीसरे में।",
+          "en": "Two groups on the scale. The lighter one has the fake. If equal, it's in the third."
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.02
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div style=\"position:absolute;left:528px;top:710px;width:24px;height:250px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:8px\"></div><div style=\"position:absolute;left:430px;top:950px;width:220px;height:34px;background:#8A5A2B;border:5px solid #2B2B2B;border-radius:12px\"></div><div id=\"{sid}-beam\" style=\"position:absolute;left:260px;top:700px;width:560px;height:22px;background:#C98A1C;border:5px solid #2B2B2B;border-radius:12px;transform-origin:50% 50%\"></div><div style=\"position:absolute;left:522px;top:694px;width:36px;height:36px;border-radius:50%;background:#2B2B2B\"></div><div id=\"{sid}-panl\" style=\"position:absolute;left:150px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"><div id=\"{sid}-lc0\" style=\"position:absolute;left:56px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div></div></div><div id=\"{sid}-panr\" style=\"position:absolute;left:710px;top:710px;width:220px;height:170px\"><svg viewBox=\"0 0 220 170\" width=\"100%\" height=\"100%\" style=\"position:absolute;left:0;top:0\"><path d=\"M110 0 L20 120 M110 0 L200 120\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M10 118 h200 q-10 40 -100 40 q-90 0 -100 -40z\" fill=\"#C98A1C\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:0;top:58px;width:220px;height:62px\"><div id=\"{sid}-rc0\" style=\"position:absolute;left:56px;top:30px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#E9C46A\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div></div></div><div id=\"{sid}-a0\" style=\"position:absolute;left:890px;top:890px;width:62px;height:62px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-light\" style=\"position:absolute;left:740px;top:600px;background:#C8342B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">NAQLI!</div>",
+        "js": [
+          "tl.to(\"#{sid}-beam\", {rotation: -12, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.to(\"#{sid}-panl\", {y: 58, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.to(\"#{sid}-panr\", {y: -58, duration: 0.8, ease: \"elastic.out(1, 0.5)\"}, @L0+0.6);",
+          "tl.fromTo(\"#{sid}-light\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.6+0.6);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.6"
+          ],
+          [
+            "pop",
+            "@L0+0.6+0.6"
+          ]
+        ]
+      },
+      "caption_y": 230,
+      "hold": 0.4,
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "kareem",
+        "line": 1,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Ab unn teen mein se ek-ek taraazu pe. Wohi tareeqa!",
+          "say": "अब उन तीन में से एक-एक तराज़ू पे। वही तरीक़ा!",
+          "en": "Now one against one from those three. Same trick!"
+        },
+        {
+          "who": "kareem",
+          "caption": "Waah! Sirf do baar mein pakar liya!",
+          "say": "वाह! सिर्फ़ दो बार में पकड़ लिया!",
+          "en": "Wow! Caught it in just two goes!"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">9 SIKKE</span></div></div><div id=\"{sid}-n0\" style=\"position:absolute;left:95px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n1\" style=\"position:absolute;left:195px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n2\" style=\"position:absolute;left:295px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n3\" style=\"position:absolute;left:395px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n4\" style=\"position:absolute;left:495px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n5\" style=\"position:absolute;left:595px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n6\" style=\"position:absolute;left:695px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n7\" style=\"position:absolute;left:795px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div><div id=\"{sid}-n8\" style=\"position:absolute;left:895px;top:750px;width:80px;height:80px\"><svg viewBox=\"0 0 60 60\" width=\"100%\" height=\"100%\"><circle cx=\"30\" cy=\"30\" r=\"26\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><circle cx=\"30\" cy=\"30\" r=\"17\" fill=\"none\" stroke=\"#C98A1C\" stroke-width=\"4\"/><path d=\"M24 22 h12 M24 30 h12 M24 38 h12\" stroke=\"#C98A1C\" stroke-width=\"3\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

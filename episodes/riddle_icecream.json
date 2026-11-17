@@ -1,0 +1,349 @@
+{
+  "number": 302,
+  "part": 1,
+  "slug": "riddle_icecream",
+  "title": {
+    "ur": "PIGHALTI ICE CREAM",
+    "en": "THE MELTING ICE CREAM"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "Zara (3): in 40-degree heat an ice cream melts in minutes, yet hers is still frozen, so she only just bought it.",
+  "shots": [
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.42
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.1
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "40 DEGREE GARMI... AUR EK JHOOT!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "ayesha",
+          "caption": "Park se meri cycle chori ho gayi!",
+          "say": "पार्क से मेरी साइकिल चोरी हो गई!",
+          "en": "My bicycle was stolen from the park!",
+          "after": "shocked"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5,
+          "num": 1
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "jamil",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "jamil",
+          "zoom": 1.4
+        }
+      },
+      "hold": 0.2,
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "jamil",
+          "caption": "Main to bench pe akhbaar padh raha tha.",
+          "say": "मैं तो बेंच पे अख़बार पढ़ रहा था।",
+          "en": "I was reading the newspaper on the bench."
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "num": 2
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.4
+        }
+      },
+      "hold": 0.2,
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "faisal",
+          "caption": "Main saamne dhaabe pe khana kha raha tha.",
+          "say": "मैं सामने ढाबे पे खाना खा रहा था।",
+          "en": "I was eating at the dhaba across the road."
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5,
+          "num": 3
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "zara",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.6,
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div><div style=\"position:absolute;left:640px;top:1140px;width:120px;height:180px\"><svg viewBox=\"0 0 100 150\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M22 62 L50 146 L78 62 Z\" fill=\"#D9A15A\"/><path d=\"M32 70 L60 120 M45 66 L68 100 M60 66 L42 120 M74 70 L55 108\" stroke=\"#A86E2C\" stroke-width=\"3\" fill=\"none\"/><circle cx=\"50\" cy=\"56\" r=\"27\" fill=\"#F8C8D8\"/><circle cx=\"38\" cy=\"36\" r=\"20\" fill=\"#FFF5E6\"/><circle cx=\"62\" cy=\"36\" r=\"20\" fill=\"#8B5A3C\"/><circle cx=\"52\" cy=\"14\" r=\"8\" fill=\"#C8342B\"/></g><path d=\"M44 46 q6 4 12 0\" stroke=\"#fff\" stroke-width=\"3\" fill=\"none\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "zara",
+          "caption": "Main ek ghante se yahan baith ke ice cream kha rahi hoon!",
+          "say": "मैं एक घंटे से यहाँ बैठ के आइसक्रीम खा रही हूँ!",
+          "en": "I've been sitting here eating ice cream for an hour!"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.2
+        },
+        {
+          "id": "faisal",
+          "x": 0.5
+        },
+        {
+          "id": "zara",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "jamil",
+        "faisal",
+        "zara"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "transition": "whoosh",
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "hold": 0.6,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaun jhoota hai? Teen second!",
+          "say": "कौन झूठा है? तीन सेकंड!",
+          "en": "Who's lying? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "zara",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "zara",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.5,
+      "caption_y": 230,
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:1500px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div><div style=\"position:absolute;left:640px;top:1140px;width:120px;height:180px\"><svg viewBox=\"0 0 100 150\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M22 62 L50 146 L78 62 Z\" fill=\"#D9A15A\"/><path d=\"M32 70 L60 120 M45 66 L68 100 M60 66 L42 120 M74 70 L55 108\" stroke=\"#A86E2C\" stroke-width=\"3\" fill=\"none\"/><circle cx=\"50\" cy=\"56\" r=\"27\" fill=\"#F8C8D8\"/><circle cx=\"38\" cy=\"36\" r=\"20\" fill=\"#FFF5E6\"/><circle cx=\"62\" cy=\"36\" r=\"20\" fill=\"#8B5A3C\"/><circle cx=\"52\" cy=\"14\" r=\"8\" fill=\"#C8342B\"/></g><path d=\"M44 46 q6 4 12 0\" stroke=\"#fff\" stroke-width=\"3\" fill=\"none\"/></svg></div><div id=\"{sid}-ring\" style=\"position:absolute;left:600px;top:1110px;width:200px;height:240px;border:10px solid #C8342B;border-radius:50%;opacity:0\"></div><div id=\"{sid}-frozen\" style=\"position:absolute;left:500px;top:1360.0px;background:#C8342B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;\">BILKUL JAMI HUI!</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-ring\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-frozen\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+0.5);"
+        ],
+        "sfx": [
+          [
+            "pop",
+            "@L0+0.3"
+          ]
+        ]
+      },
+      "verdicts": [
+        {
+          "on": "zara",
+          "ok": false,
+          "line": 1,
+          "at": 0.1,
+          "lift": 60
+        }
+      ],
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "zara",
+        "line": 2,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Chaalees degree mein ice cream minton mein pighal jaati hai!",
+          "say": "चालीस डिग्री में आइसक्रीम मिनटों में पिघल जाती है!",
+          "en": "At 40 degrees, ice cream melts in minutes!",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Yeh bilkul jami hui hai. Zara abhi aayi hai!",
+          "say": "ये बिल्कुल जमी हुई है। ज़ारा अभी आई है!",
+          "en": "This one is still frozen. Zara just got here!"
+        },
+        {
+          "who": "zara",
+          "caption": "Achha achha... cycle bhi main ne hi li thi.",
+          "say": "अच्छा अच्छा... साइकिल भी मैंने ही ली थी।",
+          "en": "Okay, okay... I took the bicycle too.",
+          "pose": "guilty"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "ayesha",
+          "x": 0.42
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;right:50px;top:400px;width:250px;height:150px;background:#FFF5DC;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 8px 0 #2B2B2B;display:flex;align-items:center;justify-content:center;gap:8px\"><svg viewBox=\"0 0 60 60\" width=\"62\" height=\"62\"><circle cx=\"30\" cy=\"30\" r=\"13\" fill=\"#F2B134\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M49.0 30.0 L57.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 43.4 L49.1 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 49.0 L30.0 57.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 43.4 L10.9 49.1\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M11.0 30.0 L3.0 30.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M16.6 16.6 L10.9 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M30.0 11.0 L30.0 3.0\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M43.4 16.6 L49.1 10.9\" stroke=\"#E8762B\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg><span style=\"font-weight:900;font-size:64px;color:#C8342B\">40°C</span></div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

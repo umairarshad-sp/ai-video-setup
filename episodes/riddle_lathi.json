@@ -1,0 +1,375 @@
+{
+  "number": 301,
+  "part": 1,
+  "slug": "riddle_lathi",
+  "title": {
+    "ur": "JAADUI LATHI",
+    "en": "THE MAGIC STICK"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 102,
+    "gain": 0.5
+  },
+  "answer_note": "Faisal (2) cut his stick by an inch, afraid it would grow. The stick was never magic.",
+  "shots": [
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.1
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "CHOR NE KHUD KO PAKARWA DIYA... KAISE?",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "kareem",
+          "caption": "Meri dukaan se sone ke sikke chori ho gaye!",
+          "say": "मेरी दुकान से सोने के सिक्के चोरी हो गए!",
+          "en": "Gold coins were stolen from my shop!",
+          "after": "shocked"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "faisal",
+          "x": 0.5
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "raju",
+        "faisal",
+        "sherkhan"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "transition": "whoosh",
+      "caption_y": 230,
+      "hold": 0.2,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">LATHIYAN</span></div></div><div style=\"position:absolute;left:230px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:215px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:520px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:505px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:810px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:795px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:150px;right:150px;top:707px;border-top:5px dashed #C8342B;opacity:0\"></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Teen log dukaan mein the. Chacha Jamil ne sab ko ek jaisi lathi di.",
+          "say": "तीन लोग दुकान में थे। चाचा जमील ने सब को एक जैसी लाठी दी।",
+          "en": "Three people were in the shop. Chacha Jamil gave each the same stick."
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "jamil",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "jamil",
+          "zoom": 1.4
+        }
+      },
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "jamil",
+          "caption": "Chor ki lathi raat bhar mein ek inch lambi ho jayegi!",
+          "say": "चोर की लाठी रात भर में एक इंच लंबी हो जाएगी!",
+          "en": "The thief's stick will grow one inch overnight!",
+          "after": "signature_cane_shake"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "faisal",
+          "x": 0.5
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "raju",
+        "faisal",
+        "sherkhan"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "transition": "whoosh",
+      "dark": 0.72,
+      "caption_y": 1290,
+      "hold": 0.2,
+      "hook": {
+        "text": "RAAT GUZAR GAYI...",
+        "y": 660,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Agli subah...",
+          "say": "अगली सुबह...",
+          "en": "The next morning..."
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "faisal",
+          "x": 0.5
+        },
+        {
+          "id": "sherkhan",
+          "x": 0.8
+        }
+      ],
+      "lineup": [
+        "raju",
+        "faisal",
+        "sherkhan"
+      ],
+      "lineup_at": 0,
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "transition": "whoosh",
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "hold": 0.6,
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Chor kaun hai? Teen second!",
+          "say": "चोर कौन है? तीन सेकंड!",
+          "en": "Who is the thief? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">LATHIYAN</span></div></div><div style=\"position:absolute;left:230px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:215px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:520px;top:746px;width:40px;height:214px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:505px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:810px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:795px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:150px;right:150px;top:707px;border-top:5px dashed #C8342B;opacity:1\"></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "kareem_shop",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.5,
+      "caption_y": 230,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">LATHIYAN</span></div></div><div style=\"position:absolute;left:230px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:215px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:520px;top:746px;width:40px;height:214px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:505px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:810px;top:710px;width:40px;height:250px;background:linear-gradient(90deg,#8A5A2B,#B97A3C,#8A5A2B);border:5px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:795px;top:966px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:150px;right:150px;top:707px;border-top:5px dashed #C8342B;opacity:1\"></div><div id=\"{sid}-gap\" style=\"position:absolute;left:590px;top:698px;opacity:0;font-weight:900;color:#C8342B;font-size:38px;white-space:nowrap\">&larr; 1 INCH KAATI!</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-gap\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3);"
+        ],
+        "sfx": [
+          [
+            "pop",
+            "@L1+0.3"
+          ]
+        ]
+      },
+      "verdicts": [
+        {
+          "on": "faisal",
+          "ok": false,
+          "line": 1,
+          "at": 0.1,
+          "lift": 60
+        }
+      ],
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "faisal",
+        "line": 2,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Lathi jaadui thi hi nahi!",
+          "say": "लाठी जादुई थी ही नहीं!",
+          "en": "The stick was never magic!",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Chor ne dar ke maare apni lathi ek inch kaat di!",
+          "say": "चोर ने डर के मारे अपनी लाठी एक इंच काट दी!",
+          "en": "The thief got scared and cut his stick by an inch!"
+        },
+        {
+          "who": "faisal",
+          "caption": "Main ne socha lambi ho gayi to pakra jaunga!",
+          "say": "मैंने सोचा लंबी हो गई तो पकड़ा जाऊँगा!",
+          "en": "I thought if it grew, I'd be caught!",
+          "pose": "guilty"
+        }
+      ]
+    },
+    {
+      "set": "kareem_shop",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.05
+        }
+      },
+      "hold": 0.6
+    }
+  ]
+}

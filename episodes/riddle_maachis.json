@@ -1,0 +1,227 @@
+{
+  "number": 305,
+  "part": 1,
+  "slug": "riddle_maachis",
+  "title": {
+    "ur": "EK MAACHIS",
+    "en": "ONE MATCH"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "You light the matchstick first.",
+  "shots": [
+    {
+      "set": "kitchen",
+      "dark": 0.55,
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "90% LOG GALAT JAWAB DETE HAIN!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div id=\"{sid}-i0\" style=\"position:absolute;left:90px;top:700px;width:120px;height:168px\"><svg viewBox=\"0 0 100 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M30 20 q20 -22 40 0\" fill=\"none\"/><rect x=\"28\" y=\"20\" width=\"44\" height=\"14\" rx=\"4\" fill=\"#8A5A2B\"/><path d=\"M24 34 h52 l-6 70 h-40z\" fill=\"#CFE8F0\"/><rect x=\"20\" y=\"104\" width=\"60\" height=\"22\" rx=\"6\" fill=\"#8A5A2B\"/></g><path d=\"M50 60 q8 14 0 26 q-8 -12 0 -26z\" fill=\"#9AA\" opacity=\"0.6\"/></svg></div><div style=\"position:absolute;left:117.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:60px;width:180px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">LALTAIN</div><div id=\"{sid}-i1\" style=\"position:absolute;left:300px;top:700px;width:190px;height:160px\"><svg viewBox=\"0 0 140 120\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 110 v-60 q0 -16 16 -16 h88 q16 0 16 16 v60z\" fill=\"#B5651D\"/><path d=\"M45 110 v-34 q25 -26 50 0 v34z\" fill=\"#3A2410\"/><path d=\"M30 34 h80 v-12 h-80z\" fill=\"#8A5A2B\"/><path d=\"M46 100 l18 -14 l14 10 l18 -12\" stroke=\"#6B4A2A\" stroke-width=\"7\" fill=\"none\"/></g></svg></div><div style=\"position:absolute;left:362.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:270px;width:250px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">CHULHA</div><div id=\"{sid}-i2\" style=\"position:absolute;left:560px;top:700px;width:100px;height:168px\"><svg viewBox=\"0 0 80 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"40\" width=\"36\" height=\"86\" rx=\"6\" fill=\"#FFF5E6\"/><path d=\"M40 40 v-14\" stroke-width=\"4\"/><ellipse cx=\"40\" cy=\"128\" rx=\"34\" ry=\"8\" fill=\"#C98A1C\"/></g></svg></div><div style=\"position:absolute;left:577.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:530px;width:160px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">MOMBATTI</div><div id=\"{sid}-m\" style=\"position:absolute;left:770px;top:760px;width:220px;height:96px;transform-origin:50% 50%\"><svg viewBox=\"0 0 160 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"96\" height=\"48\" rx=\"6\" fill=\"#C8342B\"/><rect x=\"16\" y=\"24\" width=\"76\" height=\"28\" rx=\"4\" fill=\"#F2B134\"/><rect x=\"96\" y=\"28\" width=\"56\" height=\"9\" rx=\"4\" fill=\"#E3B467\"/><ellipse cx=\"150\" cy=\"32\" rx=\"9\" ry=\"8\" fill=\"#8B1E1E\"/></g></svg><div id=\"{sid}-fl\" style=\"position:absolute;left:190px;top:-46px;width:40px;height:60px;opacity:0\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><path d=\"M20 58 C4 58 2 38 12 26 C12 36 18 36 18 30 C16 18 24 8 26 2 C30 20 38 30 36 44 C34 54 28 58 20 58Z\" fill=\"#F2B134\" stroke=\"#E8432B\" stroke-width=\"4\"/></svg></div></div><div style=\"position:absolute;left:760px;width:240px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">1 TEELI</div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Bijli chali gayi. Tumhare paas sirf ek maachis ki teeli hai.",
+          "say": "बिजली चली गई। तुम्हारे पास सिर्फ़ एक माचिस की तीली है।",
+          "en": "The power's out. You have just one matchstick."
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "dark": 0.55,
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div id=\"{sid}-i0\" style=\"position:absolute;left:90px;top:700px;width:120px;height:168px\"><svg viewBox=\"0 0 100 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M30 20 q20 -22 40 0\" fill=\"none\"/><rect x=\"28\" y=\"20\" width=\"44\" height=\"14\" rx=\"4\" fill=\"#8A5A2B\"/><path d=\"M24 34 h52 l-6 70 h-40z\" fill=\"#CFE8F0\"/><rect x=\"20\" y=\"104\" width=\"60\" height=\"22\" rx=\"6\" fill=\"#8A5A2B\"/></g><path d=\"M50 60 q8 14 0 26 q-8 -12 0 -26z\" fill=\"#9AA\" opacity=\"0.6\"/></svg></div><div style=\"position:absolute;left:117.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:60px;width:180px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">LALTAIN</div><div id=\"{sid}-i1\" style=\"position:absolute;left:300px;top:700px;width:190px;height:160px\"><svg viewBox=\"0 0 140 120\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 110 v-60 q0 -16 16 -16 h88 q16 0 16 16 v60z\" fill=\"#B5651D\"/><path d=\"M45 110 v-34 q25 -26 50 0 v34z\" fill=\"#3A2410\"/><path d=\"M30 34 h80 v-12 h-80z\" fill=\"#8A5A2B\"/><path d=\"M46 100 l18 -14 l14 10 l18 -12\" stroke=\"#6B4A2A\" stroke-width=\"7\" fill=\"none\"/></g></svg></div><div style=\"position:absolute;left:362.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:270px;width:250px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">CHULHA</div><div id=\"{sid}-i2\" style=\"position:absolute;left:560px;top:700px;width:100px;height:168px\"><svg viewBox=\"0 0 80 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"40\" width=\"36\" height=\"86\" rx=\"6\" fill=\"#FFF5E6\"/><path d=\"M40 40 v-14\" stroke-width=\"4\"/><ellipse cx=\"40\" cy=\"128\" rx=\"34\" ry=\"8\" fill=\"#C98A1C\"/></g></svg></div><div style=\"position:absolute;left:577.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:530px;width:160px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">MOMBATTI</div><div id=\"{sid}-m\" style=\"position:absolute;left:770px;top:760px;width:220px;height:96px;transform-origin:50% 50%\"><svg viewBox=\"0 0 160 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"96\" height=\"48\" rx=\"6\" fill=\"#C8342B\"/><rect x=\"16\" y=\"24\" width=\"76\" height=\"28\" rx=\"4\" fill=\"#F2B134\"/><rect x=\"96\" y=\"28\" width=\"56\" height=\"9\" rx=\"4\" fill=\"#E3B467\"/><ellipse cx=\"150\" cy=\"32\" rx=\"9\" ry=\"8\" fill=\"#8B1E1E\"/></g></svg><div id=\"{sid}-fl\" style=\"position:absolute;left:190px;top:-46px;width:40px;height:60px;opacity:0\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><path d=\"M20 58 C4 58 2 38 12 26 C12 36 18 36 18 30 C16 18 24 8 26 2 C30 20 38 30 36 44 C34 54 28 58 20 58Z\" fill=\"#F2B134\" stroke=\"#E8432B\" stroke-width=\"4\"/></svg></div></div><div style=\"position:absolute;left:760px;width:240px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">1 TEELI</div>",
+        "js": [],
+        "sfx": []
+      },
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Laltain, chulha ya mombatti... pehle kya jalaoge?",
+          "say": "लालटेन, चूल्हा या मोमबत्ती... पहले क्या जलाओगे?",
+          "en": "Lantern, stove or candle... what do you light first?"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "dark": 0.55,
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.04
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div id=\"{sid}-i0\" style=\"position:absolute;left:90px;top:700px;width:120px;height:168px\"><svg viewBox=\"0 0 100 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M30 20 q20 -22 40 0\" fill=\"none\"/><rect x=\"28\" y=\"20\" width=\"44\" height=\"14\" rx=\"4\" fill=\"#8A5A2B\"/><path d=\"M24 34 h52 l-6 70 h-40z\" fill=\"#CFE8F0\"/><rect x=\"20\" y=\"104\" width=\"60\" height=\"22\" rx=\"6\" fill=\"#8A5A2B\"/></g><path d=\"M50 60 q8 14 0 26 q-8 -12 0 -26z\" fill=\"#9AA\" opacity=\"0.6\"/></svg></div><div style=\"position:absolute;left:117.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:60px;width:180px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">LALTAIN</div><div id=\"{sid}-i1\" style=\"position:absolute;left:300px;top:700px;width:190px;height:160px\"><svg viewBox=\"0 0 140 120\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 110 v-60 q0 -16 16 -16 h88 q16 0 16 16 v60z\" fill=\"#B5651D\"/><path d=\"M45 110 v-34 q25 -26 50 0 v34z\" fill=\"#3A2410\"/><path d=\"M30 34 h80 v-12 h-80z\" fill=\"#8A5A2B\"/><path d=\"M46 100 l18 -14 l14 10 l18 -12\" stroke=\"#6B4A2A\" stroke-width=\"7\" fill=\"none\"/></g></svg></div><div style=\"position:absolute;left:362.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:270px;width:250px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">CHULHA</div><div id=\"{sid}-i2\" style=\"position:absolute;left:560px;top:700px;width:100px;height:168px\"><svg viewBox=\"0 0 80 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"40\" width=\"36\" height=\"86\" rx=\"6\" fill=\"#FFF5E6\"/><path d=\"M40 40 v-14\" stroke-width=\"4\"/><ellipse cx=\"40\" cy=\"128\" rx=\"34\" ry=\"8\" fill=\"#C98A1C\"/></g></svg></div><div style=\"position:absolute;left:577.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:530px;width:160px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">MOMBATTI</div><div id=\"{sid}-m\" style=\"position:absolute;left:770px;top:760px;width:220px;height:96px;transform-origin:50% 50%\"><svg viewBox=\"0 0 160 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"96\" height=\"48\" rx=\"6\" fill=\"#C8342B\"/><rect x=\"16\" y=\"24\" width=\"76\" height=\"28\" rx=\"4\" fill=\"#F2B134\"/><rect x=\"96\" y=\"28\" width=\"56\" height=\"9\" rx=\"4\" fill=\"#E3B467\"/><ellipse cx=\"150\" cy=\"32\" rx=\"9\" ry=\"8\" fill=\"#8B1E1E\"/></g></svg><div id=\"{sid}-fl\" style=\"position:absolute;left:190px;top:-46px;width:40px;height:60px;opacity:0\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><path d=\"M20 58 C4 58 2 38 12 26 C12 36 18 36 18 30 C16 18 24 8 26 2 C30 20 38 30 36 44 C34 54 28 58 20 58Z\" fill=\"#F2B134\" stroke=\"#E8432B\" stroke-width=\"4\"/></svg></div></div><div style=\"position:absolute;left:760px;width:240px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">1 TEELI</div>",
+        "js": [
+          "tl.to(\"#{sid}-m\", {scale: 1.35, x: -60, y: -20, duration: 0.4, ease: \"back.out(2)\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-fl\", {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1.3, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+0.4);",
+          "tl.to(\"#{sid}-fl\", {scale: 1.1, duration: 0.2, yoyo: true, repeat: 9, ease: \"sine.inOut\"}, @L0+0.3+0.7);",
+          "tl.to(\"#{sid}-i0\", {opacity: 0.35, duration: 0.3}, @L0+0.3+0.2);",
+          "tl.to(\"#{sid}-i1\", {opacity: 0.35, duration: 0.3}, @L0+0.3+0.2);",
+          "tl.to(\"#{sid}-i2\", {opacity: 0.35, duration: 0.3}, @L0+0.3+0.2);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.3"
+          ],
+          [
+            "reveal",
+            "@L0+0.3+0.4"
+          ]
+        ]
+      },
+      "caption_y": 1290,
+      "hold": 0.5,
+      "stamp": {
+        "text": "HAHAHA!",
+        "on": "bunty",
+        "line": 1,
+        "y": 130,
+        "w": 560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Sab se pehle... maachis ki teeli!",
+          "say": "सब से पहले... माचिस की तीली!",
+          "en": "First of all... the matchstick!"
+        },
+        {
+          "who": "bunty",
+          "caption": "Arey! Yeh to socha hi nahi!",
+          "say": "अरे! ये तो सोचा ही नहीं!",
+          "en": "Oh! I never thought of that!",
+          "pose": "shocked"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "dark": 0.55,
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:640px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div id=\"{sid}-i0\" style=\"position:absolute;left:90px;top:700px;width:120px;height:168px\"><svg viewBox=\"0 0 100 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M30 20 q20 -22 40 0\" fill=\"none\"/><rect x=\"28\" y=\"20\" width=\"44\" height=\"14\" rx=\"4\" fill=\"#8A5A2B\"/><path d=\"M24 34 h52 l-6 70 h-40z\" fill=\"#CFE8F0\"/><rect x=\"20\" y=\"104\" width=\"60\" height=\"22\" rx=\"6\" fill=\"#8A5A2B\"/></g><path d=\"M50 60 q8 14 0 26 q-8 -12 0 -26z\" fill=\"#9AA\" opacity=\"0.6\"/></svg></div><div style=\"position:absolute;left:117.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">1</div><div style=\"position:absolute;left:60px;width:180px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">LALTAIN</div><div id=\"{sid}-i1\" style=\"position:absolute;left:300px;top:700px;width:190px;height:160px\"><svg viewBox=\"0 0 140 120\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 110 v-60 q0 -16 16 -16 h88 q16 0 16 16 v60z\" fill=\"#B5651D\"/><path d=\"M45 110 v-34 q25 -26 50 0 v34z\" fill=\"#3A2410\"/><path d=\"M30 34 h80 v-12 h-80z\" fill=\"#8A5A2B\"/><path d=\"M46 100 l18 -14 l14 10 l18 -12\" stroke=\"#6B4A2A\" stroke-width=\"7\" fill=\"none\"/></g></svg></div><div style=\"position:absolute;left:362.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">2</div><div style=\"position:absolute;left:270px;width:250px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">CHULHA</div><div id=\"{sid}-i2\" style=\"position:absolute;left:560px;top:700px;width:100px;height:168px\"><svg viewBox=\"0 0 80 140\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"40\" width=\"36\" height=\"86\" rx=\"6\" fill=\"#FFF5E6\"/><path d=\"M40 40 v-14\" stroke-width=\"4\"/><ellipse cx=\"40\" cy=\"128\" rx=\"34\" ry=\"8\" fill=\"#C98A1C\"/></g></svg></div><div style=\"position:absolute;left:577.0px;top:646px;width:66px;height:66px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:40px;color:#2B2B2B\">3</div><div style=\"position:absolute;left:530px;width:160px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">MOMBATTI</div><div id=\"{sid}-m\" style=\"position:absolute;left:770px;top:760px;width:220px;height:96px;transform-origin:50% 50%\"><svg viewBox=\"0 0 160 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"14\" width=\"96\" height=\"48\" rx=\"6\" fill=\"#C8342B\"/><rect x=\"16\" y=\"24\" width=\"76\" height=\"28\" rx=\"4\" fill=\"#F2B134\"/><rect x=\"96\" y=\"28\" width=\"56\" height=\"9\" rx=\"4\" fill=\"#E3B467\"/><ellipse cx=\"150\" cy=\"32\" rx=\"9\" ry=\"8\" fill=\"#8B1E1E\"/></g></svg><div id=\"{sid}-fl\" style=\"position:absolute;left:190px;top:-46px;width:40px;height:60px;opacity:0\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><path d=\"M20 58 C4 58 2 38 12 26 C12 36 18 36 18 30 C16 18 24 8 26 2 C30 20 38 30 36 44 C34 54 28 58 20 58Z\" fill=\"#F2B134\" stroke=\"#E8432B\" stroke-width=\"4\"/></svg></div></div><div style=\"position:absolute;left:760px;width:240px;top:880px;text-align:center;font-weight:900;font-size:32px;color:#2B2B2B\">1 TEELI</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}
