@@ -172,6 +172,16 @@ Next:
      English line in the clue box and banner. Keep `caption_y` at or above ~1300 so the English line
      stays clear of the TikTok/Reels buttons; the title moves to y 700 when subtitles are on.
 
+7. New single-Reel formats (2026-11-15/17, answer in the same video, last shot = first shot so it loops):
+   `short_006` (who's lying, 31 November), `wit_001` (17 Oont), `doors_001` (Teen Darwaze), and
+   riddles 1-5 of `planning/NEW_RIDDLES.md` (`riddle_lathi/icecream/sikka/kichad/maachis`, written by
+   `studio/write_riddles_3.py`). Builder shot keys for these: `hook` (text on the first frame), `card`
+   (readable ticket/rule card, `mark` circles a row), cast `num`, `lineup_at: 0`, `timer_y`, `feet`,
+   stamp `w`, and `overlay` (raw SVG/HTML + GSAP with @L/@E/@S/@X time tokens; props drawn in code).
+   `puzzle_001` (lift sign) was rejected by the owner: a clue needs stakes and an "aha".
+   Waiting on owner backgrounds: desert_village, qila_doors, river_ghat, qila_gate, chhat_rooftop
+   (prompts in sets/SETS.md). Captions in `social/`.
+
 ## Environment notes (cloud sessions)
 
 - Chrome in the renderer cannot reach CDNs: compositions load GSAP from a local
