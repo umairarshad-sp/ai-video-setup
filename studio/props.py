@@ -28,7 +28,7 @@ def pop(idx, t):
     return f'tl.fromTo("#{{sid}}-{idx}", {{opacity: 0, scale: 0.4}}, {{opacity: 1, scale: 1, duration: 0.3, ease: "back.out(3)"}}, {t});'
 
 
-def real_doors(sid, contents, labels=None, label_colors=None, open_at=(), cross_at=(), swap_at=(), show_open=(), numbers=True):
+def real_doors(sid, contents, labels=None, label_colors=None, open_at=(), cross_at=(), swap_at=(), show_open=(), numbers=True, label_at=None):
     """contents: list of SVG/HTML shown behind each door (index 0 = door 1).
     open_at:  [(door number, time expr)]          door parts to show its room
     cross_at: [(door number, time expr)]          a red X lands over the door
@@ -50,7 +50,8 @@ def real_doors(sid, contents, labels=None, label_colors=None, open_at=(), cross_
         if labels:
             col = (label_colors or ["#FFFFFF"] * len(labels))[i]
             fg = INK if col == "#FFFFFF" else "#fff"
-            html += (f'<div style="position:absolute;left:{x - 20:.0f}px;width:{w + 40:.0f}px;top:{y + h + 12:.0f}px;text-align:center">'
+            hidden = label_at is not None and label_at[i] is not None
+            html += (f'<div id="{{sid}}-lab{n}" style="position:absolute;left:{x - 20:.0f}px;width:{w + 40:.0f}px;top:{y + h + 12:.0f}px;text-align:center;{"opacity:0;" if hidden else ""}">'
                      f'<span style="display:inline-block;background:{col};color:{fg};border:5px solid {INK};border-radius:14px;font-weight:900;'
                      f'font-size:{30 if len(labels[i]) > 12 else 36}px;line-height:1.1;padding:6px 12px">{labels[i]}</span></div>')
     if numbers:
@@ -58,6 +59,9 @@ def real_doors(sid, contents, labels=None, label_colors=None, open_at=(), cross_
             x, y, w, h = frame_rect(sid, sg["box"])
             html += (f'<div style="position:absolute;left:{x:.0f}px;top:{y:.0f}px;width:{w:.0f}px;height:{h:.0f}px;display:flex;align-items:center;'
                      f'justify-content:center;font-weight:900;font-size:{h * 0.8:.0f}px;color:#5A2E14">{k + 1}</div>')
+    for i, t in enumerate(label_at or []):
+        if t is not None:
+            js.append(pop(f"lab{i + 1}", t))
     for n, t in open_at:
         js.append(f'tl.to("#{{sid}}-room{n}", {{scaleX: 1, duration: 0.5, ease: "power2.out"}}, {t});')
         sfx.append(["whoosh", t])

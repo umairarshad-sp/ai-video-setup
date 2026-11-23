@@ -236,7 +236,7 @@ doors = {"number": 202, "part": 1, "slug": "doors_001", "format": "3: choice rid
     {"set": DSET, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "feet": 0.95, "caption_y": 1300, "hold": 0.5,
      "overlay": qdoors(show_open=(1, 2, 3), cross_at=[(1, "@L0+0.1"), (2, "@L0+0.4")], swap_at=[(3, "@L1+1.2", lion(True))]),
      "sfx": [["reveal", 0.5]],
-     "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 2, "y": 130, "w": 640},
+     "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 2, "y": 130, "w": 720},
      "lines": [ln("foxley", "Teesra darwaza!", "तीसरा दरवाज़ा!", "Door number three!"),
                ln("foxley", "Jo sher teen saal se bhooka ho... woh kab ka mar chuka hoga!", "जो शेर तीन साल से भूखा हो... वो कब का मर चुका होगा!",
                   "A lion that hasn't eaten in three years... died long ago!"),

@@ -263,6 +263,7 @@ def gate(open_at=None, show_back=False):
     k = {"show_open": (1, 2)} if show_back else {}
     if open_at:
         k["open_at"] = [(1, open_at), (2, f"{open_at}+1.6")]
+        k["label_at"] = [f"{open_at}+0.5", f"{open_at}+2.1"]
     return real_doors("qila_gate", [SUN, lion_svg()], labels=["AZAADI", "BHOOKA SHER"] if (open_at or show_back) else None,
                       label_colors=["#2E9E4F", "#C8342B"], **k)
 
@@ -271,10 +272,10 @@ def logic_card(at):
     rows = [("AGAR SACHCHE SE POOCHA:", "woh jhoote ka galat jawab batayega"),
             ("AGAR JHOOTE SE POOCHA:", "woh sachche ka jawab ulta karega"),
             ("DONO BAAR:", "GALAT darwaza! To ulta chuno")]
-    html = panel(PY - 10, 470, title="KYUN?")
+    html = panel(PY + 80, 400, title="KYUN?")
     js = []
     for i, (a, b) in enumerate(rows):
-        html += (f'<div id="{{sid}}-row{i}" style="position:absolute;left:80px;right:80px;top:{PY + 40 + i * 140}px;opacity:0">'
+        html += (f'<div id="{{sid}}-row{i}" style="position:absolute;left:80px;right:80px;top:{PY + 120 + i * 122}px;opacity:0">'
                  f'<div style="font-weight:900;font-size:40px;color:{"#C8342B" if i == 2 else "#1F4E5F"}">{a}</div>'
                  f'<div style="font-weight:800;font-size:44px;color:{INK}">{b}</div></div>')
         js.append(pop(f"row{i}", f"{at[i]}"))
@@ -305,7 +306,7 @@ EPS["riddle_pehredaar"] = {"number": 308, "part": 1, "slug": "riddle_pehredaar",
                ln("sherkhan", "Woh darwaza number do batayega!", "वो दरवाज़ा नंबर दो बताएगा!", "He would say door number two!")]},
     {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "caption_y": 1300, "hold": 0.4,
      "overlay": gate(open_at="@L0+0.6"),
-     "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 1, "y": 130, "w": 640},
+     "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 1, "y": 130, "w": 720},
      "lines": [ln("foxley", "To darwaza number ek kholo!", "तो दरवाज़ा नंबर एक खोलो!", "So open door number one!", sfx_before="reveal"),
                ln("bunty", "Azaadi! Main bach gaya!", "आज़ादी! मैं बच गया!", "Freedom! I'm saved!")]},
     {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "caption_y": 230, "hold": 0.5,
