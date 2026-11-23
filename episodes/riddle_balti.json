@@ -14,7 +14,7 @@
   "answer_note": "Bucket 2: the pipes to buckets 1 and 3 have closed valves.",
   "shots": [
     {
-      "set": "gali_street",
+      "set": "chhat_rooftop",
       "dark": 0.25,
       "cast": [],
       "camera": {
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "set": "gali_street",
+      "set": "chhat_rooftop",
       "dark": 0.25,
       "cast": [],
       "camera": {
@@ -108,7 +108,7 @@
       "lines": []
     },
     {
-      "set": "gali_street",
+      "set": "chhat_rooftop",
       "dark": 0.25,
       "cast": [],
       "camera": {
@@ -178,7 +178,7 @@
       ]
     },
     {
-      "set": "gali_street",
+      "set": "chhat_rooftop",
       "dark": 0.25,
       "cast": [],
       "camera": {

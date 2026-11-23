@@ -14,7 +14,7 @@
   "answer_note": "Ask either guard which door the OTHER guard would call the way out, then take the opposite door.",
   "shots": [
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "cast": [
         {
           "id": "sherkhan",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "transition": "whoosh",
       "cast": [
         {
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "transition": "whoosh",
       "cast": [
         {
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "transition": "whoosh",
       "cast": [
         {
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "transition": "whoosh",
       "cast": [
         {
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "transition": "whoosh",
       "cast": [
         {
@@ -370,7 +370,7 @@
       ]
     },
     {
-      "set": "police_station",
+      "set": "qila_gate",
       "cast": [
         {
           "id": "sherkhan",

@@ -14,7 +14,7 @@
   "answer_note": "Fill 5; pour into 3 (2 left); empty 3; pour the 2 in; fill 5; top up 3 -> 4 left in the 5.",
   "shots": [
     {
-      "set": "kitchen",
+      "set": "desert_village",
       "cast": [
         {
           "id": "rafiq",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "set": "kitchen",
+      "set": "desert_village",
       "transition": "whoosh",
       "cast": [
         {
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "set": "kitchen",
+      "set": "desert_village",
       "transition": "whoosh",
       "cast": [
         {
@@ -245,7 +245,7 @@
       ]
     },
     {
-      "set": "kitchen",
+      "set": "desert_village",
       "cast": [
         {
           "id": "rafiq",
