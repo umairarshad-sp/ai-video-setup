@@ -1,0 +1,208 @@
+{
+  "number": 309,
+  "part": 1,
+  "slug": "riddle_balti",
+  "title": {
+    "ur": "KAUNSI BALTI?",
+    "en": "WHICH BUCKET?"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "Bucket 2: the pipes to buckets 1 and 3 have closed valves.",
+  "shots": [
+    {
+      "set": "gali_street",
+      "dark": 0.25,
+      "cast": [],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1480,
+      "hold": 0.1,
+      "hook": {
+        "text": "SIRF 1% LOG PEHLI BAAR MEIN SAHI!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<svg viewBox=\"0 0 1080 1920\" width=\"1080\" height=\"1920\" style=\"position:absolute;left:0;top:0\"><rect x=\"420\" y=\"560\" width=\"240\" height=\"150\" rx=\"18\" fill=\"#2B2B2B\"/><rect x=\"436\" y=\"576\" width=\"208\" height=\"20\" rx=\"8\" fill=\"#555\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"144\" y=\"1018\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"210\" cy=\"1030\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M196 1030 h28 M210 1016 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M190 1030 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><rect x=\"754\" y=\"858\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"820\" cy=\"870\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M806 870 h28 M820 856 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M800 870 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:80px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill1\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:135px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:450px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill2\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:505px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:820px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:875px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-x1\" style=\"position:absolute;left:100px;top:940px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div><div id=\"{sid}-x3\" style=\"position:absolute;left:710px;top:780px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Tanki khul gayi! Kaunsi balti sab se pehle bharegi?",
+          "say": "टंकी खुल गई! कौनसी बाल्टी सब से पहले भरेगी?",
+          "en": "The tank is open! Which bucket fills first?"
+        }
+      ]
+    },
+    {
+      "set": "gali_street",
+      "dark": 0.25,
+      "cast": [],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "overlay": {
+        "html": "<svg viewBox=\"0 0 1080 1920\" width=\"1080\" height=\"1920\" style=\"position:absolute;left:0;top:0\"><rect x=\"420\" y=\"560\" width=\"240\" height=\"150\" rx=\"18\" fill=\"#2B2B2B\"/><rect x=\"436\" y=\"576\" width=\"208\" height=\"20\" rx=\"8\" fill=\"#555\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"144\" y=\"1018\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"210\" cy=\"1030\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M196 1030 h28 M210 1016 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M190 1030 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><rect x=\"754\" y=\"858\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"820\" cy=\"870\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M806 870 h28 M820 856 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M800 870 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:80px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill1\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:135px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:450px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill2\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:505px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:820px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:875px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-x1\" style=\"position:absolute;left:100px;top:940px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div><div id=\"{sid}-x3\" style=\"position:absolute;left:710px;top:780px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div>",
+        "js": [],
+        "sfx": []
+      },
+      "timer": 5,
+      "timer_y": 1500,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "hold": 0.6,
+      "hook": {
+        "text": "PAUSE KARO AUR PIPE DEKHO!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": []
+    },
+    {
+      "set": "gali_street",
+      "dark": 0.25,
+      "cast": [],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "overlay": {
+        "html": "<svg viewBox=\"0 0 1080 1920\" width=\"1080\" height=\"1920\" style=\"position:absolute;left:0;top:0\"><rect x=\"420\" y=\"560\" width=\"240\" height=\"150\" rx=\"18\" fill=\"#2B2B2B\"/><rect x=\"436\" y=\"576\" width=\"208\" height=\"20\" rx=\"8\" fill=\"#555\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"144\" y=\"1018\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"210\" cy=\"1030\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M196 1030 h28 M210 1016 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M190 1030 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><rect x=\"754\" y=\"858\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"820\" cy=\"870\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M806 870 h28 M820 856 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M800 870 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><polyline id=\"{sid}-wf1\" points=\"540,700 540,760 300,760 300,860 170,860 170,1010\" fill=\"none\" stroke=\"#2E8BC0\" stroke-width=\"14\" stroke-linejoin=\"round\" stroke-linecap=\"round\" style=\"stroke-dasharray:680;stroke-dashoffset:680\"/><polyline id=\"{sid}-wf2\" points=\"540,700 540,760 300,760 300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#2E8BC0\" stroke-width=\"14\" stroke-linejoin=\"round\" stroke-linecap=\"round\" style=\"stroke-dasharray:1010;stroke-dashoffset:1010\"/><polyline id=\"{sid}-wf3\" points=\"540,700 540,760 780,760 780,850\" fill=\"none\" stroke=\"#2E8BC0\" stroke-width=\"14\" stroke-linejoin=\"round\" stroke-linecap=\"round\" style=\"stroke-dasharray:390;stroke-dashoffset:390\"/></svg><div style=\"position:absolute;left:80px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill1\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:135px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:450px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill2\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:505px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:820px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:875px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-x1\" style=\"position:absolute;left:100px;top:940px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div><div id=\"{sid}-x3\" style=\"position:absolute;left:710px;top:780px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div>",
+        "js": [
+          "tl.to(\"#{sid}-wf1\", {strokeDashoffset: 0, duration: 1.62, ease: \"none\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-x1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+1.62);",
+          "tl.to(\"#{sid}-wf2\", {strokeDashoffset: 0, duration: 2.40, ease: \"none\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-wf3\", {strokeDashoffset: 0, duration: 0.93, ease: \"none\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-x3\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+0.93);",
+          "tl.to(\"#{sid}-fill2\", {height: 120, duration: 1.2, ease: \"power1.inOut\"}, @L0+0.3+2.40);"
+        ],
+        "sfx": [
+          [
+            "stamp",
+            "@L0+0.3+1.62"
+          ],
+          [
+            "stamp",
+            "@L0+0.3+0.93"
+          ],
+          [
+            "whoosh",
+            "@L0+0.3"
+          ]
+        ]
+      },
+      "caption_y": 230,
+      "hold": 0.6,
+      "stamp": {
+        "text": "BALTI 2!",
+        "on": null,
+        "line": 1,
+        "y": 1560,
+        "w": 520
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Paani ka raasta dekho!",
+          "say": "पानी का रास्ता देखो!",
+          "en": "Follow the water!",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Ek aur teen ke pipe band hain. Sirf do bharegi!",
+          "say": "एक और तीन के पाइप बंद हैं। सिर्फ़ दो भरेगी!",
+          "en": "The pipes to one and three are closed. Only two fills!"
+        }
+      ]
+    },
+    {
+      "set": "gali_street",
+      "dark": 0.25,
+      "cast": [],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "overlay": {
+        "html": "<svg viewBox=\"0 0 1080 1920\" width=\"1080\" height=\"1920\" style=\"position:absolute;left:0;top:0\"><rect x=\"420\" y=\"560\" width=\"240\" height=\"150\" rx=\"18\" fill=\"#2B2B2B\"/><rect x=\"436\" y=\"576\" width=\"208\" height=\"20\" rx=\"8\" fill=\"#555\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#2B2B2B\" stroke-width=\"40\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,700 540,760 300,760 300,860 170,860 170,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"300,860 430,860 430,960 540,960 540,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"540,760 780,760 780,1100 910,1100 910,1230\" fill=\"none\" stroke=\"#B0B0B0\" stroke-width=\"26\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"144\" y=\"1018\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"210\" cy=\"1030\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M196 1030 h28 M210 1016 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M190 1030 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><rect x=\"754\" y=\"858\" width=\"52\" height=\"24\" rx=\"6\" fill=\"#2B2B2B\"/><circle cx=\"820\" cy=\"870\" r=\"20\" fill=\"#C8342B\" stroke=\"#2B2B2B\" stroke-width=\"5\"/><path d=\"M806 870 h28 M820 856 v28\" stroke=\"#2B2B2B\" stroke-width=\"4\"/><path d=\"M800 870 h-0\" stroke=\"#2B2B2B\" stroke-width=\"5\"/></svg><div style=\"position:absolute;left:80px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill1\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:135px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:450px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill2\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:505px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:820px;top:1236px;width:180px;height:150px;border:9px solid #2B2B2B;border-radius:6px 6px 40px 40px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-fill3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0;background:#2E8BC0\"></div></div><div style=\"position:absolute;left:875px;top:1400px;width:70px;height:70px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:44px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-x1\" style=\"position:absolute;left:100px;top:940px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div><div id=\"{sid}-x3\" style=\"position:absolute;left:710px;top:780px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAND!</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

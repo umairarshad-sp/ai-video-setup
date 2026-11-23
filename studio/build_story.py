@@ -358,7 +358,7 @@ def build_html(ep, shots, total):
         stamp_overlay = ""
         if sh.get("stamp"):
             stp = sh["stamp"]
-            on = chars[stp["on"]]
+            on = chars.get(stp.get("on")) or {"head": (W / 2, H / 2)}   # a stamp needs no character (prop-only shots)
             at = sh["lines"][stp["line"]]["start"] if "line" in stp else s0 + stp.get("at", 0.5)
             hx, hy = on["head"]
             sw_ = stp.get("w", 460)

@@ -1,0 +1,280 @@
+{
+  "number": 307,
+  "part": 1,
+  "slug": "riddle_matke",
+  "title": {
+    "ur": "DO MATKE",
+    "en": "TWO POTS"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 100,
+    "gain": 0.5
+  },
+  "answer_note": "Fill 5; pour into 3 (2 left); empty 3; pour the 2 in; fill 5; top up 3 -> 4 left in the 5.",
+  "shots": [
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "rafiq",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "THIK 4 LITRE... SIRF DO MATKON SE!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:470px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">DO MATKE</span></div></div><div style=\"position:absolute;left:130px;top:700px;width:300px;height:280px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wa\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:116px;top:678px;width:328px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:130px;width:300px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">5 LITRE</div><div id=\"{sid}-na0\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-na1\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-na2\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-na3\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div><div id=\"{sid}-na4\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">4 L</div><div id=\"{sid}-na5\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">5 L</div><div style=\"position:absolute;left:620px;top:804px;width:240px;height:176px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wb\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:606px;top:782px;width:268px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:620px;width:240px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">3 LITRE</div><div id=\"{sid}-nb0\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-nb1\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-nb2\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-nb3\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "rafiq",
+          "caption": "Mujhe thik chaar litre paani chahiye. Matke sirf paanch aur teen litre ke hain!",
+          "say": "मुझे ठीक चार लीटर पानी चाहिए। मटके सिर्फ़ पाँच और तीन लीटर के हैं!",
+          "en": "I need exactly four litres of water. The pots only hold five and three litres!"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "rafiq",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:470px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">DO MATKE</span></div></div><div style=\"position:absolute;left:130px;top:700px;width:300px;height:280px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wa\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:116px;top:678px;width:328px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:130px;width:300px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">5 LITRE</div><div id=\"{sid}-na0\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-na1\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-na2\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-na3\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div><div id=\"{sid}-na4\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">4 L</div><div id=\"{sid}-na5\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">5 L</div><div style=\"position:absolute;left:620px;top:804px;width:240px;height:176px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wb\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:606px;top:782px;width:268px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:620px;width:240px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">3 LITRE</div><div id=\"{sid}-nb0\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-nb1\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-nb2\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-nb3\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div>",
+        "js": [],
+        "sfx": []
+      },
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAISE NAAPOGE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaise naapoge thik chaar litre? Socho!",
+          "say": "कैसे नापोगे ठीक चार लीटर? सोचो!",
+          "en": "How do you measure exactly four litres? Think!"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "rafiq",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.6,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:470px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">DO MATKE</span></div></div><div style=\"position:absolute;left:130px;top:700px;width:300px;height:280px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wa\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:116px;top:678px;width:328px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:130px;width:300px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">5 LITRE</div><div id=\"{sid}-na0\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-na1\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-na2\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-na3\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div><div id=\"{sid}-na4\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">4 L</div><div id=\"{sid}-na5\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">5 L</div><div style=\"position:absolute;left:620px;top:804px;width:240px;height:176px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wb\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:606px;top:782px;width:268px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:620px;width:240px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">3 LITRE</div><div id=\"{sid}-nb0\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-nb1\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-nb2\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-nb3\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div><div id=\"{sid}-ring\" style=\"position:absolute;left:100px;top:640px;width:420px;height:430px;border:10px solid #C8342B;border-radius:50%;opacity:0\"></div><div id=\"{sid}-four\" style=\"position:absolute;left:160px;top:606px;background:#C8342B;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 18px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">THIK 4 LITRE!</div>",
+        "js": [
+          "tl.to(\"#{sid}-wa\", {height: 260, duration: 0.8, ease: \"power1.inOut\"}, @L0+0.4);",
+          "tl.set(\"#{sid}-na0\", {opacity: 0}, @L0+0.4+0.8); tl.set(\"#{sid}-na5\", {opacity: 1}, @L0+0.4+0.8);",
+          "tl.to(\"#{sid}-wa\", {height: 104, duration: 0.8, ease: \"power1.inOut\"}, @L1+0.5);",
+          "tl.set(\"#{sid}-na5\", {opacity: 0}, @L1+0.5+0.8); tl.set(\"#{sid}-na2\", {opacity: 1}, @L1+0.5+0.8);",
+          "tl.to(\"#{sid}-wb\", {height: 156, duration: 0.8, ease: \"power1.inOut\"}, @L1+0.5);",
+          "tl.set(\"#{sid}-nb0\", {opacity: 0}, @L1+0.5+0.8); tl.set(\"#{sid}-nb3\", {opacity: 1}, @L1+0.5+0.8);",
+          "tl.to(\"#{sid}-wb\", {height: 0, duration: 0.8, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.set(\"#{sid}-nb3\", {opacity: 0}, @L2+0.3+0.8); tl.set(\"#{sid}-nb0\", {opacity: 1}, @L2+0.3+0.8);",
+          "tl.to(\"#{sid}-wa\", {height: 0, duration: 0.8, ease: \"power1.inOut\"}, @L2+2.0);",
+          "tl.set(\"#{sid}-na2\", {opacity: 0}, @L2+2.0+0.8); tl.set(\"#{sid}-na0\", {opacity: 1}, @L2+2.0+0.8);",
+          "tl.to(\"#{sid}-wb\", {height: 104, duration: 0.8, ease: \"power1.inOut\"}, @L2+2.0);",
+          "tl.set(\"#{sid}-nb0\", {opacity: 0}, @L2+2.0+0.8); tl.set(\"#{sid}-nb2\", {opacity: 1}, @L2+2.0+0.8);",
+          "tl.to(\"#{sid}-wa\", {height: 260, duration: 0.8, ease: \"power1.inOut\"}, @L3+0.3);",
+          "tl.set(\"#{sid}-na0\", {opacity: 0}, @L3+0.3+0.8); tl.set(\"#{sid}-na5\", {opacity: 1}, @L3+0.3+0.8);",
+          "tl.to(\"#{sid}-wa\", {height: 208, duration: 0.8, ease: \"power1.inOut\"}, @L3+2.0);",
+          "tl.set(\"#{sid}-na5\", {opacity: 0}, @L3+2.0+0.8); tl.set(\"#{sid}-na4\", {opacity: 1}, @L3+2.0+0.8);",
+          "tl.to(\"#{sid}-wb\", {height: 156, duration: 0.8, ease: \"power1.inOut\"}, @L3+2.0);",
+          "tl.set(\"#{sid}-nb2\", {opacity: 0}, @L3+2.0+0.8); tl.set(\"#{sid}-nb3\", {opacity: 1}, @L3+2.0+0.8);",
+          "tl.fromTo(\"#{sid}-ring\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L4+0.3);",
+          "tl.fromTo(\"#{sid}-four\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L4+0.3+0.3);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.4"
+          ],
+          [
+            "whoosh",
+            "@L1+0.5"
+          ],
+          [
+            "whoosh",
+            "@L2+0.3"
+          ],
+          [
+            "whoosh",
+            "@L2+2.0"
+          ],
+          [
+            "whoosh",
+            "@L3+0.3"
+          ],
+          [
+            "whoosh",
+            "@L3+2.0"
+          ],
+          [
+            "reveal",
+            "@L4+0.3"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "rafiq",
+        "line": 4,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Paanch wala bharo.",
+          "say": "पाँच वाला भरो।",
+          "en": "Fill the five.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Usse teen wala bharo. Paanch mein bache do.",
+          "say": "उससे तीन वाला भरो। पाँच में बचे दो।",
+          "en": "Fill the three from it. Two are left in the five."
+        },
+        {
+          "who": "foxley",
+          "caption": "Teen wala khaali karo, aur woh do litre usmein daalo.",
+          "say": "तीन वाला ख़ाली करो, और वो दो लीटर उसमें डालो।",
+          "en": "Empty the three, and pour those two litres into it."
+        },
+        {
+          "who": "foxley",
+          "caption": "Paanch wala phir bharo, aur teen wale ko upar tak bharo.",
+          "say": "पाँच वाला फिर भरो, और तीन वाले को ऊपर तक भरो।",
+          "en": "Fill the five again, and top up the three."
+        },
+        {
+          "who": "rafiq",
+          "caption": "Waah! Paanch wale mein bache thik chaar!",
+          "say": "वाह! पाँच वाले में बचे ठीक चार!",
+          "en": "Wow! Exactly four left in the five!"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "rafiq",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:470px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">DO MATKE</span></div></div><div style=\"position:absolute;left:130px;top:700px;width:300px;height:280px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wa\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:116px;top:678px;width:328px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:130px;width:300px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">5 LITRE</div><div id=\"{sid}-na0\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-na1\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-na2\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-na3\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div><div id=\"{sid}-na4\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">4 L</div><div id=\"{sid}-na5\" style=\"position:absolute;left:440px;top:690px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">5 L</div><div style=\"position:absolute;left:620px;top:804px;width:240px;height:176px;border:9px solid #2B2B2B;border-top:none;border-radius:0 0 90px 90px;background:#FFF5E6;overflow:hidden\"><div id=\"{sid}-wb\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:linear-gradient(#7FD3F7,#2E8BC0)\"></div></div><div style=\"position:absolute;left:606px;top:782px;width:268px;height:30px;background:#B5651D;border:7px solid #2B2B2B;border-radius:14px\"></div><div style=\"position:absolute;left:620px;width:240px;top:994px;text-align:center;font-weight:900;font-size:36px;color:#2B2B2B\">3 LITRE</div><div id=\"{sid}-nb0\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:1\">0 L</div><div id=\"{sid}-nb1\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">1 L</div><div id=\"{sid}-nb2\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">2 L</div><div id=\"{sid}-nb3\" style=\"position:absolute;left:870px;top:794px;font-weight:900;font-size:48px;color:#1F4E5F;opacity:0\">3 L</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

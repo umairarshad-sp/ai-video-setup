@@ -1,0 +1,354 @@
+{
+  "number": 306,
+  "part": 1,
+  "slug": "riddle_nadi",
+  "title": {
+    "ur": "NADI PAAR",
+    "en": "THE RIVER CROSSING"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 100,
+    "gain": 0.5
+  },
+  "answer_note": "Goat over; back; wolf over; goat back; grass over; back; goat over.",
+  "shots": [
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "SIRF EK KASHTI... AUR TEEN MUSIBATEIN!",
+        "y": 110,
+        "dur": 99
+      },
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:430px;background:#6EC6F0;border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NADI PAAR</span></div></div><div style=\"position:absolute;left:48px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:22px 0 0 22px\"></div><div style=\"position:absolute;left:832px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:0 22px 22px 0\"></div><div style=\"position:absolute;left:300px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:300px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div id=\"{sid}-boat\" style=\"position:absolute;left:260px;top:900px;width:200px;height:70px;z-index:2\"><svg viewBox=\"0 0 200 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M6 16 h188 q-14 46 -60 48 h-68 q-46 -2 -60 -48z\" fill=\"#8A5A2B\"/><path d=\"M20 30 h160\" stroke=\"#5A3A1E\" stroke-width=\"4\"/></g></svg></div><div id=\"{sid}-wolf\" style=\"position:absolute;left:70px;top:640px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><path d=\"M22 58 q-16 -10 -16 -26 q10 8 20 16\" fill=\"#8E8E8E\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"19\" fill=\"#8E8E8E\"/><path d=\"M84 30 l6 -20 l8 14 l8 -14 l4 20 q12 6 12 16 q-12 6 -24 4 q-14 -2 -14 -20z\" fill=\"#8E8E8E\"/></g><circle cx=\"100\" cy=\"32\" r=\"3\" fill=\"#F2B134\"/><circle cx=\"118\" cy=\"46\" r=\"3\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-goat\" style=\"position:absolute;left:70px;top:760px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"20\" fill=\"#FFFFFF\"/><path d=\"M26 52 q-8 -2 -10 8\" fill=\"none\"/><ellipse cx=\"96\" cy=\"36\" rx=\"16\" ry=\"13\" fill=\"#FFFFFF\"/><path d=\"M88 24 q-4 -14 8 -18 M100 24 q4 -14 14 -12\" fill=\"none\" stroke=\"#8A5A2B\" stroke-width=\"5\"/><path d=\"M100 48 q2 10 -4 14\" fill=\"none\"/></g><circle cx=\"100\" cy=\"33\" r=\"2.5\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-grass\" style=\"position:absolute;left:70px;top:880px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M30 90 q-6 -50 -22 -70 q20 10 34 40 q2 -40 18 -56 q-4 30 2 56 q10 -40 34 -50 q-18 26 -16 60 q12 -20 30 -24 q-16 18 -20 44z\" fill=\"#7CB342\"/><rect x=\"38\" y=\"62\" width=\"44\" height=\"12\" rx=\"4\" fill=\"#C98A1C\"/></g></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Raju ko bhediya, bakri aur ghaas nadi paar le jaani hai.",
+          "say": "राजू को भेड़िया, बकरी और घास नदी पार ले जानी है।",
+          "en": "Raju has to take a wolf, a goat and some grass across the river."
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.3,
+      "card": {
+        "title": "MUSHKIL",
+        "rows": [
+          [
+            "BHEDIYA + BAKRI",
+            "BAKRI GAYI!"
+          ],
+          [
+            "BAKRI + GHAAS",
+            "GHAAS GAYI!"
+          ],
+          [
+            "KASHTI MEIN",
+            "RAJU + 1 CHEEZ"
+          ]
+        ],
+        "y": 640,
+        "rot": -2,
+        "at": -1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kashti mein sirf ek cheez! Aur akele chhodo to bhediya bakri kha jayega, bakri ghaas.",
+          "say": "कश्ती में सिर्फ़ एक चीज़! और अकेले छोड़ो तो भेड़िया बकरी खा जाएगा, बकरी घास।",
+          "en": "Only one thing fits in the boat! Left alone, the wolf eats the goat, and the goat eats the grass."
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:430px;background:#6EC6F0;border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NADI PAAR</span></div></div><div style=\"position:absolute;left:48px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:22px 0 0 22px\"></div><div style=\"position:absolute;left:832px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:0 22px 22px 0\"></div><div style=\"position:absolute;left:300px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:300px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div id=\"{sid}-boat\" style=\"position:absolute;left:260px;top:900px;width:200px;height:70px;z-index:2\"><svg viewBox=\"0 0 200 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M6 16 h188 q-14 46 -60 48 h-68 q-46 -2 -60 -48z\" fill=\"#8A5A2B\"/><path d=\"M20 30 h160\" stroke=\"#5A3A1E\" stroke-width=\"4\"/></g></svg></div><div id=\"{sid}-wolf\" style=\"position:absolute;left:70px;top:640px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><path d=\"M22 58 q-16 -10 -16 -26 q10 8 20 16\" fill=\"#8E8E8E\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"19\" fill=\"#8E8E8E\"/><path d=\"M84 30 l6 -20 l8 14 l8 -14 l4 20 q12 6 12 16 q-12 6 -24 4 q-14 -2 -14 -20z\" fill=\"#8E8E8E\"/></g><circle cx=\"100\" cy=\"32\" r=\"3\" fill=\"#F2B134\"/><circle cx=\"118\" cy=\"46\" r=\"3\" fill=\"#2B2B2B\"/></svg></div><div style=\"position:absolute;left:190px;top:650px;width:60px;height:60px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:38px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-goat\" style=\"position:absolute;left:70px;top:760px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"20\" fill=\"#FFFFFF\"/><path d=\"M26 52 q-8 -2 -10 8\" fill=\"none\"/><ellipse cx=\"96\" cy=\"36\" rx=\"16\" ry=\"13\" fill=\"#FFFFFF\"/><path d=\"M88 24 q-4 -14 8 -18 M100 24 q4 -14 14 -12\" fill=\"none\" stroke=\"#8A5A2B\" stroke-width=\"5\"/><path d=\"M100 48 q2 10 -4 14\" fill=\"none\"/></g><circle cx=\"100\" cy=\"33\" r=\"2.5\" fill=\"#2B2B2B\"/></svg></div><div style=\"position:absolute;left:190px;top:770px;width:60px;height:60px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:38px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-grass\" style=\"position:absolute;left:70px;top:880px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M30 90 q-6 -50 -22 -70 q20 10 34 40 q2 -40 18 -56 q-4 30 2 56 q10 -40 34 -50 q-18 26 -16 60 q12 -20 30 -24 q-16 18 -20 44z\" fill=\"#7CB342\"/><rect x=\"38\" y=\"62\" width=\"44\" height=\"12\" rx=\"4\" fill=\"#C98A1C\"/></g></svg></div><div style=\"position:absolute;left:190px;top:890px;width:60px;height:60px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:38px;color:#2B2B2B;z-index:3\">3</div>",
+        "js": [],
+        "sfx": []
+      },
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Pehle kise le jaoge? Teen second!",
+          "say": "पहले किसे ले जाओगे? तीन सेकंड!",
+          "en": "Which one goes first? Three seconds!"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.6,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:430px;background:#6EC6F0;border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NADI PAAR</span></div></div><div style=\"position:absolute;left:48px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:22px 0 0 22px\"></div><div style=\"position:absolute;left:832px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:0 22px 22px 0\"></div><div style=\"position:absolute;left:300px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:300px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div id=\"{sid}-boat\" style=\"position:absolute;left:260px;top:900px;width:200px;height:70px;z-index:2\"><svg viewBox=\"0 0 200 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M6 16 h188 q-14 46 -60 48 h-68 q-46 -2 -60 -48z\" fill=\"#8A5A2B\"/><path d=\"M20 30 h160\" stroke=\"#5A3A1E\" stroke-width=\"4\"/></g></svg></div><div id=\"{sid}-wolf\" style=\"position:absolute;left:70px;top:640px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><path d=\"M22 58 q-16 -10 -16 -26 q10 8 20 16\" fill=\"#8E8E8E\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"19\" fill=\"#8E8E8E\"/><path d=\"M84 30 l6 -20 l8 14 l8 -14 l4 20 q12 6 12 16 q-12 6 -24 4 q-14 -2 -14 -20z\" fill=\"#8E8E8E\"/></g><circle cx=\"100\" cy=\"32\" r=\"3\" fill=\"#F2B134\"/><circle cx=\"118\" cy=\"46\" r=\"3\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-goat\" style=\"position:absolute;left:70px;top:760px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"20\" fill=\"#FFFFFF\"/><path d=\"M26 52 q-8 -2 -10 8\" fill=\"none\"/><ellipse cx=\"96\" cy=\"36\" rx=\"16\" ry=\"13\" fill=\"#FFFFFF\"/><path d=\"M88 24 q-4 -14 8 -18 M100 24 q4 -14 14 -12\" fill=\"none\" stroke=\"#8A5A2B\" stroke-width=\"5\"/><path d=\"M100 48 q2 10 -4 14\" fill=\"none\"/></g><circle cx=\"100\" cy=\"33\" r=\"2.5\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-grass\" style=\"position:absolute;left:70px;top:880px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M30 90 q-6 -50 -22 -70 q20 10 34 40 q2 -40 18 -56 q-4 30 2 56 q10 -40 34 -50 q-18 26 -16 60 q12 -20 30 -24 q-16 18 -20 44z\" fill=\"#7CB342\"/><rect x=\"38\" y=\"62\" width=\"44\" height=\"12\" rx=\"4\" fill=\"#C98A1C\"/></g></svg></div>",
+        "js": [
+          "tl.to(\"#{sid}-goat\", {x: 230, y: 58, duration: 0.3, ease: \"power2.out\"}, @L0+0.2);",
+          "tl.to(\"#{sid}-boat\", {x: 360, duration: 0.8, ease: \"sine.inOut\"}, @L0+0.2+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 590, duration: 0.8, ease: \"sine.inOut\"}, @L0+0.2+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 810, y: 0, duration: 0.3, ease: \"back.out(2)\"}, @L0+0.2+1.2);",
+          "tl.to(\"#{sid}-boat\", {x: 0, duration: 0.8, ease: \"sine.inOut\"}, @L0+1.9);",
+          "tl.to(\"#{sid}-wolf\", {x: 230, y: 178, duration: 0.3, ease: \"power2.out\"}, @L1+0.2);",
+          "tl.to(\"#{sid}-boat\", {x: 360, duration: 0.8, ease: \"sine.inOut\"}, @L1+0.2+0.35);",
+          "tl.to(\"#{sid}-wolf\", {x: 590, duration: 0.8, ease: \"sine.inOut\"}, @L1+0.2+0.35);",
+          "tl.to(\"#{sid}-wolf\", {x: 810, y: 0, duration: 0.3, ease: \"back.out(2)\"}, @L1+0.2+1.2);",
+          "tl.to(\"#{sid}-goat\", {x: 590, y: 58, duration: 0.3, ease: \"power2.out\"}, @L1+1.9);",
+          "tl.to(\"#{sid}-boat\", {x: 0, duration: 0.8, ease: \"sine.inOut\"}, @L1+1.9+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 230, duration: 0.8, ease: \"sine.inOut\"}, @L1+1.9+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 0, y: 0, duration: 0.3, ease: \"back.out(2)\"}, @L1+1.9+1.2);",
+          "tl.to(\"#{sid}-grass\", {x: 230, y: -62, duration: 0.3, ease: \"power2.out\"}, @L2+0.2);",
+          "tl.to(\"#{sid}-boat\", {x: 360, duration: 0.8, ease: \"sine.inOut\"}, @L2+0.2+0.35);",
+          "tl.to(\"#{sid}-grass\", {x: 590, duration: 0.8, ease: \"sine.inOut\"}, @L2+0.2+0.35);",
+          "tl.to(\"#{sid}-grass\", {x: 810, y: 0, duration: 0.3, ease: \"back.out(2)\"}, @L2+0.2+1.2);",
+          "tl.to(\"#{sid}-boat\", {x: 0, duration: 0.8, ease: \"sine.inOut\"}, @L2+1.9);",
+          "tl.to(\"#{sid}-goat\", {x: 230, y: 58, duration: 0.3, ease: \"power2.out\"}, @L3+0.2);",
+          "tl.to(\"#{sid}-boat\", {x: 360, duration: 0.8, ease: \"sine.inOut\"}, @L3+0.2+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 590, duration: 0.8, ease: \"sine.inOut\"}, @L3+0.2+0.35);",
+          "tl.to(\"#{sid}-goat\", {x: 810, y: 0, duration: 0.3, ease: \"back.out(2)\"}, @L3+0.2+1.2);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.2+0.35"
+          ],
+          [
+            "pop",
+            "@L0+0.2+1.3"
+          ],
+          [
+            "whoosh",
+            "@L0+1.9"
+          ],
+          [
+            "whoosh",
+            "@L1+0.2+0.35"
+          ],
+          [
+            "pop",
+            "@L1+0.2+1.3"
+          ],
+          [
+            "whoosh",
+            "@L1+1.9+0.35"
+          ],
+          [
+            "pop",
+            "@L1+1.9+1.3"
+          ],
+          [
+            "whoosh",
+            "@L2+0.2+0.35"
+          ],
+          [
+            "pop",
+            "@L2+0.2+1.3"
+          ],
+          [
+            "whoosh",
+            "@L2+1.9"
+          ],
+          [
+            "whoosh",
+            "@L3+0.2+0.35"
+          ],
+          [
+            "pop",
+            "@L3+0.2+1.3"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "SAB PAAR!",
+        "on": "raju",
+        "line": 3,
+        "y": 1560,
+        "w": 560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Pehle bakri le jao, aur khaali wapas aao.",
+          "say": "पहले बकरी ले जाओ, और ख़ाली वापस आओ।",
+          "en": "First take the goat, and come back empty.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Phir bhediya le jao... aur bakri wapas le aao!",
+          "say": "फिर भेड़िया ले जाओ... और बकरी वापस ले आओ!",
+          "en": "Then take the wolf... and bring the goat back!"
+        },
+        {
+          "who": "foxley",
+          "caption": "Ab ghaas le jao, aur khaali wapas aao.",
+          "say": "अब घास ले जाओ, और ख़ाली वापस आओ।",
+          "en": "Now take the grass, and come back empty."
+        },
+        {
+          "who": "foxley",
+          "caption": "Aakhir mein bakri! Sab salamat paar!",
+          "say": "आख़िर में बकरी! सब सलामत पार!",
+          "en": "Finally, the goat! Everyone across safely!"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:430px;background:#6EC6F0;border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B;overflow:visible\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NADI PAAR</span></div></div><div style=\"position:absolute;left:48px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:22px 0 0 22px\"></div><div style=\"position:absolute;left:832px;top:598px;width:200px;height:414px;background:#C9A36A;border-radius:0 22px 22px 0\"></div><div style=\"position:absolute;left:300px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:640px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:300px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:460px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div style=\"position:absolute;left:620px;top:790px;width:90px;height:18px;border-top:5px solid rgba(255,255,255,0.7);border-radius:50%\"></div><div id=\"{sid}-boat\" style=\"position:absolute;left:260px;top:900px;width:200px;height:70px;z-index:2\"><svg viewBox=\"0 0 200 70\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M6 16 h188 q-14 46 -60 48 h-68 q-46 -2 -60 -48z\" fill=\"#8A5A2B\"/><path d=\"M20 30 h160\" stroke=\"#5A3A1E\" stroke-width=\"4\"/></g></svg></div><div id=\"{sid}-wolf\" style=\"position:absolute;left:70px;top:640px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><path d=\"M22 58 q-16 -10 -16 -26 q10 8 20 16\" fill=\"#8E8E8E\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"19\" fill=\"#8E8E8E\"/><path d=\"M84 30 l6 -20 l8 14 l8 -14 l4 20 q12 6 12 16 q-12 6 -24 4 q-14 -2 -14 -20z\" fill=\"#8E8E8E\"/></g><circle cx=\"100\" cy=\"32\" r=\"3\" fill=\"#F2B134\"/><circle cx=\"118\" cy=\"46\" r=\"3\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-goat\" style=\"position:absolute;left:70px;top:760px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M34 66 v24 M46 68 v22 M76 68 v22 M88 66 v24\" stroke-width=\"6\"/><ellipse cx=\"60\" cy=\"56\" rx=\"36\" ry=\"20\" fill=\"#FFFFFF\"/><path d=\"M26 52 q-8 -2 -10 8\" fill=\"none\"/><ellipse cx=\"96\" cy=\"36\" rx=\"16\" ry=\"13\" fill=\"#FFFFFF\"/><path d=\"M88 24 q-4 -14 8 -18 M100 24 q4 -14 14 -12\" fill=\"none\" stroke=\"#8A5A2B\" stroke-width=\"5\"/><path d=\"M100 48 q2 10 -4 14\" fill=\"none\"/></g><circle cx=\"100\" cy=\"33\" r=\"2.5\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-grass\" style=\"position:absolute;left:70px;top:880px;width:120px;height:96px;z-index:3\"><svg viewBox=\"0 0 120 96\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M30 90 q-6 -50 -22 -70 q20 10 34 40 q2 -40 18 -56 q-4 30 2 56 q10 -40 34 -50 q-18 26 -16 60 q12 -20 30 -24 q-16 18 -20 44z\" fill=\"#7CB342\"/><rect x=\"38\" y=\"62\" width=\"44\" height=\"12\" rx=\"4\" fill=\"#C98A1C\"/></g></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}
