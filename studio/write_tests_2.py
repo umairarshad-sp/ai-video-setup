@@ -96,34 +96,34 @@ wit = {"number": 201, "part": 1, "slug": "wit_001", "format": "1: wit story (Akb
        "title": {"ur": "17 OONT", "en": "17 CAMELS"}, "handle": "@AskFoxley", "music": {"bpm": 100, "gain": 0.5},
        "answer_note": "Jamil lends one camel: 18 -> 9 + 6 + 2 = 17, and his own camel is left over.",
        "shots": [
-    {"set": "gali_street", "cast": TRIO, "camera": CAM, "sfx": [["sting", 0.0]], "caption_y": 1290, "hold": 0.1,
+    {"set": "desert_village", "cast": TRIO, "camera": CAM, "sfx": [["sting", 0.0]], "caption_y": 1290, "hold": 0.1,
      "hook": {"text": "17 OONT, 3 DOST... AUR EK MUSHKIL!", "y": 110, "dur": 99},
      "overlay": camels_overlay(17),
      "lines": [ln("foxley", "Teen doston ne inaam mein satrah oont jeete.", "तीन दोस्तों ने इनाम में सत्रह ऊँट जीते।",
                   "Three friends won seventeen camels as a prize.")]},
-    {"set": "gali_street", "transition": "whoosh", "cast": TRIO, "camera": CAM, "caption_y": 230, "hold": 0.5,
+    {"set": "desert_village", "transition": "whoosh", "cast": TRIO, "camera": CAM, "caption_y": 230, "hold": 0.5,
      "card": {**RULES, "at": -1},
      "lines": [ln("foxley", "Shart yeh thi: Raju ko aadhe, Faisal ko teesra hissa, aur Zara ko nauvan hissa.",
                   "शर्त ये थी: राजू को आधे, फ़ैसल को तीसरा हिस्सा, और ज़ारा को नौवाँ हिस्सा।",
                   "The rule: Raju gets half, Faisal a third, and Zara a ninth.")]},
-    {"set": "gali_street", "transition": "whoosh", "cast": [{"id": "raju", "x": 0.5}],
+    {"set": "desert_village", "transition": "whoosh", "cast": [{"id": "raju", "x": 0.5}],
      "camera": {"from": {"focus": "raju", "zoom": 1.25}, "to": {"focus": "raju", "zoom": 1.4}}, "hold": 0.3,
      "lines": [ln("raju", "Satrah ka aadha? Saadhe aath oont? Ek oont ko kaatein kya?!",
                   "सत्रह का आधा? साढ़े आठ ऊँट? एक ऊँट को काटें क्या?!",
                   "Half of seventeen? Eight and a half camels? Do we cut a camel in half?!", after="shocked")]},
-    {"set": "gali_street", "transition": "whoosh", "cast": TRIO, "camera": CAM, "caption_y": 1290,
+    {"set": "desert_village", "transition": "whoosh", "cast": TRIO, "camera": CAM, "caption_y": 1290,
      "overlay": camels_overlay(17), "timer": 3, "timer_y": 1500, "sfx": [["riser", 0.0]],
      "cta": {"after_timer": True, "y": 160, "main": "TUM KYA KARTE? COMMENT KARO!", "sub": "Jawab abhi aa raha hai..."}, "hold": 0.6,
      "lines": [ln("foxley", "Kisi oont ko kaate bina, kaise baantoge? Socho!", "किसी ऊँट को काटे बिना, कैसे बाँटोगे? सोचो!",
                   "How would you share them without cutting a camel? Think!")]},
-    {"set": "gali_street", "transition": "whoosh", "cast": [{"id": "jamil", "x": 0.5}], "caption_y": 230, "hold": 0.4,
+    {"set": "desert_village", "transition": "whoosh", "cast": [{"id": "jamil", "x": 0.5}], "caption_y": 230, "hold": 0.4,
      "camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.0}, "to": {"focus": [0.5, 0.62], "zoom": 1.04}},
      "overlay": camels_overlay(17, extra=True, extra_at="@L0+1.2", split_at="@L1+0.6"),
      "lines": [ln("jamil", "Lo beta, mera ek oont bhi le lo!", "लो बेटा, मेरा एक ऊँट भी ले लो!", "Here, take one of my camels too!"),
                ln("foxley", "Ab atharah! Aadhe nau, teesra hissa chhe, aur nauvan hissa do.",
                   "अब अठारह! आधे नौ, तीसरा हिस्सा छह, और नौवाँ हिस्सा दो।",
                   "Now eighteen! Half is nine, a third is six, and a ninth is two.", sfx_before="reveal")]},
-    {"set": "gali_street", "cast": [{"id": "jamil", "x": 0.5}], "caption_y": 230, "hold": 0.6,
+    {"set": "desert_village", "cast": [{"id": "jamil", "x": 0.5}], "caption_y": 230, "hold": 0.6,
      "camera": {"from": {"focus": [0.5, 0.62], "zoom": 1.04}, "to": {"focus": [0.5, 0.62], "zoom": 1.1}},
      "overlay": camels_overlay(17, extra=True, start_split=True, home_at="@L1+0.3"),
      "stamp": {"text": "KAMAAL!", "on": "jamil", "line": 1, "y": 1520},
@@ -131,7 +131,7 @@ wit = {"number": 201, "part": 1, "slug": "wit_001", "format": "1: wit story (Akb
                   "Nine, six and two... seventeen in all! One camel is left over."),
                ln("jamil", "Aur mera oont, wapas mere paas!", "और मेरा ऊँट, वापस मेरे पास!", "And my camel comes right back to me!",
                   after="signature_cane_shake")]},
-    {"set": "gali_street", "cast": TRIO, "camera": CAM, "overlay": camels_overlay(17), "hold": 0.6},
+    {"set": "desert_village", "cast": TRIO, "camera": CAM, "overlay": camels_overlay(17), "hold": 0.6},
 ]}
 
 
@@ -199,36 +199,49 @@ def doors_overlay(pulse=None, answer=None):
 
 
 BUNTY = [{"id": "bunty", "x": 0.5}]
-CAMD = {"from": {"focus": [0.5, 0.6], "zoom": 1.0}, "to": {"focus": [0.5, 0.6], "zoom": 1.03}}
+CAMD = {"from": {"focus": [0.5, 0.6], "zoom": 1.0}, "to": {"focus": [0.5, 0.6], "zoom": 1.0}}   # still: doors are painted in the set
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from props import real_doors  # noqa: E402
+
+ROOMS = [FIRE, SNAKES, lion()]
+LBL = ["AAG", "ZEHREELE SAANP", "SHER: 3 SAAL SE BHOOKA"]
+DSET = "qila_doors"
+
+
+def qdoors(**k):
+    return real_doors(DSET, ROOMS, labels=LBL, **k)
+
+
 doors = {"number": 202, "part": 1, "slug": "doors_001", "format": "3: choice riddle, answer included, loops",
          "title": {"ur": "TEEN DARWAZE", "en": "THREE DOORS"}, "handle": "@AskFoxley", "music": {"bpm": 104, "gain": 0.5},
          "answer_note": "Door 3: a lion that hasn't eaten for 3 years is long dead.",
          "shots": [
-    {"set": "police_station", "dark": 0.35, "cast": BUNTY, "camera": CAMD, "sfx": [["sting", 0.0]], "caption_y": 1300, "hold": 0.1,
-     "hook": {"text": "90% LOG GALAT DARWAZA CHUNTE HAIN!", "y": 110, "dur": 99}, "overlay": doors_overlay(),
+    {"set": DSET, "cast": BUNTY, "camera": CAMD, "feet": 0.95, "sfx": [["sting", 0.0]], "caption_y": 1300, "hold": 0.1,
+     "hook": {"text": "90% LOG GALAT DARWAZA CHUNTE HAIN!", "y": 110, "dur": 99}, "overlay": qdoors(),
      "lines": [ln("foxley", "Tum qaid mein ho. Bahar nikalne ke sirf teen raaste hain.", "तुम क़ैद में हो। बाहर निकलने के सिर्फ़ तीन रास्ते हैं।",
                   "You're locked up. There are only three ways out.")]},
-    {"set": "police_station", "dark": 0.35, "cast": BUNTY, "camera": CAMD, "caption_y": 1300, "hold": 0.2,
-     "overlay": doors_overlay(pulse=[(0, "@L0+0.2"), (1, "@L1+0.2"), (2, "@L2+0.2")]),
+    {"set": DSET, "cast": BUNTY, "camera": CAMD, "feet": 0.95, "caption_y": 1300, "hold": 0.2,
+     "overlay": qdoors(open_at=[(1, "@L0+0.2"), (2, "@L1+0.2"), (3, "@L2+0.2")]),
      "lines": [ln("foxley", "Pehle kamre mein bhadakti aag.", "पहले कमरे में भड़कती आग।", "Room one: a blazing fire."),
                ln("foxley", "Doosre mein zehreele saanp.", "दूसरे में ज़हरीले साँप।", "Room two: poisonous snakes."),
                ln("foxley", "Teesre mein ek sher, jis ne teen saal se kuch nahi khaya.", "तीसरे में एक शेर, जिसने तीन साल से कुछ नहीं खाया।",
                   "Room three: a lion that hasn't eaten in three years.")]},
-    {"set": "police_station", "dark": 0.35, "transition": "whoosh", "cast": [{"id": "bunty", "x": 0.5}],
+    {"set": DSET, "transition": "whoosh", "cast": [{"id": "bunty", "x": 0.5}],
      "camera": {"from": {"focus": "bunty", "zoom": 1.3}, "to": {"focus": "bunty", "zoom": 1.45}}, "hold": 0.2,
      "lines": [ln("bunty", "Baap re! Main kaunsa darwaza kholoon?", "बाप रे! मैं कौनसा दरवाज़ा खोलूँ?", "Oh no! Which door do I open?", after="nervous")]},
-    {"set": "police_station", "dark": 0.35, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "caption_y": 1300,
-     "overlay": doors_overlay(), "timer": 3, "timer_y": 1500, "sfx": [["riser", 0.0]],
+    {"set": DSET, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "feet": 0.95, "caption_y": 1300,
+     "overlay": qdoors(show_open=(1, 2, 3)), "timer": 3, "timer_y": 1500, "sfx": [["riser", 0.0]],
      "cta": {"after_timer": True, "y": 160, "main": "1, 2 YA 3? COMMENT KARO!", "sub": "Jawab abhi aa raha hai..."}, "hold": 0.6,
      "lines": [ln("foxley", "Tum kaunsa chunoge? Teen second!", "तुम कौनसा चुनोगे? तीन सेकंड!", "Which one would you pick? Three seconds!")]},
-    {"set": "police_station", "dark": 0.35, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "caption_y": 1300, "hold": 0.5,
-     "overlay": doors_overlay(answer="@L0+0.1"),
+    {"set": DSET, "transition": "whoosh", "cast": BUNTY, "camera": CAMD, "feet": 0.95, "caption_y": 1300, "hold": 0.5,
+     "overlay": qdoors(show_open=(1, 2, 3), cross_at=[(1, "@L0+0.1"), (2, "@L0+0.4")], swap_at=[(3, "@L1+1.2", lion(True))]),
+     "sfx": [["reveal", 0.5]],
      "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 2, "y": 130, "w": 640},
      "lines": [ln("foxley", "Teesra darwaza!", "तीसरा दरवाज़ा!", "Door number three!"),
                ln("foxley", "Jo sher teen saal se bhooka ho... woh kab ka mar chuka hoga!", "जो शेर तीन साल से भूखा हो... वो कब का मर चुका होगा!",
                   "A lion that hasn't eaten in three years... died long ago!"),
                ln("bunty", "Waah! Main bach gaya!", "वाह! मैं बच गया!", "Yay! I'm saved!")]},
-    {"set": "police_station", "dark": 0.35, "cast": BUNTY, "camera": CAMD, "overlay": doors_overlay(), "hold": 0.6},
+    {"set": DSET, "cast": BUNTY, "camera": CAMD, "feet": 0.95, "overlay": qdoors(), "hold": 0.6},
 ]}
 
 for name, ep in (("wit_001", wit), ("doors_001", doors)):

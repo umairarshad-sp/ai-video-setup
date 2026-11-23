@@ -8,7 +8,9 @@
     python3 studio/write_riddles_4.py
 When the owner's backgrounds exist in sets/<id>/background.png, the real set is used automatically.
 """
-import json, math, os
+import json, math, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from props import real_doors  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INK = "#2B2B2B"
@@ -53,8 +55,11 @@ def cam(z0=1.0, z1=1.03):
 
 
 def question_shot(set_, cast, overlay, text, say, en, main="1, 2 YA 3? COMMENT KARO!", timer=3, **k):
-    return {"set": set_, "transition": "whoosh", "cast": cast, "camera": cam(), "feet": 0.93, "overlay": overlay,
-            "timer": timer, "timer_y": 1500, "caption_y": 1290, "sfx": [["riser", 0.0]], "hold": 0.6,
+    camera = k.pop("camera", cam())
+    feet = k.pop("feet", 0.93)
+    caption_y = k.pop("caption_y", 1290)
+    return {"set": set_, "transition": "whoosh", "cast": cast, "camera": camera, "feet": feet, "overlay": overlay,
+            "timer": timer, "timer_y": 1500, "caption_y": caption_y, "sfx": [["riser", 0.0]], "hold": 0.6,
             "cta": {"after_timer": True, "y": 160, "main": main, "sub": "Jawab abhi aa raha hai..."},
             "lines": [ln("foxley", text, say, en)], **k}
 
@@ -251,31 +256,15 @@ def lion_svg():
             '<path d="M80 134 q20 26 42 0" fill="#C8342B" stroke="#2B2B2B" stroke-width="5"/></svg>')
 
 
-DOORS2 = [(110, 1), (630, 2)]
-
-
 def gate(open_at=None, show_back=False):
-    html, js, sfx = "", [], []
-    for x, n in DOORS2:
-        behind = SUN if n == 1 else lion_svg()
-        lbl = "AZAADI" if n == 1 else "BHOOKA SHER"
-        html += (f'<div style="position:absolute;left:{x}px;top:{PY}px;width:340px;height:440px;border:10px solid {INK};border-radius:170px 170px 10px 10px;'
-                 f'overflow:hidden;background:#3A2410;box-shadow:0 12px 0 {INK}">'
-                 f'<div style="position:absolute;left:30px;right:30px;top:90px;bottom:40px">{behind}</div>'
-                 f'<div id="{{sid}}-door{n}" style="position:absolute;inset:0;background:linear-gradient(90deg,#6B3F22,#8A5A2B,#6B3F22);transform-origin:0 50%;'
-                 f'{"opacity:0;" if show_back else ""}">'
-                 f'<div style="position:absolute;left:50%;top:150px;margin-left:-60px;font-weight:900;font-size:150px;color:#F2B134;text-shadow:0 6px 0 {INK}">?</div></div></div>'
-                 + badge(n, x + 140, PY - 36, 70, 44)
-                 + tag(lbl, x + 30, PY + 450, f"lb{n}", bg="#2E9E4F" if n == 1 else "#C8342B"))
-        if show_back:
-            js.append(pop(f"lb{n}", "@S+0.2"))
+    """the two painted doors of qila_gate: 1 = freedom, 2 = the lion"""
+    if set_or("qila_gate", "") != "qila_gate":
+        raise SystemExit("qila_gate background missing")
+    k = {"show_open": (1, 2)} if show_back else {}
     if open_at:
-        js += [f'tl.to("#{{sid}}-door1", {{scaleX: 0.05, duration: 0.6, ease: "power2.inOut"}}, {open_at});',
-               pop("lb1", f"{open_at}+0.6"),
-               f'tl.to("#{{sid}}-door2", {{scaleX: 0.05, duration: 0.6, ease: "power2.inOut"}}, {open_at}+1.6);',
-               pop("lb2", f"{open_at}+2.2")]
-        sfx += [["reveal", open_at], ["sting", f"{open_at}+1.6"]]
-    return ov(html, js, sfx)
+        k["open_at"] = [(1, open_at), (2, f"{open_at}+1.6")]
+    return real_doors("qila_gate", [SUN, lion_svg()], labels=["AZAADI", "BHOOKA SHER"] if (open_at or show_back) else None,
+                      label_colors=["#2E9E4F", "#C8342B"], **k)
 
 
 def logic_card(at):
@@ -298,28 +287,28 @@ EPS["riddle_pehredaar"] = {"number": 308, "part": 1, "slug": "riddle_pehredaar",
   "handle": "@AskFoxley", "music": {"bpm": 98, "gain": 0.5},
   "answer_note": "Ask either guard which door the OTHER guard would call the way out, then take the opposite door.",
   "shots": [
-    {"set": SET8, "cast": TRIO8, "camera": cam(), "feet": 0.95, "sfx": [["sting", 0.0]], "caption_y": 1300, "hold": 0.1,
+    {"set": SET8, "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "sfx": [["sting", 0.0]], "caption_y": 1300, "hold": 0.1,
      "hook": {"text": "EK SAWAAL... AUR ZINDAGI KA FAISLA!", "y": 110, "dur": 99}, "overlay": gate(),
      "lines": [ln("foxley", "Ek darwaza azaadi ka, doosra bhooke sher ka.", "एक दरवाज़ा आज़ादी का, दूसरा भूखे शेर का।",
                   "One door leads to freedom, the other to a hungry lion.")]},
-    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(), "feet": 0.95, "caption_y": 1300, "hold": 0.2, "overlay": gate(),
+    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "caption_y": 1300, "hold": 0.2, "overlay": gate(),
      "lines": [ln("foxley", "Ek pehredaar hamesha sach bolta hai, doosra hamesha jhoot. Kaun kaun hai, koi nahi jaanta!",
                   "एक पहरेदार हमेशा सच बोलता है, दूसरा हमेशा झूठ। कौन कौन है, कोई नहीं जानता!",
                   "One guard always tells the truth, the other always lies. Nobody knows which is which!")]},
     question_shot(SET8, TRIO8, gate(), "Sirf ek sawaal! Kya poochoge?", "सिर्फ़ एक सवाल! क्या पूछोगे?", "Just one question! What would you ask?",
-                  main="KYA POOCHOGE? COMMENT KARO!", feet=0.95, caption_y=1300),
+                  main="KYA POOCHOGE? COMMENT KARO!", feet=0.95, caption_y=1300, camera=cam(1.0, 1.0)),
     {"set": SET8, "transition": "whoosh", "cast": [{"id": "bunty", "x": 0.32}, {"id": "sherkhan", "x": 0.7}],
      "camera": {"from": {"focus": "group", "zoom": 1.2}, "to": {"focus": "group", "zoom": 1.28}}, "hold": 0.3,
      "lines": [ln("bunty", "Agar main doosre pehredaar se poochoon ke azaadi ka darwaza kaunsa hai, to woh kya batayega?",
                   "अगर मैं दूसरे पहरेदार से पूछूँ के आज़ादी का दरवाज़ा कौनसा है, तो वो क्या बताएगा?",
                   "If I asked the other guard which door leads to freedom, what would he say?"),
                ln("sherkhan", "Woh darwaza number do batayega!", "वो दरवाज़ा नंबर दो बताएगा!", "He would say door number two!")]},
-    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(), "feet": 0.95, "caption_y": 1300, "hold": 0.4,
+    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "caption_y": 1300, "hold": 0.4,
      "overlay": gate(open_at="@L0+0.6"),
      "stamp": {"text": "BACH GAYA!", "on": "bunty", "line": 1, "y": 130, "w": 640},
      "lines": [ln("foxley", "To darwaza number ek kholo!", "तो दरवाज़ा नंबर एक खोलो!", "So open door number one!", sfx_before="reveal"),
                ln("bunty", "Azaadi! Main bach gaya!", "आज़ादी! मैं बच गया!", "Freedom! I'm saved!")]},
-    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(), "feet": 0.95, "caption_y": 230, "hold": 0.5,
+    {"set": SET8, "transition": "whoosh", "cast": TRIO8, "camera": cam(1.0, 1.0), "feet": 0.95, "caption_y": 230, "hold": 0.5,
      "overlay": logic_card(["@L0+0.3", "@L0+2.2", "@L1+0.3"]),
      "lines": [ln("foxley", "Sachcha jhoote ka jawab sach bataata hai, aur jhoota sachche ka jawab ulta kar deta hai.",
                   "सच्चा झूठे का जवाब सच बताता है, और झूठा सच्चे का जवाब उल्टा कर देता है।",
