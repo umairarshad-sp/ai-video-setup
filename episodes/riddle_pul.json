@@ -237,62 +237,52 @@
       "caption_y": 230,
       "hold": 0.8,
       "overlay": {
-        "html": "<div id=\"{sid}-mbunty\" style=\"position:absolute;left:78px;top:1176px;width:144px;height:204px;transform-origin:50% 100%\"><img src=\"cast/bunty/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mzara\" style=\"position:absolute;left:230px;top:1155px;width:120px;height:225px;transform-origin:50% 100%\"><img src=\"cast/zara/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mraju\" style=\"position:absolute;left:346px;top:1097px;width:167px;height:283px;transform-origin:50% 100%\"><img src=\"cast/raju/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mjamil\" style=\"position:absolute;left:485px;top:1111px;width:170px;height:269px;transform-origin:50% 100%\"><img src=\"cast/jamil/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-lamp\" style=\"position:absolute;left:180px;top:1210px;width:48px;height:72px;transform-origin:50% 100%;z-index:5\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"3\"><path d=\"M12 8 q8 -10 16 0\" fill=\"none\"/><rect x=\"10\" y=\"8\" width=\"20\" height=\"6\" fill=\"#8A5A2B\"/><path d=\"M8 14 h24 l-3 34 h-18z\" fill=\"#FFE066\"/><rect x=\"8\" y=\"48\" width=\"24\" height=\"8\" fill=\"#8A5A2B\"/></g></svg></div><div style=\"position:absolute;left:150px;top:0;width:1px;height:1px\"></div><div style=\"position:absolute;left:40px;top:600px;display:grid;grid-template-columns:auto auto;gap:8px 12px\"><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">BUNTY 1 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">ZARA 2 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">RAJU 5 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">JAMIL 10 MIN</div></div><div style=\"position:absolute;right:40px;top:600px;width:220px;height:120px;background:#C8342B;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 10px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:6px;text-align:center;color:#fff;font-weight:900;font-size:26px\">MINUTE</div><div id=\"{sid}-c0\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:1\">0</div><div id=\"{sid}-c2\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">2</div><div id=\"{sid}-c3\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">3</div><div id=\"{sid}-c13\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">13</div><div id=\"{sid}-c15\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">15</div><div id=\"{sid}-c17\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">17</div></div>",
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:1070px;height:380px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"></div><div style=\"position:absolute;left:532px;top:1080px;width:16px;height:360px;background:repeating-linear-gradient(#2B2B2B 0 18px,transparent 18px 30px)\"></div><div style=\"position:absolute;left:290px;top:1038px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">IS PAAR</div><div style=\"position:absolute;left:810px;top:1038px;transform:translateX(-50%);background:#2E9E4F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">US PAAR</div><div id=\"{sid}-mbunty\" style=\"position:absolute;left:64px;top:1227px;width:112px;height:158px\"><img src=\"cast/bunty/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-tbunty\" style=\"position:absolute;left:72px;top:1392px;width:96px;text-align:center;font-weight:900;font-size:26px;color:#2B2B2B\">1 MIN</div><div id=\"{sid}-mzara\" style=\"position:absolute;left:169px;top:1211px;width:93px;height:174px\"><img src=\"cast/zara/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-tzara\" style=\"position:absolute;left:167px;top:1392px;width:96px;text-align:center;font-weight:900;font-size:26px;color:#2B2B2B\">2 MIN</div><div id=\"{sid}-mraju\" style=\"position:absolute;left:245px;top:1166px;width:130px;height:219px\"><img src=\"cast/raju/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-traju\" style=\"position:absolute;left:262px;top:1392px;width:96px;text-align:center;font-weight:900;font-size:26px;color:#2B2B2B\">5 MIN</div><div id=\"{sid}-mjamil\" style=\"position:absolute;left:339px;top:1176px;width:132px;height:209px\"><img src=\"cast/jamil/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-tjamil\" style=\"position:absolute;left:357px;top:1392px;width:96px;text-align:center;font-weight:900;font-size:26px;color:#2B2B2B\">10 MIN</div><div id=\"{sid}-lamp\" style=\"position:absolute;left:96px;top:1100px;width:48px;height:72px\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"3\"><path d=\"M12 8 q8 -10 16 0\" fill=\"none\"/><rect x=\"10\" y=\"8\" width=\"20\" height=\"6\" fill=\"#8A5A2B\"/><path d=\"M8 14 h24 l-3 34 h-18z\" fill=\"#FFE066\"/><rect x=\"8\" y=\"48\" width=\"24\" height=\"8\" fill=\"#8A5A2B\"/></g></svg></div><div style=\"position:absolute;right:40px;top:600px;width:220px;height:120px;background:#C8342B;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 10px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:6px;text-align:center;color:#fff;font-weight:900;font-size:26px\">MINUTE</div><div id=\"{sid}-c0\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:1\">0</div><div id=\"{sid}-c2\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">2</div><div id=\"{sid}-c3\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">3</div><div id=\"{sid}-c13\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">13</div><div id=\"{sid}-c15\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">15</div><div id=\"{sid}-c17\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">17</div></div>",
         "js": [
-          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
-          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
-          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
-          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
-          "tl.to(\"#{sid}-mbunty\", {x: 780, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
-          "tl.to(\"#{sid}-lamp\", {x: 760, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
-          "tl.to(\"#{sid}-mzara\", {x: 69, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
-          "tl.to(\"#{sid}-mzara\", {x: 706, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
-          "tl.to(\"#{sid}-mzara\", {x: 699, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
-          "tl.set(\"#{sid}-c0\", {opacity: 0}, @L0+0.3+1.90); tl.set(\"#{sid}-c2\", {opacity: 1}, @L0+0.3+1.90);",
-          "tl.fromTo(\"#{sid}-c2\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+1.90);",
-          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 0.30, ease: \"none\"}, @L1+0.3+0.00);",
-          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 0.30, ease: \"none\"}, @L1+0.3+0.00);",
-          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 1.05, ease: \"none\"}, @L1+0.3+0.30);",
-          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 1.05, ease: \"none\"}, @L1+0.3+0.30);",
-          "tl.to(\"#{sid}-mbunty\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L1+0.3+1.35);",
-          "tl.to(\"#{sid}-lamp\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L1+0.3+1.35);",
-          "tl.set(\"#{sid}-c2\", {opacity: 0}, @L1+0.3+1.65); tl.set(\"#{sid}-c3\", {opacity: 1}, @L1+0.3+1.65);",
-          "tl.fromTo(\"#{sid}-c3\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3+1.65);",
-          "tl.to(\"#{sid}-mraju\", {x: -95, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
-          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
-          "tl.to(\"#{sid}-mraju\", {x: 542, y: -664, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
-          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
-          "tl.to(\"#{sid}-mraju\", {x: 570, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
-          "tl.to(\"#{sid}-lamp\", {x: 830, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
-          "tl.to(\"#{sid}-mjamil\", {x: -211, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
-          "tl.to(\"#{sid}-mjamil\", {x: 426, y: -664, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
-          "tl.to(\"#{sid}-mjamil\", {x: 489, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
-          "tl.set(\"#{sid}-c3\", {opacity: 0}, @L2+0.3+3.90); tl.set(\"#{sid}-c13\", {opacity: 1}, @L2+0.3+3.90);",
-          "tl.fromTo(\"#{sid}-c13\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L2+0.3+3.90);",
-          "tl.to(\"#{sid}-mzara\", {x: 682, y: -664, scale: 0.32, duration: 0.30, ease: \"none\"}, @L3+0.3+0.00);",
-          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 0.30, ease: \"none\"}, @L3+0.3+0.00);",
-          "tl.to(\"#{sid}-mzara\", {x: 45, y: -330, scale: 0.75, duration: 1.30, ease: \"none\"}, @L3+0.3+0.30);",
-          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 1.30, ease: \"none\"}, @L3+0.3+0.30);",
-          "tl.to(\"#{sid}-mzara\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L3+0.3+1.60);",
-          "tl.to(\"#{sid}-lamp\", {x: 140, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L3+0.3+1.60);",
-          "tl.set(\"#{sid}-c13\", {opacity: 0}, @L3+0.3+1.90); tl.set(\"#{sid}-c15\", {opacity: 1}, @L3+0.3+1.90);",
-          "tl.fromTo(\"#{sid}-c15\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L3+0.3+1.90);",
-          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
-          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
-          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
-          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
-          "tl.to(\"#{sid}-mbunty\", {x: 780, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
-          "tl.to(\"#{sid}-lamp\", {x: 760, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
-          "tl.to(\"#{sid}-mzara\", {x: 69, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
-          "tl.to(\"#{sid}-mzara\", {x: 706, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
-          "tl.to(\"#{sid}-mzara\", {x: 699, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
-          "tl.set(\"#{sid}-c15\", {opacity: 0}, @L4+0.3+1.90); tl.set(\"#{sid}-c17\", {opacity: 1}, @L4+0.3+1.90);",
-          "tl.fromTo(\"#{sid}-c17\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L4+0.3+1.90);"
+          "tl.to(\"#{sid}-mbunty\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-tbunty\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-mbunty\", {y: -14, duration: 0.19, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-mzara\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-tzara\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-mzara\", {y: -14, duration: 0.19, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-lamp\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L0+0.3);",
+          "tl.set(\"#{sid}-c0\", {opacity: 0}, @L0+0.3+1.14); tl.set(\"#{sid}-c2\", {opacity: 1}, @L0+0.3+1.14);",
+          "tl.fromTo(\"#{sid}-c2\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+1.14);",
+          "tl.to(\"#{sid}-mbunty\", {x: 0, duration: 1.02, ease: \"power1.inOut\"}, @L1+0.3);",
+          "tl.to(\"#{sid}-tbunty\", {x: 0, duration: 1.02, ease: \"power1.inOut\"}, @L1+0.3);",
+          "tl.to(\"#{sid}-mbunty\", {y: -14, duration: 0.17, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L1+0.3);",
+          "tl.to(\"#{sid}-lamp\", {x: 0, duration: 1.02, ease: \"power1.inOut\"}, @L1+0.3);",
+          "tl.set(\"#{sid}-c2\", {opacity: 0}, @L1+0.3+1.02); tl.set(\"#{sid}-c3\", {opacity: 1}, @L1+0.3+1.02);",
+          "tl.fromTo(\"#{sid}-c3\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3+1.02);",
+          "tl.to(\"#{sid}-mraju\", {x: 520, duration: 2.10, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-traju\", {x: 520, duration: 2.10, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-mraju\", {y: -14, duration: 0.35, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-mjamil\", {x: 520, duration: 2.10, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-tjamil\", {x: 520, duration: 2.10, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-mjamil\", {y: -14, duration: 0.35, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L2+0.3);",
+          "tl.to(\"#{sid}-lamp\", {x: 710, duration: 2.10, ease: \"power1.inOut\"}, @L2+0.3);",
+          "tl.set(\"#{sid}-c3\", {opacity: 0}, @L2+0.3+2.10); tl.set(\"#{sid}-c13\", {opacity: 1}, @L2+0.3+2.10);",
+          "tl.fromTo(\"#{sid}-c13\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L2+0.3+2.10);",
+          "tl.to(\"#{sid}-mzara\", {x: 0, duration: 1.14, ease: \"power1.inOut\"}, @L3+0.3);",
+          "tl.to(\"#{sid}-tzara\", {x: 0, duration: 1.14, ease: \"power1.inOut\"}, @L3+0.3);",
+          "tl.to(\"#{sid}-mzara\", {y: -14, duration: 0.19, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L3+0.3);",
+          "tl.to(\"#{sid}-lamp\", {x: 95, duration: 1.14, ease: \"power1.inOut\"}, @L3+0.3);",
+          "tl.set(\"#{sid}-c13\", {opacity: 0}, @L3+0.3+1.14); tl.set(\"#{sid}-c15\", {opacity: 1}, @L3+0.3+1.14);",
+          "tl.fromTo(\"#{sid}-c15\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L3+0.3+1.14);",
+          "tl.to(\"#{sid}-mbunty\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-tbunty\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-mbunty\", {y: -14, duration: 0.19, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-mzara\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-tzara\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-mzara\", {y: -14, duration: 0.19, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L4+0.3);",
+          "tl.to(\"#{sid}-lamp\", {x: 520, duration: 1.14, ease: \"power1.inOut\"}, @L4+0.3);",
+          "tl.set(\"#{sid}-c15\", {opacity: 0}, @L4+0.3+1.14); tl.set(\"#{sid}-c17\", {opacity: 1}, @L4+0.3+1.14);",
+          "tl.fromTo(\"#{sid}-c17\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L4+0.3+1.14);"
         ],
         "sfx": [
           [
             "pop",
-            "@L0+0.3+1.90"
+            "@L0+0.3+1.14"
           ],
           [
             "whoosh",
@@ -300,7 +290,7 @@
           ],
           [
             "pop",
-            "@L1+0.3+1.65"
+            "@L1+0.3+1.02"
           ],
           [
             "whoosh",
@@ -308,7 +298,7 @@
           ],
           [
             "pop",
-            "@L2+0.3+3.90"
+            "@L2+0.3+2.10"
           ],
           [
             "whoosh",
@@ -316,7 +306,7 @@
           ],
           [
             "pop",
-            "@L3+0.3+1.90"
+            "@L3+0.3+1.14"
           ],
           [
             "whoosh",
@@ -324,7 +314,7 @@
           ],
           [
             "pop",
-            "@L4+0.3+1.90"
+            "@L4+0.3+1.14"
           ],
           [
             "whoosh",

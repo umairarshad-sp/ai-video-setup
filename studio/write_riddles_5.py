@@ -165,8 +165,8 @@ def bulbs_overlay(switch_steps=None, bulb_steps=None, labels_at=None, clock_at=N
         html += tag("5 MINUTE RUKO...", 120, PY + 300, "clk", bg="#1F4E5F")
         js.append(pop("clk", clock_at)); sfx.append(["tick", clock_at])
     if labels_at:
-        for k, (x, txt, col) in enumerate(((560, "SWITCH 1", "#E8762B"), (710, "SWITCH 2", "#2E9E4F"), (860, "SWITCH 3", "#1F4E5F"))):
-            html += tag(txt, x, PY + 300, f"lb{k}", bg=col, fs=28)
+        for k, (x, txt, col) in enumerate(((620, "SW 1", "#E8762B"), (770, "SW 2", "#2E9E4F"), (920, "SW 3", "#1F4E5F"))):
+            html += tag(txt, x, PY + 300, f"lb{k}", bg=col, fs=30, center=True)
             js.append(pop(f"lb{k}", labels_at[k]))
     for n, d in (switch_steps or {}).items():
         for key in ("on_at", "off_at"):
@@ -276,9 +276,9 @@ def age_card(answer_at=None):
                  f'<div style="position:absolute;right:90px;top:{y}px;font-weight:900;font-size:46px;color:{INK}">{b}</div>')
     js, sfx = [], []
     if answer_at:
-        html += (f'<div id="{{sid}}-thirty" style="position:absolute;left:640px;top:{PY + 260}px;font-weight:900;font-size:70px;color:#9E9E9E;opacity:0">30?'
+        html += (f'<div id="{{sid}}-thirty" style="position:absolute;left:560px;top:{PY + 260}px;font-weight:900;font-size:70px;color:#9E9E9E;opacity:0">30?'
                  f'<svg viewBox="0 0 100 60" style="position:absolute;left:-10px;top:0;width:150px;height:90px"><path d="M5 50 L95 10" stroke="#C8342B" stroke-width="10"/></svg></div>')
-        html += tag("FARQ HAMESHA 3 SAAL!", 90, PY + 270, "farq", bg="#1F4E5F", fs=36) + big("57!", 840, PY + 200, "ans", fs=130)
+        html += tag("FARQ HAMESHA 3 SAAL!", 90, PY + 270, "farq", bg="#1F4E5F", fs=36) + big("57!", 890, PY + 210, "ans", fs=130)
         js += [pop("thirty", answer_at), pop("farq", f"{answer_at}+1.0"), pop("ans", "@L1+0.8")]
         sfx += [["stamp", answer_at], ["reveal", "@L1+0.8"]]
     return ov(html, js, sfx)
@@ -378,20 +378,30 @@ LANTERN = ('<svg viewBox="0 0 40 60" width="100%" height="100%"><g stroke="#2B2B
            '<rect x="10" y="8" width="20" height="6" fill="#8A5A2B"/><path d="M8 14 h24 l-3 34 h-18z" fill="#FFE066"/><rect x="8" y="48" width="24" height="8" fill="#8A5A2B"/></g></svg>')
 
 
+BANK_L, BANK_R, BANK_TOP = 70, 590, 1130
+FIG_H = 210
+
+
 def bridge(trips=(), counter=False):
-    """trips: (time expr, [walkers], to 'F'|'N', minutes so far after the trip)"""
-    html, js, sfx = "", [], []
-    pos = {}
+    """two banks drawn as a board on the ledge: IS PAAR (left) and US PAAR (right); trips move the walkers
+    and the lantern across. trips: (time expr, [walkers], to 'F'|'N', minutes so far after the trip)"""
+    html = (f'<div style="position:absolute;left:40px;right:40px;top:{BANK_TOP - 60}px;height:380px;background:rgba(255,248,230,0.94);border:8px solid {INK};'
+            f'border-radius:30px;box-shadow:0 12px 0 {INK}"></div>'
+            f'<div style="position:absolute;left:532px;top:{BANK_TOP - 50}px;width:16px;height:360px;background:repeating-linear-gradient({INK} 0 18px,transparent 18px 30px)"></div>'
+            + tag("IS PAAR", 290, BANK_TOP - 92, bg="#1F4E5F", fs=32, center=True)
+            + tag("US PAAR", 810, BANK_TOP - 92, bg="#2E9E4F", fs=32, center=True))
+    js, sfx = [], []
+    slot_x = {c: 95 * i for i, c in enumerate(TIMES)}
     for c in TIMES:
-        h, p = mini(c)
-        html += h
-        pos[c] = ("N", p)
-    html += (f'<div id="{{sid}}-lamp" style="position:absolute;left:{NEAR_SLOTS["bunty"][0] + 30}px;top:{NEAR_SLOTS["bunty"][1] - 170}px;width:48px;height:72px;'
-             f'transform-origin:50% 100%;z-index:5">{LANTERN}</div>'
-             f'<div style="position:absolute;left:{NEAR_SLOTS["bunty"][0]}px;top:0;width:1px;height:1px"></div>')
-    html += (f'<div style="position:absolute;left:40px;top:600px;display:grid;grid-template-columns:auto auto;gap:8px 12px">'
-             + "".join(f'<div style="background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid {INK};border-radius:14px">'
-                       f'{c.upper()} {t} MIN</div>' for c, t in TIMES.items()) + '</div>')
+        r = rig(c)
+        cw, ch = r["canvas"]
+        ih = FIG_H * ch / r["figure_height"] * r["height"]
+        iw = ih * cw / ch
+        x = BANK_L + slot_x[c] + 50
+        html += (f'<div id="{{sid}}-m{c}" style="position:absolute;left:{x - iw / 2:.0f}px;top:{BANK_TOP + 255 - ih:.0f}px;width:{iw:.0f}px;height:{ih:.0f}px">'
+                 f'<img src="cast/{c}/pose_neutral.png" style="width:100%;height:100%"></div>'
+                 f'<div id="{{sid}}-t{c}" style="position:absolute;left:{x - 48}px;top:{BANK_TOP + 262}px;width:96px;text-align:center;font-weight:900;font-size:26px;color:{INK}">{TIMES[c]} MIN</div>')
+    html += (f'<div id="{{sid}}-lamp" style="position:absolute;left:{BANK_L + 50 - 24}px;top:{BANK_TOP - 30}px;width:48px;height:72px">{LANTERN}</div>')
     if counter:
         vals = [0] + [t[3] for t in trips]
         html += (f'<div style="position:absolute;right:40px;top:600px;width:220px;height:120px;background:#C8342B;border:7px solid {INK};border-radius:22px;'
@@ -400,33 +410,22 @@ def bridge(trips=(), counter=False):
             html += (f'<div id="{{sid}}-c{v}" style="position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;'
                      f'opacity:{1 if v == 0 else 0}">{v}</div>')
         html += '</div>'
+    side = {c: "N" for c in TIMES}
     shown = 0
-    lamp_side = "N"
     for t, walkers, to, total in trips:
-        slowest = max(TIMES[w] for w in walkers)
-        d = 0.8 + 0.25 * slowest
-        for i, w in enumerate(walkers):
-            sx, sy = (NEAR_SLOTS if pos[w][0] == "N" else FAR_SLOTS)[w]
-            hx, hy = NEAR_SLOTS[w]
-            route = [(N_PT, S_N), (F_PT, S_F), (FAR_SLOTS[w], S_F)] if to == "F" else [(F_PT, S_F), (N_PT, S_N), (NEAR_SLOTS[w], S_NEAR)]
-            off = 24 * i
-            durs = [0.3, d, 0.3]
-            tt = f"{t}"
-            for (px, py), sc in route:
-                pass
-            acc = 0.0
-            for k, ((px, py), sc) in enumerate(route):
-                js.append(f'tl.to("#{{sid}}-m{w}", {{x: {px + off - hx}, y: {py - hy}, scale: {sc}, duration: {durs[k]:.2f}, ease: "none"}}, {t}+{acc:.2f});')
-                if i == 0:
-                    lx, ly = px + off - hx, py - hy - 170 * sc - 0
-                    js.append(f'tl.to("#{{sid}}-lamp", {{x: {px + off + 30 * sc - NEAR_SLOTS["bunty"][0] - 30:.0f}, y: {py - 170 * sc - (NEAR_SLOTS["bunty"][1] - 170):.0f}, '
-                              f'scale: {sc}, duration: {durs[k]:.2f}, ease: "none"}}, {t}+{acc:.2f});')
-                acc += durs[k]
-            pos[w] = (to, FAR_SLOTS[w] if to == "F" else NEAR_SLOTS[w])
+        d = 0.9 + 0.12 * max(TIMES[w] for w in walkers)
+        dx = BANK_R - BANK_L if to == "F" else 0
+        for w in walkers:
+            js.append(f'tl.to("#{{sid}}-m{w}", {{x: {dx}, duration: {d:.2f}, ease: "power1.inOut"}}, {t});')
+            js.append(f'tl.to("#{{sid}}-t{w}", {{x: {dx}, duration: {d:.2f}, ease: "power1.inOut"}}, {t});')
+            js.append(f'tl.to("#{{sid}}-m{w}", {{y: -14, duration: {d / 6:.2f}, yoyo: true, repeat: 5, ease: "sine.inOut"}}, {t});')
+            side[w] = to
+        lead = walkers[0]
+        js.append(f'tl.to("#{{sid}}-lamp", {{x: {dx + slot_x[lead]}, duration: {d:.2f}, ease: "power1.inOut"}}, {t});')
         if counter:
-            js.append(f'tl.set("#{{sid}}-c{shown}", {{opacity: 0}}, {t}+{acc:.2f}); tl.set("#{{sid}}-c{total}", {{opacity: 1}}, {t}+{acc:.2f});')
-            js.append(f'tl.fromTo("#{{sid}}-c{total}", {{scale: 1.5}}, {{scale: 1, duration: 0.3, ease: "back.out(3)"}}, {t}+{acc:.2f});')
-            sfx.append(["pop", f"{t}+{acc:.2f}"])
+            js.append(f'tl.set("#{{sid}}-c{shown}", {{opacity: 0}}, {t}+{d:.2f}); tl.set("#{{sid}}-c{total}", {{opacity: 1}}, {t}+{d:.2f});')
+            js.append(f'tl.fromTo("#{{sid}}-c{total}", {{scale: 1.5}}, {{scale: 1, duration: 0.3, ease: "back.out(3)"}}, {t}+{d:.2f});')
+            sfx.append(["pop", f"{t}+{d:.2f}"])
             shown = total
         sfx.append(["whoosh", t])
     return ov(html, js, sfx)
@@ -526,7 +525,8 @@ def shikari_overlay(roles_at=None, fish_at=None):
     if fish_at:
         for i, (c, x) in enumerate(FAM):
             hx, hy = head_top(c, x, 0.93)
-            tx, ty = hx - 100, hy + 80
+            fig_h = H * BASE_H * rig(c)["height"]
+            tx, ty = hx - 40, hy + 0.55 * fig_h - 50
             js.append(f'tl.to("#{{sid}}-f{i}", {{x: {tx - (170 + i * 270)}, y: {ty - (PY + 50)}, scale: 0.7, duration: 0.6, ease: "power2.inOut"}}, {fish_at}+{0.2 * i:.1f});')
         sfx.append(["whoosh", fish_at])
     return ov(html, js, sfx)

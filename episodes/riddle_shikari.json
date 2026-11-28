@@ -186,9 +186,9 @@
           "tl.fromTo(\"#{sid}-rraju0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3);",
           "tl.fromTo(\"#{sid}-rraju1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+1.4);",
           "tl.fromTo(\"#{sid}-rbunty0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+1.4);",
-          "tl.to(\"#{sid}-f0\", {x: -54.0, y: 660.7200000000003, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.0);",
-          "tl.to(\"#{sid}-f1\", {x: 0.0, y: 562.8000000000002, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.2);",
-          "tl.to(\"#{sid}-f2\", {x: 54.0, y: 758.6400000000001, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.4);"
+          "tl.to(\"#{sid}-f0\", {x: 6.0, y: 835.9040000000002, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.0);",
+          "tl.to(\"#{sid}-f1\", {x: 60.0, y: 791.8400000000001, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.2);",
+          "tl.to(\"#{sid}-f2\", {x: 114.0, y: 879.9680000000001, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.4);"
         ],
         "sfx": [
           [
