@@ -1,0 +1,238 @@
+{
+  "number": 312,
+  "part": 1,
+  "slug": "riddle_umar",
+  "title": {
+    "ur": "UMAR KI PAHELI",
+    "en": "THE AGE RIDDLE"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "57: she was 3 years younger, always.",
+  "shots": [
+    {
+      "set": "garden",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "90% LOG 30 BOLTE HAIN!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "jamil",
+          "caption": "Jab main chhe saal ka tha, meri behan meri aadhi umar ki thi.",
+          "say": "जब मैं छह साल का था, मेरी बहन मेरी आधी उम्र की थी।",
+          "en": "When I was six, my sister was half my age."
+        },
+        {
+          "who": "jamil",
+          "caption": "Ab main saath saal ka hoon. Behan kitne saal ki hai?",
+          "say": "अब मैं साठ साल का हूँ। बहन कितने साल की है?",
+          "en": "Now I'm sixty. How old is my sister?"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">UMAR</span></div></div><div style=\"position:absolute;left:90px;top:650px;font-weight:900;font-size:46px;color:#1F4E5F\">JAB MAIN 6 KA THA</div><div style=\"position:absolute;right:90px;top:650px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN 3 KI</div><div style=\"position:absolute;left:90px;top:780px;font-weight:900;font-size:46px;color:#1F4E5F\">AB MAIN 60 KA HOON</div><div style=\"position:absolute;right:90px;top:780px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN ?</div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "garden",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KITNE SAAL? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Jaldi bolo! Teen second!",
+          "say": "जल्दी बोलो! तीन सेकंड!",
+          "en": "Quick! Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">UMAR</span></div></div><div style=\"position:absolute;left:90px;top:650px;font-weight:900;font-size:46px;color:#1F4E5F\">JAB MAIN 6 KA THA</div><div style=\"position:absolute;right:90px;top:650px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN 3 KI</div><div style=\"position:absolute;left:90px;top:780px;font-weight:900;font-size:46px;color:#1F4E5F\">AB MAIN 60 KA HOON</div><div style=\"position:absolute;right:90px;top:780px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN ?</div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "garden",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.5,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">UMAR</span></div></div><div style=\"position:absolute;left:90px;top:650px;font-weight:900;font-size:46px;color:#1F4E5F\">JAB MAIN 6 KA THA</div><div style=\"position:absolute;right:90px;top:650px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN 3 KI</div><div style=\"position:absolute;left:90px;top:780px;font-weight:900;font-size:46px;color:#1F4E5F\">AB MAIN 60 KA HOON</div><div style=\"position:absolute;right:90px;top:780px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN ?</div><div id=\"{sid}-thirty\" style=\"position:absolute;left:640px;top:860px;font-weight:900;font-size:70px;color:#9E9E9E;opacity:0\">30?<svg viewBox=\"0 0 100 60\" style=\"position:absolute;left:-10px;top:0;width:150px;height:90px\"><path d=\"M5 50 L95 10\" stroke=\"#C8342B\" stroke-width=\"10\"/></svg></div><div id=\"{sid}-farq\" style=\"position:absolute;left:90px;top:870px;background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">FARQ HAMESHA 3 SAAL!</div><div id=\"{sid}-ans\" style=\"position:absolute;left:840px;top:800px;transform:translateX(-50%);font-weight:900;font-size:130px;color:#C8342B;opacity:0;text-shadow:-6px -6px 0 #fff,6px -6px 0 #fff,-6px 6px 0 #fff,6px 6px 0 #fff,0 10px 0 #2B2B2B;white-space:nowrap\">57!</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-thirty\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-farq\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+1.0);",
+          "tl.fromTo(\"#{sid}-ans\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.8);"
+        ],
+        "sfx": [
+          [
+            "stamp",
+            "@L0+0.3"
+          ],
+          [
+            "reveal",
+            "@L1+0.8"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "57 SAAL!",
+        "on": "jamil",
+        "line": 2,
+        "y": 1560,
+        "w": 560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Tees nahi! Behan tab bhi teen saal choti thi.",
+          "say": "तीस नहीं! बहन तब भी तीन साल छोटी थी।",
+          "en": "Not thirty! She was three years younger back then.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Farq hamesha wohi rehta hai. Saath minus teen... sattawan!",
+          "say": "फ़र्क़ हमेशा वही रहता है। साठ माइनस तीन... सत्तावन!",
+          "en": "The gap never changes. Sixty minus three... fifty-seven!"
+        },
+        {
+          "who": "jamil",
+          "caption": "Haan bhai! Behan sattawan ki hai!",
+          "say": "हाँ भाई! बहन सत्तावन की है!",
+          "en": "That's right! She's fifty-seven!"
+        }
+      ]
+    },
+    {
+      "set": "garden",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">UMAR</span></div></div><div style=\"position:absolute;left:90px;top:650px;font-weight:900;font-size:46px;color:#1F4E5F\">JAB MAIN 6 KA THA</div><div style=\"position:absolute;right:90px;top:650px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN 3 KI</div><div style=\"position:absolute;left:90px;top:780px;font-weight:900;font-size:46px;color:#1F4E5F\">AB MAIN 60 KA HOON</div><div style=\"position:absolute;right:90px;top:780px;font-weight:900;font-size:46px;color:#2B2B2B\">BEHAN ?</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

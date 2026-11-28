@@ -1,0 +1,421 @@
+{
+  "number": 314,
+  "part": 1,
+  "slug": "riddle_pul",
+  "title": {
+    "ur": "RAAT KA PUL",
+    "en": "THE NIGHT BRIDGE"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 98,
+    "gain": 0.5
+  },
+  "answer_note": "Bunty+Zara (2), Bunty back (3), Raju+Jamil (13), Zara back (15), Bunty+Zara (17).",
+  "shots": [
+    {
+      "set": "raat_pul",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.14
+        },
+        {
+          "id": "zara",
+          "x": 0.38
+        },
+        {
+          "id": "raju",
+          "x": 0.62
+        },
+        {
+          "id": "jamil",
+          "x": 0.86
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.95,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:151.20000000000002px;top:1297.04px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">1 MIN</div><div style=\"position:absolute;left:410.4px;top:1231.7599999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">2 MIN</div><div style=\"position:absolute;left:669.6px;top:1101.1999999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">5 MIN</div><div style=\"position:absolute;left:928.8px;top:1199.12px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">10 MIN</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hook": {
+        "text": "17 MINUTE... EK LALTAIN... CHAAR LOG!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Raat ko yeh pul paar karna hai, aur laltain sirf ek hai!",
+          "say": "रात को ये पुल पार करना है, और लालटेन सिर्फ़ एक है!",
+          "en": "They must cross this bridge at night, with only one lantern!"
+        }
+      ]
+    },
+    {
+      "set": "raat_pul",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.14
+        },
+        {
+          "id": "zara",
+          "x": 0.38
+        },
+        {
+          "id": "raju",
+          "x": 0.62
+        },
+        {
+          "id": "jamil",
+          "x": 0.86
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.95,
+      "caption_y": 230,
+      "hold": 0.3,
+      "card": {
+        "title": "SHART",
+        "rows": [
+          [
+            "PUL PE",
+            "SIRF 2 LOG"
+          ],
+          [
+            "LAALTAIN",
+            "ZAROORI"
+          ],
+          [
+            "SAATH CHALEIN TO",
+            "DHEERE WALE KI RAFTAAR"
+          ]
+        ],
+        "y": 620,
+        "rot": -2,
+        "at": -1
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Pul pe ek saath sirf do log. Aur do log saath chalein, to dheere wale ki raftaar se.",
+          "say": "पुल पे एक साथ सिर्फ़ दो लोग। और दो लोग साथ चलें, तो धीरे वाले की रफ़्तार से।",
+          "en": "Only two on the bridge at once. And two walk at the slower one's speed."
+        }
+      ]
+    },
+    {
+      "set": "raat_pul",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.14
+        },
+        {
+          "id": "zara",
+          "x": 0.38
+        },
+        {
+          "id": "raju",
+          "x": 0.62
+        },
+        {
+          "id": "jamil",
+          "x": 0.86
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.95,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:151.20000000000002px;top:1297.04px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">1 MIN</div><div style=\"position:absolute;left:410.4px;top:1231.7599999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">2 MIN</div><div style=\"position:absolute;left:669.6px;top:1101.1999999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">5 MIN</div><div style=\"position:absolute;left:928.8px;top:1199.12px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">10 MIN</div>",
+        "js": [],
+        "sfx": []
+      },
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAISE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kya sab satrah minute mein paar ho sakte hain?",
+          "say": "क्या सब सत्रह मिनट में पार हो सकते हैं?",
+          "en": "Can everyone cross in seventeen minutes?"
+        }
+      ]
+    },
+    {
+      "set": "raat_pul",
+      "transition": "whoosh",
+      "cast": [],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "caption_y": 230,
+      "hold": 0.8,
+      "overlay": {
+        "html": "<div id=\"{sid}-mbunty\" style=\"position:absolute;left:78px;top:1176px;width:144px;height:204px;transform-origin:50% 100%\"><img src=\"cast/bunty/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mzara\" style=\"position:absolute;left:230px;top:1155px;width:120px;height:225px;transform-origin:50% 100%\"><img src=\"cast/zara/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mraju\" style=\"position:absolute;left:346px;top:1097px;width:167px;height:283px;transform-origin:50% 100%\"><img src=\"cast/raju/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-mjamil\" style=\"position:absolute;left:485px;top:1111px;width:170px;height:269px;transform-origin:50% 100%\"><img src=\"cast/jamil/pose_neutral.png\" style=\"width:100%;height:100%\"></div><div id=\"{sid}-lamp\" style=\"position:absolute;left:180px;top:1210px;width:48px;height:72px;transform-origin:50% 100%;z-index:5\"><svg viewBox=\"0 0 40 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"3\"><path d=\"M12 8 q8 -10 16 0\" fill=\"none\"/><rect x=\"10\" y=\"8\" width=\"20\" height=\"6\" fill=\"#8A5A2B\"/><path d=\"M8 14 h24 l-3 34 h-18z\" fill=\"#FFE066\"/><rect x=\"8\" y=\"48\" width=\"24\" height=\"8\" fill=\"#8A5A2B\"/></g></svg></div><div style=\"position:absolute;left:150px;top:0;width:1px;height:1px\"></div><div style=\"position:absolute;left:40px;top:600px;display:grid;grid-template-columns:auto auto;gap:8px 12px\"><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">BUNTY 1 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">ZARA 2 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">RAJU 5 MIN</div><div style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:30px;padding:4px 14px;border:5px solid #2B2B2B;border-radius:14px\">JAMIL 10 MIN</div></div><div style=\"position:absolute;right:40px;top:600px;width:220px;height:120px;background:#C8342B;border:7px solid #2B2B2B;border-radius:22px;box-shadow:0 10px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:6px;text-align:center;color:#fff;font-weight:900;font-size:26px\">MINUTE</div><div id=\"{sid}-c0\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:1\">0</div><div id=\"{sid}-c2\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">2</div><div id=\"{sid}-c3\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">3</div><div id=\"{sid}-c13\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">13</div><div id=\"{sid}-c15\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">15</div><div id=\"{sid}-c17\" style=\"position:absolute;left:0;right:0;top:34px;text-align:center;color:#fff;font-weight:900;font-size:70px;opacity:0\">17</div></div>",
+        "js": [
+          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
+          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
+          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
+          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
+          "tl.to(\"#{sid}-mbunty\", {x: 780, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
+          "tl.to(\"#{sid}-lamp\", {x: 760, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
+          "tl.to(\"#{sid}-mzara\", {x: 69, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L0+0.3+0.00);",
+          "tl.to(\"#{sid}-mzara\", {x: 706, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L0+0.3+0.30);",
+          "tl.to(\"#{sid}-mzara\", {x: 699, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L0+0.3+1.60);",
+          "tl.set(\"#{sid}-c0\", {opacity: 0}, @L0+0.3+1.90); tl.set(\"#{sid}-c2\", {opacity: 1}, @L0+0.3+1.90);",
+          "tl.fromTo(\"#{sid}-c2\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+1.90);",
+          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 0.30, ease: \"none\"}, @L1+0.3+0.00);",
+          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 0.30, ease: \"none\"}, @L1+0.3+0.00);",
+          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 1.05, ease: \"none\"}, @L1+0.3+0.30);",
+          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 1.05, ease: \"none\"}, @L1+0.3+0.30);",
+          "tl.to(\"#{sid}-mbunty\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L1+0.3+1.35);",
+          "tl.to(\"#{sid}-lamp\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L1+0.3+1.35);",
+          "tl.set(\"#{sid}-c2\", {opacity: 0}, @L1+0.3+1.65); tl.set(\"#{sid}-c3\", {opacity: 1}, @L1+0.3+1.65);",
+          "tl.fromTo(\"#{sid}-c3\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3+1.65);",
+          "tl.to(\"#{sid}-mraju\", {x: -95, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
+          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
+          "tl.to(\"#{sid}-mraju\", {x: 542, y: -664, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
+          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
+          "tl.to(\"#{sid}-mraju\", {x: 570, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
+          "tl.to(\"#{sid}-lamp\", {x: 830, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
+          "tl.to(\"#{sid}-mjamil\", {x: -211, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L2+0.3+0.00);",
+          "tl.to(\"#{sid}-mjamil\", {x: 426, y: -664, scale: 0.32, duration: 3.30, ease: \"none\"}, @L2+0.3+0.30);",
+          "tl.to(\"#{sid}-mjamil\", {x: 489, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L2+0.3+3.60);",
+          "tl.set(\"#{sid}-c3\", {opacity: 0}, @L2+0.3+3.90); tl.set(\"#{sid}-c13\", {opacity: 1}, @L2+0.3+3.90);",
+          "tl.fromTo(\"#{sid}-c13\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L2+0.3+3.90);",
+          "tl.to(\"#{sid}-mzara\", {x: 682, y: -664, scale: 0.32, duration: 0.30, ease: \"none\"}, @L3+0.3+0.00);",
+          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 0.30, ease: \"none\"}, @L3+0.3+0.00);",
+          "tl.to(\"#{sid}-mzara\", {x: 45, y: -330, scale: 0.75, duration: 1.30, ease: \"none\"}, @L3+0.3+0.30);",
+          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 1.30, ease: \"none\"}, @L3+0.3+0.30);",
+          "tl.to(\"#{sid}-mzara\", {x: 0, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L3+0.3+1.60);",
+          "tl.to(\"#{sid}-lamp\", {x: 140, y: 0, scale: 1.0, duration: 0.30, ease: \"none\"}, @L3+0.3+1.60);",
+          "tl.set(\"#{sid}-c13\", {opacity: 0}, @L3+0.3+1.90); tl.set(\"#{sid}-c15\", {opacity: 1}, @L3+0.3+1.90);",
+          "tl.fromTo(\"#{sid}-c15\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L3+0.3+1.90);",
+          "tl.to(\"#{sid}-mbunty\", {x: 185, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
+          "tl.to(\"#{sid}-lamp\", {x: 178, y: -288, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
+          "tl.to(\"#{sid}-mbunty\", {x: 822, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
+          "tl.to(\"#{sid}-lamp\", {x: 802, y: -548, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
+          "tl.to(\"#{sid}-mbunty\", {x: 780, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
+          "tl.to(\"#{sid}-lamp\", {x: 760, y: -546, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
+          "tl.to(\"#{sid}-mzara\", {x: 69, y: -330, scale: 0.75, duration: 0.30, ease: \"none\"}, @L4+0.3+0.00);",
+          "tl.to(\"#{sid}-mzara\", {x: 706, y: -664, scale: 0.32, duration: 1.30, ease: \"none\"}, @L4+0.3+0.30);",
+          "tl.to(\"#{sid}-mzara\", {x: 699, y: -662, scale: 0.32, duration: 0.30, ease: \"none\"}, @L4+0.3+1.60);",
+          "tl.set(\"#{sid}-c15\", {opacity: 0}, @L4+0.3+1.90); tl.set(\"#{sid}-c17\", {opacity: 1}, @L4+0.3+1.90);",
+          "tl.fromTo(\"#{sid}-c17\", {scale: 1.5}, {scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L4+0.3+1.90);"
+        ],
+        "sfx": [
+          [
+            "pop",
+            "@L0+0.3+1.90"
+          ],
+          [
+            "whoosh",
+            "@L0+0.3"
+          ],
+          [
+            "pop",
+            "@L1+0.3+1.65"
+          ],
+          [
+            "whoosh",
+            "@L1+0.3"
+          ],
+          [
+            "pop",
+            "@L2+0.3+3.90"
+          ],
+          [
+            "whoosh",
+            "@L2+0.3"
+          ],
+          [
+            "pop",
+            "@L3+0.3+1.90"
+          ],
+          [
+            "whoosh",
+            "@L3+0.3"
+          ],
+          [
+            "pop",
+            "@L4+0.3+1.90"
+          ],
+          [
+            "whoosh",
+            "@L4+0.3"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "17 MINUTE!",
+        "on": null,
+        "line": 4,
+        "y": 1560,
+        "w": 700
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Bunty aur Zara saath: do minute.",
+          "say": "बंटी और ज़ारा साथ: दो मिनट।",
+          "en": "Bunty and Zara together: two minutes.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Bunty laltain le kar wapas: teen.",
+          "say": "बंटी लालटेन ले कर वापस: तीन।",
+          "en": "Bunty brings the lantern back: three."
+        },
+        {
+          "who": "foxley",
+          "caption": "Ab Raju aur Chacha Jamil saath: terah!",
+          "say": "अब राजू और चाचा जमील साथ: तेरह!",
+          "en": "Now Raju and Chacha Jamil together: thirteen!"
+        },
+        {
+          "who": "foxley",
+          "caption": "Zara laltain le kar wapas: pandrah.",
+          "say": "ज़ारा लालटेन ले कर वापस: पंद्रह।",
+          "en": "Zara brings it back: fifteen."
+        },
+        {
+          "who": "foxley",
+          "caption": "Aur Bunty Zara phir saath... thik satrah minute!",
+          "say": "और बंटी ज़ारा फिर साथ... ठीक सत्रह मिनट!",
+          "en": "And Bunty and Zara again... exactly seventeen!"
+        }
+      ]
+    },
+    {
+      "set": "raat_pul",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.14
+        },
+        {
+          "id": "zara",
+          "x": 0.38
+        },
+        {
+          "id": "raju",
+          "x": 0.62
+        },
+        {
+          "id": "jamil",
+          "x": 0.86
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.95,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:151.20000000000002px;top:1297.04px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">1 MIN</div><div style=\"position:absolute;left:410.4px;top:1231.7599999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">2 MIN</div><div style=\"position:absolute;left:669.6px;top:1101.1999999999998px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">5 MIN</div><div style=\"position:absolute;left:928.8px;top:1199.12px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:32px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;z-index:4\">10 MIN</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

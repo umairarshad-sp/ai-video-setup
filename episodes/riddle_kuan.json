@@ -1,0 +1,242 @@
+{
+  "number": 315,
+  "part": 1,
+  "slug": "riddle_kuan",
+  "title": {
+    "ur": "KUEN KA PAANI",
+    "en": "THE WELL'S WATER"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 100,
+    "gain": 0.5
+  },
+  "answer_note": "Raju: then take your water out of my well, or pay rent for keeping it there.",
+  "shots": [
+    {
+      "set": "desert_village",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.72
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "KUAN BIK GAYA... PAANI NAHI!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Seth Kareem ne apna kuan Raju ko bech diya.",
+          "say": "सेठ करीम ने अपना कुआँ राजू को बेच दिया।",
+          "en": "Seth Kareem sold his well to Raju."
+        }
+      ]
+    },
+    {
+      "set": "desert_village",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "kareem",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "kareem",
+          "zoom": 1.35
+        }
+      },
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "kareem",
+          "caption": "Kuan tumhara, lekin paani mera! Paani ka kiraya do!",
+          "say": "कुआँ तुम्हारा, लेकिन पानी मेरा! पानी का किराया दो!",
+          "en": "The well is yours, but the water is mine! Pay rent for the water!",
+          "after": "signature_scheming"
+        }
+      ]
+    },
+    {
+      "set": "desert_village",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.72
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "TUM KYA KEHTE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Raju kya jawab de? Teen second!",
+          "say": "राजू क्या जवाब दे? तीन सेकंड!",
+          "en": "What should Raju say? Three seconds!"
+        }
+      ]
+    },
+    {
+      "set": "desert_village",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.72
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "group",
+          "zoom": 1.1
+        },
+        "to": {
+          "focus": "group",
+          "zoom": 1.18
+        }
+      },
+      "caption_y": 230,
+      "hold": 0.5,
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "raju",
+        "line": 2,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "caption": "Theek hai Seth ji! Apna paani mere kuen se nikaal lo...",
+          "say": "ठीक है सेठ जी! अपना पानी मेरे कुएँ से निकाल लो...",
+          "en": "Fine, Seth ji! Take your water out of my well...",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "raju",
+          "caption": "...warna mere kuen mein rakhne ka kiraya do!",
+          "say": "...वरना मेरे कुएँ में रखने का किराया दो!",
+          "en": "...or pay rent for keeping it in my well!"
+        },
+        {
+          "who": "kareem",
+          "caption": "Arey... yeh to main ne socha hi nahi!",
+          "say": "अरे... ये तो मैंने सोचा ही नहीं!",
+          "en": "Oh... I never thought of that!",
+          "pose": "shocked"
+        }
+      ]
+    },
+    {
+      "set": "desert_village",
+      "cast": [
+        {
+          "id": "kareem",
+          "x": 0.3,
+          "face": "right"
+        },
+        {
+          "id": "raju",
+          "x": 0.72
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "hold": 0.6
+    }
+  ]
+}

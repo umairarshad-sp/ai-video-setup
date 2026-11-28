@@ -1,0 +1,285 @@
+{
+  "number": 316,
+  "part": 1,
+  "slug": "riddle_shikari",
+  "title": {
+    "ur": "TEEN SHIKARI",
+    "en": "THREE FISHERMEN"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 102,
+    "gain": 0.5
+  },
+  "answer_note": "Only three people: grandfather Jamil, his son Raju, and Raju's son Bunty.",
+  "shots": [
+    {
+      "set": "river_ghat",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "bunty",
+          "x": 0.8
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "DO BAAP, DO BETE... PHIR BHI TEEN MACHHLIYAN!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Do baap aur do bete machhli pakarne gaye.",
+          "say": "दो बाप और दो बेटे मछली पकड़ने गए।",
+          "en": "Two fathers and two sons went fishing."
+        },
+        {
+          "who": "foxley",
+          "caption": "Teen machhliyan pakri, aur sab ko ek-ek mili. Kaise?",
+          "say": "तीन मछलियाँ पकड़ीं, और सब को एक-एक मिली। कैसे?",
+          "en": "They caught three fish, and each got one. How?"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:200px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">3 MACHHLIYAN</span></div></div><div id=\"{sid}-f0\" style=\"position:absolute;left:170px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f1\" style=\"position:absolute;left:440px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f2\" style=\"position:absolute;left:710px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "river_ghat",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "bunty",
+          "x": 0.8
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAISE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaise? Teen second!",
+          "say": "कैसे? तीन सेकंड!",
+          "en": "How? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:200px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">3 MACHHLIYAN</span></div></div><div id=\"{sid}-f0\" style=\"position:absolute;left:170px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f1\" style=\"position:absolute;left:440px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f2\" style=\"position:absolute;left:710px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "river_ghat",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "bunty",
+          "x": 0.8
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.5,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:200px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">3 MACHHLIYAN</span></div></div><div id=\"{sid}-f0\" style=\"position:absolute;left:170px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f1\" style=\"position:absolute;left:440px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f2\" style=\"position:absolute;left:710px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-rjamil0\" style=\"position:absolute;left:216.0px;top:1150.7200000000003px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">DADA</div><div id=\"{sid}-rraju0\" style=\"position:absolute;left:540.0px;top:1052.8000000000002px;transform:translateX(-50%);background:#2E9E4F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BAAP</div><div id=\"{sid}-rraju1\" style=\"position:absolute;left:540.0px;top:990.8000000000002px;transform:translateX(-50%);background:#E8762B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BETA</div><div id=\"{sid}-rbunty0\" style=\"position:absolute;left:864.0px;top:1248.64px;transform:translateX(-50%);background:#E8762B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BETA</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-rjamil0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.6);",
+          "tl.fromTo(\"#{sid}-rraju0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.3);",
+          "tl.fromTo(\"#{sid}-rraju1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+1.4);",
+          "tl.fromTo(\"#{sid}-rbunty0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+1.4);",
+          "tl.to(\"#{sid}-f0\", {x: -54.0, y: 660.7200000000003, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.0);",
+          "tl.to(\"#{sid}-f1\", {x: 0.0, y: 562.8000000000002, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.2);",
+          "tl.to(\"#{sid}-f2\", {x: 54.0, y: 758.6400000000001, scale: 0.7, duration: 0.6, ease: \"power2.inOut\"}, @L2+0.3+0.4);"
+        ],
+        "sfx": [
+          [
+            "pop",
+            "@L0+0.6"
+          ],
+          [
+            "pop",
+            "@L1+0.3"
+          ],
+          [
+            "pop",
+            "@L1+1.4"
+          ],
+          [
+            "pop",
+            "@L0+1.4"
+          ],
+          [
+            "whoosh",
+            "@L2+0.3"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "bunty",
+        "line": 2,
+        "y": 1600
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Woh sirf teen the! Dada, baap aur beta.",
+          "say": "वो सिर्फ़ तीन थे! दादा, बाप और बेटा।",
+          "en": "There were only three! Grandfather, father and son.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Raju, Jamil ka beta bhi hai... aur Bunty ka baap bhi!",
+          "say": "राजू, जमील का बेटा भी है... और बंटी का बाप भी!",
+          "en": "Raju is Jamil's son... and Bunty's father too!"
+        },
+        {
+          "who": "bunty",
+          "caption": "Teen log, teen machhliyan!",
+          "say": "तीन लोग, तीन मछलियाँ!",
+          "en": "Three people, three fish!"
+        }
+      ]
+    },
+    {
+      "set": "river_ghat",
+      "cast": [
+        {
+          "id": "jamil",
+          "x": 0.2
+        },
+        {
+          "id": "raju",
+          "x": 0.5
+        },
+        {
+          "id": "bunty",
+          "x": 0.8
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:200px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">3 MACHHLIYAN</span></div></div><div id=\"{sid}-f0\" style=\"position:absolute;left:170px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f1\" style=\"position:absolute;left:440px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div><div id=\"{sid}-f2\" style=\"position:absolute;left:710px;top:650px;width:200px;height:100px\"><svg viewBox=\"0 0 120 60\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"5\" stroke-linejoin=\"round\"><path d=\"M10 30 q40 -34 80 0 q-40 34 -80 0z\" fill=\"#64B5F6\"/><path d=\"M88 30 l26 -18 v36z\" fill=\"#64B5F6\"/></g><circle cx=\"30\" cy=\"26\" r=\"4\" fill=\"#2B2B2B\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

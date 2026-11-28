@@ -1,0 +1,343 @@
+{
+  "number": 311,
+  "part": 1,
+  "slug": "riddle_rang",
+  "title": {
+    "ur": "GEELA RANG",
+    "en": "WET PAINT"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "Faisal (3) says he never went near the bench, but there are fresh green stripes on his trousers.",
+  "shots": [
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "TAAZA RANG NE CHOR PAKARWA DIYA!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "zara",
+          "caption": "Main ne phone bench pe rakha tha... aur woh gayab!",
+          "say": "मैंने फ़ोन बेंच पे रखा था... और वो ग़ायब!",
+          "en": "I left my phone on the bench... and it's gone!",
+          "after": "shocked"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">TAAZA RANG!</span></div></div><div style=\"position:absolute;left:250px;top:640px;width:580px;height:220px\"><svg viewBox=\"0 0 580 220\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"7\" stroke-linejoin=\"round\"><rect x=\"30\" y=\"30\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"30\" y=\"80\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"20\" y=\"128\" width=\"540\" height=\"30\" rx=\"8\" fill=\"#2E9E4F\"/><path d=\"M60 158 v50 M520 158 v50\" stroke-width=\"14\"/></g><path d=\"M150 66 q4 14 0 22 M300 116 q4 14 0 22 M420 66 q4 16 0 24\" stroke=\"#2E9E4F\" stroke-width=\"10\" stroke-linecap=\"round\" fill=\"none\"/></svg></div><div style=\"position:absolute;left:70px;top:670px;width:160px;height:150px;background:#FFF5DC;border:6px solid #2B2B2B;border-radius:12px;transform:rotate(-6deg);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:34px;color:#C8342B\">TAAZA<br>RANG!<br>&#9888;</div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5,
+          "num": 1
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "raju",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "raju",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "raju",
+          "caption": "Main ne hi bench rang kiya tha... phir main gate pe chala gaya.",
+          "say": "मैंने ही बेंच रंग किया था... फिर मैं गेट पे चला गया।",
+          "en": "I painted the bench... then I went to the gate."
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "bunty",
+          "x": 0.5,
+          "num": 2
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "bunty",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "bunty",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "bunty",
+          "caption": "Main dhaabe pe samose kha raha tha!",
+          "say": "मैं ढाबे पे समोसे खा रहा था!",
+          "en": "I was eating samosas at the dhaba!"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "num": 3
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.25
+        }
+      },
+      "hold": 0.3,
+      "lines": [
+        {
+          "who": "faisal",
+          "caption": "Main to bench ke paas gaya hi nahi!",
+          "say": "मैं तो बेंच के पास गया ही नहीं!",
+          "en": "I never even went near the bench!"
+        }
+      ],
+      "overlay": {
+        "html": "<div id=\"{sid}-paint\" style=\"position:absolute;left:468px;top:1418px;width:150px;height:60px\"><svg viewBox=\"0 0 150 60\" width=\"100%\" height=\"100%\"><path d=\"M6 10 h60 M84 10 h60 M6 34 h60 M84 34 h60\" stroke=\"#2EC46A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.2
+        },
+        {
+          "id": "bunty",
+          "x": 0.5
+        },
+        {
+          "id": "faisal",
+          "x": 0.8
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "1, 2 YA 3? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaun jhoota? Teen second!",
+          "say": "कौन झूठा? तीन सेकंड!",
+          "en": "Who's lying? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">TAAZA RANG!</span></div></div><div style=\"position:absolute;left:250px;top:640px;width:580px;height:220px\"><svg viewBox=\"0 0 580 220\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"7\" stroke-linejoin=\"round\"><rect x=\"30\" y=\"30\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"30\" y=\"80\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"20\" y=\"128\" width=\"540\" height=\"30\" rx=\"8\" fill=\"#2E9E4F\"/><path d=\"M60 158 v50 M520 158 v50\" stroke-width=\"14\"/></g><path d=\"M150 66 q4 14 0 22 M300 116 q4 14 0 22 M420 66 q4 16 0 24\" stroke=\"#2E9E4F\" stroke-width=\"10\" stroke-linecap=\"round\" fill=\"none\"/></svg></div><div style=\"position:absolute;left:70px;top:670px;width:160px;height:150px;background:#FFF5DC;border:6px solid #2B2B2B;border-radius:12px;transform:rotate(-6deg);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:34px;color:#C8342B\">TAAZA<br>RANG!<br>&#9888;</div>",
+        "js": [],
+        "sfx": []
+      },
+      "lineup": [
+        "raju",
+        "bunty",
+        "faisal"
+      ],
+      "lineup_at": 0
+    },
+    {
+      "set": "town_park",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "faisal",
+          "x": 0.5,
+          "pose": "nervous"
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": "faisal",
+          "zoom": 1.25
+        },
+        "to": {
+          "focus": "faisal",
+          "zoom": 1.25
+        }
+      },
+      "caption_y": 230,
+      "hold": 0.5,
+      "overlay": {
+        "html": "<div id=\"{sid}-paint\" style=\"position:absolute;left:468px;top:1418px;width:150px;height:60px\"><svg viewBox=\"0 0 150 60\" width=\"100%\" height=\"100%\"><path d=\"M6 10 h60 M84 10 h60 M6 34 h60 M84 34 h60\" stroke=\"#2EC46A\" stroke-width=\"10\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-ring\" style=\"position:absolute;left:418px;top:1368px;width:250px;height:160px;border:10px solid #C8342B;border-radius:50%;opacity:0\"></div><div id=\"{sid}-rl\" style=\"position:absolute;left:458px;top:1538px;background:#C8342B;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">HARA RANG!</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-ring\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3);",
+          "tl.fromTo(\"#{sid}-rl\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.3+0.3);"
+        ],
+        "sfx": [
+          [
+            "reveal",
+            "@L0+0.3"
+          ]
+        ]
+      },
+      "verdicts": [
+        {
+          "on": "faisal",
+          "ok": false,
+          "line": 1,
+          "at": 0.1,
+          "lift": 60
+        }
+      ],
+      "stamp": {
+        "text": {
+          "ur": "MUJRIM!",
+          "en": "GUILTY!"
+        },
+        "on": "faisal",
+        "line": 2,
+        "y": 1600
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Bench ke paas gaye hi nahi? To patloon pe hara rang kahan se aaya?",
+          "say": "बेंच के पास गए ही नहीं? तो पतलून पे हरा रंग कहाँ से आया?",
+          "en": "Never went near the bench? Then where did the green paint on your trousers come from?",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Raju ke haath pe rang hona theek hai, woh painter hai!",
+          "say": "राजू के हाथ पे रंग होना ठीक है, वो पेंटर है!",
+          "en": "Paint on Raju's hands is fine, he's the painter!"
+        },
+        {
+          "who": "faisal",
+          "caption": "Achha... phone main ne hi uthaya tha.",
+          "say": "अच्छा... फ़ोन मैंने ही उठाया था।",
+          "en": "Okay... I took the phone.",
+          "pose": "guilty"
+        }
+      ]
+    },
+    {
+      "set": "town_park",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:300px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">TAAZA RANG!</span></div></div><div style=\"position:absolute;left:250px;top:640px;width:580px;height:220px\"><svg viewBox=\"0 0 580 220\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"7\" stroke-linejoin=\"round\"><rect x=\"30\" y=\"30\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"30\" y=\"80\" width=\"520\" height=\"36\" rx=\"8\" fill=\"#2E9E4F\"/><rect x=\"20\" y=\"128\" width=\"540\" height=\"30\" rx=\"8\" fill=\"#2E9E4F\"/><path d=\"M60 158 v50 M520 158 v50\" stroke-width=\"14\"/></g><path d=\"M150 66 q4 14 0 22 M300 116 q4 14 0 22 M420 66 q4 16 0 24\" stroke=\"#2E9E4F\" stroke-width=\"10\" stroke-linecap=\"round\" fill=\"none\"/></svg></div><div style=\"position:absolute;left:70px;top:670px;width:160px;height:150px;background:#FFF5DC;border:6px solid #2B2B2B;border-radius:12px;transform:rotate(-6deg);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:34px;color:#C8342B\">TAAZA<br>RANG!<br>&#9888;</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

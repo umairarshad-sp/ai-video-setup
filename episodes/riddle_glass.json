@@ -1,0 +1,288 @@
+{
+  "number": 317,
+  "part": 1,
+  "slug": "riddle_glass",
+  "title": {
+    "ur": "CHHE GLASS",
+    "en": "SIX GLASSES"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 104,
+    "gain": 0.5
+  },
+  "answer_note": "Pick up glass 2, pour it into glass 5, put it back.",
+  "shots": [
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "SIRF EK GLASS CHHOO SAKTE HO!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Pehle teen glass mein lassi, baaki teen khaali.",
+          "say": "पहले तीन ग्लास में लस्सी, बाक़ी तीन ख़ाली।",
+          "en": "The first three glasses have lassi, the other three are empty."
+        },
+        {
+          "who": "foxley",
+          "caption": "Sirf ek glass chhoo kar, inhein bhara-khaali-bhara karo!",
+          "say": "सिर्फ़ एक ग्लास छू कर, इन्हें भरा-ख़ाली-भरा करो!",
+          "en": "Touch just one glass and make them full-empty-full!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">6 GLASS</span></div></div><div id=\"{sid}-g0\" style=\"position:absolute;left:95px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l0\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:125px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:245px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l1\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:275px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:395px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l2\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:425px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-g3\" style=\"position:absolute;left:545px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:575px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">4</div><div id=\"{sid}-g4\" style=\"position:absolute;left:695px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l4\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:725px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">5</div><div id=\"{sid}-g5\" style=\"position:absolute;left:845px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l5\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:875px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">6</div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "kitchen",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAUNSA GLASS? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaunsa glass? Teen second!",
+          "say": "कौनसा ग्लास? तीन सेकंड!",
+          "en": "Which glass? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">6 GLASS</span></div></div><div id=\"{sid}-g0\" style=\"position:absolute;left:95px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l0\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:125px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:245px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l1\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:275px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:395px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l2\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:425px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-g3\" style=\"position:absolute;left:545px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:575px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">4</div><div id=\"{sid}-g4\" style=\"position:absolute;left:695px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l4\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:725px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">5</div><div id=\"{sid}-g5\" style=\"position:absolute;left:845px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l5\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:875px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">6</div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "kitchen",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.3,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">6 GLASS</span></div></div><div id=\"{sid}-g0\" style=\"position:absolute;left:95px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l0\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:125px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:245px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l1\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:275px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:395px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l2\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:425px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-g3\" style=\"position:absolute;left:545px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:575px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">4</div><div id=\"{sid}-g4\" style=\"position:absolute;left:695px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l4\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:725px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">5</div><div id=\"{sid}-g5\" style=\"position:absolute;left:845px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l5\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:875px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">6</div>",
+        "js": [
+          "tl.to(\"#{sid}-g1\", {y: -120, duration: 0.4, ease: \"power2.out\"}, @L0+0.3);",
+          "tl.to(\"#{sid}-g1\", {x: 380, duration: 0.6, ease: \"power2.inOut\"}, @L0+0.3+0.4);",
+          "tl.to(\"#{sid}-g1\", {rotation: 70, duration: 0.4}, @L0+0.3+1.0);",
+          "tl.to(\"#{sid}-l1\", {height: 0, duration: 0.8}, @L0+0.3+1.3);",
+          "tl.to(\"#{sid}-l4\", {height: 150, duration: 0.8}, @L0+0.3+1.3);",
+          "tl.to(\"#{sid}-g1\", {rotation: 0, duration: 0.3}, @L0+0.3+2.2);",
+          "tl.to(\"#{sid}-g1\", {x: 0, y: 0, duration: 0.6, ease: \"power2.inOut\"}, @L0+0.3+2.5);"
+        ],
+        "sfx": [
+          [
+            "whoosh",
+            "@L0+0.3"
+          ],
+          [
+            "pop",
+            "@L0+0.3+1.3"
+          ]
+        ]
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Doosra glass uthao... aur paanchwe mein daal do!",
+          "say": "दूसरा ग्लास उठाओ... और पाँचवें में डाल दो!",
+          "en": "Pick up glass two... and pour it into glass five!",
+          "sfx_before": "reveal"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.5,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">6 GLASS</span></div></div><div id=\"{sid}-g0\" style=\"position:absolute;left:95px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l0\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:125px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:245px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l1\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:275px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:395px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l2\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:425px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-g3\" style=\"position:absolute;left:545px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:575px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">4</div><div id=\"{sid}-g4\" style=\"position:absolute;left:695px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l4\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:725px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">5</div><div id=\"{sid}-g5\" style=\"position:absolute;left:845px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l5\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:875px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">6</div><div id=\"{sid}-t0\" style=\"position:absolute;left:155.0px;top:596px;transform:translateX(-50%);background:#2E9E4F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BHARA</div><div id=\"{sid}-t1\" style=\"position:absolute;left:305.0px;top:596px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">KHAALI</div><div id=\"{sid}-t2\" style=\"position:absolute;left:455.0px;top:596px;transform:translateX(-50%);background:#2E9E4F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BHARA</div><div id=\"{sid}-t3\" style=\"position:absolute;left:605.0px;top:596px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">KHAALI</div><div id=\"{sid}-t4\" style=\"position:absolute;left:755.0px;top:596px;transform:translateX(-50%);background:#2E9E4F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">BHARA</div><div id=\"{sid}-t5\" style=\"position:absolute;left:905.0px;top:596px;transform:translateX(-50%);background:#1F4E5F;color:#fff;font-weight:900;font-size:24px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">KHAALI</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-t0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+0.00);",
+          "tl.fromTo(\"#{sid}-t1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+0.25);",
+          "tl.fromTo(\"#{sid}-t2\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+0.50);",
+          "tl.fromTo(\"#{sid}-t3\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+0.75);",
+          "tl.fromTo(\"#{sid}-t4\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+1.00);",
+          "tl.fromTo(\"#{sid}-t5\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.2+1.25);"
+        ],
+        "sfx": [
+          [
+            "reveal",
+            "@L0+0.2"
+          ]
+        ]
+      },
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "zara",
+        "line": 1,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Ab dekho: bhara, khaali, bhara, khaali!",
+          "say": "अब देखो: भरा, ख़ाली, भरा, ख़ाली!",
+          "en": "Now look: full, empty, full, empty!"
+        },
+        {
+          "who": "zara",
+          "caption": "Arey waah! Itna aasaan!",
+          "say": "अरे वाह! इतना आसान!",
+          "en": "Oh wow! That easy!"
+        }
+      ]
+    },
+    {
+      "set": "kitchen",
+      "cast": [
+        {
+          "id": "zara",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:360px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">6 GLASS</span></div></div><div id=\"{sid}-g0\" style=\"position:absolute;left:95px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l0\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:125px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div id=\"{sid}-g1\" style=\"position:absolute;left:245px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l1\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:275px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div id=\"{sid}-g2\" style=\"position:absolute;left:395px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l2\" style=\"position:absolute;left:0;right:0;bottom:0;height:150px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:425px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div id=\"{sid}-g3\" style=\"position:absolute;left:545px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l3\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:575px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">4</div><div id=\"{sid}-g4\" style=\"position:absolute;left:695px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l4\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:725px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">5</div><div id=\"{sid}-g5\" style=\"position:absolute;left:845px;top:660px;width:120px;height:200px;transform-origin:50% 50%\"><div style=\"position:absolute;inset:0;border:7px solid #2B2B2B;border-top:none;border-radius:0 0 22px 22px;background:rgba(230,245,255,0.6);overflow:hidden\"><div id=\"{sid}-l5\" style=\"position:absolute;left:0;right:0;bottom:0;height:0px;background:#FFF3C4;border-top:5px solid #F2D27A\"></div></div></div><div style=\"position:absolute;left:875px;top:876px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">6</div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}

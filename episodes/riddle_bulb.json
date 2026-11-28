@@ -1,0 +1,308 @@
+{
+  "number": 310,
+  "part": 1,
+  "slug": "riddle_bulb",
+  "title": {
+    "ur": "TEEN BULB",
+    "en": "THREE BULBS"
+  },
+  "handle": "@AskFoxley",
+  "music": {
+    "bpm": 102,
+    "gain": 0.5
+  },
+  "answer_note": "Switch 1 on for 5 minutes then off, switch 2 on, go up: lit = 2, warm = 1, cold = 3.",
+  "shots": [
+    {
+      "set": "apartment_lobby",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "sfx": [
+        [
+          "sting",
+          0.0
+        ]
+      ],
+      "caption_y": 1290,
+      "hold": 0.1,
+      "hook": {
+        "text": "SIRF EK BAAR UPAR JA SAKTE HO!",
+        "y": 110,
+        "dur": 99
+      },
+      "lines": [
+        {
+          "who": "raju",
+          "caption": "Neeche teen switch, upar teen bulb. Kaunsa switch kis bulb ka hai?",
+          "say": "नीचे तीन स्विच, ऊपर तीन बल्ब। कौनसा स्विच किस बल्ब का है?",
+          "en": "Three switches down here, three bulbs upstairs. Which switch is which bulb?"
+        },
+        {
+          "who": "foxley",
+          "caption": "Aur upar sirf ek baar ja sakte ho!",
+          "say": "और ऊपर सिर्फ़ एक बार जा सकते हो!",
+          "en": "And you can only go upstairs once!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:480px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NEECHE SWITCH · UPAR BULB</span></div></div><div style=\"position:absolute;left:80px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw1\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:105px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:210px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw2\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:235px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:340px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw3\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:365px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div style=\"position:absolute;left:470px;top:720px;font-size:80px;font-weight:900;color:#2B2B2B\">&#10140;</div><div id=\"{sid}-glow1\" style=\"position:absolute;left:500px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:560px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill1\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat1\" style=\"position:absolute;left:570px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow2\" style=\"position:absolute;left:650px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:710px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill2\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat2\" style=\"position:absolute;left:720px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow3\" style=\"position:absolute;left:800px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:860px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill3\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat3\" style=\"position:absolute;left:870px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "apartment_lobby",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "timer": 3,
+      "timer_y": 1500,
+      "caption_y": 1290,
+      "sfx": [
+        [
+          "riser",
+          0.0
+        ]
+      ],
+      "hold": 0.6,
+      "cta": {
+        "after_timer": true,
+        "y": 160,
+        "main": "KAISE? COMMENT KARO!",
+        "sub": "Jawab abhi aa raha hai..."
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Kaise pata karoge? Teen second!",
+          "say": "कैसे पता करोगे? तीन सेकंड!",
+          "en": "How do you find out? Three seconds!"
+        }
+      ],
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:480px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NEECHE SWITCH · UPAR BULB</span></div></div><div style=\"position:absolute;left:80px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw1\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:105px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:210px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw2\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:235px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:340px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw3\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:365px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div style=\"position:absolute;left:470px;top:720px;font-size:80px;font-weight:900;color:#2B2B2B\">&#10140;</div><div id=\"{sid}-glow1\" style=\"position:absolute;left:500px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:560px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill1\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat1\" style=\"position:absolute;left:570px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow2\" style=\"position:absolute;left:650px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:710px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill2\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat2\" style=\"position:absolute;left:720px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow3\" style=\"position:absolute;left:800px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:860px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill3\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat3\" style=\"position:absolute;left:870px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      }
+    },
+    {
+      "set": "apartment_lobby",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.3,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:480px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NEECHE SWITCH · UPAR BULB</span></div></div><div style=\"position:absolute;left:80px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw1\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:105px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:210px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw2\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:235px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:340px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw3\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:365px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div style=\"position:absolute;left:470px;top:720px;font-size:80px;font-weight:900;color:#2B2B2B\">&#10140;</div><div id=\"{sid}-glow1\" style=\"position:absolute;left:500px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:560px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill1\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat1\" style=\"position:absolute;left:570px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow2\" style=\"position:absolute;left:650px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:710px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill2\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat2\" style=\"position:absolute;left:720px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow3\" style=\"position:absolute;left:800px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:860px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill3\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat3\" style=\"position:absolute;left:870px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-clk\" style=\"position:absolute;left:120px;top:900px;background:#1F4E5F;color:#fff;font-weight:900;font-size:34px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">5 MINUTE RUKO...</div>",
+        "js": [
+          "tl.to(\"#{sid}-sw1\", {top: 24, backgroundColor: \"#2E9E4F\", duration: 0.15}, @L0+0.4);",
+          "tl.to(\"#{sid}-sw1\", {top: 76, backgroundColor: \"#9E9E9E\", duration: 0.15}, @L0+2.8);",
+          "tl.to(\"#{sid}-sw2\", {top: 24, backgroundColor: \"#2E9E4F\", duration: 0.15}, @L1+0.4);",
+          "tl.fromTo(\"#{sid}-clk\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+1.0);"
+        ],
+        "sfx": [
+          [
+            "tick",
+            "@L0+1.0"
+          ],
+          [
+            "pop",
+            "@L0+0.4"
+          ],
+          [
+            "pop",
+            "@L0+2.8"
+          ],
+          [
+            "pop",
+            "@L1+0.4"
+          ]
+        ]
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Switch ek on karo, paanch minute ruko, phir off kar do.",
+          "say": "स्विच एक ऑन करो, पाँच मिनट रुको, फिर ऑफ़ कर दो।",
+          "en": "Turn switch one on, wait five minutes, then turn it off.",
+          "sfx_before": "reveal"
+        },
+        {
+          "who": "foxley",
+          "caption": "Ab switch do on karo, aur upar jao.",
+          "say": "अब स्विच दो ऑन करो, और ऊपर जाओ।",
+          "en": "Now turn switch two on, and go upstairs."
+        }
+      ]
+    },
+    {
+      "set": "apartment_hallway",
+      "transition": "whoosh",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.03
+        }
+      },
+      "feet": 0.93,
+      "caption_y": 230,
+      "hold": 0.5,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:480px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NEECHE SWITCH · UPAR BULB</span></div></div><div style=\"position:absolute;left:80px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw1\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:105px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:210px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw2\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:235px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:340px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw3\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:365px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div style=\"position:absolute;left:470px;top:720px;font-size:80px;font-weight:900;color:#2B2B2B\">&#10140;</div><div id=\"{sid}-glow1\" style=\"position:absolute;left:500px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:560px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill1\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat1\" style=\"position:absolute;left:570px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow2\" style=\"position:absolute;left:650px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:710px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill2\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat2\" style=\"position:absolute;left:720px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow3\" style=\"position:absolute;left:800px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:860px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill3\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat3\" style=\"position:absolute;left:870px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-lb0\" style=\"position:absolute;left:560px;top:900px;background:#E8762B;color:#fff;font-weight:900;font-size:28px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">SWITCH 1</div><div id=\"{sid}-lb1\" style=\"position:absolute;left:710px;top:900px;background:#2E9E4F;color:#fff;font-weight:900;font-size:28px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">SWITCH 2</div><div id=\"{sid}-lb2\" style=\"position:absolute;left:860px;top:900px;background:#1F4E5F;color:#fff;font-weight:900;font-size:28px;white-space:nowrap;padding:4px 16px;border:5px solid #2B2B2B;border-radius:16px;opacity:0;z-index:4\">SWITCH 3</div>",
+        "js": [
+          "tl.fromTo(\"#{sid}-heat1\", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.4}, @L1+0.2);",
+          "tl.to(\"#{sid}-heat1\", {y: -8, duration: 0.5, yoyo: true, repeat: 5, ease: \"sine.inOut\"}, @L1+0.2+0.4);",
+          "tl.to(\"#{sid}-glow2\", {opacity: 1, duration: 0.3}, @L0+0.2);",
+          "tl.to(\"#{sid}-bulbfill2\", {attr: {fill: \"#FFE066\"}, duration: 0.2}, @L0+0.2);",
+          "tl.fromTo(\"#{sid}-lb0\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L1+0.6);",
+          "tl.fromTo(\"#{sid}-lb1\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L0+0.6);",
+          "tl.fromTo(\"#{sid}-lb2\", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.3, ease: \"back.out(3)\"}, @L2+0.4);"
+        ],
+        "sfx": []
+      },
+      "stamp": {
+        "text": "KAMAAL!",
+        "on": "raju",
+        "line": 3,
+        "y": 1560
+      },
+      "lines": [
+        {
+          "who": "foxley",
+          "caption": "Jo bulb jal raha hai, woh switch do ka.",
+          "say": "जो बल्ब जल रहा है, वो स्विच दो का।",
+          "en": "The bulb that's on is switch two."
+        },
+        {
+          "who": "foxley",
+          "caption": "Jo bujha hai par garam, woh switch ek ka!",
+          "say": "जो बुझा है पर गरम, वो स्विच एक का!",
+          "en": "The one that's off but warm is switch one!"
+        },
+        {
+          "who": "foxley",
+          "caption": "Aur jo thanda hai, woh teen!",
+          "say": "और जो ठंडा है, वो तीन!",
+          "en": "And the cold one is three!"
+        },
+        {
+          "who": "raju",
+          "caption": "Waah! Ek hi chakkar mein!",
+          "say": "वाह! एक ही चक्कर में!",
+          "en": "Wow! In just one trip!"
+        }
+      ]
+    },
+    {
+      "set": "apartment_lobby",
+      "cast": [
+        {
+          "id": "raju",
+          "x": 0.5
+        }
+      ],
+      "camera": {
+        "from": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        },
+        "to": {
+          "focus": [
+            0.5,
+            0.62
+          ],
+          "zoom": 1.0
+        }
+      },
+      "feet": 0.93,
+      "overlay": {
+        "html": "<div style=\"position:absolute;left:40px;right:40px;top:590px;height:480px;background:rgba(255,248,230,0.94);border:8px solid #2B2B2B;border-radius:30px;box-shadow:0 12px 0 #2B2B2B\"><div style=\"position:absolute;left:0;right:0;top:-34px;text-align:center\"><span style=\"background:#1F4E5F;color:#fff;font-weight:900;font-size:36px;padding:4px 24px;border:6px solid #2B2B2B;border-radius:18px\">NEECHE SWITCH · UPAR BULB</span></div></div><div style=\"position:absolute;left:80px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw1\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:105px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">1</div><div style=\"position:absolute;left:210px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw2\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:235px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">2</div><div style=\"position:absolute;left:340px;top:660px;width:110px;height:170px;background:#F5F1E8;border:7px solid #2B2B2B;border-radius:18px\"><div id=\"{sid}-sw3\" style=\"position:absolute;left:30px;top:76px;width:36px;height:56px;background:#9E9E9E;border:5px solid #2B2B2B;border-radius:10px\"></div></div><div style=\"position:absolute;left:365px;top:840px;width:56px;height:56px;border-radius:50%;background:#F2B134;border:6px solid #2B2B2B;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px;color:#2B2B2B;z-index:3\">3</div><div style=\"position:absolute;left:470px;top:720px;font-size:80px;font-weight:900;color:#2B2B2B\">&#10140;</div><div id=\"{sid}-glow1\" style=\"position:absolute;left:500px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:560px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill1\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat1\" style=\"position:absolute;left:570px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow2\" style=\"position:absolute;left:650px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:710px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill2\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat2\" style=\"position:absolute;left:720px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div><div id=\"{sid}-glow3\" style=\"position:absolute;left:800px;top:640px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(255,230,120,0.95),rgba(255,230,120,0) 70%);opacity:0\"></div><div style=\"position:absolute;left:860px;top:700px;width:120px;height:170px\"><svg viewBox=\"0 0 120 170\" width=\"100%\" height=\"100%\"><g stroke=\"#2B2B2B\" stroke-width=\"6\" stroke-linejoin=\"round\"><path id=\"{sid}-bulbfill3\" d=\"M60 8 C20 8 6 40 14 70 C20 92 36 100 38 122 H82 C84 100 100 92 106 70 C114 40 100 8 60 8Z\" fill=\"#EEF3F6\"/><rect x=\"38\" y=\"122\" width=\"44\" height=\"34\" rx=\"6\" fill=\"#9E9E9E\"/></g></svg></div><div id=\"{sid}-heat3\" style=\"position:absolute;left:870px;top:630px;width:100px;height:60px;opacity:0\"><svg viewBox=\"0 0 100 60\" width=\"100%\" height=\"100%\"><path d=\"M20 55 q-10 -12 0 -24 q10 -12 0 -26 M50 55 q-10 -12 0 -24 q10 -12 0 -26 M80 55 q-10 -12 0 -24 q10 -12 0 -26\" fill=\"none\" stroke=\"#E8432B\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg></div>",
+        "js": [],
+        "sfx": []
+      },
+      "hold": 0.6
+    }
+  ]
+}
